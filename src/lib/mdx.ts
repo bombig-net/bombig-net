@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { Locale, locales } from '@/i18n/settings';
+import { Locale } from '@/i18n/settings';
 import { Metadata } from 'next';
 import matter, { GrayMatterFile } from 'gray-matter';
 
@@ -13,7 +13,6 @@ export type BlogPost = {
         title: string;
         date: string;
         excerpt: string;
-        categories: string[];
         // Metadata for SEO and page head elements
         metadata?: Metadata;
         [key: string]: unknown; // For additional frontmatter fields
@@ -90,7 +89,7 @@ export async function getBlogPost(slug: string, locale: Locale): Promise<BlogPos
     }
 
     // Extract specific frontmatter fields
-    const { title, date, excerpt = '', categories = [], metadata, ...restData } = data;
+    const { title, date, excerpt = '', metadata, ...restData } = data;
 
     // Construct the blog post with data from frontmatter
     return {
@@ -101,43 +100,8 @@ export async function getBlogPost(slug: string, locale: Locale): Promise<BlogPos
             title,
             date,
             excerpt,
-            categories: Array.isArray(categories) ? categories : [],
             metadata,
             ...restData // Include any other frontmatter fields
         }
     };
-}
-
-// Get all blog posts for a specific category and locale
-export async function getBlogPostsByCategory(category: string, locale: Locale): Promise<BlogPost[]> {
-    const posts = await getBlogPosts(locale);
-    return posts.filter(post => post.frontmatter.categories.includes(category));
-}
-
-// Get all unique categories across all blog posts in a specific locale
-export async function getCategories(locale: Locale): Promise<string[]> {
-    const posts = await getBlogPosts(locale);
-    const categoriesSet = new Set<string>();
-
-    posts.forEach(post => {
-        post.frontmatter.categories.forEach(category => {
-            categoriesSet.add(category);
-        });
-    });
-
-    return Array.from(categoriesSet).sort();
-}
-
-// Get all unique categories across all blog posts in all locales
-export async function getAllCategories(): Promise<string[]> {
-    const categoriesSet = new Set<string>();
-
-    for (const locale of locales) {
-        const categories = await getCategories(locale);
-        categories.forEach(category => {
-            categoriesSet.add(category);
-        });
-    }
-
-    return Array.from(categoriesSet).sort();
 }

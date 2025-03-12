@@ -1,7 +1,7 @@
 {
     "common": {
         "title": "Bombig.net",
-        "description": "Internationalized Website",
+        "description": "Internationalized Next.js site",
         "navigation": {
             "home": "Home",
             "about": "About",
@@ -15,11 +15,16 @@
             "de": "German"
         },
         "blog": {
-            "categories": "Categories",
-            "browseByCategory": "Browse by Category",
-            "allCategories": "All Categories",
-            "category": "Category",
-            "backToBlog": "Back to Blog"
+            "title": "Blog",
+            "description": "Check out our latest blog posts",
+            "backToBlog": "Back to Blog",
+            "readMore": "Read More",
+            "latestPosts": "Latest Posts"
         }
+    },
+    "routes": {
+        "home": "Home",
+        "about": "About",
+        "blog": "Blog"
     }
 }
