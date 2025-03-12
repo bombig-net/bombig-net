@@ -8,6 +8,7 @@ import matter from 'gray-matter';
  * Get metadata from page-specific JSON locale files
  * 
  * This function retrieves the metadata section from a specific page's locale file
+ * Falls back to the default metadata in the locale file if not found
  */
 export async function getJsonMetadata({
     locale,
@@ -17,18 +18,24 @@ export async function getJsonMetadata({
     pageName: string;
 }): Promise<Metadata> {
     try {
-        // For home page which is in (home) directory
-        if (pageName === 'home') {
-            const messages = (await import(`../app/[locale]/(home)/locales/${locale}.json`)).default;
-            return messages.metadata || {};
-        } else {
-            // For other pages
-            const messages = (await import(`../app/[locale]/${pageName}/locales/${locale}.json`)).default;
-            return messages.metadata || {};
+        // Try to get page-specific metadata
+        const messages = pageName === 'home'
+            ? (await import(`../app/[locale]/(home)/locales/${locale}.json`)).default
+            : (await import(`../app/[locale]/${pageName}/locales/${locale}.json`)).default;
+
+        // Use page metadata if it exists, otherwise use the default locale metadata
+        if (messages.metadata) {
+            return messages.metadata;
         }
-    } catch {
-        // Standardized error handling across both functions
-        console.error(`Could not load JSON metadata for page "${pageName}" in locale "${locale}"`);
+    } catch (error) {
+        console.error(`Could not load JSON metadata for page "${pageName}" in locale "${locale}"`, error);
+    }
+
+    // Fall back to locale default metadata
+    try {
+        return (await import(`../locales/${locale}.json`)).default.metadata || {};
+    } catch (error) {
+        console.error(`Could not load fallback metadata for locale "${locale}"`, error);
         return {};
     }
 }
@@ -37,6 +44,7 @@ export async function getJsonMetadata({
  * Get metadata from MDX blog post frontmatter
  * 
  * Retrieves the metadata object from an MDX file's frontmatter for SEO and page metadata
+ * Falls back to the default metadata in the locale file if not found
  */
 export async function getMdxMetadata({
     slug,
@@ -61,12 +69,18 @@ export async function getMdxMetadata({
         const { data } = matter(fileContents);
 
         // Extract the metadata object from the frontmatter
-        return data.metadata || {};
+        if (data.metadata && Object.keys(data.metadata).length > 0) {
+            return data.metadata;
+        }
     } catch (error) {
         console.error(`Could not load MDX metadata for blog post "${slug}" in locale "${locale}":`, error);
-        return {
-            title: `Blog Post Not Found: ${slug}`,
-            description: `The requested blog post is not available in ${locale === 'en' ? 'English' : 'German'}.`
-        };
+    }
+
+    // Fall back to locale default metadata
+    try {
+        return (await import(`../locales/${locale}.json`)).default.metadata || {};
+    } catch (error) {
+        console.error(`Could not load fallback metadata for locale "${locale}"`, error);
+        return {};
     }
 } 

@@ -22,6 +22,30 @@
             "latestPosts": "Neueste Beiträge"
         }
     },
+    "metadata": {
+        "title": "Bombig.net - Internationalisierte Website",
+        "description": "Entdecken Sie Bombig.net - Eine mehrsprachige Erfahrung mit Next.js",
+        "openGraph": {
+            "title": "Bombig.net",
+            "description": "Entdecken Sie Bombig.net - Eine mehrsprachige Erfahrung mit Next.js",
+            "images": [
+                {
+                    "url": "/images/og-image-de.jpg",
+                    "width": 1200,
+                    "height": 630,
+                    "alt": "Bombig.net"
+                }
+            ]
+        },
+        "twitter": {
+            "card": "summary_large_image",
+            "title": "Bombig.net",
+            "description": "Entdecken Sie Bombig.net - Eine mehrsprachige Erfahrung mit Next.js",
+            "images": [
+                "/images/og-image-de.jpg"
+            ]
+        }
+    },
     "routes": {
         "home": "Startseite",
         "about": "Über uns",

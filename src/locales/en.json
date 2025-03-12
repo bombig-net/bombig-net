@@ -22,6 +22,30 @@
             "latestPosts": "Latest Posts"
         }
     },
+    "metadata": {
+        "title": "Bombig.net - Internationalized Website",
+        "description": "Discover Bombig.net - A multilingual experience built with Next.js",
+        "openGraph": {
+            "title": "Bombig.net",
+            "description": "Discover Bombig.net - A multilingual experience built with Next.js",
+            "images": [
+                {
+                    "url": "/images/og-image-en.jpg",
+                    "width": 1200,
+                    "height": 630,
+                    "alt": "Bombig.net"
+                }
+            ]
+        },
+        "twitter": {
+            "card": "summary_large_image",
+            "title": "Bombig.net",
+            "description": "Discover Bombig.net - A multilingual experience built with Next.js",
+            "images": [
+                "/images/og-image-en.jpg"
+            ]
+        }
+    },
     "routes": {
         "home": "Home",
         "about": "About",
