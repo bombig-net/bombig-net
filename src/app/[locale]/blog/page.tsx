@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { Link } from '@/i18n/navigation';
 import { ClientProvider } from '@/i18n/client-provider';
-import { getBlogPosts } from '@/lib/mdx';
+import { getBlogPosts } from '@/features/blog';
 import { Locale } from '@/i18n/settings';
 import { getJsonMetadata } from '@/lib/metadata';
 

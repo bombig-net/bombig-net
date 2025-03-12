@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { getBlogPost, getBlogPosts } from '@/lib/mdx';
+import { getBlogPost, getBlogPosts } from '@/features/blog';
 import { getMdxMetadata } from '@/lib/metadata';
 import { Locale, locales } from '@/i18n/settings';
 import { ClientProvider } from '@/i18n/client-provider';
