@@ -1,0 +1,10 @@
+{
+    "hero": {
+        "title": "Blog",
+        "subtitle": "Latest articles from Bombig.net",
+        "description": "This is a placeholder for the blog page hero section in English."
+    },
+    "posts": {
+        "readMore": "Read More"
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "common": {
+        "title": "Bombig.net",
+        "description": "Internationalized Website",
+        "navigation": {
+            "home": "Home",
+            "about": "About",
+            "blog": "Blog"
+        },
+        "footer": {
+            "copyright": "© 2024 Bombig.net - All Rights Reserved"
+        },
+        "languageSwitcher": {
+            "en": "English",
+            "de": "German"
+        },
+        "blog": {
+            "categories": "Categories",
+            "browseByCategory": "Browse by Category",
+            "allCategories": "All Categories",
+            "category": "Category",
+            "backToBlog": "Back to Blog"
+        }
+    }
+}

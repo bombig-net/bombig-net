@@ -1,0 +1,10 @@
+{
+    "hero": {
+        "title": "Über Uns",
+        "subtitle": "Erfahren Sie mehr über Bombig.net",
+        "description": "Dies ist ein Platzhalter für den Hero-Bereich der Über-Uns-Seite auf Deutsch."
+    },
+    "content": {
+        "placeholder": "Dies ist ein Platzhalter für den Inhalt der Über-Uns-Seite."
+    }
+}

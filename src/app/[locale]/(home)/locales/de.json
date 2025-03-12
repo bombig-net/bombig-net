@@ -1,0 +1,11 @@
+{
+    "hero": {
+        "title": "Willkommen bei Bombig.net",
+        "subtitle": "Ihre internationalisierte Website",
+        "description": "Dies ist ein Platzhalter für den Hero-Bereich der Startseite auf Deutsch.",
+        "cta": "Mehr erfahren"
+    },
+    "content": {
+        "placeholder": "Dies ist ein Platzhalter für den Inhalt der Startseite."
+    }
+}

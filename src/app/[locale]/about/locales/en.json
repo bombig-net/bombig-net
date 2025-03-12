@@ -1,0 +1,10 @@
+{
+    "hero": {
+        "title": "About Us",
+        "subtitle": "Learn more about Bombig.net",
+        "description": "This is a placeholder for the about page hero section in English."
+    },
+    "content": {
+        "placeholder": "This is a placeholder for the about page content."
+    }
+}
