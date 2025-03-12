@@ -1,17 +1,42 @@
 import fs from 'fs';
 import path from 'path';
 import { Locale, locales } from '@/i18n/settings';
+import { Metadata } from 'next';
+import matter, { GrayMatterFile } from 'gray-matter';
 
-// Define the blog post type
+// Define the blog post type using the frontmatter from MDX
 export type BlogPost = {
     slug: string;
     locale: string;
-    title: string;
-    date: string;
-    content: string;
-    excerpt: string;
-    categories: string[];
+    content: string; // The MDX content (without frontmatter)
+    frontmatter: {
+        title: string;
+        date: string;
+        excerpt: string;
+        categories: string[];
+        // Metadata for SEO and page head elements
+        metadata?: Metadata;
+        [key: string]: unknown; // For additional frontmatter fields
+    };
 };
+
+/**
+ * Read and parse an MDX file
+ */
+function readMdxFile(locale: Locale, slug: string): GrayMatterFile<string> | null {
+    try {
+        const filePath = path.join(process.cwd(), 'src/content/blog', locale, `${slug}.mdx`);
+        if (!fs.existsSync(filePath)) {
+            return null;
+        }
+
+        const fileContents = fs.readFileSync(filePath, 'utf8');
+        return matter(fileContents);
+    } catch (error) {
+        console.error(`Error reading MDX file ${slug} in ${locale}:`, error);
+        return null;
+    }
+}
 
 // Get all blog posts for a specific locale
 export async function getBlogPosts(locale: Locale): Promise<BlogPost[]> {
@@ -19,111 +44,74 @@ export async function getBlogPosts(locale: Locale): Promise<BlogPost[]> {
 
     // Check if directory exists
     if (!fs.existsSync(postsDirectory)) {
+        console.log(`Blog directory not found: ${postsDirectory}`);
         return [];
     }
 
-    const filenames = fs.readdirSync(postsDirectory);
+    const filenames = fs.readdirSync(postsDirectory).filter(name => name.endsWith('.mdx'));
+    console.log(`Found ${filenames.length} files in ${locale} blog directory`);
 
-    const posts = filenames
-        .filter(filename => filename.endsWith('.mdx'))
-        .map(filename => {
-            // Get the slug from the filename
-            const slug = filename.replace(/\.mdx$/, '');
-            const filePath = path.join(postsDirectory, filename);
+    const posts = [];
 
-            // Read the file content
-            const fileContent = fs.readFileSync(filePath, 'utf8');
+    for (const filename of filenames) {
+        const slug = filename.replace(/\.mdx$/, '');
 
-            // Extract metadata from MDX file
-            const { title, date, excerpt, categories } = extractMetadata(fileContent);
-
-            return {
-                slug,
-                locale,
-                title: title || `Blog Post: ${slug}`,
-                date: date || new Date().toISOString(),
-                content: fileContent,
-                excerpt: excerpt || `This is a placeholder excerpt for blog post ${slug} in ${locale}...`,
-                categories: categories || []
-            };
-        });
-
-    return posts;
-}
-
-// Extract metadata from MDX file
-function extractMetadata(content: string): { title?: string; date?: string; excerpt?: string; categories?: string[] } {
-    const metadataSection = content.split('---')[1];
-
-    if (!metadataSection) {
-        return {};
+        // Get the post data using our helper function
+        const post = await getBlogPost(slug, locale);
+        if (post) {
+            posts.push(post);
+        }
     }
 
-    const result: { title?: string; date?: string; excerpt?: string; categories?: string[] } = {};
+    console.log(`Successfully processed ${posts.length} posts for ${locale}`);
 
-    // Extract title
-    const titleMatch = metadataSection.match(/title:\s*"([^"]*)"/);
-    if (titleMatch && titleMatch[1]) {
-        result.title = titleMatch[1];
-    }
-
-    // Extract date
-    const dateMatch = metadataSection.match(/date:\s*"([^"]*)"/);
-    if (dateMatch && dateMatch[1]) {
-        result.date = dateMatch[1];
-    }
-
-    // Extract excerpt
-    const excerptMatch = metadataSection.match(/excerpt:\s*"([^"]*)"/);
-    if (excerptMatch && excerptMatch[1]) {
-        result.excerpt = excerptMatch[1];
-    }
-
-    // Extract categories
-    const categoriesMatch = metadataSection.match(/categories:\s*\[(.*?)\]/);
-    if (categoriesMatch && categoriesMatch[1]) {
-        result.categories = categoriesMatch[1]
-            .split(',')
-            .map(category => category.trim().replace(/"/g, ''))
-            .filter(Boolean);
-    }
-
-    return result;
+    // Sort by date
+    return posts.sort((a, b) =>
+        new Date(b.frontmatter.date).getTime() - new Date(a.frontmatter.date).getTime()
+    );
 }
 
 // Get a specific blog post by slug and locale
 export async function getBlogPost(slug: string, locale: Locale): Promise<BlogPost | null> {
-    const posts = await getBlogPosts(locale);
-    const post = posts.find(post => post.slug === slug);
-    return post || null;
-}
+    // Read and parse the MDX file
+    const parsedFile = readMdxFile(locale, slug);
 
-// Get a specific blog post by slug in any locale, with locale preference order
-export async function getBlogPostAcrossLocales(slug: string, preferredLocale: Locale): Promise<{ post: BlogPost | null, locale: Locale | null }> {
-    // First try the preferred locale
-    const preferredPost = await getBlogPost(slug, preferredLocale);
-    if (preferredPost) {
-        return { post: preferredPost, locale: preferredLocale };
+    if (!parsedFile) {
+        console.log(`Blog post not found or could not be parsed: ${slug} in ${locale}`);
+        return null;
     }
 
-    // Try other locales
-    for (const locale of locales) {
-        if (locale !== preferredLocale) {
-            const post = await getBlogPost(slug, locale);
-            if (post) {
-                return { post, locale };
-            }
+    const { content, data } = parsedFile;
+
+    // Ensure required frontmatter fields exist
+    if (!data.title || !data.date) {
+        console.error(`Missing required frontmatter in blog post ${slug} in ${locale}`);
+        return null;
+    }
+
+    // Extract specific frontmatter fields
+    const { title, date, excerpt = '', categories = [], metadata, ...restData } = data;
+
+    // Construct the blog post with data from frontmatter
+    return {
+        slug,
+        locale,
+        content,
+        frontmatter: {
+            title,
+            date,
+            excerpt,
+            categories: Array.isArray(categories) ? categories : [],
+            metadata,
+            ...restData // Include any other frontmatter fields
         }
-    }
-
-    // Not found in any locale
-    return { post: null, locale: null };
+    };
 }
 
 // Get all blog posts for a specific category and locale
 export async function getBlogPostsByCategory(category: string, locale: Locale): Promise<BlogPost[]> {
     const posts = await getBlogPosts(locale);
-    return posts.filter(post => post.categories.includes(category));
+    return posts.filter(post => post.frontmatter.categories.includes(category));
 }
 
 // Get all unique categories across all blog posts in a specific locale
@@ -132,7 +120,7 @@ export async function getCategories(locale: Locale): Promise<string[]> {
     const categoriesSet = new Set<string>();
 
     posts.forEach(post => {
-        post.categories.forEach(category => {
+        post.frontmatter.categories.forEach(category => {
             categoriesSet.add(category);
         });
     });

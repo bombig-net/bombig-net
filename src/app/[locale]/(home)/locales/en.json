@@ -7,5 +7,21 @@
     },
     "content": {
         "placeholder": "This is a placeholder for the home page content."
+    },
+    "metadata": {
+        "title": "Bombig.net - Internationalized Website",
+        "description": "A multilingual Next.js website showcasing internationalization features",
+        "openGraph": {
+            "title": "Bombig.net - Multilingual Website",
+            "description": "Experience our internationalized website in multiple languages",
+            "images": [
+                {
+                    "url": "/images/og-image.jpg",
+                    "width": 1200,
+                    "height": 630,
+                    "alt": "Bombig.net homepage"
+                }
+            ]
+        }
     }
 }

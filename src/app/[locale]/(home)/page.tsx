@@ -1,35 +1,16 @@
 import { Metadata } from 'next';
-import { getTranslations } from 'next-intl/server';
 import Hero from './sections/hero';
 import ContentPlaceholder from './sections/content-placeholder';
 import { ClientProvider } from '@/i18n/client-provider';
+import { getJsonMetadata } from '@/lib/metadata';
 
-type MetadataProps = {
-    params: { locale: string };
-};
-
-export async function generateMetadata({ params }: MetadataProps): Promise<Metadata> {
-    // Await the params object
-    const resolvedParams = await params;
-    const locale = resolvedParams.locale;
-
-    const t = await getTranslations({ locale, namespace: 'common' });
-
-    return {
-        title: t('title'),
-        description: t('description'),
-    };
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+    const { locale } = await params;
+    return getJsonMetadata({ locale, pageName: 'home' });
 }
 
-type PageProps = {
-    params: { locale: string };
-};
-
-export default async function HomePage({ params }: PageProps) {
-    // Await the params object
-    const resolvedParams = await params;
-    const locale = resolvedParams.locale;
-
+export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
     // Load page-specific messages
     const pageMessages = (await import(`./locales/${locale}.json`)).default;
 

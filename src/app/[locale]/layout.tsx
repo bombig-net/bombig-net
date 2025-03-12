@@ -4,6 +4,12 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { ClientProvider } from '@/i18n/client-provider';
 import LanguageSwitcher from './language-switcher';
+import { Metadata } from 'next';
+
+// Add global metadata with metadataBase
+export const metadata: Metadata = {
+    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
+};
 
 export function generateStaticParams() {
     return locales.map((locale) => ({ locale }));

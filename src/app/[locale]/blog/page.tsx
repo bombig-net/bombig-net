@@ -1,37 +1,18 @@
 import { Metadata } from 'next';
-import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import Hero from './sections/hero';
 import { getBlogPosts } from '@/lib/mdx';
 import { Locale } from '@/i18n/settings';
 import { ClientProvider } from '@/i18n/client-provider';
+import { getJsonMetadata } from '@/lib/metadata';
 
-type MetadataProps = {
-    params: { locale: string };
-};
-
-export async function generateMetadata({ params }: MetadataProps): Promise<Metadata> {
-    // Await the params object
-    const resolvedParams = await params;
-    const locale = resolvedParams.locale;
-
-    const t = await getTranslations({ locale, namespace: 'common' });
-
-    return {
-        title: `${t('title')} - Blog`,
-        description: t('description'),
-    };
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+    const { locale } = await params;
+    return getJsonMetadata({ locale, pageName: 'blog' });
 }
 
-type PageProps = {
-    params: { locale: string };
-};
-
-export default async function BlogPage({ params }: PageProps) {
-    // Await the params object
-    const resolvedParams = await params;
-    const locale = resolvedParams.locale;
-
+export default async function BlogPage({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
     // Load blogPosts for current locale
     const posts = await getBlogPosts(locale as Locale);
 
@@ -62,11 +43,11 @@ export default async function BlogPage({ params }: PageProps) {
                         ) : (
                             posts.map((post) => (
                                 <div key={post.slug} className="bg-gray-800 p-6 rounded-lg">
-                                    <h3 className="mb-2 font-bold text-white text-xl">{post.title}</h3>
-                                    <p className="mb-4 text-gray-400">{new Date(post.date).toLocaleDateString()}</p>
-                                    {post.categories.length > 0 && (
+                                    <h3 className="mb-2 font-bold text-white text-xl">{post.frontmatter.title}</h3>
+                                    <p className="mb-4 text-gray-400">{new Date(post.frontmatter.date).toLocaleDateString()}</p>
+                                    {post.frontmatter.categories.length > 0 && (
                                         <div className="flex flex-wrap gap-2 mb-4">
-                                            {post.categories.map(category => (
+                                            {post.frontmatter.categories.map(category => (
                                                 <Link
                                                     key={category}
                                                     href={`/blog/categories/${encodeURIComponent(category)}`}
@@ -77,7 +58,7 @@ export default async function BlogPage({ params }: PageProps) {
                                             ))}
                                         </div>
                                     )}
-                                    <p className="mb-4 text-white">{post.excerpt}</p>
+                                    <p className="mb-4 text-white">{post.frontmatter.excerpt}</p>
                                     <Link
                                         href={`/blog/${post.slug}`}
                                         className="text-blue-400 hover:text-blue-300"

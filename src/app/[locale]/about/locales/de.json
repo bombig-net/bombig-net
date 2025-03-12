@@ -6,5 +6,21 @@
     },
     "content": {
         "placeholder": "Dies ist ein Platzhalter für den Inhalt der Über-Uns-Seite."
+    },
+    "metadata": {
+        "title": "Über uns - Bombig.net",
+        "description": "Erfahren Sie mehr über Bombig.net, unsere Mission und unser Team",
+        "openGraph": {
+            "title": "Über Bombig.net",
+            "description": "Entdecken Sie unsere Geschichte und was uns antreibt",
+            "images": [
+                {
+                    "url": "/images/about-og.jpg",
+                    "width": 1200,
+                    "height": 630,
+                    "alt": "Über Bombig.net"
+                }
+            ]
+        }
     }
 }

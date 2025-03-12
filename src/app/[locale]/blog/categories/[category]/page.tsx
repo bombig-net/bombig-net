@@ -5,27 +5,22 @@ import { ClientProvider } from '@/i18n/client-provider';
 import { getBlogPostsByCategory, getAllCategories } from '@/lib/mdx';
 import { Locale, locales } from '@/i18n/settings';
 
-type MetadataProps = {
-    params: { locale: string; category: string };
-};
-
-export async function generateMetadata({ params }: MetadataProps): Promise<Metadata> {
-    const resolvedParams = await params;
-    const locale = resolvedParams.locale;
-    const category = decodeURIComponent(resolvedParams.category);
+export async function generateMetadata({ params }: { params: Promise<{ locale: string; category: string }> }): Promise<Metadata> {
+    const { locale, category: encodedCategory } = await params;
+    const category = decodeURIComponent(encodedCategory);
 
     const t = await getTranslations({ locale, namespace: 'common' });
 
     return {
-        title: `${t('title')} - ${category}`,
+        title: `${t('title')} - ${t('blog.category')}: ${category}`,
         description: t('description'),
     };
 }
 
-// Generate static params for all categories across all locales
+// Generate static params for all blog categories
 export async function generateStaticParams() {
-    const staticParams = [];
     const categories = await getAllCategories();
+    const staticParams = [];
 
     for (const locale of locales) {
         for (const category of categories) {
@@ -39,14 +34,9 @@ export async function generateStaticParams() {
     return staticParams;
 }
 
-type PageProps = {
-    params: { locale: string; category: string };
-};
-
-export default async function CategoryPage({ params }: PageProps) {
-    const resolvedParams = await params;
-    const locale = resolvedParams.locale;
-    const category = decodeURIComponent(resolvedParams.category);
+export default async function CategoryPage({ params }: { params: Promise<{ locale: string; category: string }> }) {
+    const { locale, category: encodedCategory } = await params;
+    const category = decodeURIComponent(encodedCategory);
 
     // Get posts for this category and locale
     const posts = await getBlogPostsByCategory(category, locale as Locale);
@@ -58,35 +48,41 @@ export default async function CategoryPage({ params }: PageProps) {
     return (
         <ClientProvider locale={locale} messages={commonMessages}>
             <div className="mx-auto px-4 py-10 container">
-                <h1 className="mb-8 font-bold text-white text-3xl">
-                    {t.category}: <span className="text-blue-400">{category}</span>
-                </h1>
+                <div className="mb-10">
+                    <h1 className="mb-2 font-bold text-white text-3xl">{t.category}: {category}</h1>
+                    <Link
+                        href="/blog/categories"
+                        className="text-blue-400 hover:text-blue-300"
+                    >
+                        ← {t.browseByCategory}
+                    </Link>
+                </div>
 
-                {posts.length === 0 ? (
-                    <p className="text-white">No posts available in this category for {locale === 'en' ? 'English' : 'German'}.</p>
-                ) : (
-                    <div className="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                        {posts.map((post) => (
+                <div className="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    {posts.length === 0 ? (
+                        <p className="text-white">No posts found in this category for {locale === 'en' ? 'English' : 'German'}.</p>
+                    ) : (
+                        posts.map((post) => (
                             <div key={post.slug} className="bg-gray-800 p-6 rounded-lg">
-                                <h3 className="mb-2 font-bold text-white text-xl">{post.title}</h3>
-                                <p className="mb-4 text-gray-400">{new Date(post.date).toLocaleDateString()}</p>
-                                <p className="mb-4 text-white">{post.excerpt}</p>
+                                <h2 className="mb-2 font-bold text-white text-xl">{post.frontmatter.title}</h2>
+                                <p className="mb-4 text-gray-400">{new Date(post.frontmatter.date).toLocaleDateString()}</p>
+                                <p className="mb-4 text-white">{post.frontmatter.excerpt}</p>
                                 <Link
                                     href={`/blog/${post.slug}`}
                                     className="text-blue-400 hover:text-blue-300"
                                 >
-                                    Read More →
+                                    {t.readMore} →
                                 </Link>
                             </div>
-                        ))}
-                    </div>
-                )}
+                        ))
+                    )}
+                </div>
 
-                <div className="flex space-x-4 mt-8">
-                    <Link href="/blog/categories" className="text-blue-400 hover:text-blue-300">
-                        ← {t.allCategories}
-                    </Link>
-                    <Link href="/blog" className="text-blue-400 hover:text-blue-300">
+                <div className="mt-10">
+                    <Link
+                        href="/blog"
+                        className="text-blue-400 hover:text-blue-300"
+                    >
                         ← {t.backToBlog}
                     </Link>
                 </div>

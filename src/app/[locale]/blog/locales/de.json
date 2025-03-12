@@ -6,5 +6,21 @@
     },
     "posts": {
         "readMore": "Weiterlesen"
+    },
+    "metadata": {
+        "title": "Blog - Bombig.net",
+        "description": "Entdecken Sie unsere neuesten Artikel und Einblicke",
+        "openGraph": {
+            "title": "Bombig.net Blog",
+            "description": "Lesen Sie unsere neuesten Artikel über Internationalisierung und Webentwicklung",
+            "images": [
+                {
+                    "url": "/images/blog-og.jpg",
+                    "width": 1200,
+                    "height": 630,
+                    "alt": "Bombig.net Blog"
+                }
+            ]
+        }
     }
 }

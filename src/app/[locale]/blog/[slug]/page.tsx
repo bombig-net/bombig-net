@@ -1,32 +1,25 @@
 import { Metadata } from 'next';
-import { getBlogPost, getBlogPosts, getBlogPostAcrossLocales } from '@/lib/mdx';
+import { getBlogPost, getBlogPosts } from '@/lib/mdx';
+import { getMdxMetadata } from '@/lib/metadata';
 import { Locale, locales } from '@/i18n/settings';
 import { ClientProvider } from '@/i18n/client-provider';
 import { Link } from '@/i18n/navigation';
 
-type MetadataProps = {
-    params: { locale: string; slug: string };
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug: string }> }): Promise<Metadata> {
+    const { locale, slug } = await params;
 
-export async function generateMetadata({ params }: MetadataProps): Promise<Metadata> {
-    // Await the params object
-    const resolvedParams = await params;
-    const locale = resolvedParams.locale;
-    const slug = resolvedParams.slug;
-
-    // Try to get the post in any locale, preferring the current one
-    const { post } = await getBlogPostAcrossLocales(slug, locale as Locale);
+    // First check if the post exists - if not, provide fallback metadata
+    const post = await getBlogPost(slug, locale as Locale);
 
     if (!post) {
         return {
-            title: 'Post Not Found',
+            title: 'Post Not Available',
+            description: `This blog post is not available in ${locale === 'en' ? 'English' : 'German'}.`
         };
     }
 
-    return {
-        title: post.title,
-        description: post.excerpt,
-    };
+    // If the post exists, use the enhanced metadata from MDX frontmatter
+    return getMdxMetadata({ slug, locale: locale as Locale });
 }
 
 // Generate static params for all blog posts across all locales
@@ -47,16 +40,8 @@ export async function generateStaticParams() {
     return staticParams;
 }
 
-type PageProps = {
-    params: { locale: string; slug: string };
-};
-
-export default async function BlogPostPage({ params }: PageProps) {
-    // Await the params object
-    const resolvedParams = await params;
-    const locale = resolvedParams.locale;
-    const slug = resolvedParams.slug;
-
+export default async function BlogPostPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
+    const { locale, slug } = await params;
     // Try to get the post in the current locale only
     const post = await getBlogPost(slug, locale as Locale);
 
@@ -111,16 +96,19 @@ export default async function BlogPostPage({ params }: PageProps) {
         );
     }
 
+    // Get frontmatter data for rendering
+    const { title, date, categories } = post.frontmatter;
+
     return (
         <ClientProvider locale={locale} messages={commonMessages}>
             <div className="mx-auto px-4 py-10 container">
                 <article className="prose-invert mx-auto prose lg:prose-xl">
-                    <h1 className="mb-4 font-bold text-white text-3xl">{post.title}</h1>
-                    <p className="mb-4 text-gray-400">{new Date(post.date).toLocaleDateString()}</p>
+                    <h1 className="mb-4 font-bold text-white text-3xl">{title}</h1>
+                    <p className="mb-4 text-gray-400">{new Date(date).toLocaleDateString()}</p>
 
-                    {post.categories.length > 0 && (
+                    {categories.length > 0 && (
                         <div className="flex flex-wrap gap-2 mb-8">
-                            {post.categories.map(category => (
+                            {categories.map(category => (
                                 <Link
                                     key={category}
                                     href={`/blog/categories/${encodeURIComponent(category)}`}
@@ -133,8 +121,8 @@ export default async function BlogPostPage({ params }: PageProps) {
                     )}
 
                     <div className="text-white">
-                        {/* In a real implementation, we would render the MDX content here */}
-                        <p>{post.content}</p>
+                        {/* Render the MDX content */}
+                        {post.content}
                         <p className="mt-4 text-gray-400">
                             This is a placeholder for the blog post content. In a real implementation,
                             this would be rendered MDX content.

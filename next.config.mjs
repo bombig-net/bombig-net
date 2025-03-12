@@ -3,6 +3,10 @@ import createNextIntlPlugin from 'next-intl/plugin';
 
 const withMDX = createMDX({
     extension: /\.mdx?$/,
+    options: {
+        remarkPlugins: [],
+        rehypePlugins: [],
+    },
 });
 
 const nextConfig = {

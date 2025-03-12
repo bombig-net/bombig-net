@@ -6,5 +6,21 @@
     },
     "content": {
         "placeholder": "This is a placeholder for the about page content."
+    },
+    "metadata": {
+        "title": "About Us - Bombig.net",
+        "description": "Learn more about Bombig.net, our mission and team",
+        "openGraph": {
+            "title": "About Bombig.net",
+            "description": "Discover our story and what drives us forward",
+            "images": [
+                {
+                    "url": "/images/about-og.jpg",
+                    "width": 1200,
+                    "height": 630,
+                    "alt": "About Bombig.net"
+                }
+            ]
+        }
     }
 }

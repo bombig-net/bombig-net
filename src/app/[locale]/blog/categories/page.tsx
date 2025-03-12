@@ -4,14 +4,8 @@ import { Link } from '@/i18n/navigation';
 import { ClientProvider } from '@/i18n/client-provider';
 import { getAllCategories } from '@/lib/mdx';
 
-type MetadataProps = {
-    params: { locale: string };
-};
-
-export async function generateMetadata({ params }: MetadataProps): Promise<Metadata> {
-    const resolvedParams = await params;
-    const locale = resolvedParams.locale;
-
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+    const { locale } = await params;
     const t = await getTranslations({ locale, namespace: 'common' });
 
     return {
@@ -20,14 +14,8 @@ export async function generateMetadata({ params }: MetadataProps): Promise<Metad
     };
 }
 
-type PageProps = {
-    params: { locale: string };
-};
-
-export default async function CategoriesPage({ params }: PageProps) {
-    const resolvedParams = await params;
-    const locale = resolvedParams.locale;
-
+export default async function CategoriesPage({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
     // Get all categories across all locales
     const categories = await getAllCategories();
 
