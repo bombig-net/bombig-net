@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
-import { Link } from '@/i18n/navigation';
 import { ClientProvider } from '@/i18n/client-provider';
-import { getBlogPosts } from '@/features/blog';
+import { getPosts } from '@/features/posts';
+import { PostCard } from '@/features/posts/components/PostCard';
 import { Locale } from '@/i18n/settings';
 import { getJsonMetadata } from '@/lib/metadata';
 
@@ -13,15 +13,19 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function BlogPage({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
 
-    // Load blogPosts for current locale
-    const posts = await getBlogPosts(locale as Locale);
+    // Load posts for current locale
+    const posts = await getPosts(locale as Locale);
 
     // Load page-specific messages
     const pageMessages = (await import(`./locales/${locale}.json`)).default;
 
+    // Load feature-specific messages for post components
+    const postsMessages = (await import(`@/features/posts/locales/${locale}.json`)).default;
+
     // Load common messages for translations
     const commonMessages = {
         ...pageMessages,
+        posts: postsMessages,
         common: (await import(`@/locales/${locale}.json`)).default
     };
 
@@ -38,20 +42,11 @@ export default async function BlogPage({ params }: { params: Promise<{ locale: s
                 ) : (
                     <div className="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                         {posts.map(post => (
-                            <div key={post.slug} className="bg-gray-800 shadow-lg p-6 rounded-lg">
-                                <h2 className="mb-2 font-bold text-white text-xl">
-                                    {post.frontmatter.title}
-                                </h2>
-                                <p className="mb-2 text-gray-400">{new Date(post.frontmatter.date).toLocaleDateString()}</p>
-                                <p className="mb-4 text-white">{post.frontmatter.excerpt}</p>
-
-                                <Link
-                                    href={`/blog/${post.slug}`}
-                                    className="text-blue-400 hover:text-blue-300"
-                                >
-                                    {pageMessages.posts.readMore} →
-                                </Link>
-                            </div>
+                            <PostCard
+                                key={post.slug}
+                                post={post}
+                                readMoreText={postsMessages.ui.readMore}
+                            />
                         ))}
                     </div>
                 )}

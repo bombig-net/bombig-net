@@ -4,11 +4,11 @@ import matter, { GrayMatterFile } from 'gray-matter';
 import { Locale } from '@/i18n/settings';
 
 /**
- * Read and parse an MDX file
+ * Read and parse an MDX file from the posts content directory
  */
 export function parseMdxFile(locale: Locale, slug: string): GrayMatterFile<string> | null {
     try {
-        const filePath = path.join(process.cwd(), 'src/content/blog', locale, `${slug}.mdx`);
+        const filePath = path.join(process.cwd(), 'src/features/posts/content', locale, `${slug}.mdx`);
         if (!fs.existsSync(filePath)) {
             return null;
         }

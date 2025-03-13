@@ -1,0 +1,12 @@
+{
+    "ui": {
+        "readMore": "Read More",
+        "backToBlog": "Back to Blog",
+        "notAvailable": "Post Not Available",
+        "notAvailableMessage": "This post is not available in English.",
+        "availableIn": "Available in:"
+    },
+    "dates": {
+        "format": "MMMM d, yyyy"
+    }
+}

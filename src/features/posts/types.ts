@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 
-// Define the blog post type using the frontmatter from MDX
-export type BlogPost = {
+// Define the post type using the frontmatter from MDX
+export type Post = {
     slug: string;
     locale: string;
     content: string; // The MDX content (without frontmatter)

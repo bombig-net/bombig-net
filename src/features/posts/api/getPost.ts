@@ -1,16 +1,16 @@
 import { Locale } from '@/i18n/settings';
-import { BlogPost } from '../types/BlogPost';
+import { Post } from '../types';
 import { parseMdxFile } from './parseMdx';
 
 /**
- * Get a specific blog post by slug and locale
+ * Get a specific post by slug and locale
  */
-export async function getBlogPost(slug: string, locale: Locale): Promise<BlogPost | null> {
+export async function getPost(slug: string, locale: Locale): Promise<Post | null> {
     // Read and parse the MDX file
     const parsedFile = parseMdxFile(locale, slug);
 
     if (!parsedFile) {
-        console.log(`Blog post not found or could not be parsed: ${slug} in ${locale}`);
+        console.log(`Post not found or could not be parsed: ${slug} in ${locale}`);
         return null;
     }
 
@@ -18,14 +18,14 @@ export async function getBlogPost(slug: string, locale: Locale): Promise<BlogPos
 
     // Ensure required frontmatter fields exist
     if (!data.title || !data.date) {
-        console.error(`Missing required frontmatter in blog post ${slug} in ${locale}`);
+        console.error(`Missing required frontmatter in post ${slug} in ${locale}`);
         return null;
     }
 
     // Extract specific frontmatter fields
     const { title, date, excerpt = '', metadata, ...restData } = data;
 
-    // Construct the blog post with data from frontmatter
+    // Construct the post with data from frontmatter
     return {
         slug,
         locale,

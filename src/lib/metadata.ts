@@ -41,7 +41,7 @@ export async function getJsonMetadata({
 }
 
 /**
- * Get metadata from MDX blog post frontmatter
+ * Get metadata from MDX post frontmatter
  * 
  * Retrieves the metadata object from an MDX file's frontmatter for SEO and page metadata
  * Falls back to the default metadata in the locale file if not found
@@ -55,7 +55,7 @@ export async function getMdxMetadata({
 }): Promise<Metadata> {
     try {
         // Path to the MDX file
-        const filePath = path.join(process.cwd(), 'src/content/blog', locale, `${slug}.mdx`);
+        const filePath = path.join(process.cwd(), 'src/features/posts/content', locale, `${slug}.mdx`);
 
         // Check if the file exists
         if (!fs.existsSync(filePath)) {
@@ -73,7 +73,7 @@ export async function getMdxMetadata({
             return data.metadata;
         }
     } catch (error) {
-        console.error(`Could not load MDX metadata for blog post "${slug}" in locale "${locale}":`, error);
+        console.error(`Could not load MDX metadata for post "${slug}" in locale "${locale}":`, error);
     }
 
     // Fall back to locale default metadata

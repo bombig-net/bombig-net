@@ -1,23 +1,23 @@
 import fs from 'fs';
 import path from 'path';
 import { Locale } from '@/i18n/settings';
-import { BlogPost } from '../types/BlogPost';
-import { getBlogPost } from './getBlogPost';
+import { Post } from '../types';
+import { getPost } from './getPost';
 
 /**
- * Get all blog posts for a specific locale
+ * Get all posts for a specific locale
  */
-export async function getBlogPosts(locale: Locale): Promise<BlogPost[]> {
-    const postsDirectory = path.join(process.cwd(), 'src/content/blog', locale);
+export async function getPosts(locale: Locale): Promise<Post[]> {
+    const postsDirectory = path.join(process.cwd(), 'src/features/posts/content', locale);
 
     // Check if directory exists
     if (!fs.existsSync(postsDirectory)) {
-        console.log(`Blog directory not found: ${postsDirectory}`);
+        console.log(`Posts directory not found: ${postsDirectory}`);
         return [];
     }
 
     const filenames = fs.readdirSync(postsDirectory).filter(name => name.endsWith('.mdx'));
-    console.log(`Found ${filenames.length} files in ${locale} blog directory`);
+    console.log(`Found ${filenames.length} files in ${locale} posts directory`);
 
     const posts = [];
 
@@ -25,7 +25,7 @@ export async function getBlogPosts(locale: Locale): Promise<BlogPost[]> {
         const slug = filename.replace(/\.mdx$/, '');
 
         // Get the post data using our helper function
-        const post = await getBlogPost(slug, locale);
+        const post = await getPost(slug, locale);
         if (post) {
             posts.push(post);
         }
