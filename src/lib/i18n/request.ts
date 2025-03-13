@@ -24,14 +24,14 @@ export default getRequestConfig(async ({ requestLocale }) => {
         return {
             locale,
             timeZone: 'Europe/Berlin',
-            messages: (await import(`../locales/${locale}.json`)).default
+            messages: (await import(`../../locales/${locale}.json`)).default
         };
     } catch {
         // If messages for the locale couldn't be loaded, fallback to default locale
         return {
             locale,
             timeZone: 'Europe/Berlin',
-            messages: (await import(`../locales/${defaultLocale}.json`)).default
+            messages: (await import(`../../locales/${defaultLocale}.json`)).default
         };
     }
 }); 
