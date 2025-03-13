@@ -1,6 +1,7 @@
 'use client';
 
-import { usePathname, Link } from '@/i18n/navigation';
+import { locales } from '@/lib/i18n/settings';
+import { usePathname, Link } from '@/lib/i18n/navigation';
 
 export default function LanguageSwitcher({ currentLocale }: { currentLocale: string }) {
     // Get the current path without the locale prefix

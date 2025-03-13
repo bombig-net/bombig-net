@@ -1,10 +1,12 @@
-import { notFound } from 'next/navigation';
-import { Locale, locales } from '@/i18n/settings';
+import { Locale, locales } from '@/lib/i18n/settings';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { Link } from '@/i18n/navigation';
-import { ClientProvider } from '@/i18n/client-provider';
+import { Link } from '@/lib/i18n/navigation';
+import { ClientProvider } from '@/lib/i18n/client-provider';
 import LanguageSwitcher from './language-switcher';
 import { Metadata } from 'next';
+import { notFound } from 'next/navigation';
+import Footer from '../../components/footer';
+import './globals.css';
 
 // Add global metadata with metadataBase
 export const metadata: Metadata = {
@@ -54,9 +56,7 @@ export default async function LocaleLayout({ children, params }: Props) {
                 <main>
                     {children}
                 </main>
-                <footer className="bg-gray-800 p-4 text-white text-center">
-                    <p>{t('footer.copyright')}</p>
-                </footer>
+                <Footer />
             </div>
         </ClientProvider>
     );

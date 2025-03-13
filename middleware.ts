@@ -1,5 +1,5 @@
 import createMiddleware from 'next-intl/middleware';
-import { routing } from './src/i18n/routing';
+import { routing } from './src/lib/i18n/routing';
 
 // This middleware intercepts requests to /[locale]/... routes,
 // and rewrites them so Next.js can handle them properly

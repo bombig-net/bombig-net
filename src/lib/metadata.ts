@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { Locale } from '@/i18n/settings';
+import { Locale } from '@/lib/i18n/settings';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';

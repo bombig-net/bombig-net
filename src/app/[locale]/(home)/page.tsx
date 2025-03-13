@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Hero from './sections/hero';
 import ContentPlaceholder from './sections/content-placeholder';
-import { ClientProvider } from '@/i18n/client-provider';
+import { ClientProvider } from '@/lib/i18n/client-provider';
 import { getJsonMetadata } from '@/lib/metadata';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {

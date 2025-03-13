@@ -1,9 +1,9 @@
 import { Metadata } from 'next';
 import { getPost, getPosts, formatPostDate } from '@/features/posts';
 import { getMdxMetadata } from '@/lib/metadata';
-import { Locale, locales } from '@/i18n/settings';
-import { ClientProvider } from '@/i18n/client-provider';
-import { Link } from '@/i18n/navigation';
+import { Locale, locales } from '@/lib/i18n/settings';
+import { ClientProvider } from '@/lib/i18n/client-provider';
+import { Link } from '@/lib/i18n/navigation';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug: string }> }): Promise<Metadata> {
     const { locale, slug } = await params;

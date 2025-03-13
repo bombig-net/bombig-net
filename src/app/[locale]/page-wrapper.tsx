@@ -2,7 +2,7 @@
 
 import { ReactNode } from 'react';
 import { AbstractIntlMessages } from 'next-intl';
-import { ClientProvider } from '@/i18n/client-provider';
+import { ClientProvider } from '@/lib/i18n/client-provider';
 
 type Props = {
     locale: string;

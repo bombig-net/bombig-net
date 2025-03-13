@@ -1,4 +1,4 @@
-import { Link } from '@/i18n/navigation';
+import { Link } from '@/lib/i18n/navigation';
 import { Post } from '../types';
 import { formatPostDate } from '../utils/formatDate';
 

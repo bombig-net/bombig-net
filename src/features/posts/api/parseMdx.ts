@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import matter, { GrayMatterFile } from 'gray-matter';
-import { Locale } from '@/i18n/settings';
+import { Locale } from '@/lib/i18n/settings';
 
 /**
  * Read and parse an MDX file from the posts content directory

@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
-import { ClientProvider } from '@/i18n/client-provider';
+import { ClientProvider } from '@/lib/i18n/client-provider';
 import { getPosts } from '@/features/posts';
 import { PostCard } from '@/features/posts/components/PostCard';
-import { Locale } from '@/i18n/settings';
+import { Locale } from '@/lib/i18n/settings';
 import { getJsonMetadata } from '@/lib/metadata';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {

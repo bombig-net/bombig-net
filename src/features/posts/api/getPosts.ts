@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { Locale } from '@/i18n/settings';
+import { Locale } from '@/lib/i18n/settings';
 import { Post } from '../types';
 import { getPost } from './getPost';
 
