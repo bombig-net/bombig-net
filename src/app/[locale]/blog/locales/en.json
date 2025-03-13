@@ -5,7 +5,8 @@
         "description": "This is a placeholder for the blog page hero section in English."
     },
     "posts": {
-        "readMore": "Read More"
+        "readMore": "Read More",
+        "backToBlog": "Back to Blog"
     },
     "metadata": {
         "title": "Blog - Bombig.net",

@@ -56,6 +56,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
     // Load common messages
     const commonMessages = (await import(`@/locales/${locale}.json`)).default;
 
+    // Load blog-specific translations
+    const blogMessages = (await import(`@/app/[locale]/blog/locales/${locale}.json`)).default;
+
     // If post not found in current locale
     if (!post) {
         return (
@@ -87,7 +90,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
                         )}
 
                         <Link href="/blog" className="text-blue-400 hover:text-blue-300">
-                            ← Back to Blog
+                            ← {blogMessages.posts.backToBlog}
                         </Link>
                     </div>
                 </div>
@@ -117,7 +120,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
 
                 <div className="mt-8 text-center">
                     <Link href="/blog" className="text-blue-400 hover:text-blue-300">
-                        ← Back to Blog
+                        ← {blogMessages.posts.backToBlog}
                     </Link>
                 </div>
             </div>

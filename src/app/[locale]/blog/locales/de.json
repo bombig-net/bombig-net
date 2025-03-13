@@ -5,7 +5,8 @@
         "description": "Dies ist ein Platzhalter für den Hero-Bereich der Blog-Seite auf Deutsch."
     },
     "posts": {
-        "readMore": "Weiterlesen"
+        "readMore": "Weiterlesen",
+        "backToBlog": "Zurück zum Blog"
     },
     "metadata": {
         "title": "Blog - Bombig.net",

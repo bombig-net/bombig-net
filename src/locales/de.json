@@ -13,13 +13,6 @@
         "languageSwitcher": {
             "en": "Englisch",
             "de": "Deutsch"
-        },
-        "blog": {
-            "title": "Blog",
-            "description": "Sehen Sie sich unsere neuesten Blogbeiträge an",
-            "backToBlog": "Zurück zum Blog",
-            "readMore": "Weiterlesen",
-            "latestPosts": "Neueste Beiträge"
         }
     },
     "metadata": {
