@@ -23,6 +23,9 @@
     "elsewhere": "Woanders",
     "copyright": "Copyright 2026 Bombig"
   },
+  "a11y": {
+    "skipToContent": "Zum Inhalt springen"
+  },
   "callout": {
     "eyebrow": "Bereit fuer den naechsten Schritt",
     "title": "Lass uns die Site bauen, die deine Konkurrenz gern haette.",
@@ -227,10 +230,13 @@
       "email": "Email",
       "emailPlaceholder": "du at company.com",
       "project": "Projekt",
-      "projectPlaceholder": "Woran arbeitet ihr?",
-      "submit": "Brief senden",
-      "note": "Dieses Formular ist ein Platzhalter. Wir verbinden es als naechstes mit deinem System."
-    },
+    "projectPlaceholder": "Woran arbeitet ihr?",
+    "submit": "Brief senden",
+    "sending": "Senden...",
+    "note": "Wir antworten innerhalb von zwei Werktagen.",
+    "success": "Danke — wir haben deinen Brief erhalten.",
+    "error": "Etwas ist schiefgelaufen. Bitte sende uns eine E-Mail."
+  },
     "meta": {
       "title": "Kontakt",
       "description": "Starte ein Projekt mit Bombig. Kontaktiere uns fuer deinen naechsten Launch."

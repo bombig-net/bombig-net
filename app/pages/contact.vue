@@ -11,30 +11,54 @@
           <p>{{ config.site?.location }}</p>
         </div>
       </div>
-      <form class="glass-panel grid gap-4 p-8">
+      <form class="glass-panel grid gap-4 p-8" @submit.prevent="onSubmit">
+        <div class="sr-only" aria-hidden="true">
+          <label for="company">Company</label>
+          <input id="company" v-model="form.company" name="company" tabindex="-1" autocomplete="off" type="text">
+        </div>
         <label class="text-xs uppercase tracking-[0.2em] text-slate-400" for="name">{{ t('contact.form.name') }}</label>
         <input
           id="name"
+          name="name"
           type="text"
+          autocomplete="name"
+          required
+          v-model="form.name"
           class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm"
           :placeholder="t('contact.form.namePlaceholder')"
         >
         <label class="text-xs uppercase tracking-[0.2em] text-slate-400" for="email">{{ t('contact.form.email') }}</label>
         <input
           id="email"
+          name="email"
           type="email"
+          autocomplete="email"
+          required
+          v-model="form.email"
           class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm"
           :placeholder="t('contact.form.emailPlaceholder')"
         >
         <label class="text-xs uppercase tracking-[0.2em] text-slate-400" for="project">{{ t('contact.form.project') }}</label>
         <textarea
           id="project"
+          name="project"
+          autocomplete="off"
+          required
           rows="4"
+          v-model="form.project"
           class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm"
           :placeholder="t('contact.form.projectPlaceholder')"
         />
-        <button type="submit" class="cta-button justify-center">{{ t('contact.form.submit') }}</button>
+        <button type="submit" class="cta-button justify-center" :disabled="isSending">
+          {{ isSending ? t('contact.form.sending') : t('contact.form.submit') }}
+        </button>
         <p class="text-xs text-slate-400">{{ t('contact.form.note') }}</p>
+        <p v-if="status === 'success'" class="text-xs text-emerald-300" role="status">
+          {{ t('contact.form.success') }}
+        </p>
+        <p v-if="status === 'error'" class="text-xs text-rose-300" role="alert">
+          {{ errorMessage || t('contact.form.error') }}
+        </p>
       </form>
     </section>
   </div>
@@ -42,9 +66,49 @@
 
 <script setup lang="ts">
 const config = useAppConfig()
-const { t } = useI18n()
+const { t, locale } = useI18n()
 const metaTitle = computed(() => t('contact.meta.title'))
 const metaDescription = computed(() => t('contact.meta.description'))
+
+const form = reactive({
+  name: '',
+  email: '',
+  project: '',
+  company: '',
+})
+
+const status = ref<'idle' | 'sending' | 'success' | 'error'>('idle')
+const errorMessage = ref('')
+const isSending = computed(() => status.value === 'sending')
+
+const onSubmit = async () => {
+  if (isSending.value) {
+    return
+  }
+  status.value = 'sending'
+  errorMessage.value = ''
+  try {
+    await $fetch('/api/contact', {
+      method: 'POST',
+      body: {
+        name: form.name,
+        email: form.email,
+        project: form.project,
+        company: form.company,
+        locale: locale.value,
+      },
+    })
+    status.value = 'success'
+    form.name = ''
+    form.email = ''
+    form.project = ''
+    form.company = ''
+  } catch (error) {
+    status.value = 'error'
+    const message = error instanceof Error ? error.message : ''
+    errorMessage.value = message
+  }
+}
 
 useSeoMeta({
   title: metaTitle,

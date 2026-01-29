@@ -1,2 +1,3 @@
 User-Agent: *
 Disallow:
+Sitemap: https://bombig.net/sitemap.xml

@@ -23,6 +23,9 @@
     "elsewhere": "Elsewhere",
     "copyright": "Copyright 2026 Bombig"
   },
+  "a11y": {
+    "skipToContent": "Skip to content"
+  },
   "callout": {
     "eyebrow": "Ready to move",
     "title": "Let's build the site your competitors wish they had.",
@@ -227,10 +230,13 @@
       "email": "Email",
       "emailPlaceholder": "you at company.com",
       "project": "Project",
-      "projectPlaceholder": "What are you building?",
-      "submit": "Send the brief",
-      "note": "This form is a placeholder. We'll wire it to your system next."
-    },
+    "projectPlaceholder": "What are you building?",
+    "submit": "Send the brief",
+    "sending": "Sending...",
+    "note": "We reply within two business days.",
+    "success": "Thanks — we received your brief.",
+    "error": "Something went wrong. Please email us directly."
+  },
     "meta": {
       "title": "Contact",
       "description": "Start a project with Bombig. Reach out to plan your next digital launch."

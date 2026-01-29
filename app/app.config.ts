@@ -16,8 +16,9 @@ export default defineAppConfig({
     ],
     footer: [
       { key: 'nav.services', to: '/services' },
-      { key: 'nav.process', to: '/about' },
-      { key: 'nav.careers', to: '/about' },
+      { key: 'nav.caseStudies', to: '/case-studies' },
+      { key: 'nav.blog', to: '/blog' },
+      { key: 'nav.contact', to: '/contact' },
       { key: 'nav.privacy', to: '/privacy' },
     ],
   },
