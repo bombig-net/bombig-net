@@ -81,6 +81,7 @@ Broken builds or ignored warnings are not acceptable.
 - No unnecessary libraries
 - No overlapping functionality
 - Updates must not introduce instability or bloat
+- Reka UI is the approved library for accessible interactive primitives (menus, dialogs, tooltips, popovers, etc.)
 
 Convenience alone is not a sufficient reason to add a dependency.
 

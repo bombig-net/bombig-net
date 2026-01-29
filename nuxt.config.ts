@@ -51,6 +51,7 @@ export default defineNuxtConfig({
     '@nuxtjs/seo',
     '@nuxtjs/i18n',
     '@nuxtjs/tailwindcss',
+    'reka-ui/nuxt',
   ],
   devtools: { enabled: true },
   compatibilityDate: '2024-04-03',
