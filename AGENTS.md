@@ -74,8 +74,8 @@ Default working mode:
 1. Understand the request
 2. Check governance
 3. If needed, propose a short plan
-4. Wait for confirmation
-5. Implement in small, reviewable steps
+4. Wait for confirmation while planning, exploring, and discussing scope
+5. After a complete plan is agreed, execute the full plan without additional confirmation prompts
 
 Rules:
 - No large refactors without an explicit plan
