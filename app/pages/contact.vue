@@ -19,33 +19,33 @@
         <label class="text-xs uppercase tracking-[0.2em] text-slate-400" for="name">{{ t('contact.form.name') }}</label>
         <input
           id="name"
+          v-model="form.name"
           name="name"
           type="text"
           autocomplete="name"
           required
-          v-model="form.name"
           class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm"
           :placeholder="t('contact.form.namePlaceholder')"
         >
         <label class="text-xs uppercase tracking-[0.2em] text-slate-400" for="email">{{ t('contact.form.email') }}</label>
         <input
           id="email"
+          v-model="form.email"
           name="email"
           type="email"
           autocomplete="email"
           required
-          v-model="form.email"
           class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm"
           :placeholder="t('contact.form.emailPlaceholder')"
         >
         <label class="text-xs uppercase tracking-[0.2em] text-slate-400" for="project">{{ t('contact.form.project') }}</label>
         <textarea
           id="project"
+          v-model="form.project"
           name="project"
           autocomplete="off"
           required
           rows="4"
-          v-model="form.project"
           class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm"
           :placeholder="t('contact.form.projectPlaceholder')"
         />
