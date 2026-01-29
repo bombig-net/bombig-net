@@ -1,0 +1,319 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "caseStudies": "Case Studies",
+    "blog": "Blog",
+    "contact": "Contact",
+    "services": "Services",
+    "process": "Process",
+    "careers": "Careers",
+    "privacy": "Privacy"
+  },
+  "header": {
+    "startProject": "Start a project",
+    "letsTalk": "Let's talk",
+    "language": "Switch language",
+    "menu": "Menu"
+  },
+  "footer": {
+    "tagline": "Digital agency for fearless brands.",
+    "blurb": "Design-led, performance-obsessed, and unapologetically bold. We build digital experiences that turn curiosity into action.",
+    "explore": "Explore",
+    "elsewhere": "Elsewhere",
+    "copyright": "Copyright 2026 Bombig"
+  },
+  "callout": {
+    "eyebrow": "Ready to move",
+    "title": "Let's build the site your competitors wish they had.",
+    "description": "One sprint, one aligned team, one clear outcome. We do the hard work of clarity and execution so your brand can launch with confidence.",
+    "primaryCta": "Book a discovery call",
+    "secondaryCta": "See recent launches"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Digital agency for ambitious teams",
+      "title": "We turn bold ideas into conversion-ready digital experiences.",
+      "description": "Bombig is the agency founders call when they need a launch that feels cinematic, performs like a product, and reads like a story worth sharing.",
+      "primaryCta": "Start a project",
+      "secondaryCta": "Explore case studies",
+      "stat1Label": "Launches shipped",
+      "stat2Label": "Client satisfaction",
+      "stat3Label": "Avg. lift in conversions"
+    },
+    "panel": {
+      "chip": "Launch-ready",
+      "title": "The agency layout that already feels custom.",
+      "description": "Think of this as the first draft of a systemized, scalable marketing site. Every section is designed to be reworked without losing its power.",
+      "imageAlt": "Team collaborating on a digital project",
+      "signatureLabel": "Signature move",
+      "signatureText": "Narrative-driven UX, striking by default."
+    },
+    "whatWeDo": {
+      "eyebrow": "What we do",
+      "title": "Strategy, design, and execution under one bold direction.",
+      "description": "We lead with clarity and build with momentum. Every engagement is focused, collaborative, and driven by measurable wins.",
+      "cards": {
+        "positioning": {
+          "label": "Positioning",
+          "text": "Brand narratives and product messaging that land."
+        },
+        "experience": {
+          "label": "Experience",
+          "text": "High-fidelity UI and motion systems for standout launches."
+        },
+        "growth": {
+          "label": "Growth",
+          "text": "SEO, performance, and conversion craft baked in from day one."
+        }
+      }
+    },
+    "featured": {
+      "eyebrow": "Featured work",
+      "title": "Proof that our strategy translates into outcomes.",
+      "description": "A tight mix of launches, rebrands, and digital product overhauls designed to move the needle."
+    },
+    "process": {
+      "eyebrow": "How we run",
+      "title": "A focused sprint that brings bold ideas to life.",
+      "description": "We compress momentum into four phases. You'll always know what's next, what it means, and why it matters.",
+      "steps": {
+        "strategy": {
+          "label": "01 Strategy",
+          "text": "Positioning, insights, and narrative clarity."
+        },
+        "design": {
+          "label": "02 Design",
+          "text": "Cinematic UI systems and brand expression."
+        },
+        "build": {
+          "label": "03 Build",
+          "text": "Nuxt + Tailwind builds optimized for speed."
+        },
+        "launch": {
+          "label": "04 Launch",
+          "text": "Analytics, handoff, and post-launch tuning."
+        }
+      }
+    },
+    "client": {
+      "chip": "Client signal",
+      "quote": "They translated our vision into something bold and credible.",
+      "description": "We bring a focused core team to every engagement. No handoffs, no diluted ideas, just one aligned vision from start to finish.",
+      "attribution": "Asteria Labs / Series B"
+    },
+    "fieldNotes": {
+      "eyebrow": "Field notes",
+      "title": "Insights from the edges of design, growth, and storytelling.",
+      "description": "Short reads for teams that care about how design shows up in the real world."
+    },
+    "meta": {
+      "title": "Digital agency for ambitious launches",
+      "description": "Bombig is a design-driven digital agency creating bold, conversion-ready experiences for modern teams."
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "About Bombig",
+      "title": "A studio built for teams who refuse to be forgettable.",
+      "description": "We are a tight, senior team that blends strategy, design, and build. Our focus is simple: help ambitious brands launch with clarity, confidence, and momentum.",
+      "primaryCta": "Work with us",
+      "secondaryCta": "View our work"
+    },
+    "beliefs": {
+      "label": "What we believe",
+      "items": {
+        "first": "Clarity beats noise. Every page should say one thing remarkably well.",
+        "second": "Design earns attention, but performance earns trust.",
+        "third": "Storytelling belongs in every interaction, not just the copy."
+      }
+    },
+    "values": {
+      "leadership": {
+        "label": "Leadership",
+        "title": "Design, strategy, and engineering in one room.",
+        "description": "You work directly with the people shaping the work, not a handoff chain."
+      },
+      "method": {
+        "label": "Method",
+        "title": "Short, focused sprints with weekly milestones.",
+        "description": "Momentum stays high, feedback stays real, decisions stay sharp."
+      },
+      "momentum": {
+        "label": "Momentum",
+        "title": "Launches that feel inevitable, not improvised.",
+        "description": "We set up your team for continuous improvement after go-live."
+      }
+    },
+    "team": {
+      "eyebrow": "Our team",
+      "title": "Small, senior, and intentionally built.",
+      "description": "We keep the team lean so every engagement stays close, consistent, and accountable.",
+      "roles": {
+        "founder": "Founder / Strategy",
+        "creativeDirector": "Creative Director",
+        "productDesigner": "Product Designer",
+        "engineeringLead": "Engineering Lead"
+      }
+    },
+    "capabilities": {
+      "label": "Capabilities",
+      "items": {
+        "first": "Brand narrative and messaging systems",
+        "second": "Conversion-led landing pages and marketing sites",
+        "third": "Design systems with motion and interaction direction",
+        "fourth": "Nuxt + Vue production builds and performance tuning",
+        "fifth": "Content strategy and SEO foundations"
+      }
+    },
+    "meta": {
+      "title": "About Bombig",
+      "description": "Meet the team behind Bombig, a digital agency focused on bold, conversion-ready launches."
+    }
+  },
+  "services": {
+    "hero": {
+      "eyebrow": "Services",
+      "title": "A full-stack digital studio, built for launch velocity.",
+      "description": "We blend strategy, design, content, and engineering into a single focused engagement. Every deliverable is designed to move your brand closer to trust and conversion."
+    },
+    "timeline": {
+      "label": "Typical engagement",
+      "items": {
+        "discovery": "Discovery + Positioning",
+        "discoveryTime": "1-2 weeks",
+        "design": "Experience Design",
+        "designTime": "2-3 weeks",
+        "build": "Nuxt Build + Launch",
+        "buildTime": "2-4 weeks"
+      }
+    },
+    "cards": {
+      "strategy": {
+        "label": "Strategy",
+        "title": "Narrative and positioning",
+        "description": "Brand voice, competitive landscape, and sharp product messaging."
+      },
+      "design": {
+        "label": "Design",
+        "title": "Experience and visual systems",
+        "description": "UI systems, motion direction, and bold editorial layouts."
+      },
+      "build": {
+        "label": "Build",
+        "title": "Nuxt engineering",
+        "description": "Production-grade builds, accessibility, and performance optimization."
+      },
+      "growth": {
+        "label": "Growth",
+        "title": "SEO and conversion",
+        "description": "Structured content, analytics, and conversion-ready journeys."
+      }
+    },
+    "meta": {
+      "title": "Services",
+      "description": "Strategy, design, and engineering services for bold digital launches."
+    }
+  },
+  "contact": {
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Let's build something that feels inevitable.",
+      "description": "Tell us where you're headed and we'll shape the roadmap. We reply within two business days with next steps."
+    },
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "you at company.com",
+      "project": "Project",
+      "projectPlaceholder": "What are you building?",
+      "submit": "Send the brief",
+      "note": "This form is a placeholder. We'll wire it to your system next."
+    },
+    "meta": {
+      "title": "Contact",
+      "description": "Start a project with Bombig. Reach out to plan your next digital launch."
+    }
+  },
+  "caseStudies": {
+    "index": {
+      "eyebrow": "Case studies",
+      "title": "Launches engineered for clarity, speed, and conversion.",
+      "description": "Every case is a snapshot of how we blend narrative, design, and build. Each one shows the systems behind the outcome, not just the final screens."
+    },
+    "card": {
+      "fallbackClient": "Confidential partner",
+      "fallbackYear": "2026",
+      "defaultTags": {
+        "first": "Brand",
+        "second": "Product",
+        "third": "Growth"
+      }
+    },
+    "detail": {
+      "eyebrow": "Case study",
+      "fallbackClient": "Confidential partner",
+      "fallbackYear": "2026",
+      "fallbackScope": "Brand + Web + Launch",
+      "servicesLabel": "Services",
+      "fallbackServices": "Strategy, visual design, Nuxt build",
+      "outcomesLabel": "Outcomes",
+      "outcomes": {
+        "first": "+32% lift in qualified inbound",
+        "second": "Site speed score above 95",
+        "third": "Clear narrative for sales enablement"
+      },
+      "cta": "Build your own launch"
+    },
+    "meta": {
+      "title": "Case studies",
+      "description": "Recent launches and transformations delivered by Bombig."
+    }
+  },
+  "blog": {
+    "index": {
+      "eyebrow": "Journal",
+      "title": "Dispatches from the creative edge.",
+      "description": "Short, practical reads on design, strategy, and launch momentum. Built for founders who care about the details."
+    },
+    "detail": {
+      "eyebrow": "Journal",
+      "fallbackCategory": "Insight",
+      "fallbackDate": "Just now",
+      "fallbackRead": "6 min read"
+    },
+    "card": {
+      "fallbackCategory": "Insights",
+      "fallbackRead": "6 min read",
+      "fallbackDate": "Just now"
+    },
+    "meta": {
+      "title": "Blog",
+      "description": "Insights and perspectives from Bombig on design, growth, and digital launches."
+    }
+  },
+  "privacy": {
+    "eyebrow": "Privacy",
+    "title": "Privacy with clarity and restraint.",
+    "description": "This is placeholder legal content. We will replace it with your official privacy policy before launch.",
+    "sections": {
+      "collect": {
+        "title": "What we collect",
+        "body": "Basic analytics data and information you submit through our contact forms."
+      },
+      "use": {
+        "title": "How we use it",
+        "body": "To respond to inquiries, understand site performance, and improve the experience."
+      },
+      "choices": {
+        "title": "Your choices",
+        "body": "You can request access, updates, or deletion of your personal data at any time."
+      }
+    },
+    "meta": {
+      "title": "Privacy policy",
+      "description": "Placeholder privacy policy for Bombig."
+    }
+  }
+}

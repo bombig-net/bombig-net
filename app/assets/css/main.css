@@ -1,3 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..900&family=Manrope:wght@300..800&family=Space+Grotesk:wght@300..700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    --ink: #0b0e13;
+    --paper: #f4f2ed;
+    --mist: #c8cdd8;
+    --glow: #7bd7ff;
+    --ember: #ff8b5c;
+    --lilac: #a7a0ff;
+    --acid: #9cf6d3;
+  }
+
+  html {
+    font-family: 'Manrope', 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: radial-gradient(1200px 700px at 15% -10%, rgba(123, 215, 255, 0.18), transparent 65%),
+      radial-gradient(900px 600px at 85% 0%, rgba(167, 160, 255, 0.18), transparent 60%),
+      #0b0e13;
+    color: #f5f4f1;
+    min-height: 100vh;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  ::selection {
+    background: rgba(156, 246, 211, 0.35);
+    color: #0b0e13;
+  }
+
+  input,
+  textarea {
+    color: #f5f4f1;
+  }
+
+  input:focus,
+  textarea:focus {
+    outline: 2px solid rgba(123, 215, 255, 0.5);
+    outline-offset: 2px;
+  }
+
+  summary {
+    list-style: none;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+}
+
+@layer components {
+  .section-shell {
+    @apply mx-auto w-full max-w-6xl px-6;
+  }
+
+  .eyebrow {
+    @apply text-xs uppercase tracking-[0.3em] text-slate-300/80;
+  }
+
+  .hero-title {
+    @apply text-4xl font-semibold leading-tight md:text-6xl;
+  }
+
+  .glass-panel {
+    @apply rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-1 text-xs uppercase tracking-[0.2em];
+  }
+
+  .cta-button {
+    @apply inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-950 transition hover:-translate-y-0.5 hover:bg-white/90;
+  }
+
+  .ghost-button {
+    @apply inline-flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:border-white/40;
+  }
+
+  .prose {
+    @apply text-sm leading-relaxed text-slate-200;
+  }
+
+  .prose h2 {
+    @apply mt-10 text-2xl font-semibold text-white;
+  }
+
+  .prose h3 {
+    @apply mt-8 text-xl font-semibold text-white;
+  }
+
+  .prose p {
+    @apply mt-4;
+  }
+
+  .prose ul {
+    @apply mt-4 list-disc space-y-2 pl-6;
+  }
+}
