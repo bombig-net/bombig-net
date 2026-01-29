@@ -73,6 +73,7 @@ export default defineNuxtConfig({
     strategy: 'prefix',
     defaultLocale: 'de',
     langDir: 'locales',
+    baseUrl: 'https://bombig.net',
     locales: [
       { code: 'en', iso: 'en-US', file: 'en.json', name: 'English' },
       { code: 'de', iso: 'de-DE', file: 'de.json', name: 'Deutsch' },
@@ -87,6 +88,9 @@ export default defineNuxtConfig({
   typescript: {
     strict: true,
     typeCheck: false,
+  },
+  sitemap: {
+    zeroRuntime: true,
   },
   nitro: {
     prerender: {
