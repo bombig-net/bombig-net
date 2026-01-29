@@ -10,6 +10,12 @@
     "careers": "Karriere",
     "privacy": "Datenschutz"
   },
+  "navServices": {
+    "overview": "Alle Services",
+    "educationResearch": "Bildung & Forschung",
+    "agencyPartner": "Agentur-Partner",
+    "smbFlatFee": "KMU Flat Fee"
+  },
   "header": {
     "startProject": "Projekt starten",
     "letsTalk": "Lass uns sprechen",
@@ -35,84 +41,441 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Digitale Agentur fuer ambitionierte Teams",
-      "title": "Wir machen mutige Ideen zu conversion-starken digitalen Erlebnissen.",
-      "description": "Bombig ist die Agentur, die Gruender rufen, wenn ein Launch cineastisch wirken, wie ein Produkt performen und wie eine Story klingen soll.",
-      "primaryCta": "Projekt starten",
-      "secondaryCta": "Fallstudien ansehen",
-      "stat1Label": "Launches geliefert",
-      "stat2Label": "Client-Zufriedenheit",
-      "stat3Label": "Durchschnittlicher Conversion-Lift"
-    },
-    "panel": {
-      "chip": "Launch-ready",
-      "title": "Das Agentur-Layout, das sich schon custom anfuehlt.",
-      "description": "Sieh das als ersten Entwurf einer skalierbaren Marketing-Site. Jeder Abschnitt ist darauf ausgelegt, spaeter sauber weiterentwickelt zu werden.",
-      "imageAlt": "Team bei der Zusammenarbeit an einem Digitalprojekt",
-      "signatureLabel": "Signature Move",
-      "signatureText": "Narrative UX, von Anfang an markant."
-    },
-    "whatWeDo": {
-      "eyebrow": "Was wir tun",
-      "title": "Strategie, Design und Umsetzung unter einer klaren Richtung.",
-      "description": "Wir starten mit Klarheit und bauen mit Momentum. Jede Zusammenarbeit ist fokussiert, kollaborativ und messbar.",
-      "cards": {
-        "positioning": {
-          "label": "Positionierung",
-          "text": "Brand-Narrative und Messaging, das trifft."
-        },
-        "experience": {
-          "label": "Experience",
-          "text": "High-Fidelity UI und Motion-Systeme fuer standout Launches."
-        },
-        "growth": {
-          "label": "Growth",
-          "text": "SEO, Performance und Conversion-Craft von Tag eins."
+      "eyebrow": "Bombig, Digitalagentur",
+      "title": "Vertrauen vor Conversion. Wir uebernehmen Verantwortung fuer Websites und digitale Projekte.",
+      "description": "Platzhalter: Kurz erklaeren, wer ihr seid, wofuer ihr steht und warum Teams euch Verantwortung geben.",
+      "primaryCta": "Services ansehen",
+      "secondaryCta": "Ueber uns",
+      "panel": {
+        "label": "Verantwortung",
+        "title": "Wir fuehren, bauen und betreuen.",
+        "description": "Platzhalter: Ein Satz, der die Rolle von Bombig als verantwortlicher Partner beschreibt.",
+        "points": {
+          "first": {
+            "label": "Verbindlich",
+            "text": "Wir bleiben nach dem Launch und tragen die Verantwortung weiter."
+          },
+          "second": {
+            "label": "Sicher",
+            "text": "Recht, Barrierefreiheit und Governance werden mitgedacht."
+          },
+          "third": {
+            "label": "Klar",
+            "text": "Ein Team, ein Ansprechpartner, eine klare Linie."
+          }
         }
       }
     },
-    "featured": {
-      "eyebrow": "Ausgewaehlte Arbeit",
-      "title": "Beweise, dass Strategie zu Ergebnissen fuehrt.",
-      "description": "Ein fokussierter Mix aus Launches, Rebrands und Produkt-Redesigns, die Wirkung zeigen."
+    "responsibility": {
+      "eyebrow": "Verantwortung",
+      "title": "Wir tragen das Projekt mit euch.",
+      "description": "Platzhalter: Erklaere die Uebergabe, Betreuung und den Anspruch an Zuverlaessigkeit.",
+      "points": {
+        "first": {
+          "label": "Fokus",
+          "text": "Wir loesen das konkrete Problem, nicht nur das visuelle." 
+        },
+        "second": {
+          "label": "Sicherheit",
+          "text": "Wir liefern rechtliche, technische und organisatorische Sicherheit." 
+        },
+        "third": {
+          "label": "Betreuung",
+          "text": "Wir bleiben erreichbar und uebersetzen Anforderungen in klare Entscheidungen." 
+        }
+      }
     },
-    "process": {
-      "eyebrow": "So arbeiten wir",
-      "title": "Ein fokussierter Sprint, der mutige Ideen lebendig macht.",
-      "description": "Wir komprimieren Momentum in vier Phasen. Du weisst immer, was als naechstes kommt und warum es zaehlt.",
+    "founders": {
+      "eyebrow": "Gruender",
+      "title": "Deniz Binay und Jannis Tanner",
+      "description": "Platzhalter: Warum die Gruender persoenlich Verantwortung uebernehmen.",
+      "people": {
+        "deniz": {
+          "name": "Deniz Binay",
+          "role": "Co-Founder / Strategy",
+          "focus": "Fokus auf Positionierung, Klarheit und Projektverantwortung."
+        },
+        "jannis": {
+          "name": "Jannis Tanner",
+          "role": "Co-Founder / Design & Build",
+          "focus": "Fokus auf Umsetzung, Systeme und nachhaltige Betreuung."
+        }
+      }
+    },
+    "proof": {
+      "eyebrow": "Vertrauen",
+      "title": "Belege statt Behauptungen.",
+      "description": "Platzhalter: Kurzer Satz zu Proof, Ergebnissen und Zusammenarbeit.",
+      "logosLabel": "Organisationen, die mit uns arbeiten",
+      "logos": {
+        "first": "Universitaet Hamburg",
+        "second": "Ruhr-Universitaet Bochum",
+        "third": "Kulturhaus Suederelbe",
+        "fourth": "Kulturpixel e.V."
+      }
+    },
+    "approach": {
+      "eyebrow": "Zusammenarbeit",
+      "title": "Klarer Rahmen, klare Verantwortung.",
+      "description": "Platzhalter: Wie ihr Zusammenarbeit organisiert und Verantwortung sichtbar macht.",
       "steps": {
-        "strategy": {
-          "label": "01 Strategie",
-          "text": "Positionierung, Insights und narrative Klarheit."
+        "first": {
+          "label": "01 Orientierung",
+          "text": "Ziele, Pflichten, Rahmenbedingungen und Rolle definieren."
         },
-        "design": {
-          "label": "02 Design",
-          "text": "Cineastische UI-Systeme und Brand-Expression."
+        "second": {
+          "label": "02 Verantwortung",
+          "text": "Design, Build und Absicherung aus einer Hand."
         },
-        "build": {
-          "label": "03 Build",
-          "text": "Nuxt + Tailwind Builds, optimiert fuer Speed."
-        },
-        "launch": {
-          "label": "04 Launch",
-          "text": "Analytics, Handover und Post-Launch Tuning."
+        "third": {
+          "label": "03 Kontinuitaet",
+          "text": "Betreuung ueber die Laufzeit, klare Updates, messbare Wirkung."
         }
       }
     },
-    "client": {
-      "chip": "Client-Signal",
-      "quote": "Sie haben unsere Vision in etwas Mutiges und Glaubwuerdiges uebersetzt.",
-      "description": "Wir bringen ein fokussiertes Core-Team in jedes Projekt. Keine Handoffs, keine verdunnten Ideen, nur eine klare Vision von Start bis Finish.",
-      "attribution": "Asteria Labs / Series B"
-    },
-    "fieldNotes": {
-      "eyebrow": "Field Notes",
-      "title": "Insights an der Schnittstelle von Design, Growth und Storytelling.",
-      "description": "Kurze Reads fuer Teams, die Design in der Praxis ernst nehmen."
+    "services": {
+      "eyebrow": "Unsere Services",
+      "title": "Finde den Service, der zu deinem Kontext passt.",
+      "description": "Platzhalter: Ein Satz, der den Wechsel zur passenden Landingpage erklaert.",
+      "items": {
+        "educationResearch": {
+          "eyebrow": "Foerderprojekte",
+          "title": "Websites fuer Bildungs- und Forschungsprojekte",
+          "description": "Fixpreis, rechtliche Sicherheit und Betreuung ueber die Laufzeit.",
+          "cta": "Service ansehen"
+        },
+        "agencyPartner": {
+          "eyebrow": "Agency Partner",
+          "title": "Produktionspartner fuer Agenturen",
+          "description": "White-Label Build, Design-Support oder technische Umsetzung.",
+          "cta": "Service ansehen"
+        },
+        "smbFlatFee": {
+          "eyebrow": "KMU Flat Fee",
+          "title": "Webbetreuung als monatlicher Fixpreis",
+          "description": "Fortlaufende Pflege, Verbesserungen und messbare Ergebnisse.",
+          "cta": "Service ansehen"
+        }
+      }
     },
     "meta": {
-      "title": "Digitale Agentur fuer ambitionierte Launches",
-      "description": "Bombig ist eine design-getriebene Digitalagentur fuer mutige, conversion-starke Launches."
+      "title": "Bombig Digitalagentur",
+      "description": "Bombig ist eine Digitalagentur, die Verantwortung fuer Websites und digitale Projekte uebernimmt."
+    }
+  },
+  "servicesIndex": {
+    "hero": {
+      "eyebrow": "Services",
+      "title": "Die passende Conversion-Seite fuer deinen Kontext.",
+      "description": "Platzhalter: Kurze Einordnung, wie sich die Services unterscheiden."
+    },
+    "panel": {
+      "label": "Typischer Start",
+      "title": "In 2 Wochen zum klaren Vorschlag.",
+      "description": "Platzhalter: Wie schnell ein konkreter Vorschlag entsteht.",
+      "items": {
+        "first": "Kennenlernen + Kontext",
+        "second": "Angebot + Fahrplan",
+        "third": "Start + Umsetzung"
+      },
+      "times": {
+        "first": "Woche 1",
+        "second": "Woche 2",
+        "third": "Ab Woche 3"
+      }
+    },
+    "directory": {
+      "eyebrow": "Service-Auswahl",
+      "title": "Waehle die passende Ausgangslage.",
+      "description": "Platzhalter: Ein Satz, der auf die individuelle Landingpage verweist."
+    },
+    "cards": {
+      "educationResearch": {
+        "eyebrow": "Foerderprojekte",
+        "title": "Bildung & Forschung",
+        "description": "Websites fuer gefoerderte Projekte mit Fixpreis und rechtlicher Sicherheit.",
+        "tagFirst": "Fixpreis",
+        "tagSecond": "Laufzeitbetreuung",
+        "cta": "Zur Landingpage"
+      },
+      "agencyPartner": {
+        "eyebrow": "Agency Partner",
+        "title": "Agentur-zu-Agentur",
+        "description": "Wir staerken eure Delivery mit Design, Build oder kompletter Umsetzung.",
+        "tagFirst": "White Label",
+        "tagSecond": "Senior Team",
+        "cta": "Zur Landingpage"
+      },
+      "smbFlatFee": {
+        "eyebrow": "KMU Flat Fee",
+        "title": "Monatliche Webbetreuung",
+        "description": "Fixpreis pro Monat fuer Pflege, Weiterentwicklung und SEO.",
+        "tagFirst": "Fixpreis",
+        "tagSecond": "Fortlaufend",
+        "cta": "Zur Landingpage"
+      }
+    },
+    "howToChoose": {
+      "eyebrow": "So waehlst du",
+      "title": "Der Kontext entscheidet die Landingpage.",
+      "description": "Platzhalter: Woran sich Teams orientieren sollten.",
+      "points": {
+        "first": {
+          "label": "Foerderkontext",
+          "text": "Zeitdruck, Pflichten und Fixbudget sprechen fuer die Foerderprojekt-Seite."
+        },
+        "second": {
+          "label": "Agentur-Setup",
+          "text": "Wenn ihr Delivery staerken wollt, passt der Partner-Service."
+        },
+        "third": {
+          "label": "KMU Betreuung",
+          "text": "Wenn laufend Pflege und Optimierung wichtig sind, passt die Flat Fee."
+        }
+      }
+    },
+    "meta": {
+      "title": "Services",
+      "description": "Finde die passende Landingpage fuer deinen Kontext bei Bombig."
+    }
+  },
+  "servicePages": {
+    "educationResearch": {
+      "meta": {
+        "title": "Websites fuer gefoerderte Bildungs- und Forschungsprojekte",
+        "description": "Fixpreis und Verantwortung fuer Projektwebsites in Bildung und Forschung."
+      },
+      "hero": {
+        "eyebrow": "Service fuer Foerderprojekte",
+        "title": "Websites & Plattformen fuer gefoerderte Bildungs- und Forschungsprojekte.",
+        "description": "Platzhalter: Zielgruppe, Pflichten und Zeitdruck kurz erlaeutern.",
+        "primaryCta": "Kennenlernen buchen",
+        "secondaryCta": "Projekte ansehen",
+        "priceLabel": "Fixpreis",
+        "priceValue": "8.500 EUR inkl. USt.",
+        "priceNote": "Platzhalter: Was im Fixpreis enthalten ist.",
+        "promiseLabel": "Unser Versprechen",
+        "promiseText": "Individuelles Design, rechtliche Sicherheit und Betreuung ueber die Laufzeit."
+      },
+      "problem": {
+        "eyebrow": "Warum das hier",
+        "title": "Zeitdruck, Fixbudget, Pflichten.",
+        "description": "Platzhalter: Warum interne Loesungen scheitern.",
+        "points": {
+          "first": { "label": "Tempo", "text": "Interne Prozesse bremsen und gefaehrden Fristen." },
+          "second": { "label": "Sicherheit", "text": "Recht, Barrierefreiheit und Vorgaben muessen sitzen." },
+          "third": { "label": "Team", "text": "Projektteams sind fachlich stark, aber digital oft ueberlastet." }
+        }
+      },
+      "offer": {
+        "eyebrow": "Was du bekommst",
+        "title": "Projekt-Website mit klarer Verantwortung.",
+        "description": "Platzhalter: Inhaltliche und technische Liefergegenstaende.",
+        "items": {
+          "first": { "label": "Design", "title": "Individuelles Erscheinungsbild", "text": "Kein Template, sondern ein Auftritt mit Profil." },
+          "second": { "label": "Build", "title": "Saubere Umsetzung", "text": "CMS, Performance, SEO und Accessibility inklusive." },
+          "third": { "label": "Betreuung", "title": "Begleitung ueber die Laufzeit", "text": "Support, Pflege und rechtliche Updates." }
+        }
+      },
+      "proof": {
+        "eyebrow": "Beweise",
+        "title": "Vertrauen aus dem Wissenschaftsbereich.",
+        "description": "Platzhalter: Warum euch Hochschulen vertrauen.",
+        "quote": "Platzhalter-Zitat aus einem gefoerderten Projekt.",
+        "attribution": "Projektleitung / Foerderprojekt",
+        "logosLabel": "Organisationen",
+        "logos": {
+          "first": "Universitaet Hamburg",
+          "second": "Ruhr-Universitaet Bochum",
+          "third": "Kulturhaus Suederelbe",
+          "fourth": "Kulturpixel e.V."
+        }
+      },
+      "process": {
+        "eyebrow": "Ablauf",
+        "title": "Vier Phasen mit festen Milestones.",
+        "description": "Platzhalter: Ablauf kurz erklaeren.",
+        "steps": {
+          "first": { "label": "01 Klarheit", "text": "Ziele, Pflichten und Inhalte abstecken." },
+          "second": { "label": "02 Design", "text": "Individuelles Design mit Freigabeschleifen." },
+          "third": { "label": "03 Build", "text": "Technische Umsetzung und Rechtssicherheit." },
+          "fourth": { "label": "04 Betreuung", "text": "Go-live, Pflege und Weiterentwicklung." }
+        }
+      },
+      "faq": {
+        "eyebrow": "FAQ",
+        "title": "Haeufige Fragen.",
+        "description": "Platzhalter: Die drei wichtigsten Fragen.",
+        "items": {
+          "first": { "question": "Wie schnell startet der erste Entwurf?", "answer": "Platzhalter: Zeitrahmen und Voraussetzungen." },
+          "second": { "question": "Wie wird Barrierefreiheit gesichert?", "answer": "Platzhalter: Standards und Dokumentation." },
+          "third": { "question": "Wie lange betreut ihr das Projekt?", "answer": "Platzhalter: Laufzeit und Optionen." }
+        }
+      },
+      "finalCta": {
+        "eyebrow": "Naechster Schritt",
+        "title": "Kurzgespraech fuer dein Projekt.",
+        "description": "Platzhalter: Wie das Erstgespraech ablaeuft.",
+        "cta": "Kennenlernen buchen"
+      }
+    },
+    "agencyPartner": {
+      "meta": {
+        "title": "Agency Partner fuer Design und Build",
+        "description": "Wir erweitern Agenturen als White-Label Partner oder Co-Lead."
+      },
+      "hero": {
+        "eyebrow": "Agency Partner",
+        "title": "Wir staerken Agenturen, wenn Delivery sitzen muss.",
+        "description": "Platzhalter: Zielgruppe, Zusammenarbeit und Nutzen.",
+        "primaryCta": "Partner-Call buchen",
+        "secondaryCta": "Ausgewaehlte Projekte",
+        "panelLabel": "Zusammenarbeit",
+        "panelTitle": "Flexibel, verlaesslich, unsichtbar wenn noetig.",
+        "panelPoints": {
+          "first": { "label": "White Label", "text": "Wir bleiben im Hintergrund und liefern unter eurem Namen." },
+          "second": { "label": "Co-Lead", "text": "Wir teilen Verantwortung fuer Design und Build." },
+          "third": { "label": "Pitch Support", "text": "Wir helfen euch, Pitches zu gewinnen." }
+        }
+      },
+      "modes": {
+        "eyebrow": "Engagements",
+        "title": "Drei Modi, die ihr skalieren koennt.",
+        "description": "Platzhalter: Wie die Zusammenarbeit organisiert wird.",
+        "items": {
+          "first": { "label": "Modus 01", "title": "White-Label Build", "text": "Wir uebernehmen Umsetzung und Lieferung im Hintergrund." },
+          "second": { "label": "Modus 02", "title": "Design + Build", "text": "Wir ergaenzen euer Team mit Senior-Design und Engineering." },
+          "third": { "label": "Modus 03", "title": "Delivery Sprint", "text": "Kurzer Sprint fuer anspruchsvolle Projektphasen." }
+        }
+      },
+      "why": {
+        "eyebrow": "Warum wir",
+        "title": "Zuverlaessige Delivery fuer eure Kunden.",
+        "description": "Platzhalter: Differenzierung als Partner.",
+        "points": {
+          "first": { "label": "Senior", "text": "Direkter Zugriff auf ein kleines, erfahrenes Team." },
+          "second": { "label": "Timing", "text": "Transparente Meilensteine und realistische Timelines." },
+          "third": { "label": "Qualitaet", "text": "Saubere Builds, Designsysteme und handsaubere Handoffs." }
+        }
+      },
+      "proof": {
+        "eyebrow": "Proof",
+        "title": "Vertrauen aus Agenturprojekten.",
+        "description": "Platzhalter: Beispielhafte Zusammenarbeit.",
+        "quote": "Platzhalter-Zitat einer Partneragentur.",
+        "attribution": "Managing Director / Partneragentur",
+        "logosLabel": "Partner & Kunden",
+        "logos": {
+          "first": "Studio Aurora",
+          "second": "Northwind", 
+          "third": "Greyline",
+          "fourth": "Signal Studio"
+        }
+      },
+      "process": {
+        "eyebrow": "Ablauf",
+        "title": "Klarer Rahmen, schnelle Uebergabe.",
+        "description": "Platzhalter: Wie ihr zusammenarbeitet.",
+        "steps": {
+          "first": { "label": "01 Briefing", "text": "Kontext, Scope und Rollen klaeren." },
+          "second": { "label": "02 Delivery", "text": "Wir liefern Design und Build in Sprints." },
+          "third": { "label": "03 Handoff", "text": "Saubere Uebergabe mit Assets und Doku." }
+        }
+      },
+      "faq": {
+        "eyebrow": "FAQ",
+        "title": "Haeufige Fragen.",
+        "description": "Platzhalter: Drei Fragen von Agenturen.",
+        "items": {
+          "first": { "question": "Wie funktioniert White Label konkret?", "answer": "Platzhalter: Kommunikation und NDA." },
+          "second": { "question": "Uebernehmt ihr Kundenkontakt?", "answer": "Platzhalter: Optionen und Grenzen." },
+          "third": { "question": "Wie kalkuliert ihr?", "answer": "Platzhalter: Tagessaetze oder Paketpreise." }
+        }
+      },
+      "finalCta": {
+        "eyebrow": "Naechster Schritt",
+        "title": "Partner-Call buchen.",
+        "description": "Platzhalter: Wir klaeren Scope und Rollen in 30 Minuten.",
+        "cta": "Partner-Call buchen"
+      }
+    },
+    "smbFlatFee": {
+      "meta": {
+        "title": "Webbetreuung als monatlicher Fixpreis",
+        "description": "Fortlaufende Betreuung fuer KMU mit fixem Monatsbudget."
+      },
+      "hero": {
+        "eyebrow": "KMU Flat Fee",
+        "title": "Wir betreuen euren Webauftritt zum monatlichen Fixpreis.",
+        "description": "Platzhalter: Laufende Pflege, Optimierung und messbare Ergebnisse.",
+        "primaryCta": "Fixpreis anfragen",
+        "secondaryCta": "Beispiele ansehen",
+        "priceLabel": "Monatlicher Fixpreis",
+        "priceValue": "ab 1.900 EUR / Monat",
+        "priceNote": "Platzhalter: Umfang, Laufzeit und Mindestdauer.",
+        "promiseLabel": "Unser Versprechen",
+        "promiseText": "Regelmaessige Updates, klare Priorisierung und messbarer Impact."
+      },
+      "included": {
+        "eyebrow": "Enthalten",
+        "title": "Was der Fixpreis abdeckt.",
+        "description": "Platzhalter: Was Teams jeden Monat erwarten koennen.",
+        "items": {
+          "first": { "label": "Basis", "title": "Pflege & Updates", "text": "Content, technische Wartung und kleine Verbesserungen." },
+          "second": { "label": "Wirkung", "title": "Conversion & SEO", "text": "Optimierungen fuer Sichtbarkeit und Anfragen." },
+          "third": { "label": "Reporting", "title": "Transparente Priorisierung", "text": "Monatliche Auswertung und klare To-dos." }
+        }
+      },
+      "boundaries": {
+        "eyebrow": "Abgrenzung",
+        "title": "Was nicht im Fixpreis steckt.",
+        "description": "Platzhalter: Grenzen schaffen Vertrauen.",
+        "points": {
+          "first": { "label": "Grossprojekte", "text": "Komplette Relaunches werden separat geplant." },
+          "second": { "label": "Kampagnen", "text": "Groesse Kampagnen erhalten ein eigenes Paket." },
+          "third": { "label": "Tools", "text": "Externe Lizenzen sind nicht enthalten." }
+        }
+      },
+      "proof": {
+        "eyebrow": "Proof",
+        "title": "Langfristige Betreuung, messbare Wirkung.",
+        "description": "Platzhalter: Beispielkunde und Ergebnisse.",
+        "quote": "Platzhalter-Zitat eines KMU Kunden.",
+        "attribution": "Geschaeftsfuehrung / KMU",
+        "logosLabel": "KMU Partner",
+        "logos": {
+          "first": "Studio Hafen",
+          "second": "Nordlicht",
+          "third": "Kernwerk",
+          "fourth": "Werkstatt 21"
+        }
+      },
+      "process": {
+        "eyebrow": "Ablauf",
+        "title": "Einfacher Start, klare Routine.",
+        "description": "Platzhalter: So laeuft die Betreuung.",
+        "steps": {
+          "first": { "label": "01 Audit", "text": "Bestehende Site analysieren und priorisieren." },
+          "second": { "label": "02 Plan", "text": "Monatliche Roadmap und Fixpreis festlegen." },
+          "third": { "label": "03 Rhythmus", "text": "Updates liefern, reporten, verbessern." }
+        }
+      },
+      "faq": {
+        "eyebrow": "FAQ",
+        "title": "Haeufige Fragen.",
+        "description": "Platzhalter: Drei Fragen von KMU.",
+        "items": {
+          "first": { "question": "Gibt es eine Mindestlaufzeit?", "answer": "Platzhalter: Laufzeit und Kuendigungsfrist." },
+          "second": { "question": "Wie viele Aufgaben pro Monat?", "answer": "Platzhalter: Priorisierung und Umfang." },
+          "third": { "question": "Koennen wir den Plan aendern?", "answer": "Platzhalter: Anpassung und Flexibilitaet." }
+        }
+      },
+      "finalCta": {
+        "eyebrow": "Naechster Schritt",
+        "title": "Fixpreis anfragen.",
+        "description": "Platzhalter: Wir klaeren Umfang, Ziele und Starttermin.",
+        "cta": "Fixpreis anfragen"
+      }
     }
   },
   "about": {
@@ -172,50 +535,6 @@
     "meta": {
       "title": "Ueber Bombig",
       "description": "Lerne das Team hinter Bombig kennen, einer Digitalagentur fuer mutige Launches."
-    }
-  },
-  "services": {
-    "hero": {
-      "eyebrow": "Leistungen",
-      "title": "Ein Full-Stack Studio, gebaut fuer Launch-Tempo.",
-      "description": "Wir verbinden Strategie, Design, Content und Engineering in einer fokussierten Zusammenarbeit. Jeder Deliverable bringt deine Marke naeher an Vertrauen und Conversion."
-    },
-    "timeline": {
-      "label": "Typische Zusammenarbeit",
-      "items": {
-        "discovery": "Discovery + Positionierung",
-        "discoveryTime": "1-2 Wochen",
-        "design": "Experience Design",
-        "designTime": "2-3 Wochen",
-        "build": "Nuxt Build + Launch",
-        "buildTime": "2-4 Wochen"
-      }
-    },
-    "cards": {
-      "strategy": {
-        "label": "Strategie",
-        "title": "Narrativ und Positionierung",
-        "description": "Brand Voice, Wettbewerbsbild und klares Product Messaging."
-      },
-      "design": {
-        "label": "Design",
-        "title": "Experience und visuelle Systeme",
-        "description": "UI-Systeme, Motion Direction und editoriale Layouts."
-      },
-      "build": {
-        "label": "Build",
-        "title": "Nuxt Engineering",
-        "description": "Production Builds, Accessibility und Performance-Optimierung."
-      },
-      "growth": {
-        "label": "Growth",
-        "title": "SEO und Conversion",
-        "description": "Strukturierter Content, Analytics und Conversion-Journeys."
-      }
-    },
-    "meta": {
-      "title": "Leistungen",
-      "description": "Strategie, Design und Engineering fuer mutige digitale Launches."
     }
   },
   "contact": {

@@ -3,7 +3,18 @@ import { join } from 'node:path'
 
 const contentRoot = join(process.cwd(), 'content')
 const locales = ['en', 'de']
-const staticRoutes = ['/', '/about', '/services', '/contact', '/case-studies', '/blog', '/privacy']
+const staticRoutes = [
+  '/',
+  '/about',
+  '/services',
+  '/services/education-research',
+  '/services/agency-partner',
+  '/services/smb-flat-fee',
+  '/contact',
+  '/case-studies',
+  '/blog',
+  '/privacy',
+]
 
 const readSlugs = (dir: string) => {
   if (!existsSync(dir)) {

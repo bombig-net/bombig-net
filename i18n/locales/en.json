@@ -10,6 +10,12 @@
     "careers": "Careers",
     "privacy": "Privacy"
   },
+  "navServices": {
+    "overview": "All services",
+    "educationResearch": "Education & Research",
+    "agencyPartner": "Agency Partner",
+    "smbFlatFee": "SMB Flat Fee"
+  },
   "header": {
     "startProject": "Start a project",
     "letsTalk": "Let's talk",
@@ -35,84 +41,441 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Digital agency for ambitious teams",
-      "title": "We turn bold ideas into conversion-ready digital experiences.",
-      "description": "Bombig is the agency founders call when they need a launch that feels cinematic, performs like a product, and reads like a story worth sharing.",
-      "primaryCta": "Start a project",
-      "secondaryCta": "Explore case studies",
-      "stat1Label": "Launches shipped",
-      "stat2Label": "Client satisfaction",
-      "stat3Label": "Avg. lift in conversions"
-    },
-    "panel": {
-      "chip": "Launch-ready",
-      "title": "The agency layout that already feels custom.",
-      "description": "Think of this as the first draft of a systemized, scalable marketing site. Every section is designed to be reworked without losing its power.",
-      "imageAlt": "Team collaborating on a digital project",
-      "signatureLabel": "Signature move",
-      "signatureText": "Narrative-driven UX, striking by default."
-    },
-    "whatWeDo": {
-      "eyebrow": "What we do",
-      "title": "Strategy, design, and execution under one bold direction.",
-      "description": "We lead with clarity and build with momentum. Every engagement is focused, collaborative, and driven by measurable wins.",
-      "cards": {
-        "positioning": {
-          "label": "Positioning",
-          "text": "Brand narratives and product messaging that land."
-        },
-        "experience": {
-          "label": "Experience",
-          "text": "High-fidelity UI and motion systems for standout launches."
-        },
-        "growth": {
-          "label": "Growth",
-          "text": "SEO, performance, and conversion craft baked in from day one."
+      "eyebrow": "Bombig, digital agency",
+      "title": "Trust before conversion. We take responsibility for websites and digital projects.",
+      "description": "Placeholder: Briefly state who you are, what you stand for, and why teams hand over responsibility.",
+      "primaryCta": "View services",
+      "secondaryCta": "About us",
+      "panel": {
+        "label": "Responsibility",
+        "title": "We lead, build, and maintain.",
+        "description": "Placeholder: One line that frames Bombig as the accountable partner.",
+        "points": {
+          "first": {
+            "label": "Committed",
+            "text": "We stay after launch and keep ownership clear."
+          },
+          "second": {
+            "label": "Safe",
+            "text": "Legal, accessibility, and governance are handled responsibly."
+          },
+          "third": {
+            "label": "Clear",
+            "text": "One team, one point of contact, one clear direction."
+          }
         }
       }
     },
-    "featured": {
-      "eyebrow": "Featured work",
-      "title": "Proof that our strategy translates into outcomes.",
-      "description": "A tight mix of launches, rebrands, and digital product overhauls designed to move the needle."
+    "responsibility": {
+      "eyebrow": "Responsibility",
+      "title": "We carry the project with you.",
+      "description": "Placeholder: Explain handoff, care, and accountability.",
+      "points": {
+        "first": {
+          "label": "Focus",
+          "text": "We solve the real problem, not just the visuals."
+        },
+        "second": {
+          "label": "Security",
+          "text": "We deliver legal, technical, and organizational safety."
+        },
+        "third": {
+          "label": "Care",
+          "text": "We stay available and translate requirements into decisions."
+        }
+      }
     },
-    "process": {
-      "eyebrow": "How we run",
-      "title": "A focused sprint that brings bold ideas to life.",
-      "description": "We compress momentum into four phases. You'll always know what's next, what it means, and why it matters.",
+    "founders": {
+      "eyebrow": "Founders",
+      "title": "Deniz Binay and Jannis Tanner",
+      "description": "Placeholder: Why the founders personally take responsibility.",
+      "people": {
+        "deniz": {
+          "name": "Deniz Binay",
+          "role": "Co-Founder / Strategy",
+          "focus": "Focus on positioning, clarity, and project responsibility."
+        },
+        "jannis": {
+          "name": "Jannis Tanner",
+          "role": "Co-Founder / Design & Build",
+          "focus": "Focus on delivery, systems, and long-term care."
+        }
+      }
+    },
+    "proof": {
+      "eyebrow": "Trust",
+      "title": "Evidence beats claims.",
+      "description": "Placeholder: Short line about proof and outcomes.",
+      "logosLabel": "Organizations who work with us",
+      "logos": {
+        "first": "University of Hamburg",
+        "second": "Ruhr University Bochum",
+        "third": "Kulturhaus Suederelbe",
+        "fourth": "Kulturpixel e.V."
+      }
+    },
+    "approach": {
+      "eyebrow": "Collaboration",
+      "title": "Clear frame, clear responsibility.",
+      "description": "Placeholder: How you organize work and accountability.",
       "steps": {
-        "strategy": {
-          "label": "01 Strategy",
-          "text": "Positioning, insights, and narrative clarity."
+        "first": {
+          "label": "01 Orientation",
+          "text": "Define goals, constraints, and responsibilities."
         },
-        "design": {
-          "label": "02 Design",
-          "text": "Cinematic UI systems and brand expression."
+        "second": {
+          "label": "02 Ownership",
+          "text": "Design and build handled by one accountable team."
         },
-        "build": {
-          "label": "03 Build",
-          "text": "Nuxt + Tailwind builds optimized for speed."
-        },
-        "launch": {
-          "label": "04 Launch",
-          "text": "Analytics, handoff, and post-launch tuning."
+        "third": {
+          "label": "03 Continuity",
+          "text": "Care over the lifecycle, with clear updates and impact."
         }
       }
     },
-    "client": {
-      "chip": "Client signal",
-      "quote": "They translated our vision into something bold and credible.",
-      "description": "We bring a focused core team to every engagement. No handoffs, no diluted ideas, just one aligned vision from start to finish.",
-      "attribution": "Asteria Labs / Series B"
-    },
-    "fieldNotes": {
-      "eyebrow": "Field notes",
-      "title": "Insights from the edges of design, growth, and storytelling.",
-      "description": "Short reads for teams that care about how design shows up in the real world."
+    "services": {
+      "eyebrow": "Our services",
+      "title": "Pick the service that fits your context.",
+      "description": "Placeholder: One line that routes visitors to the right landing page.",
+      "items": {
+        "educationResearch": {
+          "eyebrow": "Funded projects",
+          "title": "Websites for education and research projects",
+          "description": "Fixed price, legal safety, and lifecycle care.",
+          "cta": "View service"
+        },
+        "agencyPartner": {
+          "eyebrow": "Agency partner",
+          "title": "Production partner for agencies",
+          "description": "White-label build, design support, or full delivery.",
+          "cta": "View service"
+        },
+        "smbFlatFee": {
+          "eyebrow": "SMB flat fee",
+          "title": "Ongoing web care for a monthly fee",
+          "description": "Continuous improvements, support, and results.",
+          "cta": "View service"
+        }
+      }
     },
     "meta": {
-      "title": "Digital agency for ambitious launches",
-      "description": "Bombig is a design-driven digital agency creating bold, conversion-ready experiences for modern teams."
+      "title": "Bombig digital agency",
+      "description": "Bombig is a digital agency taking responsibility for websites and digital projects."
+    }
+  },
+  "servicesIndex": {
+    "hero": {
+      "eyebrow": "Services",
+      "title": "The right conversion page for your context.",
+      "description": "Placeholder: Short explanation of how the services differ."
+    },
+    "panel": {
+      "label": "Typical start",
+      "title": "Two weeks to a concrete proposal.",
+      "description": "Placeholder: How quickly a tangible plan appears.",
+      "items": {
+        "first": "Intro + context",
+        "second": "Offer + roadmap",
+        "third": "Start + delivery"
+      },
+      "times": {
+        "first": "Week 1",
+        "second": "Week 2",
+        "third": "From week 3"
+      }
+    },
+    "directory": {
+      "eyebrow": "Service selection",
+      "title": "Choose the right starting point.",
+      "description": "Placeholder: A line that points to each landing page."
+    },
+    "cards": {
+      "educationResearch": {
+        "eyebrow": "Funded projects",
+        "title": "Education & research",
+        "description": "Fixed-price websites for funded projects with legal safety.",
+        "tagFirst": "Fixed price",
+        "tagSecond": "Lifecycle care",
+        "cta": "Go to landing page"
+      },
+      "agencyPartner": {
+        "eyebrow": "Agency partner",
+        "title": "Agency-to-agency",
+        "description": "We reinforce delivery with senior design and build support.",
+        "tagFirst": "White label",
+        "tagSecond": "Senior team",
+        "cta": "Go to landing page"
+      },
+      "smbFlatFee": {
+        "eyebrow": "SMB flat fee",
+        "title": "Monthly web care",
+        "description": "Monthly fee for care, improvements, and SEO.",
+        "tagFirst": "Flat fee",
+        "tagSecond": "Ongoing",
+        "cta": "Go to landing page"
+      }
+    },
+    "howToChoose": {
+      "eyebrow": "How to choose",
+      "title": "Context determines the landing page.",
+      "description": "Placeholder: What teams should consider.",
+      "points": {
+        "first": {
+          "label": "Funding context",
+          "text": "Deadlines and obligations fit the funded-project service."
+        },
+        "second": {
+          "label": "Agency setup",
+          "text": "If you need delivery power, use the partner service."
+        },
+        "third": {
+          "label": "SMB care",
+          "text": "If ongoing care is key, choose the flat-fee service."
+        }
+      }
+    },
+    "meta": {
+      "title": "Services",
+      "description": "Find the right landing page for your context at Bombig."
+    }
+  },
+  "servicePages": {
+    "educationResearch": {
+      "meta": {
+        "title": "Websites for funded education and research projects",
+        "description": "Fixed price and accountability for education and research project sites."
+      },
+      "hero": {
+        "eyebrow": "Service for funded projects",
+        "title": "Websites & platforms for funded education and research projects.",
+        "description": "Placeholder: Briefly outline the audience and obligations.",
+        "primaryCta": "Book a call",
+        "secondaryCta": "View projects",
+        "priceLabel": "Fixed price",
+        "priceValue": "EUR 8,500 incl. VAT",
+        "priceNote": "Placeholder: What is included in the fixed price.",
+        "promiseLabel": "Our promise",
+        "promiseText": "Custom design, legal safety, and care across the lifecycle."
+      },
+      "problem": {
+        "eyebrow": "Why this exists",
+        "title": "Deadlines, fixed budgets, obligations.",
+        "description": "Placeholder: Why internal solutions fail here.",
+        "points": {
+          "first": { "label": "Speed", "text": "Internal processes slow down timelines." },
+          "second": { "label": "Safety", "text": "Legal, accessibility, and compliance must be covered." },
+          "third": { "label": "Capacity", "text": "Project teams are strong, but digitally overloaded." }
+        }
+      },
+      "offer": {
+        "eyebrow": "What you get",
+        "title": "A project website with clear accountability.",
+        "description": "Placeholder: Deliverables and responsibilities.",
+        "items": {
+          "first": { "label": "Design", "title": "Distinctive presence", "text": "No template, a clear identity for the project." },
+          "second": { "label": "Build", "title": "Clean delivery", "text": "CMS, performance, SEO, and accessibility included." },
+          "third": { "label": "Care", "title": "Lifecycle support", "text": "Support, updates, and legal adjustments." }
+        }
+      },
+      "proof": {
+        "eyebrow": "Proof",
+        "title": "Trusted in education and research.",
+        "description": "Placeholder: Why institutions trust you.",
+        "quote": "Placeholder quote from a funded project.",
+        "attribution": "Project lead / funded program",
+        "logosLabel": "Organizations",
+        "logos": {
+          "first": "University of Hamburg",
+          "second": "Ruhr University Bochum",
+          "third": "Kulturhaus Suederelbe",
+          "fourth": "Kulturpixel e.V."
+        }
+      },
+      "process": {
+        "eyebrow": "Process",
+        "title": "Four phases with clear milestones.",
+        "description": "Placeholder: Short process explanation.",
+        "steps": {
+          "first": { "label": "01 Clarity", "text": "Align goals, obligations, and content." },
+          "second": { "label": "02 Design", "text": "Custom design with structured approvals." },
+          "third": { "label": "03 Build", "text": "Technical delivery and compliance." },
+          "fourth": { "label": "04 Care", "text": "Go-live, maintenance, and improvements." }
+        }
+      },
+      "faq": {
+        "eyebrow": "FAQ",
+        "title": "Common questions.",
+        "description": "Placeholder: Three key questions.",
+        "items": {
+          "first": { "question": "How fast is the first draft?", "answer": "Placeholder: Timeline and prerequisites." },
+          "second": { "question": "How do you handle accessibility?", "answer": "Placeholder: Standards and documentation." },
+          "third": { "question": "How long do you support the project?", "answer": "Placeholder: Duration and options." }
+        }
+      },
+      "finalCta": {
+        "eyebrow": "Next step",
+        "title": "Short call for your project.",
+        "description": "Placeholder: How the first call works.",
+        "cta": "Book a call"
+      }
+    },
+    "agencyPartner": {
+      "meta": {
+        "title": "Agency partner for design and build",
+        "description": "We extend agencies as white-label partner or co-lead."
+      },
+      "hero": {
+        "eyebrow": "Agency partner",
+        "title": "We strengthen agency delivery when it has to land.",
+        "description": "Placeholder: Audience, collaboration, and value.",
+        "primaryCta": "Book a partner call",
+        "secondaryCta": "Selected projects",
+        "panelLabel": "Collaboration",
+        "panelTitle": "Flexible, reliable, invisible when needed.",
+        "panelPoints": {
+          "first": { "label": "White label", "text": "We stay in the background and deliver under your name." },
+          "second": { "label": "Co-lead", "text": "We share responsibility for design and build." },
+          "third": { "label": "Pitch support", "text": "We help you win complex pitches." }
+        }
+      },
+      "modes": {
+        "eyebrow": "Engagements",
+        "title": "Three modes you can scale.",
+        "description": "Placeholder: How collaboration is organized.",
+        "items": {
+          "first": { "label": "Mode 01", "title": "White-label build", "text": "We deliver implementation behind the scenes." },
+          "second": { "label": "Mode 02", "title": "Design + build", "text": "We augment your team with senior design and engineering." },
+          "third": { "label": "Mode 03", "title": "Delivery sprint", "text": "Short sprint for critical project phases." }
+        }
+      },
+      "why": {
+        "eyebrow": "Why us",
+        "title": "Reliable delivery for your clients.",
+        "description": "Placeholder: Differentiation as a partner.",
+        "points": {
+          "first": { "label": "Senior", "text": "Direct access to a compact, experienced team." },
+          "second": { "label": "Timing", "text": "Transparent milestones and realistic timelines." },
+          "third": { "label": "Quality", "text": "Clean builds, design systems, and tidy handoffs." }
+        }
+      },
+      "proof": {
+        "eyebrow": "Proof",
+        "title": "Trusted on agency projects.",
+        "description": "Placeholder: Example of agency partnership.",
+        "quote": "Placeholder quote from a partner agency.",
+        "attribution": "Managing Director / partner agency",
+        "logosLabel": "Partners & clients",
+        "logos": {
+          "first": "Studio Aurora",
+          "second": "Northwind",
+          "third": "Greyline",
+          "fourth": "Signal Studio"
+        }
+      },
+      "process": {
+        "eyebrow": "Process",
+        "title": "Clear frame, fast handoff.",
+        "description": "Placeholder: How we work together.",
+        "steps": {
+          "first": { "label": "01 Briefing", "text": "Align context, scope, and roles." },
+          "second": { "label": "02 Delivery", "text": "We deliver design and build in sprints." },
+          "third": { "label": "03 Handoff", "text": "Clean delivery with assets and documentation." }
+        }
+      },
+      "faq": {
+        "eyebrow": "FAQ",
+        "title": "Common questions.",
+        "description": "Placeholder: Three agency questions.",
+        "items": {
+          "first": { "question": "How does white-label work?", "answer": "Placeholder: Communication and NDA." },
+          "second": { "question": "Do you join client calls?", "answer": "Placeholder: Options and boundaries." },
+          "third": { "question": "How do you price?", "answer": "Placeholder: Day rates or fixed packages." }
+        }
+      },
+      "finalCta": {
+        "eyebrow": "Next step",
+        "title": "Book a partner call.",
+        "description": "Placeholder: We clarify scope and roles in 30 minutes.",
+        "cta": "Book a partner call"
+      }
+    },
+    "smbFlatFee": {
+      "meta": {
+        "title": "Monthly web care for a flat fee",
+        "description": "Ongoing care for SMBs with a fixed monthly budget."
+      },
+      "hero": {
+        "eyebrow": "SMB flat fee",
+        "title": "We maintain your web presence for a monthly flat fee.",
+        "description": "Placeholder: Ongoing care, optimization, and results.",
+        "primaryCta": "Request a flat fee",
+        "secondaryCta": "View examples",
+        "priceLabel": "Monthly flat fee",
+        "priceValue": "from EUR 1,900 / month",
+        "priceNote": "Placeholder: Scope, term, and minimum duration.",
+        "promiseLabel": "Our promise",
+        "promiseText": "Regular updates, clear prioritization, measurable impact."
+      },
+      "included": {
+        "eyebrow": "Included",
+        "title": "What the flat fee covers.",
+        "description": "Placeholder: What teams get each month.",
+        "items": {
+          "first": { "label": "Core", "title": "Maintenance & updates", "text": "Content updates, technical maintenance, small improvements." },
+          "second": { "label": "Impact", "title": "Conversion & SEO", "text": "Optimizations for visibility and inquiries." },
+          "third": { "label": "Reporting", "title": "Transparent prioritization", "text": "Monthly review and clear next actions." }
+        }
+      },
+      "boundaries": {
+        "eyebrow": "Boundaries",
+        "title": "What is not in the flat fee.",
+        "description": "Placeholder: Clear boundaries build trust.",
+        "points": {
+          "first": { "label": "Large projects", "text": "Full relaunches are scoped separately." },
+          "second": { "label": "Campaigns", "text": "Large campaigns get their own package." },
+          "third": { "label": "Tools", "text": "External licenses are not included." }
+        }
+      },
+      "proof": {
+        "eyebrow": "Proof",
+        "title": "Long-term care, measurable impact.",
+        "description": "Placeholder: Example customer and outcomes.",
+        "quote": "Placeholder quote from an SMB client.",
+        "attribution": "Managing director / SMB",
+        "logosLabel": "SMB partners",
+        "logos": {
+          "first": "Harbor Studio",
+          "second": "Northlight",
+          "third": "Coreworks",
+          "fourth": "Workshop 21"
+        }
+      },
+      "process": {
+        "eyebrow": "Process",
+        "title": "Simple start, clear rhythm.",
+        "description": "Placeholder: How care works in practice.",
+        "steps": {
+          "first": { "label": "01 Audit", "text": "Review the current site and priorities." },
+          "second": { "label": "02 Plan", "text": "Set monthly roadmap and flat fee." },
+          "third": { "label": "03 Rhythm", "text": "Deliver updates, report, improve." }
+        }
+      },
+      "faq": {
+        "eyebrow": "FAQ",
+        "title": "Common questions.",
+        "description": "Placeholder: Three SMB questions.",
+        "items": {
+          "first": { "question": "Is there a minimum term?", "answer": "Placeholder: Term length and cancellation." },
+          "second": { "question": "How many tasks per month?", "answer": "Placeholder: Prioritization and scope." },
+          "third": { "question": "Can we adjust the plan?", "answer": "Placeholder: Flexibility and changes." }
+        }
+      },
+      "finalCta": {
+        "eyebrow": "Next step",
+        "title": "Request a flat fee.",
+        "description": "Placeholder: We clarify scope, goals, and start date.",
+        "cta": "Request a flat fee"
+      }
     }
   },
   "about": {
@@ -172,50 +535,6 @@
     "meta": {
       "title": "About Bombig",
       "description": "Meet the team behind Bombig, a digital agency focused on bold, conversion-ready launches."
-    }
-  },
-  "services": {
-    "hero": {
-      "eyebrow": "Services",
-      "title": "A full-stack digital studio, built for launch velocity.",
-      "description": "We blend strategy, design, content, and engineering into a single focused engagement. Every deliverable is designed to move your brand closer to trust and conversion."
-    },
-    "timeline": {
-      "label": "Typical engagement",
-      "items": {
-        "discovery": "Discovery + Positioning",
-        "discoveryTime": "1-2 weeks",
-        "design": "Experience Design",
-        "designTime": "2-3 weeks",
-        "build": "Nuxt Build + Launch",
-        "buildTime": "2-4 weeks"
-      }
-    },
-    "cards": {
-      "strategy": {
-        "label": "Strategy",
-        "title": "Narrative and positioning",
-        "description": "Brand voice, competitive landscape, and sharp product messaging."
-      },
-      "design": {
-        "label": "Design",
-        "title": "Experience and visual systems",
-        "description": "UI systems, motion direction, and bold editorial layouts."
-      },
-      "build": {
-        "label": "Build",
-        "title": "Nuxt engineering",
-        "description": "Production-grade builds, accessibility, and performance optimization."
-      },
-      "growth": {
-        "label": "Growth",
-        "title": "SEO and conversion",
-        "description": "Structured content, analytics, and conversion-ready journeys."
-      }
-    },
-    "meta": {
-      "title": "Services",
-      "description": "Strategy, design, and engineering services for bold digital launches."
     }
   },
   "contact": {

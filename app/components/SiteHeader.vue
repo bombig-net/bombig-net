@@ -6,17 +6,36 @@
         <span class="tracking-tight">Bombig</span>
       </NuxtLink>
       <nav class="hidden items-center gap-8 text-sm uppercase tracking-[0.2em] text-slate-200 md:flex">
-        <NuxtLink
-          v-for="item in primaryNav"
-          :key="item.to"
-          :to="localePath(item.to)"
-          class="transition hover:text-white"
-        >
-          {{ t(item.key) }}
-        </NuxtLink>
+        <div v-for="item in primaryNav" :key="item.to" class="relative">
+          <details v-if="item.children" class="group">
+            <summary class="inline-flex cursor-pointer list-none items-center gap-2 transition hover:text-white">
+              {{ t(item.key) }}
+              <span class="text-xs text-slate-400 transition group-open:text-white">▾</span>
+            </summary>
+            <div
+              class="absolute left-0 top-full z-50 mt-4 w-64 rounded-2xl border border-white/10 bg-[#0b0e13]/95 p-4 shadow-xl"
+            >
+              <div class="flex flex-col gap-3 text-xs uppercase tracking-[0.2em] text-slate-200">
+                <NuxtLink :to="localePath(item.to)" class="transition hover:text-white">
+                  {{ t('navServices.overview') }}
+                </NuxtLink>
+                <NuxtLink
+                  v-for="child in item.children"
+                  :key="child.to"
+                  :to="localePath(child.to)"
+                  class="transition hover:text-white"
+                >
+                  {{ t(child.key) }}
+                </NuxtLink>
+              </div>
+            </div>
+          </details>
+          <NuxtLink v-else :to="localePath(item.to)" class="transition hover:text-white">
+            {{ t(item.key) }}
+          </NuxtLink>
+        </div>
       </nav>
       <div class="flex items-center gap-3">
-        <NuxtLink :to="localePath('/contact')" class="ghost-button hidden md:inline-flex">{{ t('header.startProject') }}</NuxtLink>
         <NuxtLink :to="localePath('/contact')" class="cta-button hidden sm:inline-flex">{{ t('header.letsTalk') }}</NuxtLink>
         <NuxtLink
           :to="switchLocalePath(otherLocale)"
@@ -27,11 +46,23 @@
         </NuxtLink>
         <details class="relative md:hidden">
           <summary class="cta-button cursor-pointer list-none">{{ t('header.menu') }}</summary>
-          <div class="absolute right-0 mt-3 w-48 rounded-2xl border border-white/10 bg-[#0b0e13]/95 p-4 shadow-xl">
-            <div class="flex flex-col gap-3 text-sm uppercase tracking-[0.2em] text-slate-200">
-              <NuxtLink v-for="item in primaryNav" :key="item.to" :to="localePath(item.to)" class="transition hover:text-white">
-                {{ t(item.key) }}
-              </NuxtLink>
+          <div class="absolute right-0 mt-3 w-56 rounded-2xl border border-white/10 bg-[#0b0e13]/95 p-4 shadow-xl">
+            <div class="flex flex-col gap-4 text-sm uppercase tracking-[0.2em] text-slate-200">
+              <div v-for="item in primaryNav" :key="item.to" class="space-y-2">
+                <NuxtLink :to="localePath(item.to)" class="block transition hover:text-white">
+                  {{ t(item.key) }}
+                </NuxtLink>
+                <div v-if="item.children" class="flex flex-col gap-2 pl-3 text-xs text-slate-400">
+                  <NuxtLink
+                    v-for="child in item.children"
+                    :key="child.to"
+                    :to="localePath(child.to)"
+                    class="transition hover:text-white"
+                  >
+                    {{ t(child.key) }}
+                  </NuxtLink>
+                </div>
+              </div>
               <NuxtLink :to="localePath('/contact')" class="text-white">{{ t('header.letsTalk') }}</NuxtLink>
               <NuxtLink :to="switchLocalePath(otherLocale)" class="text-white">{{ otherLocale.toUpperCase() }}</NuxtLink>
             </div>

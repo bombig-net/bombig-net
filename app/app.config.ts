@@ -9,10 +9,17 @@ export default defineAppConfig({
   navigation: {
     primary: [
       { key: 'nav.home', to: '/' },
-      { key: 'nav.about', to: '/about' },
+      {
+        key: 'nav.services',
+        to: '/services',
+        children: [
+          { key: 'navServices.educationResearch', to: '/services/education-research' },
+          { key: 'navServices.agencyPartner', to: '/services/agency-partner' },
+          { key: 'navServices.smbFlatFee', to: '/services/smb-flat-fee' },
+        ],
+      },
       { key: 'nav.caseStudies', to: '/case-studies' },
-      { key: 'nav.blog', to: '/blog' },
-      { key: 'nav.contact', to: '/contact' },
+      { key: 'nav.about', to: '/about' },
     ],
     footer: [
       { key: 'nav.services', to: '/services' },
