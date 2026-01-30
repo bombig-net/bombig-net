@@ -13,6 +13,9 @@ node_modules
 logs
 *.log
 
+# Playwright visual snapshots
+visual-snapshots
+
 # Misc
 .DS_Store
 .fleet

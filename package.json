@@ -10,7 +10,9 @@
     "lint:fix": "eslint . --fix",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "typecheck": "nuxt typecheck"
+    "typecheck": "nuxt typecheck",
+    "visual:check": "tsx scripts/visual-check.ts",
+    "visual:ui": "playwright test --ui"
   },
   "dependencies": {
     "@nuxt/content": "^3.11.0",
@@ -29,8 +31,10 @@
     "@nuxt/eslint": "^1.13.0",
     "@nuxt/hints": "^1.0.0-alpha.6",
     "@nuxt/scripts": "^0.13.2",
+    "@playwright/test": "^1.58.0",
     "eslint": "^9.39.2",
     "tailwindcss": "^3.4.19",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3",
     "vite-plugin-eslint2": "^5.0.4",
     "vue-tsc": "^3.2.4"
