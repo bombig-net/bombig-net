@@ -34,7 +34,7 @@
             class="h-56 w-full object-cover"
             loading="lazy"
             decoding="async"
-          />
+          >
         </div>
       </div>
     </section>
@@ -43,7 +43,7 @@
       <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('servicePages.educationResearch.logos.label') }}</p>
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
         <div v-for="logo in trustLogos" :key="logo.src" class="glass-panel raised flex items-center justify-center p-6">
-          <img :src="logo.src" :alt="logo.alt" class="h-10 w-auto opacity-80" loading="lazy" decoding="async" />
+          <img :src="logo.src" :alt="logo.alt" class="h-10 w-auto opacity-80" loading="lazy" decoding="async">
         </div>
       </div>
     </section>
@@ -86,7 +86,7 @@
           </div>
           <div class="grid gap-4 sm:grid-cols-2">
             <div v-for="image in offerImages" :key="image.src" class="glass-panel raised overflow-hidden">
-              <img :src="image.src" :alt="image.alt" class="h-48 w-full object-cover" loading="lazy" decoding="async" />
+              <img :src="image.src" :alt="image.alt" class="h-48 w-full object-cover" loading="lazy" decoding="async">
             </div>
           </div>
         </div>
@@ -110,7 +110,7 @@
           </div>
           <div class="grid gap-4 sm:grid-cols-2">
             <div v-for="image in archiveImages" :key="image.src" class="glass-panel raised overflow-hidden">
-              <img :src="image.src" :alt="image.alt" class="h-44 w-full object-cover" loading="lazy" decoding="async" />
+              <img :src="image.src" :alt="image.alt" class="h-44 w-full object-cover" loading="lazy" decoding="async">
             </div>
           </div>
         </div>
@@ -138,7 +138,7 @@
               class="h-12 w-12 rounded-full object-cover"
               loading="lazy"
               decoding="async"
-            />
+            >
             <div>
               <p class="text-sm font-semibold">{{ testimonial.name }}</p>
               <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ testimonial.role }}</p>
@@ -170,7 +170,7 @@
             </div>
             <div class="grid gap-4 sm:grid-cols-2">
               <div v-for="image in addon.images" :key="image.src" class="glass-panel highlight overflow-hidden">
-                <img :src="image.src" :alt="image.alt" class="h-44 w-full object-cover" loading="lazy" decoding="async" />
+                <img :src="image.src" :alt="image.alt" class="h-44 w-full object-cover" loading="lazy" decoding="async">
               </div>
             </div>
           </div>
@@ -186,7 +186,7 @@
       />
       <div class="grid gap-6 lg:grid-cols-2">
         <article v-for="project in projects" :key="project.title" class="glass-panel raised overflow-hidden">
-          <img :src="project.image" :alt="project.alt" class="h-56 w-full object-cover" loading="lazy" decoding="async" />
+          <img :src="project.image" :alt="project.alt" class="h-56 w-full object-cover" loading="lazy" decoding="async">
           <div class="space-y-4 p-6">
             <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ project.type }}</p>
             <a
@@ -207,7 +207,7 @@
                 class="h-8 w-auto opacity-80"
                 loading="lazy"
                 decoding="async"
-              />
+              >
             </div>
           </div>
         </article>
@@ -452,7 +452,7 @@ const projects = computed(() => [
     type: t('servicePages.educationResearch.projects.items.first.type'),
     title: t('servicePages.educationResearch.projects.items.first.title'),
     description: t('servicePages.educationResearch.projects.items.first.description'),
-    url: 'https://bombig.net/projektwebseiten/freiheitsarchiv/',
+    url: '/projektwebseiten/freiheitsarchiv',
     image: '/media/education-research/project-im-namen-der-freiheit.png',
     alt: t('servicePages.educationResearch.projects.items.first.alt'),
     logos: [
@@ -464,7 +464,7 @@ const projects = computed(() => [
     type: t('servicePages.educationResearch.projects.items.second.type'),
     title: t('servicePages.educationResearch.projects.items.second.title'),
     description: t('servicePages.educationResearch.projects.items.second.description'),
-    url: 'https://bombig.net/projektwebseiten/coronarchiv/',
+    url: '/projektwebseiten/coronarchiv',
     image: '/media/education-research/project-coronarchiv.jpg',
     alt: t('servicePages.educationResearch.projects.items.second.alt'),
     logos: [
@@ -477,7 +477,7 @@ const projects = computed(() => [
     type: t('servicePages.educationResearch.projects.items.third.type'),
     title: t('servicePages.educationResearch.projects.items.third.title'),
     description: t('servicePages.educationResearch.projects.items.third.description'),
-    url: 'https://bombig.net/projektwebseiten/orte-der-unsichtbarkeit-3/',
+    url: '/projektwebseiten/orte-der-unsichtbarkeit-3',
     image: '/media/education-research/project-orte-der-unsichtbarkeit.webp',
     alt: t('servicePages.educationResearch.projects.items.third.alt'),
     logos: [
@@ -490,7 +490,7 @@ const projects = computed(() => [
     type: t('servicePages.educationResearch.projects.items.fourth.type'),
     title: t('servicePages.educationResearch.projects.items.fourth.title'),
     description: t('servicePages.educationResearch.projects.items.fourth.description'),
-    url: 'https://bombig.net/projektwebseiten/social-media-history/',
+    url: '/projektwebseiten/social-media-history',
     image: '/media/education-research/project-social-media-history.webp',
     alt: t('servicePages.educationResearch.projects.items.fourth.alt'),
     logos: [
@@ -503,7 +503,7 @@ const projects = computed(() => [
     type: t('servicePages.educationResearch.projects.items.fifth.type'),
     title: t('servicePages.educationResearch.projects.items.fifth.title'),
     description: t('servicePages.educationResearch.projects.items.fifth.description'),
-    url: 'https://bombig.net/projektwebseiten/uebergriff/',
+    url: '/projektwebseiten/uebergriff',
     image: '/media/education-research/project-uebergriff.jpg',
     alt: t('servicePages.educationResearch.projects.items.fifth.alt'),
     logos: [
@@ -515,7 +515,7 @@ const projects = computed(() => [
     type: t('servicePages.educationResearch.projects.items.sixth.type'),
     title: t('servicePages.educationResearch.projects.items.sixth.title'),
     description: t('servicePages.educationResearch.projects.items.sixth.description'),
-    url: 'https://bombig.net/projektwebseiten/streetart-explorers/',
+    url: '/projektwebseiten/streetart-explorers',
     image: '/media/education-research/project-streetart-explorers.webp',
     alt: t('servicePages.educationResearch.projects.items.sixth.alt'),
     logos: [
@@ -528,7 +528,7 @@ const projects = computed(() => [
     type: t('servicePages.educationResearch.projects.items.seventh.type'),
     title: t('servicePages.educationResearch.projects.items.seventh.title'),
     description: t('servicePages.educationResearch.projects.items.seventh.description'),
-    url: 'https://bombig.net/projektwebseiten/ns-medizingeschichte/',
+    url: '/projektwebseiten/ns-medizingeschichte',
     image: '/media/education-research/project-ns-medizinverbrechen.jpg',
     alt: t('servicePages.educationResearch.projects.items.seventh.alt'),
     logos: [
@@ -539,7 +539,7 @@ const projects = computed(() => [
     type: t('servicePages.educationResearch.projects.items.eighth.type'),
     title: t('servicePages.educationResearch.projects.items.eighth.title'),
     description: t('servicePages.educationResearch.projects.items.eighth.description'),
-    url: 'https://bombig.net/projektwebseiten/coronarchivare/',
+    url: '/projektwebseiten/coronarchivare',
     image: '/media/education-research/project-coronarchivare.jpg',
     alt: t('servicePages.educationResearch.projects.items.eighth.alt'),
     logos: [
@@ -553,7 +553,7 @@ const projects = computed(() => [
     type: t('servicePages.educationResearch.projects.items.ninth.type'),
     title: t('servicePages.educationResearch.projects.items.ninth.title'),
     description: t('servicePages.educationResearch.projects.items.ninth.description'),
-    url: 'https://bombig.net/projektwebseiten/wieder-vereint-hamburg/',
+    url: '/projektwebseiten/wieder-vereint-hamburg',
     image: '/media/education-research/project-wieder-vereint-hamburg.webp',
     alt: t('servicePages.educationResearch.projects.items.ninth.alt'),
     logos: [
@@ -565,7 +565,7 @@ const projects = computed(() => [
     type: t('servicePages.educationResearch.projects.items.tenth.type'),
     title: t('servicePages.educationResearch.projects.items.tenth.title'),
     description: t('servicePages.educationResearch.projects.items.tenth.description'),
-    url: 'https://bombig.net/projektwebseiten/stadtrandgeschichten/',
+    url: '/projektwebseiten/stadtrandgeschichten',
     image: '/media/education-research/project-stadtrandgeschichten.webp',
     alt: t('servicePages.educationResearch.projects.items.tenth.alt'),
     logos: [

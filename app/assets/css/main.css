@@ -60,7 +60,6 @@
   summary::-webkit-details-marker {
     display: none;
   }
-}
 
 @layer components {
   .section-shell {
@@ -814,6 +813,7 @@
     }
     62% {
       opacity: 0;
+    }
   }
 
   .surface-grid {

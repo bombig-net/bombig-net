@@ -104,6 +104,9 @@ export default defineNuxtConfig({
   sitemap: {
     zeroRuntime: true,
   },
+  linkChecker: {
+    excludeLinks: ['/projektwebseiten/**', 'https://bombig.net/projektwebseiten/**'],
+  },
   nitro: {
     prerender: {
       routes: prerenderRoutes,
