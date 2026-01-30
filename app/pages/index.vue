@@ -1,41 +1,46 @@
 <template>
   <div class="space-y-24 pb-24">
-    <section class="relative overflow-hidden">
-      <div class="absolute -left-24 top-10 h-72 w-72 rounded-full bg-sky-400/20 blur-3xl" />
-      <div class="absolute right-0 top-24 h-80 w-80 rounded-full bg-emerald-400/20 blur-3xl" />
-      <div class="section-shell relative grid gap-12 pb-20 pt-28 md:grid-cols-[1.1fr_0.9fr]">
-        <div class="space-y-8">
-          <p class="eyebrow">{{ t('home.hero.eyebrow') }}</p>
-          <h1 class="hero-title">{{ t('home.hero.title') }}</h1>
-          <p class="max-w-xl text-base text-slate-300">{{ t('home.hero.description') }}</p>
+    <section class="relative -mt-24 overflow-hidden pt-24">
+      <div class="hero-canvas absolute inset-0" aria-hidden="true" />
+      <div class="hero-ecg" aria-hidden="true">
+        <svg viewBox="0 0 1570 575" preserveAspectRatio="xMidYMid meet" role="presentation">
+          <defs>
+            <linearGradient id="ecg-stroke" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="rgba(160, 243, 206, 0.2)" />
+              <stop offset="22%" stop-color="rgba(160, 243, 206, 0.65)" />
+              <stop offset="45%" stop-color="#E2FBDD" />
+              <stop offset="62%" stop-color="rgba(160, 243, 206, 0.8)" />
+              <stop offset="100%" stop-color="rgba(160, 243, 206, 0.18)" />
+            </linearGradient>
+          </defs>
+          <path
+            d="M52.817 352.744 L519.882 352.744 L551.986 259.538 L611.016 522.585 L740.469 51.378 L844.031 471.84 L902.026 355.851 L1520.291 352.744"
+            fill="none"
+            stroke="url(#ecg-stroke)"
+            stroke-width="16"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            pathLength="1000"
+            class="ecg-line"
+          />
+          <path
+            d="M52.817 352.744 L519.882 352.744 L551.986 259.538 L611.016 522.585 L740.469 51.378 L844.031 471.84 L902.026 355.851 L1520.291 352.744"
+            fill="none"
+            stroke="rgba(160, 247, 213, 0.75)"
+            stroke-width="24"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            pathLength="1000"
+            class="ecg-glow"
+          />
+        </svg>
+      </div>
+      <div class="section-shell relative flex min-h-[calc(100svh-6rem)] flex-col justify-end pb-16 pt-12">
+        <div class="max-w-3xl space-y-6">
+          <h1 class="hero-title text-4xl sm:text-5xl md:text-7xl">{{ t('home.hero.title') }}</h1>
           <div class="flex flex-wrap gap-4">
-            <NuxtLink :to="localePath('/services')" class="cta-button">{{ t('home.hero.primaryCta') }}</NuxtLink>
+          <NuxtLink :to="localePath('/services')" class="hero-cta">{{ t('home.hero.primaryCta') }}</NuxtLink>
             <NuxtLink :to="localePath('/about')" class="ghost-button">{{ t('home.hero.secondaryCta') }}</NuxtLink>
-          </div>
-        </div>
-        <div class="glass-panel relative space-y-6 p-8">
-          <p class="chip">{{ t('home.hero.panel.label') }}</p>
-          <h2 class="text-2xl font-semibold">{{ t('home.hero.panel.title') }}</h2>
-          <p class="text-sm text-slate-300">{{ t('home.hero.panel.description') }}</p>
-          <div class="grid gap-4">
-            <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
-              <p class="text-xs uppercase tracking-[0.2em] text-slate-400">
-                {{ t('home.hero.panel.points.first.label') }}
-              </p>
-              <p class="mt-2 text-sm text-slate-200">{{ t('home.hero.panel.points.first.text') }}</p>
-            </div>
-            <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
-              <p class="text-xs uppercase tracking-[0.2em] text-slate-400">
-                {{ t('home.hero.panel.points.second.label') }}
-              </p>
-              <p class="mt-2 text-sm text-slate-200">{{ t('home.hero.panel.points.second.text') }}</p>
-            </div>
-            <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
-              <p class="text-xs uppercase tracking-[0.2em] text-slate-400">
-                {{ t('home.hero.panel.points.third.label') }}
-              </p>
-              <p class="mt-2 text-sm text-slate-200">{{ t('home.hero.panel.points.third.text') }}</p>
-            </div>
           </div>
         </div>
       </div>
