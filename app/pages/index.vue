@@ -46,7 +46,7 @@
       </div>
     </section>
 
-    <section class="section-shell grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
+    <section class="section-shell atmosphere-a grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
       <SectionHeading
         :eyebrow="t('home.responsibility.eyebrow')"
         :title="t('home.responsibility.title')"
@@ -54,21 +54,30 @@
       />
       <div class="grid gap-4">
         <div class="glass-panel raised p-6">
-          <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.responsibility.points.first.label') }}</p>
+          <div class="flex items-center gap-3">
+            <span class="icon-orb" aria-hidden="true"><IconCompass class="h-5 w-5" /></span>
+            <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.responsibility.points.first.label') }}</p>
+          </div>
           <p class="mt-3 text-sm text-slate-200">{{ t('home.responsibility.points.first.text') }}</p>
         </div>
         <div class="glass-panel raised p-6">
-          <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.responsibility.points.second.label') }}</p>
+          <div class="flex items-center gap-3">
+            <span class="icon-orb" aria-hidden="true"><IconShield class="h-5 w-5" /></span>
+            <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.responsibility.points.second.label') }}</p>
+          </div>
           <p class="mt-3 text-sm text-slate-200">{{ t('home.responsibility.points.second.text') }}</p>
         </div>
         <div class="glass-panel raised p-6">
-          <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.responsibility.points.third.label') }}</p>
+          <div class="flex items-center gap-3">
+            <span class="icon-orb" aria-hidden="true"><IconCare class="h-5 w-5" /></span>
+            <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.responsibility.points.third.label') }}</p>
+          </div>
           <p class="mt-3 text-sm text-slate-200">{{ t('home.responsibility.points.third.text') }}</p>
         </div>
       </div>
     </section>
 
-    <section class="section-shell grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
+    <section class="section-shell atmosphere-b grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
       <SectionHeading
         :eyebrow="t('home.founders.eyebrow')"
         :title="t('home.founders.title')"
@@ -88,7 +97,20 @@
       </div>
     </section>
 
-    <section class="section-shell space-y-10">
+    <FeatureBillboard
+      :eyebrow="billboards.first.eyebrow"
+      :title="billboards.first.title"
+      :description="billboards.first.description"
+      :bullets="billboards.first.bullets"
+      :cta-label="billboards.first.ctaLabel"
+      :cta-to="billboards.first.ctaTo"
+      :secondary-label="billboards.first.secondaryLabel"
+      :secondary-to="billboards.first.secondaryTo"
+      :panel-label="billboards.first.panelLabel"
+      :panel-text="billboards.first.panelText"
+    />
+
+    <section class="section-shell atmosphere-c space-y-10">
       <SectionHeading
         :eyebrow="t('home.proof.eyebrow')"
         :title="t('home.proof.title')"
@@ -97,15 +119,24 @@
       <div class="grid gap-6 md:grid-cols-3">
         <CaseCard v-for="item in caseStudies" :key="item.id" :item="item" />
       </div>
-      <div class="glass-panel highlight p-6">
-        <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.proof.logosLabel') }}</p>
-        <div class="mt-6 grid gap-3 text-sm uppercase tracking-[0.2em] text-slate-300 sm:grid-cols-2 lg:grid-cols-4">
-          <span v-for="logo in proofLogos" :key="logo">{{ logo }}</span>
-        </div>
-      </div>
+      <LogoMarquee :label="t('home.proof.logosLabel')" :items="proofLogos" />
     </section>
 
-    <section class="section-shell grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
+    <FeatureBillboard
+      align="right"
+      :eyebrow="billboards.second.eyebrow"
+      :title="billboards.second.title"
+      :description="billboards.second.description"
+      :bullets="billboards.second.bullets"
+      :cta-label="billboards.second.ctaLabel"
+      :cta-to="billboards.second.ctaTo"
+      :secondary-label="billboards.second.secondaryLabel"
+      :secondary-to="billboards.second.secondaryTo"
+      :panel-label="billboards.second.panelLabel"
+      :panel-text="billboards.second.panelText"
+    />
+
+    <section class="section-shell atmosphere-a grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
       <SectionHeading
         :eyebrow="t('home.approach.eyebrow')"
         :title="t('home.approach.title')"
@@ -113,36 +144,36 @@
       />
       <div class="grid gap-4">
         <div class="glass-panel raised p-6">
-          <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.approach.steps.first.label') }}</p>
+          <div class="flex items-center gap-3">
+            <span class="icon-orb" aria-hidden="true"><IconFlow class="h-5 w-5" /></span>
+            <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.approach.steps.first.label') }}</p>
+          </div>
           <p class="mt-3 text-sm text-slate-200">{{ t('home.approach.steps.first.text') }}</p>
         </div>
         <div class="glass-panel raised p-6">
-          <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.approach.steps.second.label') }}</p>
+          <div class="flex items-center gap-3">
+            <span class="icon-orb" aria-hidden="true"><IconLayers class="h-5 w-5" /></span>
+            <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.approach.steps.second.label') }}</p>
+          </div>
           <p class="mt-3 text-sm text-slate-200">{{ t('home.approach.steps.second.text') }}</p>
         </div>
         <div class="glass-panel raised p-6">
-          <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.approach.steps.third.label') }}</p>
+          <div class="flex items-center gap-3">
+            <span class="icon-orb" aria-hidden="true"><IconOrbit class="h-5 w-5" /></span>
+            <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.approach.steps.third.label') }}</p>
+          </div>
           <p class="mt-3 text-sm text-slate-200">{{ t('home.approach.steps.third.text') }}</p>
         </div>
       </div>
     </section>
 
-    <section class="section-shell space-y-10">
+    <section class="section-shell atmosphere-b space-y-10">
       <SectionHeading
         :eyebrow="t('home.services.eyebrow')"
         :title="t('home.services.title')"
         :description="t('home.services.description')"
       />
-      <div class="grid gap-6 md:grid-cols-3">
-        <div v-for="service in serviceCards" :key="service.key" class="glass-panel raised flex flex-col gap-4 p-6">
-          <div class="space-y-2">
-            <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t(`home.services.items.${service.key}.eyebrow`) }}</p>
-            <h3 class="text-xl font-semibold">{{ t(`home.services.items.${service.key}.title`) }}</h3>
-            <p class="text-sm text-slate-200">{{ t(`home.services.items.${service.key}.description`) }}</p>
-          </div>
-          <NuxtLink :to="localePath(service.to)" class="ghost-button glow">{{ t(`home.services.items.${service.key}.cta`) }}</NuxtLink>
-        </div>
-      </div>
+      <ShowcaseRail :items="showcaseItems" />
     </section>
   </div>
 </template>
@@ -170,11 +201,67 @@ const proofLogos = computed(() => [
   t('home.proof.logos.fourth'),
 ])
 
-const serviceCards = computed(() => [
-  { key: 'educationResearch', to: '/services/education-research' },
-  { key: 'agencyPartner', to: '/services/agency-partner' },
-  { key: 'smbFlatFee', to: '/services/smb-flat-fee' },
+const showcaseItems = computed(() => [
+  {
+    key: 'educationResearch',
+    to: '/services/education-research',
+    eyebrow: t('home.services.items.educationResearch.eyebrow'),
+    title: t('home.services.items.educationResearch.title'),
+    description: t('home.services.items.educationResearch.description'),
+    cta: t('home.services.items.educationResearch.cta'),
+  },
+  {
+    key: 'agencyPartner',
+    to: '/services/agency-partner',
+    eyebrow: t('home.services.items.agencyPartner.eyebrow'),
+    title: t('home.services.items.agencyPartner.title'),
+    description: t('home.services.items.agencyPartner.description'),
+    cta: t('home.services.items.agencyPartner.cta'),
+  },
+  {
+    key: 'smbFlatFee',
+    to: '/services/smb-flat-fee',
+    eyebrow: t('home.services.items.smbFlatFee.eyebrow'),
+    title: t('home.services.items.smbFlatFee.title'),
+    description: t('home.services.items.smbFlatFee.description'),
+    cta: t('home.services.items.smbFlatFee.cta'),
+  },
 ])
+
+const billboards = computed(() => ({
+  first: {
+    eyebrow: t('home.billboards.first.eyebrow'),
+    title: t('home.billboards.first.title'),
+    description: t('home.billboards.first.description'),
+    bullets: [
+      t('home.billboards.first.bullets.first'),
+      t('home.billboards.first.bullets.second'),
+      t('home.billboards.first.bullets.third'),
+    ],
+    ctaLabel: t('home.billboards.first.cta'),
+    ctaTo: '/contact',
+    secondaryLabel: t('home.billboards.first.secondary'),
+    secondaryTo: '/case-studies',
+    panelLabel: t('home.billboards.first.panel.label'),
+    panelText: t('home.billboards.first.panel.text'),
+  },
+  second: {
+    eyebrow: t('home.billboards.second.eyebrow'),
+    title: t('home.billboards.second.title'),
+    description: t('home.billboards.second.description'),
+    bullets: [
+      t('home.billboards.second.bullets.first'),
+      t('home.billboards.second.bullets.second'),
+      t('home.billboards.second.bullets.third'),
+    ],
+    ctaLabel: t('home.billboards.second.cta'),
+    ctaTo: '/services',
+    secondaryLabel: t('home.billboards.second.secondary'),
+    secondaryTo: '/contact',
+    panelLabel: t('home.billboards.second.panel.label'),
+    panelText: t('home.billboards.second.panel.text'),
+  },
+}))
 
 const metaTitle = computed(() => t('home.meta.title'))
 const metaDescription = computed(() => t('home.meta.description'))

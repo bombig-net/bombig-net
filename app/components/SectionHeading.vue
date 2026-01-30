@@ -1,7 +1,7 @@
 <template>
   <div :class="['space-y-4', alignClass]">
     <p v-if="eyebrow" class="eyebrow">{{ eyebrow }}</p>
-    <h2 class="text-3xl font-semibold tracking-tight text-white md:text-4xl">
+    <h2 class="section-title text-3xl tracking-tight text-white md:text-4xl">
       {{ title }}
     </h2>
     <p v-if="description" class="max-w-2xl text-sm text-slate-200">

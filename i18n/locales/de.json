@@ -102,6 +102,40 @@
         }
       }
     },
+    "billboards": {
+      "first": {
+        "eyebrow": "Betreuung ueber die Laufzeit",
+        "title": "Ein Team, das das Ergebnis verantwortet.",
+        "description": "Wir bringen Unklarheit in einen Plan und tragen Umsetzung und Pflege bis zum Ergebnis.",
+        "bullets": {
+          "first": "Strategie, Inhalt und Design in einem Loop.",
+          "second": "Accessibility, Recht und SEO sind integriert.",
+          "third": "Launch-Begleitung mit laufenden Updates."
+        },
+        "cta": "Projekt starten",
+        "secondary": "Fallstudien ansehen",
+        "panel": {
+          "label": "Projekt-Snapshot",
+          "text": "Scope, Timeline und Verantwortung vor dem Build geklaert."
+        }
+      },
+      "second": {
+        "eyebrow": "Delivery auf Agenturniveau",
+        "title": "Struktur fuer Teams, die Tempo brauchen.",
+        "description": "Ein klares System fuer Briefs, Delivery und Iteration, das Stakeholder aligned haelt.",
+        "bullets": {
+          "first": "Woechentliche Checkpoints mit messbaren Outcomes.",
+          "second": "Wiederverwendbare Komponenten fuer schnellere Launches.",
+          "third": "Transparente Entscheidungen und Dokumentation."
+        },
+        "cta": "Services entdecken",
+        "secondary": "Call buchen",
+        "panel": {
+          "label": "Delivery-Rhythmus",
+          "text": "Sprints mit sichtbarem Fortschritt und Feedback-Loops."
+        }
+      }
+    },
     "proof": {
       "eyebrow": "Vertrauen",
       "title": "Belege statt Behauptungen.",

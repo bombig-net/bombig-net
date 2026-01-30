@@ -102,6 +102,40 @@
         }
       }
     },
+    "billboards": {
+      "first": {
+        "eyebrow": "Lifecycle care",
+        "title": "A single team that owns the outcome.",
+        "description": "We turn ambiguity into a clear plan, then carry execution and care end to end.",
+        "bullets": {
+          "first": "Strategy, content, and design in one loop.",
+          "second": "Accessibility, legal, and SEO built in.",
+          "third": "Launch support with ongoing updates."
+        },
+        "cta": "Start a project",
+        "secondary": "View case studies",
+        "panel": {
+          "label": "Project snapshot",
+          "text": "Scope, timeline, and ownership captured before build."
+        }
+      },
+      "second": {
+        "eyebrow": "Agency-grade delivery",
+        "title": "Structure for teams that need momentum.",
+        "description": "A clear system for briefs, delivery, and iteration that keeps stakeholders aligned.",
+        "bullets": {
+          "first": "Weekly checkpoints with measurable outcomes.",
+          "second": "Reusable components for faster launch cycles.",
+          "third": "Transparent decisions and documentation."
+        },
+        "cta": "Explore services",
+        "secondary": "Book a call",
+        "panel": {
+          "label": "Delivery cadence",
+          "text": "Sprints with visible progress and feedback loops."
+        }
+      }
+    },
     "proof": {
       "eyebrow": "Trust",
       "title": "Evidence beats claims.",
