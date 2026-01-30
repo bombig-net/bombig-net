@@ -46,53 +46,88 @@
       </div>
     </section>
 
+    <section class="section-shell atmosphere-b founders-section grid gap-10 lg:grid-cols-[0.95fr_1.05fr]">
+      <div class="space-y-6 founders-copy">
+        <SectionHeading
+          class="founders-heading"
+          :eyebrow="t('home.founders.eyebrow')"
+          :title="t('home.founders.title')"
+          :description="t('home.founders.description')"
+        />
+        <p class="founders-support text-sm text-slate-300">
+          {{ t('home.founders.support') }}
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <NuxtLink :to="localePath('/about')" class="ghost-button founders-cta">{{ t('home.founders.cta') }}</NuxtLink>
+        </div>
+      </div>
+      <div class="founders-cards">
+        <div class="founders-glow" aria-hidden="true" />
+        <article class="founder-card founder-primary">
+          <div class="founder-media">
+            <img
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80"
+              :alt="t('home.founders.people.deniz.name')"
+              class="founder-image"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+          <div class="founder-meta">
+            <p class="founder-name">{{ t('home.founders.people.deniz.name') }}</p>
+            <p class="founder-role">{{ t('home.founders.people.deniz.role') }}</p>
+          </div>
+        </article>
+        <article class="founder-card founder-secondary">
+          <div class="founder-media">
+            <img
+              src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=900&q=80"
+              :alt="t('home.founders.people.jannis.name')"
+              class="founder-image"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+          <div class="founder-meta">
+            <p class="founder-name">{{ t('home.founders.people.jannis.name') }}</p>
+            <p class="founder-role">{{ t('home.founders.people.jannis.role') }}</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <section class="section-shell atmosphere-a grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
       <SectionHeading
         :eyebrow="t('home.responsibility.eyebrow')"
         :title="t('home.responsibility.title')"
         :description="t('home.responsibility.description')"
       />
-      <div class="grid gap-4">
-        <div class="glass-panel raised p-6">
-          <div class="flex items-center gap-3">
-            <span class="icon-orb" aria-hidden="true"><IconCompass class="h-5 w-5" /></span>
-            <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.responsibility.points.first.label') }}</p>
+      <div class="responsibility-stack">
+        <div class="responsibility-visual" aria-hidden="true">
+          <div class="responsibility-visual-core" />
+        </div>
+        <div class="grid gap-4">
+          <div class="glass-panel raised p-6 info-card">
+            <div class="flex items-center gap-3">
+              <span class="icon-orb" aria-hidden="true"><IconCompass class="h-5 w-5" /></span>
+              <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.responsibility.points.first.label') }}</p>
+            </div>
+            <p class="mt-3 text-sm text-slate-200">{{ t('home.responsibility.points.first.text') }}</p>
           </div>
-          <p class="mt-3 text-sm text-slate-200">{{ t('home.responsibility.points.first.text') }}</p>
-        </div>
-        <div class="glass-panel raised p-6">
-          <div class="flex items-center gap-3">
-            <span class="icon-orb" aria-hidden="true"><IconShield class="h-5 w-5" /></span>
-            <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.responsibility.points.second.label') }}</p>
+          <div class="glass-panel raised p-6 info-card">
+            <div class="flex items-center gap-3">
+              <span class="icon-orb" aria-hidden="true"><IconShield class="h-5 w-5" /></span>
+              <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.responsibility.points.second.label') }}</p>
+            </div>
+            <p class="mt-3 text-sm text-slate-200">{{ t('home.responsibility.points.second.text') }}</p>
           </div>
-          <p class="mt-3 text-sm text-slate-200">{{ t('home.responsibility.points.second.text') }}</p>
-        </div>
-        <div class="glass-panel raised p-6">
-          <div class="flex items-center gap-3">
-            <span class="icon-orb" aria-hidden="true"><IconCare class="h-5 w-5" /></span>
-            <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.responsibility.points.third.label') }}</p>
+          <div class="glass-panel raised p-6 info-card">
+            <div class="flex items-center gap-3">
+              <span class="icon-orb" aria-hidden="true"><IconCare class="h-5 w-5" /></span>
+              <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.responsibility.points.third.label') }}</p>
+            </div>
+            <p class="mt-3 text-sm text-slate-200">{{ t('home.responsibility.points.third.text') }}</p>
           </div>
-          <p class="mt-3 text-sm text-slate-200">{{ t('home.responsibility.points.third.text') }}</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-shell atmosphere-b grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
-      <SectionHeading
-        :eyebrow="t('home.founders.eyebrow')"
-        :title="t('home.founders.title')"
-        :description="t('home.founders.description')"
-      />
-      <div class="grid gap-4 sm:grid-cols-2">
-        <div class="glass-panel raised p-6">
-          <p class="text-lg font-semibold">{{ t('home.founders.people.deniz.name') }}</p>
-          <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.founders.people.deniz.role') }}</p>
-          <p class="mt-3 text-sm text-slate-200">{{ t('home.founders.people.deniz.focus') }}</p>
-        </div>
-        <div class="glass-panel raised p-6">
-          <p class="text-lg font-semibold">{{ t('home.founders.people.jannis.name') }}</p>
-          <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.founders.people.jannis.role') }}</p>
-          <p class="mt-3 text-sm text-slate-200">{{ t('home.founders.people.jannis.focus') }}</p>
         </div>
       </div>
     </section>
@@ -116,10 +151,15 @@
         :title="t('home.proof.title')"
         :description="t('home.proof.description')"
       />
-      <div class="grid gap-6 md:grid-cols-3">
-        <CaseCard v-for="item in caseStudies" :key="item.id" :item="item" />
+      <div class="proof-grid">
+        <div class="proof-highlight" aria-hidden="true" />
+        <div class="grid gap-6 md:grid-cols-3">
+          <CaseCard v-for="item in caseStudies" :key="item.id" :item="item" />
+        </div>
       </div>
-      <LogoMarquee :label="t('home.proof.logosLabel')" :items="proofLogos" />
+      <div class="proof-marquee">
+        <LogoMarquee :label="t('home.proof.logosLabel')" :items="proofLogos" />
+      </div>
     </section>
 
     <FeatureBillboard
@@ -142,27 +182,30 @@
         :title="t('home.approach.title')"
         :description="t('home.approach.description')"
       />
-      <div class="grid gap-4">
-        <div class="glass-panel raised p-6">
-          <div class="flex items-center gap-3">
-            <span class="icon-orb" aria-hidden="true"><IconFlow class="h-5 w-5" /></span>
-            <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.approach.steps.first.label') }}</p>
+      <div class="approach-stack">
+        <div class="approach-rail" aria-hidden="true" />
+        <div class="grid gap-4">
+          <div class="glass-panel raised p-6 info-card">
+            <div class="flex items-center gap-3">
+              <span class="icon-orb" aria-hidden="true"><IconFlow class="h-5 w-5" /></span>
+              <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.approach.steps.first.label') }}</p>
+            </div>
+            <p class="mt-3 text-sm text-slate-200">{{ t('home.approach.steps.first.text') }}</p>
           </div>
-          <p class="mt-3 text-sm text-slate-200">{{ t('home.approach.steps.first.text') }}</p>
-        </div>
-        <div class="glass-panel raised p-6">
-          <div class="flex items-center gap-3">
-            <span class="icon-orb" aria-hidden="true"><IconLayers class="h-5 w-5" /></span>
-            <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.approach.steps.second.label') }}</p>
+          <div class="glass-panel raised p-6 info-card">
+            <div class="flex items-center gap-3">
+              <span class="icon-orb" aria-hidden="true"><IconLayers class="h-5 w-5" /></span>
+              <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.approach.steps.second.label') }}</p>
+            </div>
+            <p class="mt-3 text-sm text-slate-200">{{ t('home.approach.steps.second.text') }}</p>
           </div>
-          <p class="mt-3 text-sm text-slate-200">{{ t('home.approach.steps.second.text') }}</p>
-        </div>
-        <div class="glass-panel raised p-6">
-          <div class="flex items-center gap-3">
-            <span class="icon-orb" aria-hidden="true"><IconOrbit class="h-5 w-5" /></span>
-            <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.approach.steps.third.label') }}</p>
+          <div class="glass-panel raised p-6 info-card">
+            <div class="flex items-center gap-3">
+              <span class="icon-orb" aria-hidden="true"><IconOrbit class="h-5 w-5" /></span>
+              <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.approach.steps.third.label') }}</p>
+            </div>
+            <p class="mt-3 text-sm text-slate-200">{{ t('home.approach.steps.third.text') }}</p>
           </div>
-          <p class="mt-3 text-sm text-slate-200">{{ t('home.approach.steps.third.text') }}</p>
         </div>
       </div>
     </section>
@@ -173,25 +216,37 @@
         :title="t('home.services.title')"
         :description="t('home.services.description')"
       />
-      <ShowcaseRail :items="showcaseItems" />
+      <div class="services-rail-wrap">
+        <div class="services-rail-glow" aria-hidden="true" />
+        <ShowcaseRail :items="showcaseItems" />
+      </div>
     </section>
   </div>
 </template>
 
 <script setup lang="ts">
+import IconCare from '~/components/icons/IconCare.vue'
+import IconCompass from '~/components/icons/IconCompass.vue'
+import IconFlow from '~/components/icons/IconFlow.vue'
+import IconLayers from '~/components/icons/IconLayers.vue'
+import IconOrbit from '~/components/icons/IconOrbit.vue'
+import IconShield from '~/components/icons/IconShield.vue'
+
 const { t, locale } = useI18n()
 const localePath = useLocalePath()
 
+const resolvedLocale = computed(() => locale.value || 'de')
+const caseStudiesKey = computed(() => `home-case-studies-${resolvedLocale.value}`)
 const { data: caseStudies } = await useAsyncData(
-  'home-case-studies',
+  caseStudiesKey,
   () =>
     queryCollection('content')
-      .where('path', 'LIKE', `/${locale.value}/case-studies/%`)
+      .where('path', 'LIKE', `/${resolvedLocale.value}/case-studies/%`)
       .select('id', 'title', 'description', 'path', 'meta')
       .order('path', 'DESC')
       .limit(3)
       .all(),
-  { watch: [locale] },
+  { watch: [resolvedLocale], default: () => [] },
 )
 
 const proofLogos = computed(() => [

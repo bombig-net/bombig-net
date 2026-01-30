@@ -123,6 +123,22 @@
 </template>
 
 <script setup lang="ts">
+import {
+  DialogContent,
+  DialogOverlay,
+  DialogPortal,
+  DialogRoot,
+  DialogTitle,
+  DialogTrigger,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuRoot,
+  NavigationMenuTrigger,
+  VisuallyHidden,
+} from 'reka-ui'
+
 const config = useAppConfig()
 const { t, locale } = useI18n()
 const localePath = useLocalePath()

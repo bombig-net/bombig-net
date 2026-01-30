@@ -30,6 +30,24 @@
         </div>
         <div :class="align === 'right' ? 'md:order-1' : ''" class="billboard-media min-h-[260px] md:min-h-[320px]">
           <div class="billboard-media-grid" aria-hidden="true" />
+          <div class="billboard-sheen" aria-hidden="true" />
+          <div class="billboard-badges" aria-hidden="true">
+            <span class="billboard-badge" />
+            <span class="billboard-badge" />
+            <span class="billboard-badge" />
+          </div>
+          <div class="billboard-media-stack" aria-hidden="true">
+            <div class="billboard-card">
+              <div class="billboard-card-line" />
+              <div class="billboard-card-line short" />
+              <div class="billboard-card-dot" />
+            </div>
+            <div class="billboard-card offset">
+              <div class="billboard-card-line" />
+              <div class="billboard-card-line short" />
+              <div class="billboard-card-dot" />
+            </div>
+          </div>
           <div class="absolute inset-0 flex items-end justify-start p-6">
             <div class="glass-panel raised max-w-xs p-4">
               <p class="text-xs uppercase tracking-[0.2em] text-slate-300">{{ panelLabel }}</p>

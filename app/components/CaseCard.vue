@@ -1,5 +1,6 @@
 <template>
   <NuxtLink :to="item.path" class="group section-card">
+    <div class="section-card-media" aria-hidden="true" />
     <div class="flex items-center justify-between text-xs uppercase tracking-[0.2em] text-slate-400">
       <span>{{ item.meta?.client || t('caseStudies.card.fallbackClient') }}</span>
       <span>{{ item.meta?.year || t('caseStudies.card.fallbackYear') }}</span>

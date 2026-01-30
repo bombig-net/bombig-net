@@ -1,6 +1,9 @@
 <template>
-  <div :class="['space-y-4', alignClass]">
-    <p v-if="eyebrow" class="eyebrow">{{ eyebrow }}</p>
+  <div :class="['section-heading space-y-4', alignClass, props.align === 'center' ? 'section-heading-center' : '']">
+    <div v-if="eyebrow" class="section-heading-kicker">
+      <span class="section-heading-rule" aria-hidden="true" />
+      <p class="eyebrow">{{ eyebrow }}</p>
+    </div>
     <h2 class="section-title text-3xl tracking-tight text-white md:text-4xl">
       {{ title }}
     </h2>

@@ -1,7 +1,11 @@
 <template>
   <div class="showcase-rail">
-    <div v-for="item in items" :key="item.key" class="showcase-rail-item">
-      <NuxtLink :to="localePath(item.to)" class="glass-panel raised flex h-full flex-col gap-4 p-6">
+    <div v-for="(item, index) in items" :key="item.key" class="showcase-rail-item">
+      <NuxtLink :to="localePath(item.to)" class="showcase-rail-card glass-panel raised">
+        <div class="showcase-rail-media" aria-hidden="true">
+          <span class="showcase-rail-index">0{{ index + 1 }}</span>
+          <div class="showcase-rail-glow" />
+        </div>
         <div class="space-y-2">
           <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ item.eyebrow }}</p>
           <h3 class="text-xl font-semibold text-white">{{ item.title }}</h3>

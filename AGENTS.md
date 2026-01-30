@@ -117,7 +117,8 @@ If you are unsure whether a solution meets the quality bar, ask.
 The agent must validate results with the appropriate tools before claiming completion.
 
 Rules:
-- Always run relevant checks (build, lint, typecheck, visual for UI changes).
+- Always run relevant checks (build, lint, typecheck).
+- Visual checks are optional and only run when the user explicitly requests them.
 - Never claim success without verification.
 - If a check can’t be run, state why and how to run it.
 
@@ -125,6 +126,7 @@ Required checks (when applicable):
 - Build: `npm run build`
 - Lint: `npm run lint`
 - Typecheck: `npm run typecheck`
+Optional checks (only when explicitly requested):
 - Visual: `npm run visual:check`
 
 ---

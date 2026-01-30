@@ -87,8 +87,10 @@
     },
     "founders": {
       "eyebrow": "Founders",
-      "title": "Deniz Binay and Jannis Tanner",
-      "description": "Placeholder: Why the founders personally take responsibility.",
+      "title": "Experience and accountability",
+      "description": "We take personal responsibility for the quality of your digital product. As founders and managing directors, we align strategy, design, and delivery into one clear line.",
+      "support": "Long-term results come from documented decisions, early risk checks, and launch support that stays in place.",
+      "cta": "About the founders",
       "people": {
         "deniz": {
           "name": "Deniz Binay",

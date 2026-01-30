@@ -87,8 +87,10 @@
     },
     "founders": {
       "eyebrow": "Gruender",
-      "title": "Deniz Binay und Jannis Tanner",
-      "description": "Platzhalter: Warum die Gruender persoenlich Verantwortung uebernehmen.",
+      "title": "Erfahrung und Verantwortung",
+      "description": "Wir stehen persoenlich fuer die Qualitaet eurer digitalen Produkte. Als Gruender und Geschaeftsfuehrer halten wir Strategie, Design und Delivery in einer klaren Linie.",
+      "support": "Langfristiger Erfolg entsteht, wenn Entscheidungen sauber dokumentiert, Risiken frueh erkannt und Launches konsequent betreut werden.",
+      "cta": "Mehr ueber uns",
       "people": {
         "deniz": {
           "name": "Deniz Binay",

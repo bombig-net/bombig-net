@@ -1,5 +1,6 @@
 <template>
   <NuxtLink :to="item.path" class="group section-card justify-between">
+    <div class="section-card-media" aria-hidden="true" />
     <div class="space-y-4">
       <div class="text-xs uppercase tracking-[0.2em] text-slate-400">
         {{ item.meta?.category || t('blog.card.fallbackCategory') }}
