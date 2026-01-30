@@ -1,9 +1,9 @@
 <template>
-  <footer class="mt-24 border-t border-white/10">
+  <footer class="mt-24 border-t border-white/10 bg-[#0b0f0b]">
     <div class="section-shell grid gap-10 py-16 md:grid-cols-[2fr_1fr_1fr]">
       <div class="space-y-4">
-        <p class="text-2xl font-semibold">{{ t('footer.tagline') }}</p>
-        <p class="text-sm text-slate-300">{{ t('footer.blurb') }}</p>
+        <p class="text-2xl font-semibold text-white">{{ t('footer.tagline') }}</p>
+        <p class="text-sm text-slate-200">{{ t('footer.blurb') }}</p>
         <div class="flex flex-wrap gap-3 text-sm text-slate-200">
           <span>{{ config.site?.location }}</span>
           <span class="text-slate-500">|</span>

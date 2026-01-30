@@ -1,8 +1,10 @@
 <template>
   <div :class="['space-y-4', alignClass]">
     <p v-if="eyebrow" class="eyebrow">{{ eyebrow }}</p>
-    <h2 class="text-3xl font-semibold md:text-4xl">{{ title }}</h2>
-    <p v-if="description" class="max-w-2xl text-sm text-slate-300">
+    <h2 class="text-3xl font-semibold tracking-tight text-white md:text-4xl">
+      {{ title }}
+    </h2>
+    <p v-if="description" class="max-w-2xl text-sm text-slate-200">
       {{ description }}
     </p>
   </div>

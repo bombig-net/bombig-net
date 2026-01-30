@@ -1,23 +1,29 @@
 <template>
   <article v-if="caseStudy" class="space-y-12 pb-24">
-    <section class="section-shell space-y-6 pt-16">
-      <p class="eyebrow">{{ t('caseStudies.detail.eyebrow') }}</p>
-      <h1 class="text-4xl font-semibold md:text-5xl">{{ caseStudy.title }}</h1>
-      <p class="max-w-2xl text-sm text-slate-300">{{ caseStudy.description }}</p>
-      <div class="flex flex-wrap gap-4 text-xs uppercase tracking-[0.2em] text-slate-400">
-        <span>{{ caseStudy.meta?.client || t('caseStudies.detail.fallbackClient') }}</span>
-        <span>/</span>
-        <span>{{ caseStudy.meta?.year || t('caseStudies.detail.fallbackYear') }}</span>
-        <span>/</span>
-        <span>{{ caseStudy.meta?.scope || t('caseStudies.detail.fallbackScope') }}</span>
+    <section class="section-shell pt-16">
+      <div class="section-surface surface-grid space-y-6">
+        <p class="eyebrow">{{ t('caseStudies.detail.eyebrow') }}</p>
+        <h1 class="text-4xl font-semibold tracking-tight text-white md:text-5xl">{{ caseStudy.title }}</h1>
+        <p class="max-w-2xl text-sm text-slate-200">{{ caseStudy.description }}</p>
+        <div class="flex flex-wrap gap-4 text-xs uppercase tracking-[0.2em] text-slate-400">
+          <span>{{ caseStudy.meta?.client || t('caseStudies.detail.fallbackClient') }}</span>
+          <span>/</span>
+          <span>{{ caseStudy.meta?.year || t('caseStudies.detail.fallbackYear') }}</span>
+          <span>/</span>
+          <span>{{ caseStudy.meta?.scope || t('caseStudies.detail.fallbackScope') }}</span>
+        </div>
       </div>
     </section>
 
     <section class="section-shell grid gap-8 md:grid-cols-[1.1fr_0.9fr]">
-      <div class="prose max-w-none">
-        <ContentRenderer :value="caseStudy" />
+      <div class="section-frame">
+        <div class="glass-panel raised">
+          <div class="prose max-w-none px-8 py-10">
+            <ContentRenderer :value="caseStudy" />
+          </div>
+        </div>
       </div>
-      <div class="glass-panel space-y-6 p-8">
+      <div class="glass-panel highlight space-y-6 p-8">
         <div>
           <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('caseStudies.detail.servicesLabel') }}</p>
           <p class="mt-3 text-sm text-slate-200">
@@ -32,7 +38,9 @@
             <li>{{ t('caseStudies.detail.outcomes.third') }}</li>
           </ul>
         </div>
-        <NuxtLink :to="localePath('/contact')" class="cta-button justify-center">{{ t('caseStudies.detail.cta') }}</NuxtLink>
+        <NuxtLink :to="localePath('/contact')" class="cta-button emerald justify-center">
+          {{ t('caseStudies.detail.cta') }}
+        </NuxtLink>
       </div>
     </section>
   </article>

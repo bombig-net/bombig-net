@@ -1,12 +1,12 @@
 <template>
-  <NuxtLink :to="item.path" class="group flex h-full flex-col gap-6 rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:border-white/30">
+  <NuxtLink :to="item.path" class="group section-card">
     <div class="flex items-center justify-between text-xs uppercase tracking-[0.2em] text-slate-400">
       <span>{{ item.meta?.client || t('caseStudies.card.fallbackClient') }}</span>
       <span>{{ item.meta?.year || t('caseStudies.card.fallbackYear') }}</span>
     </div>
     <div class="space-y-3">
-      <h3 class="text-xl font-semibold text-white group-hover:text-white">{{ item.title }}</h3>
-      <p class="text-sm text-slate-300">{{ item.description }}</p>
+      <h3 class="section-card-title">{{ item.title }}</h3>
+      <p class="text-sm text-slate-200">{{ item.description }}</p>
     </div>
     <div class="flex flex-wrap gap-2 text-xs uppercase tracking-[0.2em] text-slate-400">
       <span v-for="tag in tags" :key="tag" class="chip">{{ tag }}</span>

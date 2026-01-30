@@ -53,15 +53,15 @@
         :description="t('home.responsibility.description')"
       />
       <div class="grid gap-4">
-        <div class="glass-panel p-6">
+        <div class="glass-panel raised p-6">
           <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.responsibility.points.first.label') }}</p>
           <p class="mt-3 text-sm text-slate-200">{{ t('home.responsibility.points.first.text') }}</p>
         </div>
-        <div class="glass-panel p-6">
+        <div class="glass-panel raised p-6">
           <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.responsibility.points.second.label') }}</p>
           <p class="mt-3 text-sm text-slate-200">{{ t('home.responsibility.points.second.text') }}</p>
         </div>
-        <div class="glass-panel p-6">
+        <div class="glass-panel raised p-6">
           <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.responsibility.points.third.label') }}</p>
           <p class="mt-3 text-sm text-slate-200">{{ t('home.responsibility.points.third.text') }}</p>
         </div>
@@ -75,15 +75,15 @@
         :description="t('home.founders.description')"
       />
       <div class="grid gap-4 sm:grid-cols-2">
-        <div class="glass-panel p-6">
+        <div class="glass-panel raised p-6">
           <p class="text-lg font-semibold">{{ t('home.founders.people.deniz.name') }}</p>
           <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.founders.people.deniz.role') }}</p>
-          <p class="mt-3 text-sm text-slate-300">{{ t('home.founders.people.deniz.focus') }}</p>
+          <p class="mt-3 text-sm text-slate-200">{{ t('home.founders.people.deniz.focus') }}</p>
         </div>
-        <div class="glass-panel p-6">
+        <div class="glass-panel raised p-6">
           <p class="text-lg font-semibold">{{ t('home.founders.people.jannis.name') }}</p>
           <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.founders.people.jannis.role') }}</p>
-          <p class="mt-3 text-sm text-slate-300">{{ t('home.founders.people.jannis.focus') }}</p>
+          <p class="mt-3 text-sm text-slate-200">{{ t('home.founders.people.jannis.focus') }}</p>
         </div>
       </div>
     </section>
@@ -97,7 +97,7 @@
       <div class="grid gap-6 md:grid-cols-3">
         <CaseCard v-for="item in caseStudies" :key="item.id" :item="item" />
       </div>
-      <div class="glass-panel p-6">
+      <div class="glass-panel highlight p-6">
         <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.proof.logosLabel') }}</p>
         <div class="mt-6 grid gap-3 text-sm uppercase tracking-[0.2em] text-slate-300 sm:grid-cols-2 lg:grid-cols-4">
           <span v-for="logo in proofLogos" :key="logo">{{ logo }}</span>
@@ -112,15 +112,15 @@
         :description="t('home.approach.description')"
       />
       <div class="grid gap-4">
-        <div class="glass-panel p-6">
+        <div class="glass-panel raised p-6">
           <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.approach.steps.first.label') }}</p>
           <p class="mt-3 text-sm text-slate-200">{{ t('home.approach.steps.first.text') }}</p>
         </div>
-        <div class="glass-panel p-6">
+        <div class="glass-panel raised p-6">
           <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.approach.steps.second.label') }}</p>
           <p class="mt-3 text-sm text-slate-200">{{ t('home.approach.steps.second.text') }}</p>
         </div>
-        <div class="glass-panel p-6">
+        <div class="glass-panel raised p-6">
           <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('home.approach.steps.third.label') }}</p>
           <p class="mt-3 text-sm text-slate-200">{{ t('home.approach.steps.third.text') }}</p>
         </div>
@@ -134,13 +134,13 @@
         :description="t('home.services.description')"
       />
       <div class="grid gap-6 md:grid-cols-3">
-        <div v-for="service in serviceCards" :key="service.key" class="glass-panel flex flex-col gap-4 p-6">
+        <div v-for="service in serviceCards" :key="service.key" class="glass-panel raised flex flex-col gap-4 p-6">
           <div class="space-y-2">
             <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t(`home.services.items.${service.key}.eyebrow`) }}</p>
             <h3 class="text-xl font-semibold">{{ t(`home.services.items.${service.key}.title`) }}</h3>
-            <p class="text-sm text-slate-300">{{ t(`home.services.items.${service.key}.description`) }}</p>
+            <p class="text-sm text-slate-200">{{ t(`home.services.items.${service.key}.description`) }}</p>
           </div>
-          <NuxtLink :to="localePath(service.to)" class="ghost-button">{{ t(`home.services.items.${service.key}.cta`) }}</NuxtLink>
+          <NuxtLink :to="localePath(service.to)" class="ghost-button glow">{{ t(`home.services.items.${service.key}.cta`) }}</NuxtLink>
         </div>
       </div>
     </section>

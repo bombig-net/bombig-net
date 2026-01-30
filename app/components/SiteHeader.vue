@@ -1,8 +1,12 @@
 <template>
-  <header class="fixed left-0 right-0 top-0 z-50 border-b border-white/5 bg-[#0b0e13]/80 backdrop-blur-xl">
+  <header class="fixed left-0 right-0 top-0 z-50 border-b border-white/5 bg-[#0b0f0b]/70 backdrop-blur-xl">
     <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
       <NuxtLink :to="localePath('/')" class="flex items-center gap-3 text-lg font-semibold">
-        <span class="flex h-10 w-10 items-center justify-center rounded-2xl bg-white text-slate-950">B</span>
+        <span
+          class="flex h-10 w-10 items-center justify-center rounded-2xl border border-white/20 bg-white/10 text-slate-100 shadow-lg shadow-emerald-500/10"
+        >
+          B
+        </span>
         <span class="tracking-tight">Bombig</span>
       </NuxtLink>
       <nav class="hidden md:flex">
@@ -41,17 +45,19 @@
         </NavigationMenuRoot>
       </nav>
       <div class="flex items-center gap-3">
-        <NuxtLink :to="localePath('/contact')" class="cta-button hidden sm:inline-flex">{{ t('header.letsTalk') }}</NuxtLink>
-        <NuxtLink
-          :to="switchLocalePath(otherLocale)"
-          class="hidden rounded-full border border-white/20 px-3 py-2 text-xs uppercase tracking-[0.2em] text-white transition hover:border-white/40 sm:inline-flex"
-          :aria-label="t('header.language')"
-        >
-          {{ otherLocale.toUpperCase() }}
-        </NuxtLink>
+          <NuxtLink :to="localePath('/contact')" class="cta-button emerald hidden sm:inline-flex">
+            {{ t('header.letsTalk') }}
+          </NuxtLink>
+          <NuxtLink
+            :to="switchLocalePath(otherLocale)"
+            class="hidden rounded-full border border-white/25 px-3 py-2 text-xs uppercase tracking-[0.2em] text-white/90 transition hover:border-white/50 sm:inline-flex"
+            :aria-label="t('header.language')"
+          >
+            {{ otherLocale.toUpperCase() }}
+          </NuxtLink>
         <DialogRoot v-model:open="mobileMenuOpen">
           <DialogTrigger as-child>
-            <button type="button" class="cta-button md:hidden">{{ t('header.menu') }}</button>
+            <button type="button" class="cta-button emerald md:hidden">{{ t('header.menu') }}</button>
           </DialogTrigger>
           <DialogPortal>
             <DialogOverlay class="fixed inset-0 z-[60] bg-[#0b0e13]/70 backdrop-blur-sm" />
