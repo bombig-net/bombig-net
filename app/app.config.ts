@@ -1,7 +1,7 @@
 export default defineAppConfig({
   site: {
-    name: 'Bombig',
-    shortName: 'Bombig',
+    name: 'bombig.net',
+    shortName: 'bombig.net',
     email: 'hello@bombig.net',
     phone: '+1 (212) 555-0118',
     location: 'Brooklyn, NY',

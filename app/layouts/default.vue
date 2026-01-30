@@ -34,7 +34,7 @@ useHead(() => ({
   ],
   meta: [
     ...(localeHead.value.meta || []),
-    { property: 'og:site_name', content: 'Bombig' },
+    { property: 'og:site_name', content: 'bombig.net' },
     { property: 'og:type', content: 'website' },
     { name: 'twitter:card', content: 'summary_large_image' },
   ],
