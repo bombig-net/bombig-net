@@ -20,10 +20,10 @@
     "startProject": "Projekt starten",
     "letsTalk": "Lass uns sprechen",
     "language": "Sprache wechseln",
-    "menu": "Menue"
+    "menu": "Menü"
   },
   "footer": {
-    "tagline": "Digitale Agentur fuer mutige Marken.",
+    "tagline": "Digitale Agentur für mutige Marken.",
     "blurb": "Design-getrieben, performance-fokussiert und kompromisslos klar. Wir bauen digitale Experiences, die Neugier in Aktion verwandeln.",
     "explore": "Entdecken",
     "elsewhere": "Woanders",
@@ -33,22 +33,22 @@
     "skipToContent": "Zum Inhalt springen"
   },
   "callout": {
-    "eyebrow": "Bereit fuer den naechsten Schritt",
-    "title": "Lass uns die Site bauen, die deine Konkurrenz gern haette.",
-    "description": "Ein Sprint, ein Team, ein klares Ergebnis. Wir uebernehmen Klarheit und Umsetzung, damit dein Launch sicher sitzt.",
+    "eyebrow": "Bereit für den nächsten Schritt",
+    "title": "Lass uns die Site bauen, die deine Konkurrenz gern hätte.",
+    "description": "Ein Sprint, ein Team, ein klares Ergebnis. Wir übernehmen Klarheit und Umsetzung, damit dein Launch sicher sitzt.",
     "primaryCta": "Discovery-Call buchen",
-    "secondaryCta": "Aktuelle Launches ansehen"
+    "secondaryCta": "Aktüelle Launches ansehen"
   },
   "home": {
     "hero": {
       "eyebrow": "Bombig, Digitalagentur",
       "title": "Wir tragen Verantwortung für deine Website",
-      "description": "Platzhalter: Kurz erklaeren, wer ihr seid, wofuer ihr steht und warum Teams euch Verantwortung geben.",
+      "description": "Platzhalter: Kurz erklären, wer ihr seid, wofür ihr steht und warum Teams euch Verantwortung geben.",
       "primaryCta": "Services ansehen",
       "secondaryCta": "Über uns",
       "panel": {
         "label": "Verantwortung",
-        "title": "Wir fuehren, bauen und betreuen.",
+        "title": "Wir führen, bauen und betreuen.",
         "description": "Platzhalter: Ein Satz, der die Rolle von Bombig als verantwortlicher Partner beschreibt.",
         "points": {
           "first": {
@@ -69,11 +69,11 @@
     "responsibility": {
       "eyebrow": "Verantwortung",
       "title": "Wir tragen das Projekt mit euch.",
-      "description": "Platzhalter: Erklaere die Uebergabe, Betreuung und den Anspruch an Zuverlaessigkeit.",
+      "description": "Platzhalter: Erkläre die Übergabe, Betreuung und den Anspruch an Zuverlässigkeit.",
       "points": {
         "first": {
           "label": "Fokus",
-          "text": "Wir loesen das konkrete Problem, nicht nur das visuelle." 
+          "text": "Wir lösen das konkrete Problem, nicht nur das visülle." 
         },
         "second": {
           "label": "Sicherheit",
@@ -81,16 +81,16 @@
         },
         "third": {
           "label": "Betreuung",
-          "text": "Wir bleiben erreichbar und uebersetzen Anforderungen in klare Entscheidungen." 
+          "text": "Wir bleiben erreichbar und übersetzen Anforderungen in klare Entscheidungen." 
         }
       }
     },
     "founders": {
-      "eyebrow": "Gruender",
+      "eyebrow": "Gründer",
       "title": "Erfahrung und Verantwortung",
-      "description": "Wir stehen persoenlich fuer die Qualitaet eurer digitalen Produkte. Als Gruender und Geschaeftsfuehrer halten wir Strategie, Design und Delivery in einer klaren Linie.",
-      "support": "Langfristiger Erfolg entsteht, wenn Entscheidungen sauber dokumentiert, Risiken frueh erkannt und Launches konsequent betreut werden.",
-      "cta": "Mehr ueber uns",
+      "description": "Wir stehen persönlich für die Qualität eurer digitalen Produkte. Als Gründer und Geschäftsführer halten wir Strategie, Design und Delivery in einer klaren Linie.",
+      "support": "Langfristiger Erfolg entsteht, wenn Entscheidungen sauber dokumentiert, Risiken früh erkannt und Launches konseqünt betreut werden.",
+      "cta": "Mehr über uns",
       "people": {
         "deniz": {
           "name": "Deniz Binay",
@@ -106,7 +106,7 @@
     },
     "billboards": {
       "first": {
-        "eyebrow": "Betreuung ueber die Laufzeit",
+        "eyebrow": "Betreuung über die Laufzeit",
         "title": "Ein Team, das das Ergebnis verantwortet.",
         "description": "Wir bringen Unklarheit in einen Plan und tragen Umsetzung und Pflege bis zum Ergebnis.",
         "bullets": {
@@ -118,16 +118,16 @@
         "secondary": "Fallstudien ansehen",
         "panel": {
           "label": "Projekt-Snapshot",
-          "text": "Scope, Timeline und Verantwortung vor dem Build geklaert."
+          "text": "Scope, Timeline und Verantwortung vor dem Build geklärt."
         }
       },
       "second": {
         "eyebrow": "Delivery auf Agenturniveau",
-        "title": "Struktur fuer Teams, die Tempo brauchen.",
-        "description": "Ein klares System fuer Briefs, Delivery und Iteration, das Stakeholder aligned haelt.",
+        "title": "Struktur für Teams, die Tempo brauchen.",
+        "description": "Ein klares System für Briefs, Delivery und Iteration, das Stakeholder aligned hält.",
         "bullets": {
-          "first": "Woechentliche Checkpoints mit messbaren Outcomes.",
-          "second": "Wiederverwendbare Komponenten fuer schnellere Launches.",
+          "first": "Wöchentliche Checkpoints mit messbaren Outcomes.",
+          "second": "Wiederverwendbare Komponenten für schnellere Launches.",
           "third": "Transparente Entscheidungen und Dokumentation."
         },
         "cta": "Services entdecken",
@@ -139,14 +139,14 @@
       }
     },
     "proof": {
-      "eyebrow": "Vertrauen",
+      "eyebrow": "Vertraün",
       "title": "Belege statt Behauptungen.",
       "description": "Platzhalter: Kurzer Satz zu Proof, Ergebnissen und Zusammenarbeit.",
       "logosLabel": "Organisationen, die mit uns arbeiten",
       "logos": {
-        "first": "Universitaet Hamburg",
-        "second": "Ruhr-Universitaet Bochum",
-        "third": "Kulturhaus Suederelbe",
+        "first": "Universität Hamburg",
+        "second": "Ruhr-Universität Bochum",
+        "third": "Kulturhaus Süderelbe",
         "fourth": "Kulturpixel e.V."
       }
     },
@@ -164,25 +164,25 @@
           "text": "Design, Build und Absicherung aus einer Hand."
         },
         "third": {
-          "label": "03 Kontinuitaet",
-          "text": "Betreuung ueber die Laufzeit, klare Updates, messbare Wirkung."
+          "label": "03 Kontinuität",
+          "text": "Betreuung über die Laufzeit, klare Updates, messbare Wirkung."
         }
       }
     },
     "services": {
       "eyebrow": "Unsere Services",
       "title": "Finde den Service, der zu deinem Kontext passt.",
-      "description": "Platzhalter: Ein Satz, der den Wechsel zur passenden Landingpage erklaert.",
+      "description": "Platzhalter: Ein Satz, der den Wechsel zur passenden Landingpage erklärt.",
       "items": {
         "educationResearch": {
-          "eyebrow": "Foerderprojekte",
-          "title": "Websites fuer Bildungs- und Forschungsprojekte",
-          "description": "Fixpreis, rechtliche Sicherheit und Betreuung ueber die Laufzeit.",
+          "eyebrow": "Förderprojekte",
+          "title": "Websites für Bildungs- und Forschungsprojekte",
+          "description": "Fixpreis, rechtliche Sicherheit und Betreuung über die Laufzeit.",
           "cta": "Service ansehen"
         },
         "agencyPartner": {
           "eyebrow": "Agency Partner",
-          "title": "Produktionspartner fuer Agenturen",
+          "title": "Produktionspartner für Agenturen",
           "description": "White-Label Build, Design-Support oder technische Umsetzung.",
           "cta": "Service ansehen"
         },
@@ -196,13 +196,13 @@
     },
     "meta": {
       "title": "Bombig Digitalagentur",
-      "description": "Bombig ist eine Digitalagentur, die Verantwortung fuer Websites und digitale Projekte uebernimmt."
+      "description": "Bombig ist eine Digitalagentur, die Verantwortung für Websites und digitale Projekte übernimmt."
     }
   },
   "servicesIndex": {
     "hero": {
       "eyebrow": "Services",
-      "title": "Die passende Conversion-Seite fuer deinen Kontext.",
+      "title": "Die passende Conversion-Seite für deinen Kontext.",
       "description": "Platzhalter: Kurze Einordnung, wie sich die Services unterscheiden."
     },
     "panel": {
@@ -222,14 +222,14 @@
     },
     "directory": {
       "eyebrow": "Service-Auswahl",
-      "title": "Waehle die passende Ausgangslage.",
-      "description": "Platzhalter: Ein Satz, der auf die individuelle Landingpage verweist."
+      "title": "Wähle die passende Ausgangslage.",
+      "description": "Platzhalter: Ein Satz, der auf die individülle Landingpage verweist."
     },
     "cards": {
       "educationResearch": {
-        "eyebrow": "Foerderprojekte",
+        "eyebrow": "Förderprojekte",
         "title": "Bildung & Forschung",
-        "description": "Websites fuer gefoerderte Projekte mit Fixpreis und rechtlicher Sicherheit.",
+        "description": "Websites für geförderte Projekte mit Fixpreis und rechtlicher Sicherheit.",
         "tagFirst": "Fixpreis",
         "tagSecond": "Laufzeitbetreuung",
         "cta": "Zur Landingpage"
@@ -237,7 +237,7 @@
       "agencyPartner": {
         "eyebrow": "Agency Partner",
         "title": "Agentur-zu-Agentur",
-        "description": "Wir staerken eure Delivery mit Design, Build oder kompletter Umsetzung.",
+        "description": "Wir stärken eure Delivery mit Design, Build oder kompletter Umsetzung.",
         "tagFirst": "White Label",
         "tagSecond": "Senior Team",
         "cta": "Zur Landingpage"
@@ -245,24 +245,24 @@
       "smbFlatFee": {
         "eyebrow": "KMU Flat Fee",
         "title": "Monatliche Webbetreuung",
-        "description": "Fixpreis pro Monat fuer Pflege, Weiterentwicklung und SEO.",
+        "description": "Fixpreis pro Monat für Pflege, Weiterentwicklung und SEO.",
         "tagFirst": "Fixpreis",
         "tagSecond": "Fortlaufend",
         "cta": "Zur Landingpage"
       }
     },
     "howToChoose": {
-      "eyebrow": "So waehlst du",
+      "eyebrow": "So wählst du",
       "title": "Der Kontext entscheidet die Landingpage.",
       "description": "Platzhalter: Woran sich Teams orientieren sollten.",
       "points": {
         "first": {
-          "label": "Foerderkontext",
-          "text": "Zeitdruck, Pflichten und Fixbudget sprechen fuer die Foerderprojekt-Seite."
+          "label": "Förderkontext",
+          "text": "Zeitdruck, Pflichten und Fixbudget sprechen für die Förderprojekt-Seite."
         },
         "second": {
           "label": "Agentur-Setup",
-          "text": "Wenn ihr Delivery staerken wollt, passt der Partner-Service."
+          "text": "Wenn ihr Delivery stärken wollt, passt der Partner-Service."
         },
         "third": {
           "label": "KMU Betreuung",
@@ -272,27 +272,27 @@
     },
     "meta": {
       "title": "Services",
-      "description": "Finde die passende Landingpage fuer deinen Kontext bei Bombig."
+      "description": "Finde die passende Landingpage für deinen Kontext bei Bombig."
     }
   },
   "servicePages": {
     "educationResearch": {
       "meta": {
-        "title": "Websites & Plattformen fuer gefoerderte Bildungs- und Forschungsprojekte",
-        "description": "Projekt-Websites mit Fixpreis, rechtlicher Sicherheit und Betreuung ueber die Laufzeit."
+        "title": "Websites & Plattformen für geförderte Bildungs- und Forschungsprojekte",
+        "description": "Projekt-Websites mit Fixpreis, rechtlicher Sicherheit und Betreuung über die Laufzeit."
       },
       "hero": {
-        "eyebrow": "Service fuer Foerderprojekte",
-        "title": "Websites & Plattformen fuer gefoerderte Bildungs- und Forschungsprojekte.",
-        "description": "Projektleitungen stehen unter Zeitdruck, mit fixem Budget und zahlreichen Pflichten. Wir liefern eine Projekt-Website mit individuellem Design, rechtlicher Sicherheit und Betreuung ueber die gesamte Laufzeit.",
-        "subline": "Der Fixpreis liegt bei 8.500 EUR inkl. USt., den ersten Entwurf erhaeltst du nach nur 4 Wochen.",
+        "eyebrow": "Service für Förderprojekte",
+        "title": "Websites & Plattformen für geförderte Bildungs- und Forschungsprojekte.",
+        "description": "Projektleitungen stehen unter Zeitdruck, mit fixem Budget und zahlreichen Pflichten. Wir liefern eine Projekt-Website mit individüllem Design, rechtlicher Sicherheit und Betreuung über die gesamte Laufzeit.",
+        "subline": "Der Fixpreis liegt bei 8.500 EUR inkl. USt., den ersten Entwurf erhältst du nach nur 4 Wochen.",
         "primaryCta": "Kennenlernen buchen",
         "secondaryCta": "Projekte ansehen",
         "priceLabel": "Fixpreis",
-        "priceValue": "8.500 EUR inkl. USt.",
+        "priceValü": "8.500 EUR inkl. USt.",
         "priceNote": "Erster Entwurf nach nur 4 Wochen.",
         "promiseLabel": "Unser Versprechen",
-        "promiseText": "Individuelles Design, rechtliche Sicherheit und Betreuung ueber die gesamte Laufzeit.",
+        "promiseText": "Individülles Design, rechtliche Sicherheit und Betreuung über die gesamte Laufzeit.",
         "images": {
           "first": "Mobile Ansicht der fAIr Research Startseite mit Logo, Slogan, Kurzbeschreibung und zwei Aktionsbuttons.",
           "second": "Mobile Ansicht der fAIr Research Startseite mit Logo, Slogan, Kurzbeschreibung und zwei Aktionsbuttons.",
@@ -301,44 +301,44 @@
         }
       },
       "logos": {
-        "label": "Diese Organisationen setzen auf unsere Loesungen",
+        "label": "Diese Organisationen setzen auf unsere Lösungen",
         "items": {
-          "first": "Universitaet Hamburg",
-          "second": "Ruhr Universitaet Bochum",
-          "third": "Universitaet Graz",
-          "fourth": "Kulturhaus Suederelbe",
+          "first": "Universität Hamburg",
+          "second": "Ruhr Universität Bochum",
+          "third": "Universität Graz",
+          "fourth": "Kulturhaus Süderelbe",
           "fifth": "Kulturpixel e.V."
         }
       },
       "problem": {
         "eyebrow": "Wer Wirkung erzielen will, darf sich nicht ausbremsen lassen.",
-        "title": "Interne Loesungen kosten deinem Projekt Zeit, Sichtbarkeit und Nerven",
-        "description": "Was in grossen Organisationen Stabilitaet schafft, ist fuer dynamische Foerderprojekte oft ein Hindernis. Starre Strukturen und Vorgaben verhindern Tempo, Flexibilitaet und Wirksamkeit.",
+        "title": "Interne Lösungen kosten deinem Projekt Zeit, Sichtbarkeit und Nerven",
+        "description": "Was in grossen Organisationen Stabilität schafft, ist für dynamische Förderprojekte oft ein Hindernis. Starre Strukturen und Vorgaben verhindern Tempo, Flexibilität und Wirksamkeit.",
         "points": {
           "first": {
-            "title": "Design ohne Raum fuer Individualitaet",
+            "title": "Design ohne Raum für Individualität",
             "text": "Starre Templates erzwingen Einheitsauftritte, dein Projekt verliert Profil und Aussenwirkung."
           },
           "second": {
-            "title": "Abstimmungen, die endlos dauern",
-            "text": "Langwierige Freigaben und Umsetzungen werfen Zeitplaene durcheinander und gefaehrden Fristen."
+            "title": "Abstimmungen, die endlos daürn",
+            "text": "Langwierige Freigaben und Umsetzungen werfen Zeitpläne durcheinander und gefährden Fristen."
           },
           "third": {
-            "title": "Ueberforderung im Projektteam",
-            "text": "Ohne Erfahrung muessen Teams sich selbstaendig ins CMS, die Content-Pflege und rechtliche Vorgaben einarbeiten."
+            "title": "Überforderung im Projektteam",
+            "text": "Ohne Erfahrung müssen Teams sich selbständig ins CMS, die Content-Pflege und rechtliche Vorgaben einarbeiten."
           },
           "fourth": {
             "title": "Support ohne echtes Engagement",
-            "text": "Es gibt Anlaufstellen, doch niemand uebernimmt Verantwortung, besonders nach Projektende."
+            "text": "Es gibt Anlaufstellen, doch niemand übernimmt Verantwortung, besonders nach Projektende."
           }
         }
       },
       "offer": {
-        "eyebrow": "Die Komplettloesung fuer deine Projekt-Website",
-        "title": "Individuelle Projekt-Website mit Fixpreis und Betreuung ueber die gesamte Laufzeit",
-        "description": "In nur 4 Wochen erhaelst du den ersten Entwurf in deinem Projektdesign. Der Fixpreis gibt dir volle Kostenkontrolle unabhaengig von deiner Projektlaufzeit. Technik, Support und rechtliche Anforderungen sind abgedeckt. So wird deine Website zur verlaesslichen Basis fuer Oeffentlichkeitsarbeit und Projekterfolg.",
+        "eyebrow": "Die Komplettlösung für deine Projekt-Website",
+        "title": "Individülle Projekt-Website mit Fixpreis und Betreuung über die gesamte Laufzeit",
+        "description": "In nur 4 Wochen erhälst du den ersten Entwurf in deinem Projektdesign. Der Fixpreis gibt dir volle Kostenkontrolle unabhängig von deiner Projektlaufzeit. Technik, Support und rechtliche Anforderungen sind abgedeckt. So wird deine Website zur verlässlichen Basis für Öffentlichkeitsarbeit und Projekterfolg.",
         "priceLabel": "Festpreis",
-        "priceValue": "8.500 EUR inkl. USt.",
+        "priceValü": "8.500 EUR inkl. USt.",
         "cta": "Kennenlernen buchen",
         "images": {
           "first": "Mobile Ansicht der fAIr Research Startseite mit Logo, Slogan, Kurzbeschreibung und zwei Aktionsbuttons.",
@@ -347,13 +347,13 @@
         "items": {
           "first": {
             "label": "Design",
-            "title": "Individuelles Projektdesign",
-            "text": "Eigene Farbwelt, Schriften und Gestaltungselemente fuer dein Projekt."
+            "title": "Individülles Projektdesign",
+            "text": "Eigene Farbwelt, Schriften und Gestaltungselemente für dein Projekt."
           },
           "second": {
             "label": "Logo",
             "title": "Logoschriftzug inklusive",
-            "text": "Du erhaeltst ein projektspezifisches Logo bestehend aus Schriftzug und Icon."
+            "text": "Du erhältst ein projektspezifisches Logo bestehend aus Schriftzug und Icon."
           },
           "third": {
             "label": "Inhalte",
@@ -363,22 +363,22 @@
           "fourth": {
             "label": "Fixpreis",
             "title": "Keine wiederkehrenden Zahlungen",
-            "text": "Einmal zahlen, die volle Laufzeit betreut werden, auch wenn dein Projekt mehrere Jahre laeuft."
+            "text": "Einmal zahlen, die volle Laufzeit betreut werden, auch wenn dein Projekt mehrere Jahre läuft."
           },
           "fifth": {
             "label": "WordPress",
-            "title": "Selbstaendige Content-Pflege in WordPress",
-            "text": "Einfaches Backend ermoeglicht dir und deinem Team die eigenstaendige Pflege aller Inhalte."
+            "title": "Selbständige Content-Pflege in WordPress",
+            "text": "Einfaches Backend ermöglicht dir und deinem Team die eigenständige Pflege aller Inhalte."
           },
           "sixth": {
             "label": "Schulung",
             "title": "Schulung mit Video-Aufzeichnung",
-            "text": "Live-Einfuehrung in die Contentpflege. Die Session wird aufgezeichnet und ist jederzeit abrufbar."
+            "text": "Live-Einführung in die Contentpflege. Die Session wird aufgezeichnet und ist jederzeit abrufbar."
           },
           "seventh": {
             "label": "Recht",
             "title": "Rechtlich und technisch abgesichert",
-            "text": "DSGVO-konform, barrierefrei nach BITV, mit vollstaendigem Impressum und Datenschutzseite."
+            "text": "DSGVO-konform, barrierefrei nach BITV, mit vollständigem Impressum und Datenschutzseite."
           },
           "eighth": {
             "label": "Support",
@@ -389,10 +389,10 @@
       },
       "archive": {
         "eyebrow": "Optional nach Projektende",
-        "title": "Projektarchiv Online: eine Website bleibt dauerhaft erreichbar",
+        "title": "Projektarchiv Online: eine Website bleibt daürhaft erreichbar",
         "description": "Nach Projektende konvertieren wir deine WordPress-Seite in eine wartungsarme HTML-Version mit Archivhinweis. Wir spielen sie auf den Server oder Webspace deiner Organisation ein und verbinden die Domain.",
         "priceLabel": "Festpreis",
-        "priceValue": "1.500 EUR inkl. USt.",
+        "priceValü": "1.500 EUR inkl. USt.",
         "cta": "Kennenlernen buchen",
         "images": {
           "first": "Archivansicht einer Projektseite mit Filter und Suche.",
@@ -400,16 +400,16 @@
         },
         "items": {
           "first": {
-            "title": "Dauerhafte Verfuegbarkeit",
+            "title": "Daürhafte Verfügbarkeit",
             "text": "Deine Ergebnisse bleiben online abrufbar, auch nach Projektende."
           },
           "second": {
             "title": "Kein Wartungsaufwand",
-            "text": "Statische HTML-Seiten benoetigen keine Updates oder Betreuung."
+            "text": "Statische HTML-Seiten benötigen keine Updates oder Betreuung."
           },
           "third": {
             "title": "Rechtlich abgesichert",
-            "text": "Archiv-Hinweis, Impressum und Datenschutz bleiben vollstaendig enthalten."
+            "text": "Archiv-Hinweis, Impressum und Datenschutz bleiben vollständig enthalten."
           },
           "fourth": {
             "title": "Einfache Integration",
@@ -419,71 +419,71 @@
       },
       "testimonials": {
         "eyebrow": "Stimmen",
-        "title": "Was Projektteams ueber uns sagen",
-        "description": "Erfahrungen aus gefoerderten Bildungs- und Forschungsprojekten.",
+        "title": "Was Projektteams über uns sagen",
+        "description": "Erfahrungen aus geförderten Bildungs- und Forschungsprojekten.",
         "items": {
           "first": {
             "name": "Nils Steffen",
-            "role": "Universitaet Hamburg",
+            "role": "Universität Hamburg",
             "org": "",
-            "quote": "Mit bombig.net haben wir einen kompetenten Partner gefunden, der es versteht, wissenschaftliche Projekte digital in Szene zu setzen. Unsere Websites coronarchiv.de, SocialMediaHistory.de und Orte-der-Unsichtbarkeit.de zeigen, wie geschichtswissenschaftliche Inhalte durch ansprechendes Design und innovative technische Loesungen neue Sichtbarkeit und Relevanz im oeffentlichen Raum erhalten. Die Zusammenarbeit mit Deniz und Jannis verbindet fachliche Praezision mit kreativer Gestaltung und traegt massgeblich dazu bei, historische Forschung attraktiv und zugaenglich fuer eine breite Oeffentlichkeit aufzubereiten.",
-            "alt": "Portraet von Nils Steffen"
+            "quote": "Mit bombig.net haben wir einen kompetenten Partner gefunden, der es versteht, wissenschaftliche Projekte digital in Szene zu setzen. Unsere Websites coronarchiv.de, SocialMediaHistory.de und Orte-der-Unsichtbarkeit.de zeigen, wie geschichtswissenschaftliche Inhalte durch ansprechendes Design und innovative technische Lösungen neü Sichtbarkeit und Relevanz im öffentlichen Raum erhalten. Die Zusammenarbeit mit Deniz und Jannis verbindet fachliche Präzision mit kreativer Gestaltung und trägt massgeblich dazu bei, historische Forschung attraktiv und zugänglich für eine breite Öffentlichkeit aufzubereiten.",
+            "alt": "Porträt von Nils Steffen"
           },
           "second": {
             "name": "Sophie Leukel",
-            "role": "DLR Projekttraeger",
+            "role": "DLR Projektträger",
             "org": "",
-            "quote": "Im Auftrag des Bundesministeriums fuer Forschung, Technologie und Raumfahrt haben wir als Projekttraeger DLR das Foerderprojekt \"Im Namen der Freiheit\" der Universitaet Hamburg im Rahmen des Wissenschaftsjahres 2024 - Freiheit betreut. Mit Theaterversammlungen, Freiheitswerkstaetten und dem digitalen Sammlungsarchiv stiftete das Projekt \"Im Namen der Freiheit\" Erfahrungen im Austausch zum Thema Freiheit mit dem Ziel den gesellschaftlichen Zusammenhalt zu staerken. Die Agentur Bombig hat die Website freiheitsarchiv.de programmiert, gestaltet und umgesetzt - das Herzstueck des Projekts. Bombig hat in der Zusammenarbeit nicht nur technisches Koennen, sondern auch eine beeindruckte Naehe zum Inhalt des Projekts gezeigt: eine robuste, skalierbare und nutzerzentrierte Website mit Archiv, die nachhaltig nutzbar ist und einen Mehrwert fuer die Wissenschaft bietet. Die Zusammenarbeit koennen wir uneingeschraenkt empfehlen.",
-            "alt": "Logo von DLR Projekttraeger"
+            "quote": "Im Auftrag des Bundesministeriums für Forschung, Technologie und Raumfahrt haben wir als Projektträger DLR das Förderprojekt \"Im Namen der Freiheit\" der Universität Hamburg im Rahmen des Wissenschaftsjahres 2024 - Freiheit betreut. Mit Theaterversammlungen, Freiheitswerkstätten und dem digitalen Sammlungsarchiv stiftete das Projekt \"Im Namen der Freiheit\" Erfahrungen im Austausch zum Thema Freiheit mit dem Ziel den gesellschaftlichen Zusammenhalt zu stärken. Die Agentur Bombig hat die Website freiheitsarchiv.de programmiert, gestaltet und umgesetzt - das Herzstück des Projekts. Bombig hat in der Zusammenarbeit nicht nur technisches Können, sondern auch eine beeindruckte Nähe zum Inhalt des Projekts gezeigt: eine robuste, skalierbare und nutzerzentrierte Website mit Archiv, die nachhaltig nutzbar ist und einen Mehrwert für die Wissenschaft bietet. Die Zusammenarbeit können wir uneingeschränkt empfehlen.",
+            "alt": "Logo von DLR Projektträger"
           },
           "third": {
             "name": "Prof. Dr. Christian Bunnenberg",
             "role": "Ruhr Uni Bochum",
             "org": "",
-            "quote": "Die Zusammenarbeit mit den 'Bombigs' verlief immer loesungsorientiert und konstruktiv. Unsere Ideen wurden im gemeinsamen Austausch professionell umgesetzt und die technische und gestalterische Umsetzung hat zum Erfolg des Projektes massgeblich beigetragen. Gerne wieder!",
-            "alt": "Portraet von Christian Bunnenberg"
+            "quote": "Die Zusammenarbeit mit den 'Bombigs' verlief immer lösungsorientiert und konstruktiv. Unsere Ideen wurden im gemeinsamen Austausch professionell umgesetzt und die technische und gestalterische Umsetzung hat zum Erfolg des Projektes massgeblich beigetragen. Gerne wieder!",
+            "alt": "Porträt von Christian Bunnenberg"
           },
           "fourth": {
             "name": "Marie-Denise Kalle",
-            "role": "neues handeln AG",
+            "role": "neüs handeln AG",
             "org": "",
-            "quote": "Fuer das Foerderprojekt Im Namen der Freiheit der Universitaet Hamburg im Rahmen des Wissenschaftsjahres 2024 - Freiheit haben wir als neues handeln AG im Auftrag des Bundesministeriums fuer Forschung, Technologie und Raumfahrt die kommunikative Begleitung uebernommen. Die Projekt-Website wurde von der Webagentur Bombig - bestehend aus Deniz und Jannis - umgesetzt, und wir haetten uns keine besseren Partner hierfuer wuenschen koennen. Die Zusammenarbeit war unkompliziert, kreativ und absolut zuverlaessig. Mit viel Gespuer fuer Design und Funktionalitaet haben die beiden unsere Ideen aufgenommen, weitergedacht und in eine moderne, ansprechende Website uebersetzt. Wir sagen Danke fuer den grossartigen Einsatz und empfehlen Bombig waermstens weiter.",
-            "alt": "Portraet von Marie-Denise Kalle"
+            "quote": "Für das Förderprojekt Im Namen der Freiheit der Universität Hamburg im Rahmen des Wissenschaftsjahres 2024 - Freiheit haben wir als neüs handeln AG im Auftrag des Bundesministeriums für Forschung, Technologie und Raumfahrt die kommunikative Begleitung übernommen. Die Projekt-Website wurde von der Webagentur Bombig - bestehend aus Deniz und Jannis - umgesetzt, und wir hätten uns keine besseren Partner hierfür wünschen können. Die Zusammenarbeit war unkompliziert, kreativ und absolut zuverlässig. Mit viel Gespür für Design und Funktionalität haben die beiden unsere Ideen aufgenommen, weitergedacht und in eine moderne, ansprechende Website übersetzt. Wir sagen Danke für den grossartigen Einsatz und empfehlen Bombig wärmstens weiter.",
+            "alt": "Porträt von Marie-Denise Kalle"
           },
           "fifth": {
             "name": "Katrin & Gunter",
-            "role": "Geschichtswerkstatt Suederelbe",
+            "role": "Geschichtswerkstatt Süderelbe",
             "org": "",
-            "quote": "Unsere Website sieht genau so aus, wie wir es uns wuenschen, laeuft zuverlaessig und ist jederzeit erreichbar. Der Support von bombig.net ist zeitnah und verlaesslich. Wir fuehlen uns bestens betreut.",
-            "alt": "Logo der Geschichtswerkstatt Suederelbe"
+            "quote": "Unsere Website sieht genau so aus, wie wir es uns wünschen, läuft zuverlässig und ist jederzeit erreichbar. Der Support von bombig.net ist zeitnah und verlässlich. Wir fühlen uns bestens betreut.",
+            "alt": "Logo der Geschichtswerkstatt Süderelbe"
           },
           "sixth": {
-            "name": "Catharina Koehnke",
-            "role": "Universitaet Hamburg",
+            "name": "Catharina Köhnke",
+            "role": "Universität Hamburg",
             "org": "",
-            "quote": "Im Projekt coronArchivare standen wir vor der Aufgabe, Jugendliche fuer politische Bildung und Geschichtswissenschaft zu begeistern. Graphik und Webpraesenz waren hier eine wichtige Basis fuer das Projekt. So waren wir sehr froh, bombig als zuverlaessigen und kompetenten Partner zu gewinnen - Deniz und Jannis haben fuer diese Herausforderung kreative Loesungen gefunden und diese zielgerichtet umgesetzt. Die Zusammenarbeit mit bombig war dabei immer sehr angenehm und absolut reibungslos.",
-            "alt": "Portraet von Catharina Koehnke"
+            "quote": "Im Projekt coronArchivare standen wir vor der Aufgabe, Jugendliche für politische Bildung und Geschichtswissenschaft zu begeistern. Graphik und Webpräsenz waren hier eine wichtige Basis für das Projekt. So waren wir sehr froh, bombig als zuverlässigen und kompetenten Partner zu gewinnen - Deniz und Jannis haben für diese Herausforderung kreative Lösungen gefunden und diese zielgerichtet umgesetzt. Die Zusammenarbeit mit bombig war dabei immer sehr angenehm und absolut reibungslos.",
+            "alt": "Porträt von Catharina Köhnke"
           },
           "seventh": {
             "name": "Dr. Janina Kriszio",
-            "role": "Universitaet Hamburg",
+            "role": "Universität Hamburg",
             "org": "",
-            "quote": "Im Namen der Freiheit war ein vielschichtiges Projekt mit sehr vielen Beteiligten. Die Website war sowohl nach aussen als auch nach innen ein wichtiges, die Prozesse strukturierendes Tool. Jannis und Deniz/bombig.net haben es verstanden, gleichermassen prozesssensibel und zielorientiert die Website zu realisieren, so dass sie zum Impulsgeber fuer das gesamte Projekt wurde.",
-            "alt": "Portraet von Dr. Janina Kriszio"
+            "quote": "Im Namen der Freiheit war ein vielschichtiges Projekt mit sehr vielen Beteiligten. Die Website war sowohl nach aussen als auch nach innen ein wichtiges, die Prozesse strukturierendes Tool. Jannis und Deniz/bombig.net haben es verstanden, gleichermassen prozesssensibel und zielorientiert die Website zu realisieren, so dass sie zum Impulsgeber für das gesamte Projekt wurde.",
+            "alt": "Porträt von Dr. Janina Kriszio"
           },
           "eighth": {
             "name": "Hannah Rentschler",
             "role": "AKHFG e.V.",
             "org": "",
-            "quote": "Die Zusammenarbeit mit Bombig ist fuer uns als Verein ideal. Jannis und Deniz haben sowohl unser Corporate Design inkl. neuem Logo entwickelt, Werbemedien gestaltet als auch unsere Website nach unseren Wuenschen neu konzipiert. Der technische Support laeuft seit Jahren aeusserst zuverlaessig und auch bei schnell zu loesenden Fragen sind sie immer ansprechbar. Das Preis-Leistungsverhaeltnis ist sehr fair und dazu ist der Umgang mit den beiden immer sehr nett und unkompliziert. Wir fuehlen uns rundum bestens betreut und empfehlen Bombig uneingeschraenkt waermstens weiter!",
-            "alt": "Portraet von Hannah Rentschler"
+            "quote": "Die Zusammenarbeit mit Bombig ist für uns als Verein ideal. Jannis und Deniz haben sowohl unser Corporate Design inkl. neüm Logo entwickelt, Werbemedien gestaltet als auch unsere Website nach unseren Wünschen neu konzipiert. Der technische Support läuft seit Jahren äusserst zuverlässig und auch bei schnell zu lösenden Fragen sind sie immer ansprechbar. Das Preis-Leistungsverhältnis ist sehr fair und dazu ist der Umgang mit den beiden immer sehr nett und unkompliziert. Wir fühlen uns rundum bestens betreut und empfehlen Bombig uneingeschränkt wärmstens weiter!",
+            "alt": "Porträt von Hannah Rentschler"
           },
           "ninth": {
             "name": "Jan Krawczyk",
             "role": "Kulturpixel e.V.",
             "org": "",
-            "quote": "Wir haben mit Jannis und Deniz u.a. im Projekt Street I Art I Democracy zusammengearbeitet. Im Austausch ueber Funktionalitaet und vor allem auch Grafik der Website bzw. CD - das fuer dieses Projekt besonders wichtig war - kamen wir in einem gemeinsamen Brainstorming schnell auf gute und vor allem auch realistisch umsetzbare Ideen. Das Ergebnis spricht absolut fuer sich! Wir haben nun nicht nur eine Plattform, die fuer uns zentrale Anwendungsbereiche wie ein Crowdsourcing-Archiv, eine Bereich fuer Bildungsmaterialien und einen Blog alle unsere Bedarfe super zusammenfuehrt, ebenso passt die Designsprache perfekt zum Projekt und der Zielgruppe. Auch nach Ende des Projektes werden wir weiterhin auf die gelungene Website angesprochen. Danke an Jannis und Deniz fuer die gute Zusammenarbeit!",
-            "alt": "Portraet von Jan Krawczyk"
+            "quote": "Wir haben mit Jannis und Deniz u.a. im Projekt Street I Art I Democracy zusammengearbeitet. Im Austausch über Funktionalität und vor allem auch Grafik der Website bzw. CD - das für dieses Projekt besonders wichtig war - kamen wir in einem gemeinsamen Brainstorming schnell auf gute und vor allem auch realistisch umsetzbare Ideen. Das Ergebnis spricht absolut für sich! Wir haben nun nicht nur eine Plattform, die für uns zentrale Anwendungsbereiche wie ein Crowdsourcing-Archiv, eine Bereich für Bildungsmaterialien und einen Blog alle unsere Bedarfe super zusammenführt, ebenso passt die Designsprache perfekt zum Projekt und der Zielgruppe. Auch nach Ende des Projektes werden wir weiterhin auf die gelungene Website angesprochen. Danke an Jannis und Deniz für die gute Zusammenarbeit!",
+            "alt": "Porträt von Jan Krawczyk"
           }
         }
       },
@@ -496,7 +496,7 @@
           "first": {
             "label": "Kartenmodul",
             "title": "Kartenmodul",
-            "text": "Interaktive Karte mit Geopins fuer Orte, Beitraege oder Veranstaltungen. Ideal fuer regionale Vorhaben oder Citizen-Science-Projekte.",
+            "text": "Interaktive Karte mit Geopins für Orte, Beiträge oder Veranstaltungen. Ideal für regionale Vorhaben oder Citizen-Science-Projekte.",
             "price": "Festpreis: 3.500 EUR inkl. USt.",
             "images": {
               "first": "Mobile Ansicht der Kartenansicht mit Geopins.",
@@ -506,7 +506,7 @@
           "second": {
             "label": "Archivmodul",
             "title": "Archivmodul",
-            "text": "Wir bauen ein durchsuchbares Online-Archiv mit Navigation, Schlagworten und Filterfunktionen, ideal fuer Projekte mit Dokumenten, Bildern oder Videos.",
+            "text": "Wir bauen ein durchsuchbares Online-Archiv mit Navigation, Schlagworten und Filterfunktionen, ideal für Projekte mit Dokumenten, Bildern oder Videos.",
             "price": "Festpreis: 6.500 EUR inkl. USt.",
             "images": {
               "first": "Mobile Ansicht des Archivmoduls mit Gridansicht.",
@@ -516,7 +516,7 @@
           "third": {
             "label": "Podcastmodul",
             "title": "Podcastmodul",
-            "text": "Wir integrieren euren Podcast direkt auf der Projektseite, bereiten Cover und Beschreibung vor, kuemmern uns um Einbindung auf Spotify, Apple & Co. Ihr liefert nur die Audiodateien.",
+            "text": "Wir integrieren euren Podcast direkt auf der Projektseite, bereiten Cover und Beschreibung vor, kümmern uns um Einbindung auf Spotify, Apple & Co. Ihr liefert nur die Audiodateien.",
             "price": "Festpreis: 3.500 EUR inkl. USt.",
             "images": {
               "first": "Mobile Ansicht des Podcastmoduls mit Player.",
@@ -528,33 +528,33 @@
       "projects": {
         "eyebrow": "Projekte",
         "title": "Erfahrung aus vielen Projekten",
-        "description": "In den letzten sieben Jahren haben wir mehr als ein Dutzend Projekt-Websites mit Universitaeten, Vereinen und Foerderprogrammen umgesetzt. Diese Erfahrungen bilden die Grundlage fuer unser heutiges Angebot.",
+        "description": "In den letzten sieben Jahren haben wir mehr als ein Dutzend Projekt-Websites mit Universitäten, Vereinen und Förderprogrammen umgesetzt. Diese Erfahrungen bilden die Grundlage für unser heutiges Angebot.",
         "items": {
           "first": {
             "type": "Projektwebseite + Archiv",
             "title": "Im Namen der Freiheit",
-            "description": "Prof. Dr. Thorsten Logge mit den Kuenstlern Thorleifur Orn Arnarsson und Uwe Goessel - gefoerdert durch das BMBF im Wissenschaftsjahr 2024 \"Freiheit\"",
+            "description": "Prof. Dr. Thorsten Logge mit den Künstlern Thorleifur Orn Arnarsson und Uwe Gössel - gefördert durch das BMBF im Wissenschaftsjahr 2024 \"Freiheit\"",
             "alt": "Projektmotiv Im Namen der Freiheit",
             "logos": {
               "first": "BMBF",
-              "second": "DLR Projekttraeger"
+              "second": "DLR Projektträger"
             }
           },
           "second": {
             "type": "Projektwebseite + Archiv + Karte",
             "title": "Coronarchiv",
-            "description": "Ein Gemeinschaftsprojekt der Universitaeten Hamburg, Bochum und Giessen",
+            "description": "Ein Gemeinschaftsprojekt der Universitäten Hamburg, Bochum und Giessen",
             "alt": "Projektmotiv Coronarchiv",
             "logos": {
-              "first": "Ruhr Universitaet Bochum",
+              "first": "Ruhr Universität Bochum",
               "second": "BMBF",
-              "third": "Universitaet Giessen"
+              "third": "Universität Giessen"
             }
           },
           "third": {
             "type": "Projektwebseite + Karte",
             "title": "Orte der Unsichtbarkeit",
-            "description": "Universitaet Hamburg & Landeszentrale fuer politische Bildung Hamburg - gefoerdert im Bundesprogramm \"Jugend erinnert\", Foerderlinie SED-Unrecht",
+            "description": "Universität Hamburg & Landeszentrale für politische Bildung Hamburg - gefördert im Bundesprogramm \"Jugend erinnert\", Förderlinie SED-Unrecht",
             "alt": "Projektmotiv Orte der Unsichtbarkeit",
             "logos": {
               "first": "Jugend erinnert",
@@ -565,19 +565,19 @@
           "fourth": {
             "type": "Projektwebseite",
             "title": "Social Media History",
-            "description": "Universitaet Hamburg & Ruhr-Universitaet Bochum in Kooperation mit Kulturpixel e.V. - gefoerdert durch das BMBF im Programm \"Buergerforschung\"",
+            "description": "Universität Hamburg & Ruhr-Universität Bochum in Kooperation mit Kulturpixel e.V. - gefördert durch das BMBF im Programm \"Bürgerforschung\"",
             "alt": "Projektmotiv Social Media History",
             "logos": {
               "first": "BMBF",
-              "second": "Ruhr Universitaet Bochum",
+              "second": "Ruhr Universität Bochum",
               "third": "Kulturpixel e.V."
             }
           },
           "fifth": {
             "type": "Projektwebseite",
-            "title": "Uebergriff",
-            "description": "Kulturpixel e. V. - gefoerdert von der Niedersaechsischen Landeszentrale fuer politische Bildung, Foerderlinie \"Politische Medienkompetenz\"",
-            "alt": "Projektmotiv Uebergriff",
+            "title": "Übergriff",
+            "description": "Kulturpixel e. V. - gefördert von der Niedersächsischen Landeszentrale für politische Bildung, Förderlinie \"Politische Medienkompetenz\"",
+            "alt": "Projektmotiv Übergriff",
             "logos": {
               "first": "Kulturpixel e.V.",
               "second": "Landeszentrale Niedersachsen"
@@ -586,7 +586,7 @@
           "sixth": {
             "type": "Projektwebseite + Archiv + Karte",
             "title": "Streetart Explorers",
-            "description": "Universitaet Hamburg & Kulturpixel e. V. - gefoerdert durch die Landeszentralen fuer politische Bildung Niedersachsen und Hamburg",
+            "description": "Universität Hamburg & Kulturpixel e. V. - gefördert durch die Landeszentralen für politische Bildung Niedersachsen und Hamburg",
             "alt": "Projektmotiv Streetart Explorers",
             "logos": {
               "first": "Kulturpixel e.V.",
@@ -597,28 +597,28 @@
           "seventh": {
             "type": "Projektwebseite + Podcast",
             "title": "NS-Medizinverbrechen",
-            "description": "Ein Projekt des Lehrstuhls fuer Neueste Geschichte und Zeitgeschichte sowie des Lehrstuhls fuer Geschichte der Medizin der FAU Erlangen-Nuernberg",
+            "description": "Ein Projekt des Lehrstuhls für Neüste Geschichte und Zeitgeschichte sowie des Lehrstuhls für Geschichte der Medizin der FAU Erlangen-Nürnberg",
             "alt": "Projektmotiv NS-Medizinverbrechen",
             "logos": {
-              "first": "FAU Erlangen-Nuernberg"
+              "first": "FAU Erlangen-Nürnberg"
             }
           },
           "eighth": {
             "type": "Projektwebseite",
             "title": "Coronarchivare",
-            "description": "Universitaet Hamburg, gefoerdert von der Bundeszentrale fuer politische Bildung",
+            "description": "Universität Hamburg, gefördert von der Bundeszentrale für politische Bildung",
             "alt": "Projektmotiv Coronarchivare",
             "logos": {
               "first": "BMBF",
-              "second": "Ruhr Universitaet Bochum",
-              "third": "Universitaet Giessen",
-              "fourth": "Bundeszentrale fuer politische Bildung"
+              "second": "Ruhr Universität Bochum",
+              "third": "Universität Giessen",
+              "fourth": "Bundeszentrale für politische Bildung"
             }
           },
           "ninth": {
             "type": "Projektwebseite",
             "title": "Wieder Vereint Hamburg",
-            "description": "anders & wissen. das projektlabor - Gefoerdert durch Landeszentrale fuer politische Bildung Hamburg, Bundesstiftung Aufarbeitung",
+            "description": "anders & wissen. das projektlabor - Gefördert durch Landeszentrale für politische Bildung Hamburg, Bundesstiftung Aufarbeitung",
             "alt": "Projektmotiv Wieder Vereint Hamburg",
             "logos": {
               "first": "anders & wissen. das projektlabor",
@@ -628,65 +628,65 @@
           "tenth": {
             "type": "Projektwebseite",
             "title": "Stadtrandgeschichten",
-            "description": "Kulturhaus Suederelbe e. V., Universitaet Hamburg, Geschichtswerkstatt Suederelbe., gefoerdert vom BMBF im Wettbewerb \"Auf die Plaetze!\"",
+            "description": "Kulturhaus Süderelbe e. V., Universität Hamburg, Geschichtswerkstatt Süderelbe., gefördert vom BMBF im Wettbewerb \"Auf die Plätze!\"",
             "alt": "Projektmotiv Stadtrandgeschichten",
             "logos": {
-              "first": "Kulturhaus Suederelbe",
+              "first": "Kulturhaus Süderelbe",
               "second": "BMBF",
-              "third": "Geschichtswerkstatt Suederelbe"
+              "third": "Geschichtswerkstatt Süderelbe"
             }
           }
         }
       },
       "finalCta": {
-        "eyebrow": "Noch Fragen oder eine individuelle Anfrage?",
-        "title": "Buche ein 30-minuetiges Kennenlerngespraech",
-        "description": "In 30 Minuten erlaeutern wir, wie unsere Projekt-Websites aufgebaut sind, ob dein Vorhaben zu unseren Modulen passt und welche naechsten Schritte sinnvoll sind. Wir geben pragmatische Einschaetzungen zu Zeitplan und Umfang und beantworten Fragen zu bestehenden Seiten oder Ideen. Kostenlos und unverbindlich, auch ohne aktuelles Projekt.",
+        "eyebrow": "Noch Fragen oder eine individülle Anfrage?",
+        "title": "Buche ein 30-minütiges Kennenlerngespräch",
+        "description": "In 30 Minuten erläutern wir, wie unsere Projekt-Websites aufgebaut sind, ob dein Vorhaben zu unseren Modulen passt und welche nächsten Schritte sinnvoll sind. Wir geben pragmatische Einschätzungen zu Zeitplan und Umfang und beantworten Fragen zu bestehenden Seiten oder Ideen. Kostenlos und unverbindlich, auch ohne aktülles Projekt.",
         "cta": "Kennenlernen buchen"
       }
     },
     "agencyPartner": {
       "meta": {
-        "title": "Agency Partner fuer Design und Build",
+        "title": "Agency Partner für Design und Build",
         "description": "Wir erweitern Agenturen als White-Label Partner oder Co-Lead."
       },
       "hero": {
         "eyebrow": "Agency Partner",
-        "title": "Wir staerken Agenturen, wenn Delivery sitzen muss.",
+        "title": "Wir stärken Agenturen, wenn Delivery sitzen muss.",
         "description": "Platzhalter: Zielgruppe, Zusammenarbeit und Nutzen.",
         "primaryCta": "Partner-Call buchen",
-        "secondaryCta": "Ausgewaehlte Projekte",
+        "secondaryCta": "Ausgewählte Projekte",
         "panelLabel": "Zusammenarbeit",
-        "panelTitle": "Flexibel, verlaesslich, unsichtbar wenn noetig.",
+        "panelTitle": "Flexibel, verlässlich, unsichtbar wenn nötig.",
         "panelPoints": {
           "first": { "label": "White Label", "text": "Wir bleiben im Hintergrund und liefern unter eurem Namen." },
-          "second": { "label": "Co-Lead", "text": "Wir teilen Verantwortung fuer Design und Build." },
+          "second": { "label": "Co-Lead", "text": "Wir teilen Verantwortung für Design und Build." },
           "third": { "label": "Pitch Support", "text": "Wir helfen euch, Pitches zu gewinnen." }
         }
       },
       "modes": {
         "eyebrow": "Engagements",
-        "title": "Drei Modi, die ihr skalieren koennt.",
+        "title": "Drei Modi, die ihr skalieren könnt.",
         "description": "Platzhalter: Wie die Zusammenarbeit organisiert wird.",
         "items": {
-          "first": { "label": "Modus 01", "title": "White-Label Build", "text": "Wir uebernehmen Umsetzung und Lieferung im Hintergrund." },
-          "second": { "label": "Modus 02", "title": "Design + Build", "text": "Wir ergaenzen euer Team mit Senior-Design und Engineering." },
-          "third": { "label": "Modus 03", "title": "Delivery Sprint", "text": "Kurzer Sprint fuer anspruchsvolle Projektphasen." }
+          "first": { "label": "Modus 01", "title": "White-Label Build", "text": "Wir übernehmen Umsetzung und Lieferung im Hintergrund." },
+          "second": { "label": "Modus 02", "title": "Design + Build", "text": "Wir ergänzen eür Team mit Senior-Design und Engineering." },
+          "third": { "label": "Modus 03", "title": "Delivery Sprint", "text": "Kurzer Sprint für anspruchsvolle Projektphasen." }
         }
       },
       "why": {
         "eyebrow": "Warum wir",
-        "title": "Zuverlaessige Delivery fuer eure Kunden.",
+        "title": "Zuverlässige Delivery für eure Kunden.",
         "description": "Platzhalter: Differenzierung als Partner.",
         "points": {
           "first": { "label": "Senior", "text": "Direkter Zugriff auf ein kleines, erfahrenes Team." },
           "second": { "label": "Timing", "text": "Transparente Meilensteine und realistische Timelines." },
-          "third": { "label": "Qualitaet", "text": "Saubere Builds, Designsysteme und handsaubere Handoffs." }
+          "third": { "label": "Qualität", "text": "Saubere Builds, Designsysteme und handsaubere Handoffs." }
         }
       },
       "proof": {
         "eyebrow": "Proof",
-        "title": "Vertrauen aus Agenturprojekten.",
+        "title": "Vertraün aus Agenturprojekten.",
         "description": "Platzhalter: Beispielhafte Zusammenarbeit.",
         "quote": "Platzhalter-Zitat einer Partneragentur.",
         "attribution": "Managing Director / Partneragentur",
@@ -700,35 +700,35 @@
       },
       "process": {
         "eyebrow": "Ablauf",
-        "title": "Klarer Rahmen, schnelle Uebergabe.",
+        "title": "Klarer Rahmen, schnelle Übergabe.",
         "description": "Platzhalter: Wie ihr zusammenarbeitet.",
         "steps": {
-          "first": { "label": "01 Briefing", "text": "Kontext, Scope und Rollen klaeren." },
+          "first": { "label": "01 Briefing", "text": "Kontext, Scope und Rollen klären." },
           "second": { "label": "02 Delivery", "text": "Wir liefern Design und Build in Sprints." },
-          "third": { "label": "03 Handoff", "text": "Saubere Uebergabe mit Assets und Doku." }
+          "third": { "label": "03 Handoff", "text": "Saubere Übergabe mit Assets und Doku." }
         }
       },
       "faq": {
         "eyebrow": "FAQ",
-        "title": "Haeufige Fragen.",
+        "title": "Häufige Fragen.",
         "description": "Platzhalter: Drei Fragen von Agenturen.",
         "items": {
-          "first": { "question": "Wie funktioniert White Label konkret?", "answer": "Platzhalter: Kommunikation und NDA." },
-          "second": { "question": "Uebernehmt ihr Kundenkontakt?", "answer": "Platzhalter: Optionen und Grenzen." },
-          "third": { "question": "Wie kalkuliert ihr?", "answer": "Platzhalter: Tagessaetze oder Paketpreise." }
+          "first": { "qüstion": "Wie funktioniert White Label konkret?", "answer": "Platzhalter: Kommunikation und NDA." },
+          "second": { "qüstion": "Übernehmt ihr Kundenkontakt?", "answer": "Platzhalter: Optionen und Grenzen." },
+          "third": { "qüstion": "Wie kalkuliert ihr?", "answer": "Platzhalter: Tagessätze oder Paketpreise." }
         }
       },
       "finalCta": {
-        "eyebrow": "Naechster Schritt",
+        "eyebrow": "Nächster Schritt",
         "title": "Partner-Call buchen.",
-        "description": "Platzhalter: Wir klaeren Scope und Rollen in 30 Minuten.",
+        "description": "Platzhalter: Wir klären Scope und Rollen in 30 Minuten.",
         "cta": "Partner-Call buchen"
       }
     },
     "smbFlatFee": {
       "meta": {
         "title": "Webbetreuung als monatlicher Fixpreis",
-        "description": "Fortlaufende Betreuung fuer KMU mit fixem Monatsbudget."
+        "description": "Fortlaufende Betreuung für KMU mit fixem Monatsbudget."
       },
       "hero": {
         "eyebrow": "KMU Flat Fee",
@@ -737,28 +737,28 @@
         "primaryCta": "Fixpreis anfragen",
         "secondaryCta": "Beispiele ansehen",
         "priceLabel": "Monatlicher Fixpreis",
-        "priceValue": "ab 1.900 EUR / Monat",
-        "priceNote": "Platzhalter: Umfang, Laufzeit und Mindestdauer.",
+        "priceValü": "ab 1.900 EUR / Monat",
+        "priceNote": "Platzhalter: Umfang, Laufzeit und Mindestdaür.",
         "promiseLabel": "Unser Versprechen",
-        "promiseText": "Regelmaessige Updates, klare Priorisierung und messbarer Impact."
+        "promiseText": "Regelmässige Updates, klare Priorisierung und messbarer Impact."
       },
       "included": {
         "eyebrow": "Enthalten",
         "title": "Was der Fixpreis abdeckt.",
-        "description": "Platzhalter: Was Teams jeden Monat erwarten koennen.",
+        "description": "Platzhalter: Was Teams jeden Monat erwarten können.",
         "items": {
           "first": { "label": "Basis", "title": "Pflege & Updates", "text": "Content, technische Wartung und kleine Verbesserungen." },
-          "second": { "label": "Wirkung", "title": "Conversion & SEO", "text": "Optimierungen fuer Sichtbarkeit und Anfragen." },
+          "second": { "label": "Wirkung", "title": "Conversion & SEO", "text": "Optimierungen für Sichtbarkeit und Anfragen." },
           "third": { "label": "Reporting", "title": "Transparente Priorisierung", "text": "Monatliche Auswertung und klare To-dos." }
         }
       },
       "boundaries": {
         "eyebrow": "Abgrenzung",
         "title": "Was nicht im Fixpreis steckt.",
-        "description": "Platzhalter: Grenzen schaffen Vertrauen.",
+        "description": "Platzhalter: Grenzen schaffen Vertraün.",
         "points": {
           "first": { "label": "Grossprojekte", "text": "Komplette Relaunches werden separat geplant." },
-          "second": { "label": "Kampagnen", "text": "Groesse Kampagnen erhalten ein eigenes Paket." },
+          "second": { "label": "Kampagnen", "text": "Grösse Kampagnen erhalten ein eigenes Paket." },
           "third": { "label": "Tools", "text": "Externe Lizenzen sind nicht enthalten." }
         }
       },
@@ -767,7 +767,7 @@
         "title": "Langfristige Betreuung, messbare Wirkung.",
         "description": "Platzhalter: Beispielkunde und Ergebnisse.",
         "quote": "Platzhalter-Zitat eines KMU Kunden.",
-        "attribution": "Geschaeftsfuehrung / KMU",
+        "attribution": "Geschäftsführung / KMU",
         "logosLabel": "KMU Partner",
         "logos": {
           "first": "Studio Hafen",
@@ -779,7 +779,7 @@
       "process": {
         "eyebrow": "Ablauf",
         "title": "Einfacher Start, klare Routine.",
-        "description": "Platzhalter: So laeuft die Betreuung.",
+        "description": "Platzhalter: So läuft die Betreuung.",
         "steps": {
           "first": { "label": "01 Audit", "text": "Bestehende Site analysieren und priorisieren." },
           "second": { "label": "02 Plan", "text": "Monatliche Roadmap und Fixpreis festlegen." },
@@ -788,26 +788,26 @@
       },
       "faq": {
         "eyebrow": "FAQ",
-        "title": "Haeufige Fragen.",
+        "title": "Häufige Fragen.",
         "description": "Platzhalter: Drei Fragen von KMU.",
         "items": {
-          "first": { "question": "Gibt es eine Mindestlaufzeit?", "answer": "Platzhalter: Laufzeit und Kuendigungsfrist." },
-          "second": { "question": "Wie viele Aufgaben pro Monat?", "answer": "Platzhalter: Priorisierung und Umfang." },
-          "third": { "question": "Koennen wir den Plan aendern?", "answer": "Platzhalter: Anpassung und Flexibilitaet." }
+          "first": { "qüstion": "Gibt es eine Mindestlaufzeit?", "answer": "Platzhalter: Laufzeit und Kündigungsfrist." },
+          "second": { "qüstion": "Wie viele Aufgaben pro Monat?", "answer": "Platzhalter: Priorisierung und Umfang." },
+          "third": { "qüstion": "Können wir den Plan ändern?", "answer": "Platzhalter: Anpassung und Flexibilität." }
         }
       },
       "finalCta": {
-        "eyebrow": "Naechster Schritt",
+        "eyebrow": "Nächster Schritt",
         "title": "Fixpreis anfragen.",
-        "description": "Platzhalter: Wir klaeren Umfang, Ziele und Starttermin.",
+        "description": "Platzhalter: Wir klären Umfang, Ziele und Starttermin.",
         "cta": "Fixpreis anfragen"
       }
     }
   },
   "about": {
     "hero": {
-      "eyebrow": "Ueber Bombig",
-      "title": "Ein Studio fuer Teams, die nicht uebersehen werden wollen.",
+      "eyebrow": "Über Bombig",
+      "title": "Ein Studio für Teams, die nicht übersehen werden wollen.",
       "description": "Wir sind ein kleines Senior-Team aus Strategie, Design und Build. Unser Fokus: ambitionierte Marken mit Klarheit, Confidence und Momentum zu launchen.",
       "primaryCta": "Mit uns arbeiten",
       "secondaryCta": "Arbeit ansehen"
@@ -815,12 +815,12 @@
     "beliefs": {
       "label": "Woran wir glauben",
       "items": {
-        "first": "Klarheit schlaegt Noise. Jede Seite sollte eine Sache richtig gut sagen.",
-        "second": "Design gewinnt Aufmerksamkeit, Performance gewinnt Vertrauen.",
-        "third": "Storytelling gehoert in jede Interaktion, nicht nur in die Copy."
+        "first": "Klarheit schlägt Noise. Jede Seite sollte eine Sache richtig gut sagen.",
+        "second": "Design gewinnt Aufmerksamkeit, Performance gewinnt Vertraün.",
+        "third": "Storytelling gehört in jede Interaktion, nicht nur in die Copy."
       }
     },
-    "values": {
+    "valüs": {
       "leadership": {
         "label": "Leadership",
         "title": "Design, Strategie und Engineering in einem Raum.",
@@ -833,8 +833,8 @@
       },
       "momentum": {
         "label": "Momentum",
-        "title": "Launches, die sich unvermeidbar anfuehlen.",
-        "description": "Wir positionieren dein Team fuer kontinuierliche Verbesserung nach dem Go-live."
+        "title": "Launches, die sich unvermeidbar anfühlen.",
+        "description": "Wir positionieren dein Team für kontinuierliche Verbesserung nach dem Go-live."
       }
     },
     "team": {
@@ -854,19 +854,19 @@
         "first": "Brand-Narrative und Messaging-Systeme",
         "second": "Conversion-getriebene Landing Pages und Marketing Sites",
         "third": "Design-Systeme mit Motion und Interaction Direction",
-        "fourth": "Nuxt + Vue Builds und Performance Tuning",
+        "fourth": "Nuxt + Vü Builds und Performance Tuning",
         "fifth": "Content-Strategie und SEO-Fundamente"
       }
     },
     "meta": {
-      "title": "Ueber Bombig",
-      "description": "Lerne das Team hinter Bombig kennen, einer Digitalagentur fuer mutige Launches."
+      "title": "Über Bombig",
+      "description": "Lerne das Team hinter Bombig kennen, einer Digitalagentur für mutige Launches."
     }
   },
   "contact": {
     "hero": {
       "eyebrow": "Kontakt",
-      "title": "Lass uns etwas bauen, das sich unvermeidbar anfuehlt.",
+      "title": "Lass uns etwas bauen, das sich unvermeidbar anfühlt.",
       "description": "Sag uns, wohin du willst, wir skizzieren den Weg. Antwort in zwei Werktagen."
     },
     "form": {
@@ -884,13 +884,13 @@
   },
     "meta": {
       "title": "Kontakt",
-      "description": "Starte ein Projekt mit Bombig. Kontaktiere uns fuer deinen naechsten Launch."
+      "description": "Starte ein Projekt mit Bombig. Kontaktiere uns für deinen nächsten Launch."
     }
   },
   "caseStudies": {
     "index": {
       "eyebrow": "Fallstudien",
-      "title": "Launches fuer Klarheit, Speed und Conversion.",
+      "title": "Launches für Klarheit, Speed und Conversion.",
       "description": "Jede Fallstudie zeigt, wie wir Storytelling, Design und Build verbinden. Der Fokus liegt auf Systemen, nicht nur Screens."
     },
     "card": {
@@ -908,18 +908,18 @@
       "fallbackYear": "2026",
       "fallbackScope": "Brand + Web + Launch",
       "servicesLabel": "Leistungen",
-      "fallbackServices": "Strategie, visuelles Design, Nuxt Build",
+      "fallbackServices": "Strategie, visülles Design, Nuxt Build",
       "outcomesLabel": "Ergebnisse",
       "outcomes": {
         "first": "+32% mehr qualifizierte Anfragen",
-        "second": "Site-Speed Score ueber 95",
-        "third": "Klare Story fuer Sales Enablement"
+        "second": "Site-Speed Score über 95",
+        "third": "Klare Story für Sales Enablement"
       },
       "cta": "Deinen Launch bauen"
     },
     "meta": {
       "title": "Fallstudien",
-      "description": "Aktuelle Launches und Transformationen von Bombig."
+      "description": "Aktüelle Launches und Transformationen von Bombig."
     }
   },
   "blog": {
@@ -946,7 +946,7 @@
   },
   "privacy": {
     "eyebrow": "Datenschutz",
-    "title": "Datenschutz mit Klarheit und Zurueckhaltung.",
+    "title": "Datenschutz mit Klarheit und Zurückhaltung.",
     "description": "Dies ist ein Platzhalter. Wir ersetzen ihn vor dem Launch mit deiner finalen Privacy Policy.",
     "sections": {
       "collect": {
@@ -959,12 +959,12 @@
       },
       "choices": {
         "title": "Deine Optionen",
-        "body": "Du kannst jederzeit Zugriff, Updates oder Loeschung deiner Daten anfragen."
+        "body": "Du kannst jederzeit Zugriff, Updates oder Löschung deiner Daten anfragen."
       }
     },
     "meta": {
       "title": "Datenschutz",
-      "description": "Platzhalter fuer die Datenschutzerklaerung von Bombig."
+      "description": "Platzhalter für die Datenschutzerklärung von Bombig."
     }
   }
 }
