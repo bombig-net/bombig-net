@@ -112,6 +112,23 @@ If you are unsure whether a solution meets the quality bar, ask.
 
 ---
 
+## Verification Required
+
+The agent must validate results with the appropriate tools before claiming completion.
+
+Rules:
+- Always run relevant checks (build, lint, typecheck, visual for UI changes).
+- Never claim success without verification.
+- If a check can’t be run, state why and how to run it.
+
+Required checks (when applicable):
+- Build: `npm run build`
+- Lint: `npm run lint`
+- Typecheck: `npm run typecheck`
+- Visual: `npm run visual:check`
+
+---
+
 ## Boundaries
 
 You must never:
