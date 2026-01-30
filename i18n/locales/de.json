@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "Startseite",
-    "about": "Ueber uns",
+    "about": "Über uns",
     "caseStudies": "Fallstudien",
     "blog": "Blog",
     "contact": "Kontakt",
@@ -42,10 +42,10 @@
   "home": {
     "hero": {
       "eyebrow": "Bombig, Digitalagentur",
-      "title": "Vertrauen vor Conversion. Wir uebernehmen Verantwortung fuer Websites und digitale Projekte.",
+      "title": "Wir tragen Verantwortung für deine Website",
       "description": "Platzhalter: Kurz erklaeren, wer ihr seid, wofuer ihr steht und warum Teams euch Verantwortung geben.",
       "primaryCta": "Services ansehen",
-      "secondaryCta": "Ueber uns",
+      "secondaryCta": "Über uns",
       "panel": {
         "label": "Verantwortung",
         "title": "Wir fuehren, bauen und betreuen.",
