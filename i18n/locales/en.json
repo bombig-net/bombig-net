@@ -242,80 +242,370 @@
   "servicePages": {
     "educationResearch": {
       "meta": {
-        "title": "Websites for funded education and research projects",
-        "description": "Fixed price and accountability for education and research project sites."
+        "title": "Websites & platforms for funded education and research projects",
+        "description": "Project websites with fixed pricing, legal safety, and lifecycle support."
       },
       "hero": {
         "eyebrow": "Service for funded projects",
         "title": "Websites & platforms for funded education and research projects.",
-        "description": "Placeholder: Briefly outline the audience and obligations.",
+        "description": "Project leads are under time pressure, with fixed budgets and extensive obligations. We deliver a project website with custom design, legal safety, and support for the entire lifecycle.",
+        "subline": "The fixed price is EUR 8,500 incl. VAT, and you receive the first draft after just 4 weeks.",
         "primaryCta": "Book a call",
         "secondaryCta": "View projects",
         "priceLabel": "Fixed price",
         "priceValue": "EUR 8,500 incl. VAT",
-        "priceNote": "Placeholder: What is included in the fixed price.",
+        "priceNote": "First draft after just 4 weeks.",
         "promiseLabel": "Our promise",
-        "promiseText": "Custom design, legal safety, and care across the lifecycle."
+        "promiseText": "Custom design, legal safety, and support across the entire lifecycle.",
+        "images": {
+          "first": "Mobile view of the fAIr Research homepage with logo, slogan, short description, and two action buttons.",
+          "second": "Mobile view of the fAIr Research homepage with logo, slogan, short description, and two action buttons.",
+          "third": "Mobile view of the fAIr Research homepage with logo, slogan, short description, and two action buttons.",
+          "fourth": "Mobile view of the fAIr Research homepage with logo, slogan, short description, and two action buttons."
+        }
+      },
+      "logos": {
+        "label": "These organizations rely on our solutions",
+        "items": {
+          "first": "University of Hamburg",
+          "second": "Ruhr University Bochum",
+          "third": "University of Graz",
+          "fourth": "Kulturhaus Suederelbe",
+          "fifth": "Kulturpixel e.V."
+        }
       },
       "problem": {
-        "eyebrow": "Why this exists",
-        "title": "Deadlines, fixed budgets, obligations.",
-        "description": "Placeholder: Why internal solutions fail here.",
+        "eyebrow": "If you want impact, you cannot be slowed down.",
+        "title": "Internal solutions cost your project time, visibility, and energy",
+        "description": "What creates stability in large organizations becomes a hurdle for dynamic funded projects. Rigid structures and requirements block speed, flexibility, and impact.",
         "points": {
-          "first": { "label": "Speed", "text": "Internal processes slow down timelines." },
-          "second": { "label": "Safety", "text": "Legal, accessibility, and compliance must be covered." },
-          "third": { "label": "Capacity", "text": "Project teams are strong, but digitally overloaded." }
+          "first": {
+            "title": "Design without room for individuality",
+            "text": "Rigid templates force uniform appearances and your project loses distinctiveness and visibility."
+          },
+          "second": {
+            "title": "Approvals that take forever",
+            "text": "Lengthy sign-offs and implementation cycles disrupt timelines and jeopardize deadlines."
+          },
+          "third": {
+            "title": "Overload in the project team",
+            "text": "Without experience, teams must teach themselves CMS workflows, content maintenance, and legal requirements."
+          },
+          "fourth": {
+            "title": "Support without real ownership",
+            "text": "There are contact points, but no one takes responsibility, especially after the project ends."
+          }
         }
       },
       "offer": {
-        "eyebrow": "What you get",
-        "title": "A project website with clear accountability.",
-        "description": "Placeholder: Deliverables and responsibilities.",
+        "eyebrow": "The complete solution for your project website",
+        "title": "Custom project website with fixed price and lifecycle support",
+        "description": "You receive the first draft in your project design within 4 weeks. The fixed price gives you full cost control regardless of your project runtime. Technology, support, and legal requirements are covered. Your website becomes a reliable foundation for public outreach and project success.",
+        "priceLabel": "Fixed price",
+        "priceValue": "EUR 8,500 incl. VAT",
+        "cta": "Book a call",
+        "images": {
+          "first": "Mobile view of the fAIr Research homepage with logo, slogan, short description, and two action buttons.",
+          "second": "Mobile view of the fAIr Research homepage with logo, slogan, short description, and two action buttons."
+        },
         "items": {
-          "first": { "label": "Design", "title": "Distinctive presence", "text": "No template, a clear identity for the project." },
-          "second": { "label": "Build", "title": "Clean delivery", "text": "CMS, performance, SEO, and accessibility included." },
-          "third": { "label": "Care", "title": "Lifecycle support", "text": "Support, updates, and legal adjustments." }
+          "first": {
+            "label": "Design",
+            "title": "Custom project design",
+            "text": "A dedicated color palette, typography, and visual elements for your project."
+          },
+          "second": {
+            "label": "Logo",
+            "title": "Logo wordmark included",
+            "text": "You receive a project-specific logo consisting of a wordmark and icon."
+          },
+          "third": {
+            "label": "Content",
+            "title": "Typical content types included",
+            "text": "Homepage, project, team, publications, events, blog, downloads, and more ready to use."
+          },
+          "fourth": {
+            "label": "Fixed price",
+            "title": "No recurring payments",
+            "text": "Pay once and receive support for the full duration, even if the project runs for years."
+          },
+          "fifth": {
+            "label": "WordPress",
+            "title": "Independent content maintenance in WordPress",
+            "text": "A simple backend lets you and your team update all content independently."
+          },
+          "sixth": {
+            "label": "Training",
+            "title": "Training with video recording",
+            "text": "Live onboarding for content editing. The session is recorded and accessible anytime."
+          },
+          "seventh": {
+            "label": "Compliance",
+            "title": "Legally and technically secured",
+            "text": "GDPR-compliant, accessible to BITV standards, with complete imprint and privacy pages."
+          },
+          "eighth": {
+            "label": "Support",
+            "title": "Hosting and support until project end",
+            "text": "Updates, backups, security, bug fixes, email support, and disaster recovery are included."
+          }
         }
       },
-      "proof": {
-        "eyebrow": "Proof",
-        "title": "Trusted in education and research.",
-        "description": "Placeholder: Why institutions trust you.",
-        "quote": "Placeholder quote from a funded project.",
-        "attribution": "Project lead / funded program",
-        "logosLabel": "Organizations",
-        "logos": {
-          "first": "University of Hamburg",
-          "second": "Ruhr University Bochum",
-          "third": "Kulturhaus Suederelbe",
-          "fourth": "Kulturpixel e.V."
-        }
-      },
-      "process": {
-        "eyebrow": "Process",
-        "title": "Four phases with clear milestones.",
-        "description": "Placeholder: Short process explanation.",
-        "steps": {
-          "first": { "label": "01 Clarity", "text": "Align goals, obligations, and content." },
-          "second": { "label": "02 Design", "text": "Custom design with structured approvals." },
-          "third": { "label": "03 Build", "text": "Technical delivery and compliance." },
-          "fourth": { "label": "04 Care", "text": "Go-live, maintenance, and improvements." }
-        }
-      },
-      "faq": {
-        "eyebrow": "FAQ",
-        "title": "Common questions.",
-        "description": "Placeholder: Three key questions.",
+      "archive": {
+        "eyebrow": "Optional after project end",
+        "title": "Project archive online: a site remains permanently accessible",
+        "description": "After the project ends, we convert your WordPress site into a low-maintenance HTML version with an archive notice. We deploy it to your organization's server or webspace and connect the domain.",
+        "priceLabel": "Fixed price",
+        "priceValue": "EUR 1,500 incl. VAT",
+        "cta": "Book a call",
+        "images": {
+          "first": "Archive view of a project site with filters and search.",
+          "second": "Archive view with list and detail layout."
+        },
         "items": {
-          "first": { "question": "How fast is the first draft?", "answer": "Placeholder: Timeline and prerequisites." },
-          "second": { "question": "How do you handle accessibility?", "answer": "Placeholder: Standards and documentation." },
-          "third": { "question": "How long do you support the project?", "answer": "Placeholder: Duration and options." }
+          "first": {
+            "title": "Permanent availability",
+            "text": "Your results remain accessible online even after the project ends."
+          },
+          "second": {
+            "title": "No maintenance effort",
+            "text": "Static HTML pages require no updates or ongoing care."
+          },
+          "third": {
+            "title": "Legally secured",
+            "text": "Archive notice, imprint, and privacy pages remain fully included."
+          },
+          "fourth": {
+            "title": "Easy integration",
+            "text": "We deploy the site to your server or webspace and connect the domain."
+          }
+        }
+      },
+      "testimonials": {
+        "eyebrow": "Voices",
+        "title": "What project teams say about us",
+        "description": "Feedback from funded education and research projects.",
+        "items": {
+          "first": {
+            "name": "Nils Steffen",
+            "role": "University of Hamburg",
+            "org": "",
+            "quote": "With bombig.net we found a competent partner who knows how to showcase scientific projects digitally. Our websites coronarchiv.de, SocialMediaHistory.de, and Orte-der-Unsichtbarkeit.de show how historical research gains visibility and relevance in public space through strong design and innovative technical solutions. Working with Deniz and Jannis combines academic precision with creative design and helps make historical research attractive and accessible to a broad audience.",
+            "alt": "Portrait of Nils Steffen"
+          },
+          "second": {
+            "name": "Sophie Leukel",
+            "role": "DLR Project Management",
+            "org": "",
+            "quote": "On behalf of the Federal Ministry of Research, Technology and Space, we at DLR Project Management supported the funded project \"Im Namen der Freiheit\" by the University of Hamburg as part of the Science Year 2024 - Freedom. With theater assemblies, freedom workshops, and the digital collection archive, the project \"Im Namen der Freiheit\" fostered exchange about freedom with the goal of strengthening social cohesion. The agency Bombig built, designed, and implemented the website freiheitsarchiv.de - the heart of the project. In the collaboration, Bombig showed not only technical skill but also impressive proximity to the content: a robust, scalable, user-centered website with an archive that is sustainably usable and offers added value for science. We recommend the collaboration without reservation.",
+            "alt": "Logo of DLR Project Management"
+          },
+          "third": {
+            "name": "Prof. Dr. Christian Bunnenberg",
+            "role": "Ruhr University Bochum",
+            "org": "",
+            "quote": "The collaboration with the 'Bombigs' was always solution-oriented and constructive. Our ideas were implemented professionally in shared exchange, and the technical and design execution contributed significantly to the project's success. Gladly again!",
+            "alt": "Portrait of Christian Bunnenberg"
+          },
+          "fourth": {
+            "name": "Marie-Denise Kalle",
+            "role": "neues handeln AG",
+            "org": "",
+            "quote": "For the funded project Im Namen der Freiheit of the University of Hamburg as part of the Science Year 2024 - Freedom, we at neues handeln AG took on the communications support on behalf of the Federal Ministry of Research, Technology and Space. The project website was delivered by the web agency Bombig - Deniz and Jannis - and we could not have wished for better partners. The collaboration was uncomplicated, creative, and absolutely reliable. With a strong sense for design and functionality, they picked up our ideas, developed them further, and translated them into a modern, compelling website. Thank you for the great effort, and we wholeheartedly recommend Bombig.",
+            "alt": "Portrait of Marie-Denise Kalle"
+          },
+          "fifth": {
+            "name": "Katrin & Gunter",
+            "role": "Geschichtswerkstatt Suederelbe",
+            "org": "",
+            "quote": "Our website looks exactly the way we want it to, runs reliably, and is always reachable. The support from bombig.net is timely and dependable. We feel very well taken care of.",
+            "alt": "Logo of Geschichtswerkstatt Suederelbe"
+          },
+          "sixth": {
+            "name": "Catharina Koehnke",
+            "role": "University of Hamburg",
+            "org": "",
+            "quote": "In the coronArchivare project, we faced the challenge of engaging young people in political education and historical research. Graphics and the website were an important foundation for the project. We were very happy to gain bombig as a reliable and competent partner - Deniz and Jannis found creative solutions and implemented them in a focused way. Working with bombig was always very pleasant and absolutely smooth.",
+            "alt": "Portrait of Catharina Koehnke"
+          },
+          "seventh": {
+            "name": "Dr. Janina Kriszio",
+            "role": "University of Hamburg",
+            "org": "",
+            "quote": "Im Namen der Freiheit was a complex project with many stakeholders. The website was an important tool both externally and internally to structure processes. Jannis and Deniz/bombig.net managed to deliver the website with equal sensitivity to process and focus on goals, so that it became a driver for the entire project.",
+            "alt": "Portrait of Dr. Janina Kriszio"
+          },
+          "eighth": {
+            "name": "Hannah Rentschler",
+            "role": "AKHFG e.V.",
+            "org": "",
+            "quote": "Working with Bombig is ideal for us as an association. Jannis and Deniz developed our corporate design including a new logo, designed marketing materials, and re-conceived our website according to our wishes. Technical support has been extremely reliable for years, and they are always reachable even for quick questions. The price-performance ratio is very fair, and dealing with the two of them is always friendly and uncomplicated. We feel completely well supported and warmly recommend Bombig without reservation!",
+            "alt": "Portrait of Hannah Rentschler"
+          },
+          "ninth": {
+            "name": "Jan Krawczyk",
+            "role": "Kulturpixel e.V.",
+            "org": "",
+            "quote": "We worked with Jannis and Deniz, among other things, on the project Street I Art I Democracy. In discussions about functionality and especially the website's design and CD - which were particularly important for this project - we quickly arrived at good and realistic ideas in a joint brainstorming. The result speaks for itself! We now have not only a platform that brings together key use cases for us such as a crowdsourcing archive, a section for educational materials, and a blog, but the design language also fits the project and target group perfectly. Even after the project ended, we continue to get positive feedback on the website. Thanks to Jannis and Deniz for the great collaboration!",
+            "alt": "Portrait of Jan Krawczyk"
+          }
+        }
+      },
+      "addons": {
+        "eyebrow": "Optional extensions",
+        "title": "Add-ons expand your project website",
+        "description": "If your project needs more functions, you can add them. Each add-on has a fixed price, is delivered within a few weeks, and integrates seamlessly into your website.",
+        "cta": "Book a call",
+        "items": {
+          "first": {
+            "label": "Map module",
+            "title": "Map module",
+            "text": "Interactive map with geo pins for places, posts, or events. Ideal for regional initiatives or citizen-science projects.",
+            "price": "Fixed price: EUR 3,500 incl. VAT",
+            "images": {
+              "first": "Mobile view of the map module with pins.",
+              "second": "Mobile view of the map module with detail view."
+            }
+          },
+          "second": {
+            "label": "Archive module",
+            "title": "Archive module",
+            "text": "We build a searchable online archive with navigation, tags, and filters, ideal for projects with documents, images, or video.",
+            "price": "Fixed price: EUR 6,500 incl. VAT",
+            "images": {
+              "first": "Mobile view of the archive module in grid view.",
+              "second": "Mobile view of the archive module with filters."
+            }
+          },
+          "third": {
+            "label": "Podcast module",
+            "title": "Podcast module",
+            "text": "We integrate your podcast directly on the project site, prepare cover art and description, and handle integration with Spotify, Apple, and more. You only provide the audio files.",
+            "price": "Fixed price: EUR 3,500 incl. VAT",
+            "images": {
+              "first": "Mobile view of the podcast module with player.",
+              "second": "Mobile view of the podcast module with episode list."
+            }
+          }
+        }
+      },
+      "projects": {
+        "eyebrow": "Projects",
+        "title": "Experience across many projects",
+        "description": "Over the last seven years we delivered more than a dozen project websites with universities, associations, and funding programs. These experiences form the foundation of our current offer.",
+        "items": {
+          "first": {
+            "type": "Project website + archive",
+            "title": "Im Namen der Freiheit",
+            "description": "Prof. Dr. Thorsten Logge with artists Thorleifur Orn Arnarsson and Uwe Goessel - funded by BMBF in the Science Year 2024 \"Freedom\"",
+            "alt": "Project visual Im Namen der Freiheit",
+            "logos": {
+              "first": "BMBF",
+              "second": "DLR Project Management"
+            }
+          },
+          "second": {
+            "type": "Project website + archive + map",
+            "title": "Coronarchiv",
+            "description": "A joint project of the universities of Hamburg, Bochum, and Giessen",
+            "alt": "Project visual Coronarchiv",
+            "logos": {
+              "first": "Ruhr University Bochum",
+              "second": "BMBF",
+              "third": "University of Giessen"
+            }
+          },
+          "third": {
+            "type": "Project website + map",
+            "title": "Orte der Unsichtbarkeit",
+            "description": "University of Hamburg & State Center for Political Education Hamburg - funded in the federal program \"Jugend erinnert\", funding line SED injustice",
+            "alt": "Project visual Orte der Unsichtbarkeit",
+            "logos": {
+              "first": "Jugend erinnert",
+              "second": "BMBF",
+              "third": "State Center Hamburg"
+            }
+          },
+          "fourth": {
+            "type": "Project website",
+            "title": "Social Media History",
+            "description": "University of Hamburg & Ruhr University Bochum in cooperation with Kulturpixel e.V. - funded by BMBF in the \"Citizen Science\" program",
+            "alt": "Project visual Social Media History",
+            "logos": {
+              "first": "BMBF",
+              "second": "Ruhr University Bochum",
+              "third": "Kulturpixel e.V."
+            }
+          },
+          "fifth": {
+            "type": "Project website",
+            "title": "Uebergriff",
+            "description": "Kulturpixel e. V. - funded by the Lower Saxony State Center for Political Education, funding line \"Political Media Literacy\"",
+            "alt": "Project visual Uebergriff",
+            "logos": {
+              "first": "Kulturpixel e.V.",
+              "second": "State Center Lower Saxony"
+            }
+          },
+          "sixth": {
+            "type": "Project website + archive + map",
+            "title": "Streetart Explorers",
+            "description": "University of Hamburg & Kulturpixel e. V. - funded by the State Centers for Political Education of Lower Saxony and Hamburg",
+            "alt": "Project visual Streetart Explorers",
+            "logos": {
+              "first": "Kulturpixel e.V.",
+              "second": "BMBF",
+              "third": "State Center Hamburg"
+            }
+          },
+          "seventh": {
+            "type": "Project website + podcast",
+            "title": "NS-Medizinverbrechen",
+            "description": "A project of the Chair for Modern History and Contemporary History and the Chair for the History of Medicine at FAU Erlangen-Nuremberg",
+            "alt": "Project visual NS-Medizinverbrechen",
+            "logos": {
+              "first": "FAU Erlangen-Nuremberg"
+            }
+          },
+          "eighth": {
+            "type": "Project website",
+            "title": "Coronarchivare",
+            "description": "University of Hamburg, funded by the Federal Agency for Civic Education",
+            "alt": "Project visual Coronarchivare",
+            "logos": {
+              "first": "BMBF",
+              "second": "Ruhr University Bochum",
+              "third": "University of Giessen",
+              "fourth": "Federal Agency for Civic Education"
+            }
+          },
+          "ninth": {
+            "type": "Project website",
+            "title": "Wieder Vereint Hamburg",
+            "description": "anders & wissen. das projektlabor - funded by the State Center for Political Education Hamburg, Federal Foundation for the Study of the Communist Dictatorship in East Germany",
+            "alt": "Project visual Wieder Vereint Hamburg",
+            "logos": {
+              "first": "anders & wissen. das projektlabor",
+              "second": "State Center Hamburg"
+            }
+          },
+          "tenth": {
+            "type": "Project website",
+            "title": "Stadtrandgeschichten",
+            "description": "Kulturhaus Suederelbe e. V., University of Hamburg, Geschichtswerkstatt Suederelbe., funded by BMBF in the competition \"Auf die Plaetze!\"",
+            "alt": "Project visual Stadtrandgeschichten",
+            "logos": {
+              "first": "Kulturhaus Suederelbe",
+              "second": "BMBF",
+              "third": "Geschichtswerkstatt Suederelbe"
+            }
+          }
         }
       },
       "finalCta": {
-        "eyebrow": "Next step",
-        "title": "Short call for your project.",
-        "description": "Placeholder: How the first call works.",
+        "eyebrow": "More questions or a custom request?",
+        "title": "Book a 30-minute intro call",
+        "description": "In 30 minutes we explain how our project websites are structured, whether your initiative fits our modules, and which next steps make sense. We provide pragmatic estimates on timeline and scope and answer questions about existing sites or new ideas. Free and without obligation, even without an active project.",
         "cta": "Book a call"
       }
     },

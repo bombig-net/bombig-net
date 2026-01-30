@@ -242,80 +242,370 @@
   "servicePages": {
     "educationResearch": {
       "meta": {
-        "title": "Websites fuer gefoerderte Bildungs- und Forschungsprojekte",
-        "description": "Fixpreis und Verantwortung fuer Projektwebsites in Bildung und Forschung."
+        "title": "Websites & Plattformen fuer gefoerderte Bildungs- und Forschungsprojekte",
+        "description": "Projekt-Websites mit Fixpreis, rechtlicher Sicherheit und Betreuung ueber die Laufzeit."
       },
       "hero": {
         "eyebrow": "Service fuer Foerderprojekte",
         "title": "Websites & Plattformen fuer gefoerderte Bildungs- und Forschungsprojekte.",
-        "description": "Platzhalter: Zielgruppe, Pflichten und Zeitdruck kurz erlaeutern.",
+        "description": "Projektleitungen stehen unter Zeitdruck, mit fixem Budget und zahlreichen Pflichten. Wir liefern eine Projekt-Website mit individuellem Design, rechtlicher Sicherheit und Betreuung ueber die gesamte Laufzeit.",
+        "subline": "Der Fixpreis liegt bei 8.500 EUR inkl. USt., den ersten Entwurf erhaeltst du nach nur 4 Wochen.",
         "primaryCta": "Kennenlernen buchen",
         "secondaryCta": "Projekte ansehen",
         "priceLabel": "Fixpreis",
         "priceValue": "8.500 EUR inkl. USt.",
-        "priceNote": "Platzhalter: Was im Fixpreis enthalten ist.",
+        "priceNote": "Erster Entwurf nach nur 4 Wochen.",
         "promiseLabel": "Unser Versprechen",
-        "promiseText": "Individuelles Design, rechtliche Sicherheit und Betreuung ueber die Laufzeit."
+        "promiseText": "Individuelles Design, rechtliche Sicherheit und Betreuung ueber die gesamte Laufzeit.",
+        "images": {
+          "first": "Mobile Ansicht der fAIr Research Startseite mit Logo, Slogan, Kurzbeschreibung und zwei Aktionsbuttons.",
+          "second": "Mobile Ansicht der fAIr Research Startseite mit Logo, Slogan, Kurzbeschreibung und zwei Aktionsbuttons.",
+          "third": "Mobile Ansicht der fAIr Research Startseite mit Logo, Slogan, Kurzbeschreibung und zwei Aktionsbuttons.",
+          "fourth": "Mobile Ansicht der fAIr Research Startseite mit Logo, Slogan, Kurzbeschreibung und zwei Aktionsbuttons."
+        }
+      },
+      "logos": {
+        "label": "Diese Organisationen setzen auf unsere Loesungen",
+        "items": {
+          "first": "Universitaet Hamburg",
+          "second": "Ruhr Universitaet Bochum",
+          "third": "Universitaet Graz",
+          "fourth": "Kulturhaus Suederelbe",
+          "fifth": "Kulturpixel e.V."
+        }
       },
       "problem": {
-        "eyebrow": "Warum das hier",
-        "title": "Zeitdruck, Fixbudget, Pflichten.",
-        "description": "Platzhalter: Warum interne Loesungen scheitern.",
+        "eyebrow": "Wer Wirkung erzielen will, darf sich nicht ausbremsen lassen.",
+        "title": "Interne Loesungen kosten deinem Projekt Zeit, Sichtbarkeit und Nerven",
+        "description": "Was in grossen Organisationen Stabilitaet schafft, ist fuer dynamische Foerderprojekte oft ein Hindernis. Starre Strukturen und Vorgaben verhindern Tempo, Flexibilitaet und Wirksamkeit.",
         "points": {
-          "first": { "label": "Tempo", "text": "Interne Prozesse bremsen und gefaehrden Fristen." },
-          "second": { "label": "Sicherheit", "text": "Recht, Barrierefreiheit und Vorgaben muessen sitzen." },
-          "third": { "label": "Team", "text": "Projektteams sind fachlich stark, aber digital oft ueberlastet." }
+          "first": {
+            "title": "Design ohne Raum fuer Individualitaet",
+            "text": "Starre Templates erzwingen Einheitsauftritte, dein Projekt verliert Profil und Aussenwirkung."
+          },
+          "second": {
+            "title": "Abstimmungen, die endlos dauern",
+            "text": "Langwierige Freigaben und Umsetzungen werfen Zeitplaene durcheinander und gefaehrden Fristen."
+          },
+          "third": {
+            "title": "Ueberforderung im Projektteam",
+            "text": "Ohne Erfahrung muessen Teams sich selbstaendig ins CMS, die Content-Pflege und rechtliche Vorgaben einarbeiten."
+          },
+          "fourth": {
+            "title": "Support ohne echtes Engagement",
+            "text": "Es gibt Anlaufstellen, doch niemand uebernimmt Verantwortung, besonders nach Projektende."
+          }
         }
       },
       "offer": {
-        "eyebrow": "Was du bekommst",
-        "title": "Projekt-Website mit klarer Verantwortung.",
-        "description": "Platzhalter: Inhaltliche und technische Liefergegenstaende.",
+        "eyebrow": "Die Komplettloesung fuer deine Projekt-Website",
+        "title": "Individuelle Projekt-Website mit Fixpreis und Betreuung ueber die gesamte Laufzeit",
+        "description": "In nur 4 Wochen erhaelst du den ersten Entwurf in deinem Projektdesign. Der Fixpreis gibt dir volle Kostenkontrolle unabhaengig von deiner Projektlaufzeit. Technik, Support und rechtliche Anforderungen sind abgedeckt. So wird deine Website zur verlaesslichen Basis fuer Oeffentlichkeitsarbeit und Projekterfolg.",
+        "priceLabel": "Festpreis",
+        "priceValue": "8.500 EUR inkl. USt.",
+        "cta": "Kennenlernen buchen",
+        "images": {
+          "first": "Mobile Ansicht der fAIr Research Startseite mit Logo, Slogan, Kurzbeschreibung und zwei Aktionsbuttons.",
+          "second": "Mobile Ansicht der fAIr Research Startseite mit Logo, Slogan, Kurzbeschreibung und zwei Aktionsbuttons."
+        },
         "items": {
-          "first": { "label": "Design", "title": "Individuelles Erscheinungsbild", "text": "Kein Template, sondern ein Auftritt mit Profil." },
-          "second": { "label": "Build", "title": "Saubere Umsetzung", "text": "CMS, Performance, SEO und Accessibility inklusive." },
-          "third": { "label": "Betreuung", "title": "Begleitung ueber die Laufzeit", "text": "Support, Pflege und rechtliche Updates." }
+          "first": {
+            "label": "Design",
+            "title": "Individuelles Projektdesign",
+            "text": "Eigene Farbwelt, Schriften und Gestaltungselemente fuer dein Projekt."
+          },
+          "second": {
+            "label": "Logo",
+            "title": "Logoschriftzug inklusive",
+            "text": "Du erhaeltst ein projektspezifisches Logo bestehend aus Schriftzug und Icon."
+          },
+          "third": {
+            "label": "Inhalte",
+            "title": "Typische Inhaltstypen vorbereitet",
+            "text": "Startseite, Projekt, Team, Publikationen, Events, Blog, Downloads und viele mehr direkt nutzbar."
+          },
+          "fourth": {
+            "label": "Fixpreis",
+            "title": "Keine wiederkehrenden Zahlungen",
+            "text": "Einmal zahlen, die volle Laufzeit betreut werden, auch wenn dein Projekt mehrere Jahre laeuft."
+          },
+          "fifth": {
+            "label": "WordPress",
+            "title": "Selbstaendige Content-Pflege in WordPress",
+            "text": "Einfaches Backend ermoeglicht dir und deinem Team die eigenstaendige Pflege aller Inhalte."
+          },
+          "sixth": {
+            "label": "Schulung",
+            "title": "Schulung mit Video-Aufzeichnung",
+            "text": "Live-Einfuehrung in die Contentpflege. Die Session wird aufgezeichnet und ist jederzeit abrufbar."
+          },
+          "seventh": {
+            "label": "Recht",
+            "title": "Rechtlich und technisch abgesichert",
+            "text": "DSGVO-konform, barrierefrei nach BITV, mit vollstaendigem Impressum und Datenschutzseite."
+          },
+          "eighth": {
+            "label": "Support",
+            "title": "Hosting und Support bis Projektende",
+            "text": "Updates, Backups, Sicherheit, Bugfixes, E-Mail-Support und Disaster-Recovery sind enthalten."
+          }
         }
       },
-      "proof": {
-        "eyebrow": "Beweise",
-        "title": "Vertrauen aus dem Wissenschaftsbereich.",
-        "description": "Platzhalter: Warum euch Hochschulen vertrauen.",
-        "quote": "Platzhalter-Zitat aus einem gefoerderten Projekt.",
-        "attribution": "Projektleitung / Foerderprojekt",
-        "logosLabel": "Organisationen",
-        "logos": {
-          "first": "Universitaet Hamburg",
-          "second": "Ruhr-Universitaet Bochum",
-          "third": "Kulturhaus Suederelbe",
-          "fourth": "Kulturpixel e.V."
-        }
-      },
-      "process": {
-        "eyebrow": "Ablauf",
-        "title": "Vier Phasen mit festen Milestones.",
-        "description": "Platzhalter: Ablauf kurz erklaeren.",
-        "steps": {
-          "first": { "label": "01 Klarheit", "text": "Ziele, Pflichten und Inhalte abstecken." },
-          "second": { "label": "02 Design", "text": "Individuelles Design mit Freigabeschleifen." },
-          "third": { "label": "03 Build", "text": "Technische Umsetzung und Rechtssicherheit." },
-          "fourth": { "label": "04 Betreuung", "text": "Go-live, Pflege und Weiterentwicklung." }
-        }
-      },
-      "faq": {
-        "eyebrow": "FAQ",
-        "title": "Haeufige Fragen.",
-        "description": "Platzhalter: Die drei wichtigsten Fragen.",
+      "archive": {
+        "eyebrow": "Optional nach Projektende",
+        "title": "Projektarchiv Online: eine Website bleibt dauerhaft erreichbar",
+        "description": "Nach Projektende konvertieren wir deine WordPress-Seite in eine wartungsarme HTML-Version mit Archivhinweis. Wir spielen sie auf den Server oder Webspace deiner Organisation ein und verbinden die Domain.",
+        "priceLabel": "Festpreis",
+        "priceValue": "1.500 EUR inkl. USt.",
+        "cta": "Kennenlernen buchen",
+        "images": {
+          "first": "Archivansicht einer Projektseite mit Filter und Suche.",
+          "second": "Archivansicht mit Listen- und Detaildarstellung."
+        },
         "items": {
-          "first": { "question": "Wie schnell startet der erste Entwurf?", "answer": "Platzhalter: Zeitrahmen und Voraussetzungen." },
-          "second": { "question": "Wie wird Barrierefreiheit gesichert?", "answer": "Platzhalter: Standards und Dokumentation." },
-          "third": { "question": "Wie lange betreut ihr das Projekt?", "answer": "Platzhalter: Laufzeit und Optionen." }
+          "first": {
+            "title": "Dauerhafte Verfuegbarkeit",
+            "text": "Deine Ergebnisse bleiben online abrufbar, auch nach Projektende."
+          },
+          "second": {
+            "title": "Kein Wartungsaufwand",
+            "text": "Statische HTML-Seiten benoetigen keine Updates oder Betreuung."
+          },
+          "third": {
+            "title": "Rechtlich abgesichert",
+            "text": "Archiv-Hinweis, Impressum und Datenschutz bleiben vollstaendig enthalten."
+          },
+          "fourth": {
+            "title": "Einfache Integration",
+            "text": "Wir spielen die Seite auf deinen Server oder Webspace ein und verbinden sie mit der Domain."
+          }
+        }
+      },
+      "testimonials": {
+        "eyebrow": "Stimmen",
+        "title": "Was Projektteams ueber uns sagen",
+        "description": "Erfahrungen aus gefoerderten Bildungs- und Forschungsprojekten.",
+        "items": {
+          "first": {
+            "name": "Nils Steffen",
+            "role": "Universitaet Hamburg",
+            "org": "",
+            "quote": "Mit bombig.net haben wir einen kompetenten Partner gefunden, der es versteht, wissenschaftliche Projekte digital in Szene zu setzen. Unsere Websites coronarchiv.de, SocialMediaHistory.de und Orte-der-Unsichtbarkeit.de zeigen, wie geschichtswissenschaftliche Inhalte durch ansprechendes Design und innovative technische Loesungen neue Sichtbarkeit und Relevanz im oeffentlichen Raum erhalten. Die Zusammenarbeit mit Deniz und Jannis verbindet fachliche Praezision mit kreativer Gestaltung und traegt massgeblich dazu bei, historische Forschung attraktiv und zugaenglich fuer eine breite Oeffentlichkeit aufzubereiten.",
+            "alt": "Portraet von Nils Steffen"
+          },
+          "second": {
+            "name": "Sophie Leukel",
+            "role": "DLR Projekttraeger",
+            "org": "",
+            "quote": "Im Auftrag des Bundesministeriums fuer Forschung, Technologie und Raumfahrt haben wir als Projekttraeger DLR das Foerderprojekt \"Im Namen der Freiheit\" der Universitaet Hamburg im Rahmen des Wissenschaftsjahres 2024 - Freiheit betreut. Mit Theaterversammlungen, Freiheitswerkstaetten und dem digitalen Sammlungsarchiv stiftete das Projekt \"Im Namen der Freiheit\" Erfahrungen im Austausch zum Thema Freiheit mit dem Ziel den gesellschaftlichen Zusammenhalt zu staerken. Die Agentur Bombig hat die Website freiheitsarchiv.de programmiert, gestaltet und umgesetzt - das Herzstueck des Projekts. Bombig hat in der Zusammenarbeit nicht nur technisches Koennen, sondern auch eine beeindruckte Naehe zum Inhalt des Projekts gezeigt: eine robuste, skalierbare und nutzerzentrierte Website mit Archiv, die nachhaltig nutzbar ist und einen Mehrwert fuer die Wissenschaft bietet. Die Zusammenarbeit koennen wir uneingeschraenkt empfehlen.",
+            "alt": "Logo von DLR Projekttraeger"
+          },
+          "third": {
+            "name": "Prof. Dr. Christian Bunnenberg",
+            "role": "Ruhr Uni Bochum",
+            "org": "",
+            "quote": "Die Zusammenarbeit mit den 'Bombigs' verlief immer loesungsorientiert und konstruktiv. Unsere Ideen wurden im gemeinsamen Austausch professionell umgesetzt und die technische und gestalterische Umsetzung hat zum Erfolg des Projektes massgeblich beigetragen. Gerne wieder!",
+            "alt": "Portraet von Christian Bunnenberg"
+          },
+          "fourth": {
+            "name": "Marie-Denise Kalle",
+            "role": "neues handeln AG",
+            "org": "",
+            "quote": "Fuer das Foerderprojekt Im Namen der Freiheit der Universitaet Hamburg im Rahmen des Wissenschaftsjahres 2024 - Freiheit haben wir als neues handeln AG im Auftrag des Bundesministeriums fuer Forschung, Technologie und Raumfahrt die kommunikative Begleitung uebernommen. Die Projekt-Website wurde von der Webagentur Bombig - bestehend aus Deniz und Jannis - umgesetzt, und wir haetten uns keine besseren Partner hierfuer wuenschen koennen. Die Zusammenarbeit war unkompliziert, kreativ und absolut zuverlaessig. Mit viel Gespuer fuer Design und Funktionalitaet haben die beiden unsere Ideen aufgenommen, weitergedacht und in eine moderne, ansprechende Website uebersetzt. Wir sagen Danke fuer den grossartigen Einsatz und empfehlen Bombig waermstens weiter.",
+            "alt": "Portraet von Marie-Denise Kalle"
+          },
+          "fifth": {
+            "name": "Katrin & Gunter",
+            "role": "Geschichtswerkstatt Suederelbe",
+            "org": "",
+            "quote": "Unsere Website sieht genau so aus, wie wir es uns wuenschen, laeuft zuverlaessig und ist jederzeit erreichbar. Der Support von bombig.net ist zeitnah und verlaesslich. Wir fuehlen uns bestens betreut.",
+            "alt": "Logo der Geschichtswerkstatt Suederelbe"
+          },
+          "sixth": {
+            "name": "Catharina Koehnke",
+            "role": "Universitaet Hamburg",
+            "org": "",
+            "quote": "Im Projekt coronArchivare standen wir vor der Aufgabe, Jugendliche fuer politische Bildung und Geschichtswissenschaft zu begeistern. Graphik und Webpraesenz waren hier eine wichtige Basis fuer das Projekt. So waren wir sehr froh, bombig als zuverlaessigen und kompetenten Partner zu gewinnen - Deniz und Jannis haben fuer diese Herausforderung kreative Loesungen gefunden und diese zielgerichtet umgesetzt. Die Zusammenarbeit mit bombig war dabei immer sehr angenehm und absolut reibungslos.",
+            "alt": "Portraet von Catharina Koehnke"
+          },
+          "seventh": {
+            "name": "Dr. Janina Kriszio",
+            "role": "Universitaet Hamburg",
+            "org": "",
+            "quote": "Im Namen der Freiheit war ein vielschichtiges Projekt mit sehr vielen Beteiligten. Die Website war sowohl nach aussen als auch nach innen ein wichtiges, die Prozesse strukturierendes Tool. Jannis und Deniz/bombig.net haben es verstanden, gleichermassen prozesssensibel und zielorientiert die Website zu realisieren, so dass sie zum Impulsgeber fuer das gesamte Projekt wurde.",
+            "alt": "Portraet von Dr. Janina Kriszio"
+          },
+          "eighth": {
+            "name": "Hannah Rentschler",
+            "role": "AKHFG e.V.",
+            "org": "",
+            "quote": "Die Zusammenarbeit mit Bombig ist fuer uns als Verein ideal. Jannis und Deniz haben sowohl unser Corporate Design inkl. neuem Logo entwickelt, Werbemedien gestaltet als auch unsere Website nach unseren Wuenschen neu konzipiert. Der technische Support laeuft seit Jahren aeusserst zuverlaessig und auch bei schnell zu loesenden Fragen sind sie immer ansprechbar. Das Preis-Leistungsverhaeltnis ist sehr fair und dazu ist der Umgang mit den beiden immer sehr nett und unkompliziert. Wir fuehlen uns rundum bestens betreut und empfehlen Bombig uneingeschraenkt waermstens weiter!",
+            "alt": "Portraet von Hannah Rentschler"
+          },
+          "ninth": {
+            "name": "Jan Krawczyk",
+            "role": "Kulturpixel e.V.",
+            "org": "",
+            "quote": "Wir haben mit Jannis und Deniz u.a. im Projekt Street I Art I Democracy zusammengearbeitet. Im Austausch ueber Funktionalitaet und vor allem auch Grafik der Website bzw. CD - das fuer dieses Projekt besonders wichtig war - kamen wir in einem gemeinsamen Brainstorming schnell auf gute und vor allem auch realistisch umsetzbare Ideen. Das Ergebnis spricht absolut fuer sich! Wir haben nun nicht nur eine Plattform, die fuer uns zentrale Anwendungsbereiche wie ein Crowdsourcing-Archiv, eine Bereich fuer Bildungsmaterialien und einen Blog alle unsere Bedarfe super zusammenfuehrt, ebenso passt die Designsprache perfekt zum Projekt und der Zielgruppe. Auch nach Ende des Projektes werden wir weiterhin auf die gelungene Website angesprochen. Danke an Jannis und Deniz fuer die gute Zusammenarbeit!",
+            "alt": "Portraet von Jan Krawczyk"
+          }
+        }
+      },
+      "addons": {
+        "eyebrow": "Optionale Erweiterungen",
+        "title": "Add-ons erweitern deine Projekt-Website",
+        "description": "Wenn dein Projekt mehr Funktionen braucht, buchst du sie einfach dazu. Jedes Add-on hat einen Fixpreis, wird in wenigen Wochen geliefert und integriert sich nahtlos in deine Website.",
+        "cta": "Kennenlernen buchen",
+        "items": {
+          "first": {
+            "label": "Kartenmodul",
+            "title": "Kartenmodul",
+            "text": "Interaktive Karte mit Geopins fuer Orte, Beitraege oder Veranstaltungen. Ideal fuer regionale Vorhaben oder Citizen-Science-Projekte.",
+            "price": "Festpreis: 3.500 EUR inkl. USt.",
+            "images": {
+              "first": "Mobile Ansicht der Kartenansicht mit Geopins.",
+              "second": "Mobile Ansicht der Kartenansicht mit Detailkarte."
+            }
+          },
+          "second": {
+            "label": "Archivmodul",
+            "title": "Archivmodul",
+            "text": "Wir bauen ein durchsuchbares Online-Archiv mit Navigation, Schlagworten und Filterfunktionen, ideal fuer Projekte mit Dokumenten, Bildern oder Videos.",
+            "price": "Festpreis: 6.500 EUR inkl. USt.",
+            "images": {
+              "first": "Mobile Ansicht des Archivmoduls mit Gridansicht.",
+              "second": "Mobile Ansicht des Archivmoduls mit Filter."
+            }
+          },
+          "third": {
+            "label": "Podcastmodul",
+            "title": "Podcastmodul",
+            "text": "Wir integrieren euren Podcast direkt auf der Projektseite, bereiten Cover und Beschreibung vor, kuemmern uns um Einbindung auf Spotify, Apple & Co. Ihr liefert nur die Audiodateien.",
+            "price": "Festpreis: 3.500 EUR inkl. USt.",
+            "images": {
+              "first": "Mobile Ansicht des Podcastmoduls mit Player.",
+              "second": "Mobile Ansicht des Podcastmoduls mit Episodenliste."
+            }
+          }
+        }
+      },
+      "projects": {
+        "eyebrow": "Projekte",
+        "title": "Erfahrung aus vielen Projekten",
+        "description": "In den letzten sieben Jahren haben wir mehr als ein Dutzend Projekt-Websites mit Universitaeten, Vereinen und Foerderprogrammen umgesetzt. Diese Erfahrungen bilden die Grundlage fuer unser heutiges Angebot.",
+        "items": {
+          "first": {
+            "type": "Projektwebseite + Archiv",
+            "title": "Im Namen der Freiheit",
+            "description": "Prof. Dr. Thorsten Logge mit den Kuenstlern Thorleifur Orn Arnarsson und Uwe Goessel - gefoerdert durch das BMBF im Wissenschaftsjahr 2024 \"Freiheit\"",
+            "alt": "Projektmotiv Im Namen der Freiheit",
+            "logos": {
+              "first": "BMBF",
+              "second": "DLR Projekttraeger"
+            }
+          },
+          "second": {
+            "type": "Projektwebseite + Archiv + Karte",
+            "title": "Coronarchiv",
+            "description": "Ein Gemeinschaftsprojekt der Universitaeten Hamburg, Bochum und Giessen",
+            "alt": "Projektmotiv Coronarchiv",
+            "logos": {
+              "first": "Ruhr Universitaet Bochum",
+              "second": "BMBF",
+              "third": "Universitaet Giessen"
+            }
+          },
+          "third": {
+            "type": "Projektwebseite + Karte",
+            "title": "Orte der Unsichtbarkeit",
+            "description": "Universitaet Hamburg & Landeszentrale fuer politische Bildung Hamburg - gefoerdert im Bundesprogramm \"Jugend erinnert\", Foerderlinie SED-Unrecht",
+            "alt": "Projektmotiv Orte der Unsichtbarkeit",
+            "logos": {
+              "first": "Jugend erinnert",
+              "second": "BMBF",
+              "third": "Landeszentrale Hamburg"
+            }
+          },
+          "fourth": {
+            "type": "Projektwebseite",
+            "title": "Social Media History",
+            "description": "Universitaet Hamburg & Ruhr-Universitaet Bochum in Kooperation mit Kulturpixel e.V. - gefoerdert durch das BMBF im Programm \"Buergerforschung\"",
+            "alt": "Projektmotiv Social Media History",
+            "logos": {
+              "first": "BMBF",
+              "second": "Ruhr Universitaet Bochum",
+              "third": "Kulturpixel e.V."
+            }
+          },
+          "fifth": {
+            "type": "Projektwebseite",
+            "title": "Uebergriff",
+            "description": "Kulturpixel e. V. - gefoerdert von der Niedersaechsischen Landeszentrale fuer politische Bildung, Foerderlinie \"Politische Medienkompetenz\"",
+            "alt": "Projektmotiv Uebergriff",
+            "logos": {
+              "first": "Kulturpixel e.V.",
+              "second": "Landeszentrale Niedersachsen"
+            }
+          },
+          "sixth": {
+            "type": "Projektwebseite + Archiv + Karte",
+            "title": "Streetart Explorers",
+            "description": "Universitaet Hamburg & Kulturpixel e. V. - gefoerdert durch die Landeszentralen fuer politische Bildung Niedersachsen und Hamburg",
+            "alt": "Projektmotiv Streetart Explorers",
+            "logos": {
+              "first": "Kulturpixel e.V.",
+              "second": "BMBF",
+              "third": "Landeszentrale Hamburg"
+            }
+          },
+          "seventh": {
+            "type": "Projektwebseite + Podcast",
+            "title": "NS-Medizinverbrechen",
+            "description": "Ein Projekt des Lehrstuhls fuer Neueste Geschichte und Zeitgeschichte sowie des Lehrstuhls fuer Geschichte der Medizin der FAU Erlangen-Nuernberg",
+            "alt": "Projektmotiv NS-Medizinverbrechen",
+            "logos": {
+              "first": "FAU Erlangen-Nuernberg"
+            }
+          },
+          "eighth": {
+            "type": "Projektwebseite",
+            "title": "Coronarchivare",
+            "description": "Universitaet Hamburg, gefoerdert von der Bundeszentrale fuer politische Bildung",
+            "alt": "Projektmotiv Coronarchivare",
+            "logos": {
+              "first": "BMBF",
+              "second": "Ruhr Universitaet Bochum",
+              "third": "Universitaet Giessen",
+              "fourth": "Bundeszentrale fuer politische Bildung"
+            }
+          },
+          "ninth": {
+            "type": "Projektwebseite",
+            "title": "Wieder Vereint Hamburg",
+            "description": "anders & wissen. das projektlabor - Gefoerdert durch Landeszentrale fuer politische Bildung Hamburg, Bundesstiftung Aufarbeitung",
+            "alt": "Projektmotiv Wieder Vereint Hamburg",
+            "logos": {
+              "first": "anders & wissen. das projektlabor",
+              "second": "Landeszentrale Hamburg"
+            }
+          },
+          "tenth": {
+            "type": "Projektwebseite",
+            "title": "Stadtrandgeschichten",
+            "description": "Kulturhaus Suederelbe e. V., Universitaet Hamburg, Geschichtswerkstatt Suederelbe., gefoerdert vom BMBF im Wettbewerb \"Auf die Plaetze!\"",
+            "alt": "Projektmotiv Stadtrandgeschichten",
+            "logos": {
+              "first": "Kulturhaus Suederelbe",
+              "second": "BMBF",
+              "third": "Geschichtswerkstatt Suederelbe"
+            }
+          }
         }
       },
       "finalCta": {
-        "eyebrow": "Naechster Schritt",
-        "title": "Kurzgespraech fuer dein Projekt.",
-        "description": "Platzhalter: Wie das Erstgespraech ablaeuft.",
+        "eyebrow": "Noch Fragen oder eine individuelle Anfrage?",
+        "title": "Buche ein 30-minuetiges Kennenlerngespraech",
+        "description": "In 30 Minuten erlaeutern wir, wie unsere Projekt-Websites aufgebaut sind, ob dein Vorhaben zu unseren Modulen passt und welche naechsten Schritte sinnvoll sind. Wir geben pragmatische Einschaetzungen zu Zeitplan und Umfang und beantworten Fragen zu bestehenden Seiten oder Ideen. Kostenlos und unverbindlich, auch ohne aktuelles Projekt.",
         "cta": "Kennenlernen buchen"
       }
     },
