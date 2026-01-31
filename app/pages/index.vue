@@ -3,7 +3,7 @@
     <section class="home-hero relative -mt-24 overflow-hidden pt-24">
       <div class="hero-canvas absolute inset-0" aria-hidden="true" />
       <div class="hero-ecg" aria-hidden="true">
-        <svg viewBox="0 0 1570 575" preserveAspectRatio="xMidYMid meet" role="presentation">
+        <svg viewBox="-50 -50 1670 675" preserveAspectRatio="xMidYMid meet" role="presentation" style="overflow: visible;">
           <defs>
             <linearGradient id="ecg-stroke" x1="0" y1="0" x2="1" y2="0">
               <stop offset="0%" stop-color="rgba(160, 243, 206, 0.2)" />
@@ -12,27 +12,40 @@
               <stop offset="62%" stop-color="rgba(160, 243, 206, 0.8)" />
               <stop offset="100%" stop-color="rgba(160, 243, 206, 0.18)" />
             </linearGradient>
+            <filter id="ecg-blur" x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="12" result="blur1" />
+              <feGaussianBlur in="SourceGraphic" stdDeviation="28" result="blur2" />
+              <feGaussianBlur in="SourceGraphic" stdDeviation="56" result="blur3" />
+              <feMerge>
+                <feMergeNode in="blur3" />
+                <feMergeNode in="blur2" />
+                <feMergeNode in="blur1" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
           </defs>
-          <path
-            d="M52.817 352.744 L519.882 352.744 L551.986 259.538 L611.016 522.585 L740.469 51.378 L844.031 471.84 L902.026 355.851 L1520.291 352.744"
-            fill="none"
-            stroke="url(#ecg-stroke)"
-            stroke-width="16"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            pathLength="1000"
-            class="ecg-line"
-          />
-          <path
-            d="M52.817 352.744 L519.882 352.744 L551.986 259.538 L611.016 522.585 L740.469 51.378 L844.031 471.84 L902.026 355.851 L1520.291 352.744"
-            fill="none"
-            stroke="rgba(160, 247, 213, 0.75)"
-            stroke-width="24"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            pathLength="1000"
-            class="ecg-glow"
-          />
+          <g filter="url(#ecg-blur)">
+            <path
+              d="M52.817 352.744 L519.882 352.744 L551.986 259.538 L611.016 522.585 L740.469 51.378 L844.031 471.84 L902.026 355.851 L1520.291 352.744"
+              fill="none"
+              stroke="rgba(160, 247, 213, 0.4)"
+              stroke-width="32"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              pathLength="1000"
+              class="ecg-glow"
+            />
+            <path
+              d="M52.817 352.744 L519.882 352.744 L551.986 259.538 L611.016 522.585 L740.469 51.378 L844.031 471.84 L902.026 355.851 L1520.291 352.744"
+              fill="none"
+              stroke="url(#ecg-stroke)"
+              stroke-width="16"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              pathLength="1000"
+              class="ecg-line"
+            />
+          </g>
         </svg>
       </div>
       <div class="home-hero-shell mx-auto w-full max-w-6xl px-6 relative flex min-h-[calc(100svh-6rem)] flex-col justify-end pb-16 pt-12">
