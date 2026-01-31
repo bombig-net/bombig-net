@@ -1,8 +1,8 @@
 <template>
   <header class="fixed left-0 right-0 top-0 z-50 pt-6">
-    <div class="section-shell">
+    <div class="mx-auto w-full max-w-6xl px-6">
       <div class="nav-bar">
-        <div class="nav-inner">
+        <div class="nav-inner relative flex items-center justify-between gap-4 rounded-full py-[0.45rem] pr-3 pl-4">
           <NuxtLink :to="localePath('/')" class="nav-logo" aria-label="bombig.net">
             <span class="nav-logo-mark" aria-hidden="true">
               <svg viewBox="0 0 24 24" class="nav-logo-icon" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -60,7 +60,7 @@
                 <button type="button" class="nav-pill md:hidden">{{ t('header.menu') }}</button>
               </DialogTrigger>
               <DialogPortal>
-                <DialogOverlay class="fixed inset-0 z-[60] bg-[#050806]/55 backdrop-blur" />
+                <DialogOverlay class="nav-overlay fixed inset-0 z-[60] backdrop-blur" />
                 <DialogContent class="nav-drawer z-[70]">
                   <VisuallyHidden as-child>
                     <DialogTitle>{{ t('header.menu') }}</DialogTitle>

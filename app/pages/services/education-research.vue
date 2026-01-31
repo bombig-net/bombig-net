@@ -1,9 +1,9 @@
 <template>
   <div class="space-y-24 pb-24">
-    <section class="relative overflow-hidden">
-      <div class="absolute -left-24 top-10 h-72 w-72 rounded-full bg-emerald-400/30 blur-3xl" />
-      <div class="absolute right-0 top-20 h-80 w-80 rounded-full bg-sky-400/30 blur-3xl" />
-      <div class="section-shell relative grid gap-12 pb-16 pt-28 md:grid-cols-[1.1fr_0.9fr]">
+    <section class="service-hero service-hero-education">
+      <div class="service-hero-orb a" aria-hidden="true" />
+      <div class="service-hero-orb b" aria-hidden="true" />
+      <div class="mx-auto w-full max-w-6xl px-6 relative grid gap-12 pb-16 pt-28 md:grid-cols-[1.1fr_0.9fr]">
         <div class="section-surface surface-grid space-y-8">
           <p class="eyebrow">{{ t('servicePages.educationResearch.hero.eyebrow') }}</p>
           <h1 class="hero-title">{{ t('servicePages.educationResearch.hero.title') }}</h1>
@@ -20,13 +20,13 @@
           <p class="chip">{{ t('servicePages.educationResearch.hero.priceLabel') }}</p>
           <p class="text-3xl font-semibold">{{ t('servicePages.educationResearch.hero.priceValue') }}</p>
           <p class="text-sm text-slate-200">{{ t('servicePages.educationResearch.hero.priceNote') }}</p>
-          <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+          <div class="panel-inset p-5">
             <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('servicePages.educationResearch.hero.promiseLabel') }}</p>
             <p class="mt-3 text-sm text-slate-200">{{ t('servicePages.educationResearch.hero.promiseText') }}</p>
           </div>
         </div>
       </div>
-      <div class="section-shell grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="mx-auto w-full max-w-6xl px-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <div v-for="image in heroImages" :key="image.src" class="glass-panel raised overflow-hidden">
           <img
             :src="image.src"
@@ -39,7 +39,7 @@
       </div>
     </section>
 
-    <section class="section-shell space-y-6">
+    <section class="mx-auto w-full max-w-6xl px-6 space-y-6">
       <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('servicePages.educationResearch.logos.label') }}</p>
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
         <div v-for="logo in trustLogos" :key="logo.src" class="glass-panel raised flex items-center justify-center p-6">
@@ -48,7 +48,7 @@
       </div>
     </section>
 
-    <section class="section-shell grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
+    <section class="mx-auto w-full max-w-6xl px-6 grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
       <SectionHeading
         :eyebrow="t('servicePages.educationResearch.problem.eyebrow')"
         :title="t('servicePages.educationResearch.problem.title')"
@@ -62,7 +62,7 @@
       </div>
     </section>
 
-    <section class="section-shell space-y-10">
+    <section class="mx-auto w-full max-w-6xl px-6 space-y-10">
       <SectionHeading
         :eyebrow="t('servicePages.educationResearch.offer.eyebrow')"
         :title="t('servicePages.educationResearch.offer.title')"
@@ -93,7 +93,7 @@
       </div>
     </section>
 
-    <section class="section-shell space-y-10">
+    <section class="mx-auto w-full max-w-6xl px-6 space-y-10">
       <div class="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
         <SectionHeading
           :eyebrow="t('servicePages.educationResearch.archive.eyebrow')"
@@ -123,7 +123,7 @@
       </div>
     </section>
 
-    <section class="section-shell space-y-10">
+    <section class="mx-auto w-full max-w-6xl px-6 space-y-10">
       <SectionHeading
         :eyebrow="t('servicePages.educationResearch.testimonials.eyebrow')"
         :title="t('servicePages.educationResearch.testimonials.title')"
@@ -150,7 +150,7 @@
       </div>
     </section>
 
-    <section class="section-shell space-y-10">
+    <section class="mx-auto w-full max-w-6xl px-6 space-y-10">
       <SectionHeading
         :eyebrow="t('servicePages.educationResearch.addons.eyebrow')"
         :title="t('servicePages.educationResearch.addons.title')"
@@ -178,7 +178,7 @@
       </div>
     </section>
 
-    <section id="projects" class="section-shell space-y-10">
+    <section id="projects" class="mx-auto w-full max-w-6xl px-6 space-y-10">
       <SectionHeading
         :eyebrow="t('servicePages.educationResearch.projects.eyebrow')"
         :title="t('servicePages.educationResearch.projects.title')"
@@ -214,7 +214,7 @@
       </div>
     </section>
 
-    <section class="section-shell">
+    <section class="mx-auto w-full max-w-6xl px-6">
       <div class="glass-panel highlight flex flex-col gap-6 p-10 md:flex-row md:items-center md:justify-between">
         <div>
           <p class="eyebrow">{{ t('servicePages.educationResearch.finalCta.eyebrow') }}</p>

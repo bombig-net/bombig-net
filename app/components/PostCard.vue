@@ -6,7 +6,7 @@
         {{ item.meta?.category || t('blog.card.fallbackCategory') }}
       </div>
       <div class="space-y-3">
-        <h3 class="section-card-title">{{ item.title }}</h3>
+        <h3 class="text-xl font-semibold text-white">{{ item.title }}</h3>
         <p class="text-sm text-slate-200">{{ item.description }}</p>
       </div>
     </div>

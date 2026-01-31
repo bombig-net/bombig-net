@@ -1,6 +1,6 @@
 <template>
   <div class="space-y-16 pb-24">
-    <section class="section-shell pt-16">
+    <section class="mx-auto w-full max-w-6xl px-6 pt-16">
       <div class="section-surface surface-grid space-y-6">
         <p class="eyebrow">{{ t('blog.index.eyebrow') }}</p>
         <h1 class="text-4xl font-semibold tracking-tight text-white md:text-5xl">{{ t('blog.index.title') }}</h1>
@@ -8,7 +8,7 @@
       </div>
     </section>
 
-    <section class="section-shell grid gap-6 md:grid-cols-3">
+    <section class="mx-auto w-full max-w-6xl px-6 grid gap-6 md:grid-cols-3">
       <PostCard v-for="item in posts" :key="item.id" :item="item" />
     </section>
 

@@ -1,6 +1,6 @@
 <template>
-  <footer class="mt-24 border-t border-white/10 bg-[#0b0f0b]">
-    <div class="section-shell grid gap-10 py-16 md:grid-cols-[2fr_1fr_1fr]">
+  <footer class="footer-surface mt-24 border-t">
+    <div class="mx-auto w-full max-w-6xl px-6 grid gap-10 py-16 md:grid-cols-[2fr_1fr_1fr]">
       <div class="space-y-4">
         <p class="text-2xl font-semibold text-white">{{ t('footer.tagline') }}</p>
         <p class="text-sm text-slate-200">{{ t('footer.blurb') }}</p>

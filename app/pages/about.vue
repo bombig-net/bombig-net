@@ -1,6 +1,6 @@
 <template>
   <div class="space-y-20 pb-24">
-    <section class="section-shell grid gap-12 pt-16 md:grid-cols-[1.1fr_0.9fr]">
+    <section class="mx-auto w-full max-w-6xl px-6 grid gap-12 pt-16 md:grid-cols-[1.1fr_0.9fr]">
       <div class="section-surface surface-grid space-y-6">
         <p class="eyebrow">{{ t('about.hero.eyebrow') }}</p>
         <h1 class="text-4xl font-semibold tracking-tight text-white md:text-5xl">{{ t('about.hero.title') }}</h1>
@@ -25,7 +25,7 @@
       </div>
     </section>
 
-    <section class="section-shell grid gap-8 md:grid-cols-3">
+    <section class="mx-auto w-full max-w-6xl px-6 grid gap-8 md:grid-cols-3">
       <div class="glass-panel raised p-6 value-card">
         <div class="value-icon" aria-hidden="true" />
         <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('about.values.leadership.label') }}</p>
@@ -46,7 +46,7 @@
       </div>
     </section>
 
-    <section class="section-shell grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
+    <section class="mx-auto w-full max-w-6xl px-6 grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
       <div class="space-y-4">
         <SectionHeading
           :eyebrow="t('about.team.eyebrow')"
@@ -54,22 +54,22 @@
           :description="t('about.team.description')"
         />
           <div class="grid gap-4 sm:grid-cols-2">
-            <div class="glass-panel raised p-5 team-card">
+            <div class="glass-panel raised flex flex-col gap-3 p-5">
               <div class="team-portrait variant-a" aria-hidden="true" />
               <p class="text-sm font-semibold">Deniz Kaya</p>
               <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('about.team.roles.founder') }}</p>
             </div>
-            <div class="glass-panel raised p-5 team-card">
+            <div class="glass-panel raised flex flex-col gap-3 p-5">
               <div class="team-portrait variant-b" aria-hidden="true" />
               <p class="text-sm font-semibold">Lea Turner</p>
               <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('about.team.roles.creativeDirector') }}</p>
             </div>
-            <div class="glass-panel raised p-5 team-card">
+            <div class="glass-panel raised flex flex-col gap-3 p-5">
               <div class="team-portrait variant-c" aria-hidden="true" />
               <p class="text-sm font-semibold">Rami Delgado</p>
               <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('about.team.roles.productDesigner') }}</p>
             </div>
-            <div class="glass-panel raised p-5 team-card">
+            <div class="glass-panel raised flex flex-col gap-3 p-5">
               <div class="team-portrait variant-d" aria-hidden="true" />
               <p class="text-sm font-semibold">Ada Kim</p>
               <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('about.team.roles.engineeringLead') }}</p>

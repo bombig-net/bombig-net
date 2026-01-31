@@ -1,6 +1,6 @@
 <template>
   <div class="space-y-16 pb-24">
-    <section class="section-shell pt-16">
+    <section class="mx-auto w-full max-w-6xl px-6 pt-16">
       <div class="section-surface surface-grid space-y-6">
         <p class="eyebrow">{{ t('caseStudies.index.eyebrow') }}</p>
         <h1 class="text-4xl font-semibold tracking-tight text-white md:text-5xl">{{ t('caseStudies.index.title') }}</h1>
@@ -8,7 +8,7 @@
       </div>
     </section>
 
-    <section class="section-shell grid gap-6 md:grid-cols-3">
+    <section class="mx-auto w-full max-w-6xl px-6 grid gap-6 md:grid-cols-3">
       <CaseCard v-for="item in caseStudies" :key="item.id" :item="item" />
     </section>
 

@@ -35,7 +35,7 @@
           />
         </svg>
       </div>
-      <div class="section-shell relative flex min-h-[calc(100svh-6rem)] flex-col justify-end pb-16 pt-12">
+      <div class="home-hero-shell mx-auto w-full max-w-6xl px-6 relative flex min-h-[calc(100svh-6rem)] flex-col justify-end pb-16 pt-12">
         <div class="max-w-3xl space-y-6">
           <h1 class="hero-title text-4xl sm:text-5xl md:text-7xl">{{ t('home.hero.title') }}</h1>
           <div class="flex flex-wrap gap-4">
@@ -46,15 +46,8 @@
       </div>
     </section>
 
-    <section
-      class="section-atmosphere atmosphere-hero"
-      :style="{
-        '--section-wash': sectionWash.founders,
-        '--section-lighting': sectionLighting.founders,
-        '--section-glow': sectionGlow.founders,
-      }"
-    >
-      <div class="section-shell founders-section grid gap-10 lg:grid-cols-[0.95fr_1.05fr]">
+    <section class="section-atmosphere atmosphere-hero atmo-founders">
+      <div class="mx-auto w-full max-w-6xl px-6 founders-section grid gap-10 lg:grid-cols-[0.95fr_1.05fr]">
         <div class="space-y-6 founders-copy">
           <SectionHeading
             class="founders-heading"
@@ -106,15 +99,8 @@
       </div>
     </section>
 
-    <section
-      class="section-atmosphere atmosphere-hero"
-      :style="{
-        '--section-wash': sectionWash.responsibility,
-        '--section-lighting': sectionLighting.responsibility,
-        '--section-glow': sectionGlow.responsibility,
-      }"
-    >
-      <div class="section-shell grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
+    <section class="section-atmosphere atmosphere-hero atmo-responsibility">
+      <div class="mx-auto w-full max-w-6xl px-6 grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
         <SectionHeading
           :eyebrow="t('home.responsibility.eyebrow')"
           :title="t('home.responsibility.title')"
@@ -162,15 +148,8 @@
       :panel-text="billboards.first.panelText"
     />
 
-    <section
-      class="section-atmosphere atmosphere-hero"
-      :style="{
-        '--section-wash': sectionWash.proof,
-        '--section-lighting': sectionLighting.proof,
-        '--section-glow': sectionGlow.proof,
-      }"
-    >
-      <div class="section-shell space-y-10">
+    <section class="section-atmosphere atmosphere-hero atmo-proof">
+      <div class="mx-auto w-full max-w-6xl px-6 space-y-10">
         <SectionHeading
           :eyebrow="t('home.proof.eyebrow')"
           :title="t('home.proof.title')"
@@ -202,15 +181,8 @@
       :panel-text="billboards.second.panelText"
     />
 
-    <section
-      class="section-atmosphere atmosphere-hero"
-      :style="{
-        '--section-wash': sectionWash.approach,
-        '--section-lighting': sectionLighting.approach,
-        '--section-glow': sectionGlow.approach,
-      }"
-    >
-      <div class="section-shell grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
+    <section class="section-atmosphere atmosphere-hero atmo-approach">
+      <div class="mx-auto w-full max-w-6xl px-6 grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
         <SectionHeading
           :eyebrow="t('home.approach.eyebrow')"
           :title="t('home.approach.title')"
@@ -244,15 +216,8 @@
       </div>
     </section>
 
-    <section
-      class="section-atmosphere atmosphere-hero fade-to-footer"
-      :style="{
-        '--section-wash': sectionWash.services,
-        '--section-lighting': sectionLighting.services,
-        '--section-glow': sectionGlow.services,
-      }"
-    >
-      <div class="section-shell space-y-10">
+    <section class="section-atmosphere atmosphere-hero atmo-services fade-to-footer">
+      <div class="mx-auto w-full max-w-6xl px-6 space-y-10">
         <SectionHeading
           :eyebrow="t('home.services.eyebrow')"
           :title="t('home.services.title')"
@@ -359,40 +324,6 @@ const billboards = computed(() => ({
     panelText: t('home.billboards.second.panel.text'),
   },
 }))
-
-const sectionLighting = {
-  founders:
-    'radial-gradient(520px 380px at 24% 92%, rgba(120, 210, 175, 0.1), transparent 72%), radial-gradient(520px 380px at 76% 90%, rgba(90, 180, 140, 0.18), transparent 72%), radial-gradient(420px 320px at 50% 96%, rgba(70, 150, 110, 0.12), transparent 75%)',
-  responsibility:
-    'radial-gradient(480px 340px at 12% 18%, rgba(125, 205, 175, 0.16), transparent 70%), radial-gradient(520px 380px at 88% 28%, rgba(100, 185, 150, 0.14), transparent 72%), radial-gradient(420px 320px at 45% 92%, rgba(80, 155, 120, 0.12), transparent 74%)',
-  proof:
-    'radial-gradient(520px 380px at 82% 84%, rgba(120, 205, 175, 0.18), transparent 72%), radial-gradient(420px 320px at 24% 76%, rgba(100, 175, 145, 0.12), transparent 72%), radial-gradient(360px 260px at 50% 10%, rgba(85, 155, 120, 0.1), transparent 72%)',
-  approach:
-    'radial-gradient(560px 420px at 68% 16%, rgba(120, 210, 175, 0.2), transparent 70%), radial-gradient(520px 380px at 18% 70%, rgba(95, 175, 140, 0.14), transparent 72%), radial-gradient(420px 320px at 80% 88%, rgba(70, 145, 115, 0.12), transparent 75%)',
-  services:
-    'radial-gradient(520px 380px at 10% 82%, rgba(120, 210, 175, 0.18), transparent 72%), radial-gradient(460px 320px at 86% 12%, rgba(95, 170, 140, 0.12), transparent 70%), radial-gradient(360px 280px at 52% 96%, rgba(70, 145, 115, 0.12), transparent 75%)',
-}
-
-const sectionGlow = {
-  founders: 'none',
-  responsibility: 'none',
-  proof: 'none',
-  approach: 'none',
-  services: 'none',
-}
-
-const sectionWash = {
-  founders:
-    'radial-gradient(in oklch circle at 0% 50%, rgba(140, 255, 200, 0.06) 0%, transparent 58%), radial-gradient(in oklch circle at 100% 50%, rgba(110, 200, 165, 0.06) 0%, transparent 58%)',
-  responsibility:
-    'radial-gradient(in oklch circle at 12% 18%, rgba(140, 255, 200, 0.05) 0%, transparent 58%), radial-gradient(in oklch circle at 95% 60%, rgba(110, 200, 165, 0.05) 0%, transparent 60%)',
-  proof:
-    'radial-gradient(in oklch circle at 85% 75%, rgba(140, 255, 200, 0.05) 0%, transparent 58%), radial-gradient(in oklch circle at 8% 55%, rgba(110, 200, 165, 0.05) 0%, transparent 60%)',
-  approach:
-    'radial-gradient(in oklch circle at 70% 20%, rgba(140, 255, 200, 0.05) 0%, transparent 58%), radial-gradient(in oklch circle at 0% 80%, rgba(110, 200, 165, 0.05) 0%, transparent 60%)',
-  services:
-    'radial-gradient(in oklch circle at 15% 85%, rgba(140, 255, 200, 0.05) 0%, transparent 58%), radial-gradient(in oklch circle at 92% 10%, rgba(110, 200, 165, 0.05) 0%, transparent 60%)',
-}
 
 const metaTitle = computed(() => t('home.meta.title'))
 const metaDescription = computed(() => t('home.meta.description'))

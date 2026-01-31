@@ -1,6 +1,6 @@
 <template>
   <section :class="['section-atmosphere', sectionClass]">
-    <div class="section-shell">
+    <div class="mx-auto w-full max-w-6xl px-6">
       <div class="billboard p-8 md:p-12">
         <div class="billboard-orb a" aria-hidden="true" />
         <div class="billboard-orb b" aria-hidden="true" />

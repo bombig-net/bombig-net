@@ -1,0 +1,137 @@
+@layer components {
+  .beliefs-visual {
+    position: relative;
+    height: 160px;
+    border-radius: 24px;
+    border: 1px solid rgba(226, 251, 221, 0.2);
+    background:
+      radial-gradient(140% 120% at 20% 0%, rgba(160, 246, 212, 0.22), transparent 60%),
+      linear-gradient(160deg, rgba(10, 16, 14, 0.92), rgba(6, 10, 9, 0.98));
+    box-shadow: 0 18px 40px rgba(5, 10, 8, 0.5);
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+  }
+
+  .beliefs-visual::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(176, 231, 206, 0.18) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(176, 231, 206, 0.18) 1px, transparent 1px);
+    background-size: 28px 28px;
+    opacity: 0.25;
+    mask-image: radial-gradient(200px 180px at 30% 20%, rgba(0, 0, 0, 0.9) 0%, transparent 70%);
+  }
+
+  .beliefs-visual-core {
+    position: absolute;
+    inset: 22% 18%;
+    border-radius: 20px;
+    border: 1px solid rgba(226, 251, 221, 0.18);
+    background:
+      radial-gradient(160px 140px at 60% 30%, rgba(123, 215, 255, 0.25), transparent 70%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0));
+  }
+
+  .value-card {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .value-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(240px 180px at 85% 0%, rgba(160, 246, 212, 0.16), transparent 70%);
+    opacity: 0.6;
+    pointer-events: none;
+  }
+
+  .value-card > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .value-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+    border: 1px solid rgba(226, 251, 221, 0.2);
+    background:
+      radial-gradient(80px 60px at 30% 20%, rgba(123, 215, 255, 0.22), transparent 70%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0));
+    box-shadow: inset 0 0 18px rgba(160, 246, 212, 0.18);
+    margin-bottom: 1.25rem;
+  }
+
+  .team-portrait {
+    height: 120px;
+    border-radius: 20px;
+    border: 1px solid rgba(226, 251, 221, 0.2);
+    background:
+      radial-gradient(140% 120% at 20% 0%, rgba(160, 246, 212, 0.2), transparent 60%),
+      linear-gradient(160deg, rgba(10, 16, 14, 0.9), rgba(6, 10, 9, 0.98));
+    position: relative;
+    overflow: hidden;
+  }
+
+  .team-portrait::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(176, 231, 206, 0.16) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(176, 231, 206, 0.16) 1px, transparent 1px);
+    background-size: 26px 26px;
+    opacity: 0.25;
+    mask-image: radial-gradient(180px 140px at 30% 20%, rgba(0, 0, 0, 0.9) 0%, transparent 70%);
+  }
+
+  .team-portrait.variant-a {
+    background:
+      radial-gradient(160% 120% at 20% 0%, rgba(123, 215, 255, 0.24), transparent 60%),
+      linear-gradient(160deg, rgba(10, 16, 14, 0.92), rgba(6, 10, 9, 0.98));
+  }
+
+  .team-portrait.variant-b {
+    background:
+      radial-gradient(160% 120% at 80% 10%, rgba(160, 246, 212, 0.26), transparent 60%),
+      linear-gradient(160deg, rgba(10, 16, 14, 0.92), rgba(6, 10, 9, 0.98));
+  }
+
+  .team-portrait.variant-c {
+    background:
+      radial-gradient(160% 120% at 10% 20%, rgba(255, 139, 92, 0.18), transparent 60%),
+      linear-gradient(160deg, rgba(10, 16, 14, 0.92), rgba(6, 10, 9, 0.98));
+  }
+
+  .team-portrait.variant-d {
+    background:
+      radial-gradient(160% 120% at 90% 0%, rgba(167, 160, 255, 0.2), transparent 60%),
+      linear-gradient(160deg, rgba(10, 16, 14, 0.92), rgba(6, 10, 9, 0.98));
+  }
+
+  .capability-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .capability-item {
+    position: relative;
+    padding-left: 1.5rem;
+  }
+
+  .capability-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.6rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 9999px;
+    background: rgba(160, 246, 212, 0.6);
+    box-shadow: 0 0 12px rgba(160, 246, 212, 0.4);
+  }
+}

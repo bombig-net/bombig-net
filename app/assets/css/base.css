@@ -1,0 +1,60 @@
+@layer base {
+  :root {
+    color-scheme: dark;
+    --ink: #0b0e13;
+    --paper: #f4f2ed;
+    --mist: #c8cdd8;
+    --glow: #7bd7ff;
+    --ember: #ff8b5c;
+    --lilac: #a7a0ff;
+    --acid: #9cf6d3;
+    --atmo-hero-base: #0b0f0b;
+    --section-block: clamp(4.5rem, 8vw, 7.5rem);
+    --section-fade-height: clamp(90px, 12vw, 150px);
+  }
+
+  html {
+    font-family: 'Manrope', 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: #0b0f0b;
+    color: #f5f4f1;
+    min-height: 100vh;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  ::selection {
+    background: rgba(156, 246, 211, 0.35);
+    color: #0b0e13;
+  }
+
+  input,
+  textarea {
+    color: #f5f4f1;
+  }
+
+  input:focus,
+  textarea:focus {
+    outline: 2px solid rgba(123, 215, 255, 0.5);
+    outline-offset: 2px;
+  }
+
+  summary {
+    list-style: none;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+}

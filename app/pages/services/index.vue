@@ -1,6 +1,6 @@
 <template>
   <div class="space-y-20 pb-24">
-    <section class="section-shell grid gap-12 pt-16 md:grid-cols-[1.1fr_0.9fr]">
+    <section class="mx-auto w-full max-w-6xl px-6 grid gap-12 pt-16 md:grid-cols-[1.1fr_0.9fr]">
       <div class="section-surface surface-grid space-y-6">
         <p class="eyebrow">{{ t('servicesIndex.hero.eyebrow') }}</p>
         <h1 class="text-4xl font-semibold tracking-tight text-white md:text-5xl">{{ t('servicesIndex.hero.title') }}</h1>
@@ -29,7 +29,7 @@
       </div>
     </section>
 
-    <section class="section-shell space-y-10">
+    <section class="mx-auto w-full max-w-6xl px-6 space-y-10">
       <SectionHeading
         :eyebrow="t('servicesIndex.directory.eyebrow')"
         :title="t('servicesIndex.directory.title')"
@@ -53,7 +53,7 @@
       </div>
     </section>
 
-    <section class="section-shell grid gap-8 md:grid-cols-2">
+    <section class="mx-auto w-full max-w-6xl px-6 grid gap-8 md:grid-cols-2">
       <SectionHeading
         :eyebrow="t('servicesIndex.howToChoose.eyebrow')"
         :title="t('servicesIndex.howToChoose.title')"

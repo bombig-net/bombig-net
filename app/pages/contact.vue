@@ -1,6 +1,6 @@
 <template>
   <div class="space-y-16 pb-24">
-    <section class="section-shell grid gap-12 pt-16 md:grid-cols-[1.1fr_0.9fr]">
+    <section class="mx-auto w-full max-w-6xl px-6 grid gap-12 pt-16 md:grid-cols-[1.1fr_0.9fr]">
       <div class="section-surface surface-grid space-y-6">
         <p class="eyebrow">{{ t('contact.hero.eyebrow') }}</p>
         <h1 class="text-4xl font-semibold tracking-tight text-white md:text-5xl">{{ t('contact.hero.title') }}</h1>
@@ -24,7 +24,7 @@
           type="text"
           autocomplete="name"
           required
-          class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm"
+          class="form-field"
           :placeholder="t('contact.form.namePlaceholder')"
         >
         <label class="text-xs uppercase tracking-[0.2em] text-slate-400" for="email">{{ t('contact.form.email') }}</label>
@@ -35,7 +35,7 @@
           type="email"
           autocomplete="email"
           required
-          class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm"
+          class="form-field"
           :placeholder="t('contact.form.emailPlaceholder')"
         >
         <label class="text-xs uppercase tracking-[0.2em] text-slate-400" for="project">{{ t('contact.form.project') }}</label>
@@ -46,7 +46,7 @@
           autocomplete="off"
           required
           rows="4"
-          class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm"
+          class="form-field"
           :placeholder="t('contact.form.projectPlaceholder')"
         />
         <button type="submit" class="cta-button emerald justify-center" :disabled="isSending">

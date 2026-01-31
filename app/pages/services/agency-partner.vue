@@ -1,9 +1,9 @@
 <template>
   <div class="space-y-24 pb-24">
-    <section class="relative overflow-hidden">
-      <div class="absolute -left-20 top-16 h-64 w-64 rounded-full bg-indigo-400/30 blur-3xl" />
-      <div class="absolute right-0 top-32 h-72 w-72 rounded-full bg-rose-300/30 blur-3xl" />
-      <div class="section-shell relative grid gap-12 pb-16 pt-28 md:grid-cols-[1.05fr_0.95fr]">
+    <section class="service-hero service-hero-agency">
+      <div class="service-hero-orb a" aria-hidden="true" />
+      <div class="service-hero-orb b" aria-hidden="true" />
+      <div class="mx-auto w-full max-w-6xl px-6 relative grid gap-12 pb-16 pt-28 md:grid-cols-[1.05fr_0.95fr]">
         <div class="section-surface surface-grid space-y-8">
           <p class="eyebrow">{{ t('servicePages.agencyPartner.hero.eyebrow') }}</p>
           <h1 class="hero-title">{{ t('servicePages.agencyPartner.hero.title') }}</h1>
@@ -17,15 +17,15 @@
           <p class="chip">{{ t('servicePages.agencyPartner.hero.panelLabel') }}</p>
           <p class="text-2xl font-semibold">{{ t('servicePages.agencyPartner.hero.panelTitle') }}</p>
           <div class="grid gap-4">
-            <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+            <div class="panel-inset p-4">
               <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('servicePages.agencyPartner.hero.panelPoints.first.label') }}</p>
               <p class="mt-2 text-sm text-slate-200">{{ t('servicePages.agencyPartner.hero.panelPoints.first.text') }}</p>
             </div>
-            <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+            <div class="panel-inset p-4">
               <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('servicePages.agencyPartner.hero.panelPoints.second.label') }}</p>
               <p class="mt-2 text-sm text-slate-200">{{ t('servicePages.agencyPartner.hero.panelPoints.second.text') }}</p>
             </div>
-            <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+            <div class="panel-inset p-4">
               <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('servicePages.agencyPartner.hero.panelPoints.third.label') }}</p>
               <p class="mt-2 text-sm text-slate-200">{{ t('servicePages.agencyPartner.hero.panelPoints.third.text') }}</p>
             </div>
@@ -34,7 +34,7 @@
       </div>
     </section>
 
-    <section class="section-shell space-y-10">
+    <section class="mx-auto w-full max-w-6xl px-6 space-y-10">
       <SectionHeading
         :eyebrow="t('servicePages.agencyPartner.modes.eyebrow')"
         :title="t('servicePages.agencyPartner.modes.title')"
@@ -59,7 +59,7 @@
       </div>
     </section>
 
-    <section class="section-shell grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
+    <section class="mx-auto w-full max-w-6xl px-6 grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
       <SectionHeading
         :eyebrow="t('servicePages.agencyPartner.why.eyebrow')"
         :title="t('servicePages.agencyPartner.why.title')"
@@ -81,7 +81,7 @@
       </div>
     </section>
 
-    <section class="section-shell grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
+    <section class="mx-auto w-full max-w-6xl px-6 grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
       <div class="space-y-6">
         <SectionHeading
           :eyebrow="t('servicePages.agencyPartner.proof.eyebrow')"
@@ -104,7 +104,7 @@
       </div>
     </section>
 
-    <section class="section-shell grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
+    <section class="mx-auto w-full max-w-6xl px-6 grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
       <SectionHeading
         :eyebrow="t('servicePages.agencyPartner.process.eyebrow')"
         :title="t('servicePages.agencyPartner.process.title')"
@@ -126,7 +126,7 @@
       </div>
     </section>
 
-    <section class="section-shell grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
+    <section class="mx-auto w-full max-w-6xl px-6 grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
       <SectionHeading
         :eyebrow="t('servicePages.agencyPartner.faq.eyebrow')"
         :title="t('servicePages.agencyPartner.faq.title')"
@@ -148,7 +148,7 @@
       </div>
     </section>
 
-    <section class="section-shell">
+    <section class="mx-auto w-full max-w-6xl px-6">
       <div class="glass-panel highlight flex flex-col gap-6 p-10 md:flex-row md:items-center md:justify-between">
         <div>
           <p class="eyebrow">{{ t('servicePages.agencyPartner.finalCta.eyebrow') }}</p>

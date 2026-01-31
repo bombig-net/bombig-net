@@ -1,6 +1,6 @@
 <template>
   <article v-if="post" class="space-y-12 pb-24">
-    <section class="section-shell pt-16">
+    <section class="mx-auto w-full max-w-6xl px-6 pt-16">
       <div class="section-surface surface-grid space-y-6">
         <p class="eyebrow">{{ t('blog.detail.eyebrow') }}</p>
         <h1 class="text-4xl font-semibold tracking-tight text-white md:text-5xl">{{ post.title }}</h1>
@@ -15,7 +15,7 @@
       </div>
     </section>
 
-    <section class="section-shell">
+    <section class="mx-auto w-full max-w-6xl px-6">
       <div class="section-frame">
         <div class="glass-panel raised">
           <div class="prose max-w-none px-8 py-10">
