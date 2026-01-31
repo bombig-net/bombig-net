@@ -3,8 +3,8 @@
     <section class="mx-auto w-full max-w-6xl px-6 pt-16">
       <div class="section-surface surface-grid space-y-6">
         <p class="eyebrow">{{ t('blog.index.eyebrow') }}</p>
-        <h1 class="text-4xl font-semibold tracking-tight text-white md:text-5xl">{{ t('blog.index.title') }}</h1>
-        <p class="max-w-2xl text-sm text-slate-200">{{ t('blog.index.description') }}</p>
+        <h1 class="headline-effect text-4xl font-semibold tracking-tight md:text-5xl">{{ t('blog.index.title') }}</h1>
+        <p class="max-w-2xl text-sm body-copy">{{ t('blog.index.description') }}</p>
       </div>
     </section>
 

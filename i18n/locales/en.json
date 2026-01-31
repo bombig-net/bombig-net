@@ -194,6 +194,35 @@
         }
       }
     },
+    "logos": {
+      "eyebrow": "Teams who trust us",
+      "title": "Partners who rely on our delivery",
+      "description": "Placeholder: One line about credibility and long-term collaboration.",
+      "label": "Organizations who work with us",
+      "items": {
+        "first": "University of Hamburg",
+        "second": "Ruhr University Bochum",
+        "third": "Kulturhaus Suederelbe",
+        "fourth": "Kulturpixel e.V."
+      }
+    },
+    "cta": {
+      "eyebrow": "Ready to move",
+      "title": "Launch the site that makes the decision easy.",
+      "description": "Placeholder: A short line about alignment, speed, and confident delivery.",
+      "primaryCta": "Book a discovery call",
+      "secondaryCta": "Explore services",
+      "panel": {
+        "label": "Next steps",
+        "text": "We align scope, timeline, and responsibilities before kickoff."
+      }
+    },
+    "blog": {
+      "eyebrow": "Journal",
+      "title": "Ideas behind the launches",
+      "description": "Short, practical notes on strategy, design, and delivery.",
+      "cta": "View the blog"
+    },
     "meta": {
       "title": "Bombig digital agency",
       "description": "Bombig is a digital agency taking responsibility for websites and digital projects."

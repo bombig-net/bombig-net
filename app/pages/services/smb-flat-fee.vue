@@ -6,20 +6,20 @@
       <div class="mx-auto w-full max-w-6xl px-6 relative grid gap-12 pb-16 pt-28 md:grid-cols-[1.1fr_0.9fr]">
         <div class="section-surface surface-grid space-y-8">
           <p class="eyebrow">{{ t('servicePages.smbFlatFee.hero.eyebrow') }}</p>
-          <h1 class="hero-title">{{ t('servicePages.smbFlatFee.hero.title') }}</h1>
-          <p class="max-w-xl text-base text-slate-200">{{ t('servicePages.smbFlatFee.hero.description') }}</p>
+          <h1 class="hero-title headline-effect">{{ t('servicePages.smbFlatFee.hero.title') }}</h1>
+          <p class="max-w-xl text-base body-copy">{{ t('servicePages.smbFlatFee.hero.description') }}</p>
           <div class="flex flex-wrap gap-4">
-            <NuxtLink :to="localePath('/contact')" class="cta-button emerald">{{ t('servicePages.smbFlatFee.hero.primaryCta') }}</NuxtLink>
-            <NuxtLink :to="localePath('/case-studies')" class="ghost-button glow">{{ t('servicePages.smbFlatFee.hero.secondaryCta') }}</NuxtLink>
+            <NuxtLink :to="localePath('/contact')" class="cta-button">{{ t('servicePages.smbFlatFee.hero.primaryCta') }}</NuxtLink>
+            <NuxtLink :to="localePath('/case-studies')" class="ghost-button">{{ t('servicePages.smbFlatFee.hero.secondaryCta') }}</NuxtLink>
           </div>
         </div>
         <div class="glass-panel highlight space-y-6 p-8">
           <p class="chip">{{ t('servicePages.smbFlatFee.hero.priceLabel') }}</p>
           <p class="text-3xl font-semibold">{{ t('servicePages.smbFlatFee.hero.priceValue') }}</p>
-          <p class="text-sm text-slate-200">{{ t('servicePages.smbFlatFee.hero.priceNote') }}</p>
+          <p class="text-sm body-copy">{{ t('servicePages.smbFlatFee.hero.priceNote') }}</p>
           <div class="panel-inset p-5">
             <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('servicePages.smbFlatFee.hero.promiseLabel') }}</p>
-            <p class="mt-3 text-sm text-slate-200">{{ t('servicePages.smbFlatFee.hero.promiseText') }}</p>
+            <p class="mt-3 text-sm body-copy">{{ t('servicePages.smbFlatFee.hero.promiseText') }}</p>
           </div>
         </div>
       </div>
@@ -35,17 +35,17 @@
         <div class="glass-panel raised p-6">
           <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('servicePages.smbFlatFee.included.items.first.label') }}</p>
           <p class="mt-3 text-lg font-semibold">{{ t('servicePages.smbFlatFee.included.items.first.title') }}</p>
-          <p class="mt-3 text-sm text-slate-200">{{ t('servicePages.smbFlatFee.included.items.first.text') }}</p>
+          <p class="mt-3 text-sm body-copy">{{ t('servicePages.smbFlatFee.included.items.first.text') }}</p>
         </div>
         <div class="glass-panel raised p-6">
           <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('servicePages.smbFlatFee.included.items.second.label') }}</p>
           <p class="mt-3 text-lg font-semibold">{{ t('servicePages.smbFlatFee.included.items.second.title') }}</p>
-          <p class="mt-3 text-sm text-slate-200">{{ t('servicePages.smbFlatFee.included.items.second.text') }}</p>
+          <p class="mt-3 text-sm body-copy">{{ t('servicePages.smbFlatFee.included.items.second.text') }}</p>
         </div>
         <div class="glass-panel raised p-6">
           <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('servicePages.smbFlatFee.included.items.third.label') }}</p>
           <p class="mt-3 text-lg font-semibold">{{ t('servicePages.smbFlatFee.included.items.third.title') }}</p>
-          <p class="mt-3 text-sm text-slate-200">{{ t('servicePages.smbFlatFee.included.items.third.text') }}</p>
+          <p class="mt-3 text-sm body-copy">{{ t('servicePages.smbFlatFee.included.items.third.text') }}</p>
         </div>
       </div>
     </section>
@@ -59,15 +59,15 @@
       <div class="grid gap-4">
         <div class="glass-panel raised p-6">
           <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('servicePages.smbFlatFee.boundaries.points.first.label') }}</p>
-          <p class="mt-3 text-sm text-slate-200">{{ t('servicePages.smbFlatFee.boundaries.points.first.text') }}</p>
+          <p class="mt-3 text-sm body-copy">{{ t('servicePages.smbFlatFee.boundaries.points.first.text') }}</p>
         </div>
         <div class="glass-panel raised p-6">
           <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('servicePages.smbFlatFee.boundaries.points.second.label') }}</p>
-          <p class="mt-3 text-sm text-slate-200">{{ t('servicePages.smbFlatFee.boundaries.points.second.text') }}</p>
+          <p class="mt-3 text-sm body-copy">{{ t('servicePages.smbFlatFee.boundaries.points.second.text') }}</p>
         </div>
         <div class="glass-panel raised p-6">
           <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('servicePages.smbFlatFee.boundaries.points.third.label') }}</p>
-          <p class="mt-3 text-sm text-slate-200">{{ t('servicePages.smbFlatFee.boundaries.points.third.text') }}</p>
+          <p class="mt-3 text-sm body-copy">{{ t('servicePages.smbFlatFee.boundaries.points.third.text') }}</p>
         </div>
       </div>
     </section>
@@ -104,15 +104,15 @@
       <div class="grid gap-4">
         <div class="glass-panel raised flex items-center justify-between px-6 py-5">
           <p class="text-sm uppercase tracking-[0.2em] text-slate-400">{{ t('servicePages.smbFlatFee.process.steps.first.label') }}</p>
-          <p class="text-sm text-slate-200">{{ t('servicePages.smbFlatFee.process.steps.first.text') }}</p>
+          <p class="text-sm body-copy">{{ t('servicePages.smbFlatFee.process.steps.first.text') }}</p>
         </div>
         <div class="glass-panel raised flex items-center justify-between px-6 py-5">
           <p class="text-sm uppercase tracking-[0.2em] text-slate-400">{{ t('servicePages.smbFlatFee.process.steps.second.label') }}</p>
-          <p class="text-sm text-slate-200">{{ t('servicePages.smbFlatFee.process.steps.second.text') }}</p>
+          <p class="text-sm body-copy">{{ t('servicePages.smbFlatFee.process.steps.second.text') }}</p>
         </div>
         <div class="glass-panel raised flex items-center justify-between px-6 py-5">
           <p class="text-sm uppercase tracking-[0.2em] text-slate-400">{{ t('servicePages.smbFlatFee.process.steps.third.label') }}</p>
-          <p class="text-sm text-slate-200">{{ t('servicePages.smbFlatFee.process.steps.third.text') }}</p>
+          <p class="text-sm body-copy">{{ t('servicePages.smbFlatFee.process.steps.third.text') }}</p>
         </div>
       </div>
     </section>
@@ -126,15 +126,15 @@
       <div class="space-y-4">
         <details class="glass-panel raised p-6">
           <summary class="cursor-pointer text-sm font-semibold">{{ t('servicePages.smbFlatFee.faq.items.first.question') }}</summary>
-          <p class="mt-3 text-sm text-slate-200">{{ t('servicePages.smbFlatFee.faq.items.first.answer') }}</p>
+          <p class="mt-3 text-sm body-copy">{{ t('servicePages.smbFlatFee.faq.items.first.answer') }}</p>
         </details>
         <details class="glass-panel raised p-6">
           <summary class="cursor-pointer text-sm font-semibold">{{ t('servicePages.smbFlatFee.faq.items.second.question') }}</summary>
-          <p class="mt-3 text-sm text-slate-200">{{ t('servicePages.smbFlatFee.faq.items.second.answer') }}</p>
+          <p class="mt-3 text-sm body-copy">{{ t('servicePages.smbFlatFee.faq.items.second.answer') }}</p>
         </details>
         <details class="glass-panel raised p-6">
           <summary class="cursor-pointer text-sm font-semibold">{{ t('servicePages.smbFlatFee.faq.items.third.question') }}</summary>
-          <p class="mt-3 text-sm text-slate-200">{{ t('servicePages.smbFlatFee.faq.items.third.answer') }}</p>
+          <p class="mt-3 text-sm body-copy">{{ t('servicePages.smbFlatFee.faq.items.third.answer') }}</p>
         </details>
       </div>
     </section>
@@ -144,9 +144,9 @@
         <div>
           <p class="eyebrow">{{ t('servicePages.smbFlatFee.finalCta.eyebrow') }}</p>
           <p class="text-2xl font-semibold">{{ t('servicePages.smbFlatFee.finalCta.title') }}</p>
-          <p class="mt-3 text-sm text-slate-200">{{ t('servicePages.smbFlatFee.finalCta.description') }}</p>
+          <p class="mt-3 text-sm body-copy">{{ t('servicePages.smbFlatFee.finalCta.description') }}</p>
         </div>
-        <NuxtLink :to="localePath('/contact')" class="cta-button emerald">{{ t('servicePages.smbFlatFee.finalCta.cta') }}</NuxtLink>
+        <NuxtLink :to="localePath('/contact')" class="cta-button">{{ t('servicePages.smbFlatFee.finalCta.cta') }}</NuxtLink>
       </div>
     </section>
   </div>

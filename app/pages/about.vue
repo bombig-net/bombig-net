@@ -3,11 +3,11 @@
     <section class="mx-auto w-full max-w-6xl px-6 grid gap-12 pt-16 md:grid-cols-[1.1fr_0.9fr]">
       <div class="section-surface surface-grid space-y-6">
         <p class="eyebrow">{{ t('about.hero.eyebrow') }}</p>
-        <h1 class="text-4xl font-semibold tracking-tight text-white md:text-5xl">{{ t('about.hero.title') }}</h1>
-        <p class="text-sm text-slate-200">{{ t('about.hero.description') }}</p>
+        <h1 class="headline-effect text-4xl font-semibold tracking-tight md:text-5xl">{{ t('about.hero.title') }}</h1>
+        <p class="text-sm body-copy">{{ t('about.hero.description') }}</p>
         <div class="flex flex-wrap gap-4">
-          <NuxtLink :to="localePath('/contact')" class="cta-button emerald">{{ t('about.hero.primaryCta') }}</NuxtLink>
-          <NuxtLink :to="localePath('/case-studies')" class="ghost-button glow">{{ t('about.hero.secondaryCta') }}</NuxtLink>
+          <NuxtLink :to="localePath('/contact')" class="cta-button">{{ t('about.hero.primaryCta') }}</NuxtLink>
+          <NuxtLink :to="localePath('/case-studies')" class="ghost-button">{{ t('about.hero.secondaryCta') }}</NuxtLink>
         </div>
       </div>
       <div class="section-frame">
@@ -16,7 +16,7 @@
             <div class="beliefs-visual-core" />
           </div>
           <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('about.beliefs.label') }}</p>
-          <ul class="mt-6 space-y-4 text-sm text-slate-200">
+          <ul class="mt-6 space-y-4 text-sm body-copy">
             <li>{{ t('about.beliefs.items.first') }}</li>
             <li>{{ t('about.beliefs.items.second') }}</li>
             <li>{{ t('about.beliefs.items.third') }}</li>
@@ -30,19 +30,19 @@
         <div class="value-icon" aria-hidden="true" />
         <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('about.values.leadership.label') }}</p>
         <p class="mt-3 text-lg font-semibold">{{ t('about.values.leadership.title') }}</p>
-        <p class="mt-3 text-sm text-slate-200">{{ t('about.values.leadership.description') }}</p>
+        <p class="mt-3 text-sm body-copy">{{ t('about.values.leadership.description') }}</p>
       </div>
       <div class="glass-panel raised p-6 value-card">
         <div class="value-icon" aria-hidden="true" />
         <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('about.values.method.label') }}</p>
         <p class="mt-3 text-lg font-semibold">{{ t('about.values.method.title') }}</p>
-        <p class="mt-3 text-sm text-slate-200">{{ t('about.values.method.description') }}</p>
+        <p class="mt-3 text-sm body-copy">{{ t('about.values.method.description') }}</p>
       </div>
       <div class="glass-panel raised p-6 value-card">
         <div class="value-icon" aria-hidden="true" />
         <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('about.values.momentum.label') }}</p>
         <p class="mt-3 text-lg font-semibold">{{ t('about.values.momentum.title') }}</p>
-        <p class="mt-3 text-sm text-slate-200">{{ t('about.values.momentum.description') }}</p>
+        <p class="mt-3 text-sm body-copy">{{ t('about.values.momentum.description') }}</p>
       </div>
     </section>
 
@@ -78,7 +78,7 @@
       </div>
       <div class="glass-panel highlight p-8">
         <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('about.capabilities.label') }}</p>
-        <ul class="capability-list mt-6 space-y-3 text-sm text-slate-200">
+        <ul class="capability-list mt-6 space-y-3 text-sm body-copy">
           <li class="capability-item">{{ t('about.capabilities.items.first') }}</li>
           <li class="capability-item">{{ t('about.capabilities.items.second') }}</li>
           <li class="capability-item">{{ t('about.capabilities.items.third') }}</li>

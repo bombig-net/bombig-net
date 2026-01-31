@@ -12,19 +12,19 @@
         >
           <div :class="align === 'right' ? 'md:order-2' : ''" class="space-y-6">
             <p v-if="eyebrow" class="eyebrow text-slate-200/80">{{ eyebrow }}</p>
-            <h3 class="section-title text-3xl text-white md:text-4xl">{{ title }}</h3>
-            <p v-if="description" class="text-sm text-slate-200">{{ description }}</p>
+            <h3 class="section-title headline-effect text-3xl md:text-4xl">{{ title }}</h3>
+            <p v-if="description" class="text-sm body-copy">{{ description }}</p>
             <div v-if="bullets?.length" class="space-y-3">
-              <div v-for="(bullet, index) in bullets" :key="`${bullet}-${index}`" class="flex gap-3 text-sm text-slate-200">
+              <div v-for="(bullet, index) in bullets" :key="`${bullet}-${index}`" class="flex gap-3 text-sm body-copy">
                 <span class="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-200/80" aria-hidden="true" />
                 <span>{{ bullet }}</span>
               </div>
             </div>
             <div class="flex flex-wrap gap-4">
-              <NuxtLink :to="localePath(ctaTo)" class="cta-button emerald">
+              <NuxtLink :to="localePath(ctaTo)" class="cta-button">
                 {{ ctaLabel }}
               </NuxtLink>
-              <NuxtLink v-if="secondaryLabel && secondaryTo" :to="localePath(secondaryTo)" class="ghost-button glow">
+              <NuxtLink v-if="secondaryLabel && secondaryTo" :to="localePath(secondaryTo)" class="ghost-button">
                 {{ secondaryLabel }}
               </NuxtLink>
             </div>
@@ -52,7 +52,7 @@
             <div class="absolute inset-0 flex items-end justify-start p-6">
               <div class="glass-panel raised max-w-xs p-4">
                 <p class="text-xs uppercase tracking-[0.2em] text-slate-300">{{ panelLabel }}</p>
-                <p class="mt-2 text-sm text-slate-200">{{ panelText }}</p>
+                <p class="mt-2 text-sm body-copy">{{ panelText }}</p>
               </div>
             </div>
           </div>

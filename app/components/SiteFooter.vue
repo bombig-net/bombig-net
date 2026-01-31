@@ -1,10 +1,10 @@
 <template>
-  <footer class="footer-surface mt-24 border-t">
+  <footer class="footer-surface mt-12 border-t">
     <div class="mx-auto w-full max-w-6xl px-6 grid gap-10 py-16 md:grid-cols-[2fr_1fr_1fr]">
       <div class="space-y-4">
         <p class="text-2xl font-semibold text-white">{{ t('footer.tagline') }}</p>
-        <p class="text-sm text-slate-200">{{ t('footer.blurb') }}</p>
-        <div class="flex flex-wrap gap-3 text-sm text-slate-200">
+        <p class="text-sm body-copy">{{ t('footer.blurb') }}</p>
+        <div class="flex flex-wrap gap-3 text-sm body-copy">
           <span>{{ config.site?.location }}</span>
           <span class="text-slate-500">|</span>
           <span>{{ config.site?.phone }}</span>
@@ -18,7 +18,7 @@
           v-for="item in footerNav"
           :key="item.to"
           :to="localePath(item.to)"
-          class="block text-slate-200 transition hover:text-white"
+          class="block body-copy transition hover:text-white"
         >
           {{ t(item.key) }}
         </NuxtLink>
@@ -30,7 +30,7 @@
           :key="item.href"
           :to="item.href"
           external
-          class="block text-slate-200 transition hover:text-white"
+          class="block body-copy transition hover:text-white"
         >
           {{ item.label }}
         </NuxtLink>

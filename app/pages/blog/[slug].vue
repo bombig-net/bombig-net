@@ -3,8 +3,8 @@
     <section class="mx-auto w-full max-w-6xl px-6 pt-16">
       <div class="section-surface surface-grid space-y-6">
         <p class="eyebrow">{{ t('blog.detail.eyebrow') }}</p>
-        <h1 class="text-4xl font-semibold tracking-tight text-white md:text-5xl">{{ post.title }}</h1>
-        <p class="max-w-2xl text-sm text-slate-200">{{ post.description }}</p>
+        <h1 class="headline-effect text-4xl font-semibold tracking-tight md:text-5xl">{{ post.title }}</h1>
+        <p class="max-w-2xl text-sm body-copy">{{ post.description }}</p>
         <div class="flex flex-wrap gap-4 text-xs uppercase tracking-[0.2em] text-slate-400">
           <span>{{ post.meta?.category || t('blog.detail.fallbackCategory') }}</span>
           <span>/</span>

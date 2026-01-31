@@ -7,10 +7,10 @@
       <span class="section-heading-rule" aria-hidden="true" />
       <p class="eyebrow">{{ eyebrow }}</p>
     </div>
-    <h2 class="section-title text-3xl font-semibold tracking-tight text-white md:text-4xl">
+    <h2 class="section-title headline-effect text-3xl font-semibold tracking-tight md:text-4xl">
       {{ title }}
     </h2>
-    <p v-if="description" :class="['max-w-2xl text-sm text-slate-200', props.align === 'center' ? 'mx-auto' : '']">
+    <p v-if="description" :class="['max-w-2xl text-sm body-copy', props.align === 'center' ? 'mx-auto' : '']">
       {{ description }}
     </p>
   </div>

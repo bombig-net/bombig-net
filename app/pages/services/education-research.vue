@@ -6,23 +6,23 @@
       <div class="mx-auto w-full max-w-6xl px-6 relative grid gap-12 pb-16 pt-28 md:grid-cols-[1.1fr_0.9fr]">
         <div class="section-surface surface-grid space-y-8">
           <p class="eyebrow">{{ t('servicePages.educationResearch.hero.eyebrow') }}</p>
-          <h1 class="hero-title">{{ t('servicePages.educationResearch.hero.title') }}</h1>
-          <p class="max-w-xl text-base text-slate-200">{{ t('servicePages.educationResearch.hero.description') }}</p>
+          <h1 class="hero-title headline-effect">{{ t('servicePages.educationResearch.hero.title') }}</h1>
+          <p class="max-w-xl text-base body-copy">{{ t('servicePages.educationResearch.hero.description') }}</p>
           <p class="max-w-xl text-sm text-slate-300">{{ t('servicePages.educationResearch.hero.subline') }}</p>
           <div class="flex flex-wrap gap-4">
-            <a :href="calendlyUrl" class="cta-button emerald" target="_blank" rel="noreferrer">
+            <a :href="calendlyUrl" class="cta-button" target="_blank" rel="noreferrer">
               {{ t('servicePages.educationResearch.hero.primaryCta') }}
             </a>
-            <a href="#projects" class="ghost-button glow">{{ t('servicePages.educationResearch.hero.secondaryCta') }}</a>
+            <a href="#projects" class="ghost-button">{{ t('servicePages.educationResearch.hero.secondaryCta') }}</a>
           </div>
         </div>
         <div class="glass-panel highlight space-y-6 p-8">
           <p class="chip">{{ t('servicePages.educationResearch.hero.priceLabel') }}</p>
           <p class="text-3xl font-semibold">{{ t('servicePages.educationResearch.hero.priceValue') }}</p>
-          <p class="text-sm text-slate-200">{{ t('servicePages.educationResearch.hero.priceNote') }}</p>
+          <p class="text-sm body-copy">{{ t('servicePages.educationResearch.hero.priceNote') }}</p>
           <div class="panel-inset p-5">
             <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('servicePages.educationResearch.hero.promiseLabel') }}</p>
-            <p class="mt-3 text-sm text-slate-200">{{ t('servicePages.educationResearch.hero.promiseText') }}</p>
+            <p class="mt-3 text-sm body-copy">{{ t('servicePages.educationResearch.hero.promiseText') }}</p>
           </div>
         </div>
       </div>
@@ -57,7 +57,7 @@
       <div class="grid gap-4">
         <div v-for="point in problemPoints" :key="point.title" class="glass-panel raised p-6">
           <p class="text-sm font-semibold">{{ point.title }}</p>
-          <p class="mt-3 text-sm text-slate-200">{{ point.text }}</p>
+          <p class="mt-3 text-sm body-copy">{{ point.text }}</p>
         </div>
       </div>
     </section>
@@ -73,14 +73,14 @@
           <div v-for="item in offerItems" :key="item.title" class="glass-panel raised p-6">
             <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ item.label }}</p>
             <p class="mt-3 text-lg font-semibold">{{ item.title }}</p>
-            <p class="mt-3 text-sm text-slate-200">{{ item.text }}</p>
+            <p class="mt-3 text-sm body-copy">{{ item.text }}</p>
           </div>
         </div>
         <div class="space-y-4">
           <div class="glass-panel highlight space-y-4 p-6">
             <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('servicePages.educationResearch.offer.priceLabel') }}</p>
             <p class="text-2xl font-semibold">{{ t('servicePages.educationResearch.offer.priceValue') }}</p>
-            <a :href="calendlyUrl" class="ghost-button glow" target="_blank" rel="noreferrer">
+            <a :href="calendlyUrl" class="ghost-button" target="_blank" rel="noreferrer">
               {{ t('servicePages.educationResearch.offer.cta') }}
             </a>
           </div>
@@ -104,7 +104,7 @@
           <div class="glass-panel highlight space-y-4 p-6">
             <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('servicePages.educationResearch.archive.priceLabel') }}</p>
             <p class="text-2xl font-semibold">{{ t('servicePages.educationResearch.archive.priceValue') }}</p>
-            <a :href="calendlyUrl" class="ghost-button glow" target="_blank" rel="noreferrer">
+            <a :href="calendlyUrl" class="ghost-button" target="_blank" rel="noreferrer">
               {{ t('servicePages.educationResearch.archive.cta') }}
             </a>
           </div>
@@ -118,7 +118,7 @@
       <div class="grid gap-4 md:grid-cols-2">
         <div v-for="item in archiveItems" :key="item.title" class="glass-panel raised p-6">
           <p class="text-sm font-semibold">{{ item.title }}</p>
-          <p class="mt-3 text-sm text-slate-200">{{ item.text }}</p>
+          <p class="mt-3 text-sm body-copy">{{ item.text }}</p>
         </div>
       </div>
     </section>
@@ -145,7 +145,7 @@
               <p v-if="testimonial.org" class="text-xs text-slate-300">{{ testimonial.org }}</p>
             </div>
           </div>
-          <blockquote class="mt-4 text-sm text-slate-200">{{ testimonial.quote }}</blockquote>
+          <blockquote class="mt-4 text-sm body-copy">{{ testimonial.quote }}</blockquote>
         </figure>
       </div>
     </section>
@@ -162,9 +162,9 @@
             <div class="space-y-4">
               <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ addon.label }}</p>
               <h3 class="text-xl font-semibold">{{ addon.title }}</h3>
-              <p class="text-sm text-slate-200">{{ addon.text }}</p>
+              <p class="text-sm body-copy">{{ addon.text }}</p>
               <p class="text-sm font-semibold">{{ addon.price }}</p>
-              <a :href="calendlyUrl" class="ghost-button glow" target="_blank" rel="noreferrer">
+              <a :href="calendlyUrl" class="ghost-button" target="_blank" rel="noreferrer">
                 {{ t('servicePages.educationResearch.addons.cta') }}
               </a>
             </div>
@@ -197,7 +197,7 @@
             >
               {{ project.title }}
             </a>
-            <p class="text-sm text-slate-200">{{ project.description }}</p>
+            <p class="text-sm body-copy">{{ project.description }}</p>
             <div class="flex flex-wrap items-center gap-4">
               <img
                 v-for="logo in project.logos"
@@ -219,9 +219,9 @@
         <div>
           <p class="eyebrow">{{ t('servicePages.educationResearch.finalCta.eyebrow') }}</p>
           <p class="text-2xl font-semibold">{{ t('servicePages.educationResearch.finalCta.title') }}</p>
-          <p class="mt-3 text-sm text-slate-200">{{ t('servicePages.educationResearch.finalCta.description') }}</p>
+          <p class="mt-3 text-sm body-copy">{{ t('servicePages.educationResearch.finalCta.description') }}</p>
         </div>
-        <a :href="calendlyUrl" class="cta-button emerald" target="_blank" rel="noreferrer">
+        <a :href="calendlyUrl" class="cta-button" target="_blank" rel="noreferrer">
           {{ t('servicePages.educationResearch.finalCta.cta') }}
         </a>
       </div>

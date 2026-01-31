@@ -9,9 +9,9 @@
         <div class="space-y-2">
           <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ item.eyebrow }}</p>
           <h3 class="text-xl font-semibold text-white">{{ item.title }}</h3>
-          <p class="text-sm text-slate-200">{{ item.description }}</p>
+          <p class="text-sm body-copy">{{ item.description }}</p>
         </div>
-        <span class="ghost-button glow w-fit">{{ item.cta }}</span>
+        <span class="ghost-button w-fit">{{ item.cta }}</span>
       </NuxtLink>
     </div>
   </div>

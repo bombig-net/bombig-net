@@ -3,9 +3,9 @@
     <section class="mx-auto w-full max-w-6xl px-6 grid gap-12 pt-16 md:grid-cols-[1.1fr_0.9fr]">
       <div class="section-surface surface-grid space-y-6">
         <p class="eyebrow">{{ t('contact.hero.eyebrow') }}</p>
-        <h1 class="text-4xl font-semibold tracking-tight text-white md:text-5xl">{{ t('contact.hero.title') }}</h1>
-        <p class="text-sm text-slate-200">{{ t('contact.hero.description') }}</p>
-        <div class="space-y-2 text-sm text-slate-200">
+        <h1 class="headline-effect text-4xl font-semibold tracking-tight md:text-5xl">{{ t('contact.hero.title') }}</h1>
+        <p class="text-sm body-copy">{{ t('contact.hero.description') }}</p>
+        <div class="space-y-2 text-sm body-copy">
           <p>{{ config.site?.email }}</p>
           <p>{{ config.site?.phone }}</p>
           <p>{{ config.site?.location }}</p>
@@ -49,7 +49,7 @@
           class="form-field"
           :placeholder="t('contact.form.projectPlaceholder')"
         />
-        <button type="submit" class="cta-button emerald justify-center" :disabled="isSending">
+        <button type="submit" class="cta-button justify-center" :disabled="isSending">
           {{ isSending ? t('contact.form.sending') : t('contact.form.submit') }}
         </button>
         <p class="text-xs text-slate-400">{{ t('contact.form.note') }}</p>

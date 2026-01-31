@@ -194,6 +194,35 @@
         }
       }
     },
+    "logos": {
+      "eyebrow": "Teams, die uns vertrauen",
+      "title": "Partner, die auf unsere Delivery setzen",
+      "description": "Platzhalter: Ein Satz zu Vertrauen und langfristiger Zusammenarbeit.",
+      "label": "Organisationen, die mit uns arbeiten",
+      "items": {
+        "first": "Universität Hamburg",
+        "second": "Ruhr-Universität Bochum",
+        "third": "Kulturhaus Süderelbe",
+        "fourth": "Kulturpixel e.V."
+      }
+    },
+    "cta": {
+      "eyebrow": "Bereit für den nächsten Schritt",
+      "title": "Launch die Site, die Entscheidungen leichter macht.",
+      "description": "Platzhalter: Ein Satz über Alignment, Tempo und sichere Umsetzung.",
+      "primaryCta": "Discovery-Call buchen",
+      "secondaryCta": "Services entdecken",
+      "panel": {
+        "label": "Nächste Schritte",
+        "text": "Wir klären Scope, Timing und Verantwortung vor dem Kickoff."
+      }
+    },
+    "blog": {
+      "eyebrow": "Journal",
+      "title": "Gedanken hinter den Launches",
+      "description": "Kurze, praxisnahe Notizen zu Strategie, Design und Delivery.",
+      "cta": "Zum Blog"
+    },
     "meta": {
       "title": "Bombig Digitalagentur",
       "description": "Bombig ist eine Digitalagentur, die Verantwortung für Websites und digitale Projekte übernimmt."
@@ -289,6 +318,7 @@
         "primaryCta": "Kennenlernen buchen",
         "secondaryCta": "Projekte ansehen",
         "priceLabel": "Fixpreis",
+        "priceValue": "8.500 EUR inkl. USt.",
         "priceValü": "8.500 EUR inkl. USt.",
         "priceNote": "Erster Entwurf nach nur 4 Wochen.",
         "promiseLabel": "Unser Versprechen",
@@ -338,6 +368,7 @@
         "title": "Individülle Projekt-Website mit Fixpreis und Betreuung über die gesamte Laufzeit",
         "description": "In nur 4 Wochen erhälst du den ersten Entwurf in deinem Projektdesign. Der Fixpreis gibt dir volle Kostenkontrolle unabhängig von deiner Projektlaufzeit. Technik, Support und rechtliche Anforderungen sind abgedeckt. So wird deine Website zur verlässlichen Basis für Öffentlichkeitsarbeit und Projekterfolg.",
         "priceLabel": "Festpreis",
+        "priceValue": "8.500 EUR inkl. USt.",
         "priceValü": "8.500 EUR inkl. USt.",
         "cta": "Kennenlernen buchen",
         "images": {
@@ -392,6 +423,7 @@
         "title": "Projektarchiv Online: eine Website bleibt daürhaft erreichbar",
         "description": "Nach Projektende konvertieren wir deine WordPress-Seite in eine wartungsarme HTML-Version mit Archivhinweis. Wir spielen sie auf den Server oder Webspace deiner Organisation ein und verbinden die Domain.",
         "priceLabel": "Festpreis",
+        "priceValue": "1.500 EUR inkl. USt.",
         "priceValü": "1.500 EUR inkl. USt.",
         "cta": "Kennenlernen buchen",
         "images": {
@@ -713,9 +745,9 @@
         "title": "Häufige Fragen.",
         "description": "Platzhalter: Drei Fragen von Agenturen.",
         "items": {
-          "first": { "qüstion": "Wie funktioniert White Label konkret?", "answer": "Platzhalter: Kommunikation und NDA." },
-          "second": { "qüstion": "Übernehmt ihr Kundenkontakt?", "answer": "Platzhalter: Optionen und Grenzen." },
-          "third": { "qüstion": "Wie kalkuliert ihr?", "answer": "Platzhalter: Tagessätze oder Paketpreise." }
+          "first": { "question": "Wie funktioniert White Label konkret?", "qüstion": "Wie funktioniert White Label konkret?", "answer": "Platzhalter: Kommunikation und NDA." },
+          "second": { "question": "Übernehmt ihr Kundenkontakt?", "qüstion": "Übernehmt ihr Kundenkontakt?", "answer": "Platzhalter: Optionen und Grenzen." },
+          "third": { "question": "Wie kalkuliert ihr?", "qüstion": "Wie kalkuliert ihr?", "answer": "Platzhalter: Tagessätze oder Paketpreise." }
         }
       },
       "finalCta": {
@@ -737,6 +769,7 @@
         "primaryCta": "Fixpreis anfragen",
         "secondaryCta": "Beispiele ansehen",
         "priceLabel": "Monatlicher Fixpreis",
+        "priceValue": "ab 1.900 EUR / Monat",
         "priceValü": "ab 1.900 EUR / Monat",
         "priceNote": "Platzhalter: Umfang, Laufzeit und Mindestdaür.",
         "promiseLabel": "Unser Versprechen",
@@ -791,9 +824,9 @@
         "title": "Häufige Fragen.",
         "description": "Platzhalter: Drei Fragen von KMU.",
         "items": {
-          "first": { "qüstion": "Gibt es eine Mindestlaufzeit?", "answer": "Platzhalter: Laufzeit und Kündigungsfrist." },
-          "second": { "qüstion": "Wie viele Aufgaben pro Monat?", "answer": "Platzhalter: Priorisierung und Umfang." },
-          "third": { "qüstion": "Können wir den Plan ändern?", "answer": "Platzhalter: Anpassung und Flexibilität." }
+          "first": { "question": "Gibt es eine Mindestlaufzeit?", "qüstion": "Gibt es eine Mindestlaufzeit?", "answer": "Platzhalter: Laufzeit und Kündigungsfrist." },
+          "second": { "question": "Wie viele Aufgaben pro Monat?", "qüstion": "Wie viele Aufgaben pro Monat?", "answer": "Platzhalter: Priorisierung und Umfang." },
+          "third": { "question": "Können wir den Plan ändern?", "qüstion": "Können wir den Plan ändern?", "answer": "Platzhalter: Anpassung und Flexibilität." }
         }
       },
       "finalCta": {
@@ -821,6 +854,23 @@
       }
     },
     "valüs": {
+      "leadership": {
+        "label": "Leadership",
+        "title": "Design, Strategie und Engineering in einem Raum.",
+        "description": "Du arbeitest direkt mit den Menschen, die das Projekt formen."
+      },
+      "method": {
+        "label": "Methode",
+        "title": "Kurze, fokussierte Sprints mit Wochen-Meilensteinen.",
+        "description": "Momentum bleibt hoch, Feedback bleibt echt, Entscheidungen bleiben klar."
+      },
+      "momentum": {
+        "label": "Momentum",
+        "title": "Launches, die sich unvermeidbar anfühlen.",
+        "description": "Wir positionieren dein Team für kontinuierliche Verbesserung nach dem Go-live."
+      }
+    },
+    "values": {
       "leadership": {
         "label": "Leadership",
         "title": "Design, Strategie und Engineering in einem Raum.",

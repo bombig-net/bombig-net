@@ -7,7 +7,7 @@
     </div>
     <div class="space-y-3">
       <h3 class="text-xl font-semibold text-white">{{ item.title }}</h3>
-      <p class="text-sm text-slate-200">{{ item.description }}</p>
+      <p class="text-sm body-copy">{{ item.description }}</p>
     </div>
     <div class="flex flex-wrap gap-2 text-xs uppercase tracking-[0.2em] text-slate-400">
       <span v-for="tag in tags" :key="tag" class="chip">{{ tag }}</span>

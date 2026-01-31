@@ -3,8 +3,8 @@
     <section class="mx-auto w-full max-w-6xl px-6 pt-16">
       <div class="section-surface surface-grid space-y-6">
         <p class="eyebrow">{{ t('caseStudies.detail.eyebrow') }}</p>
-        <h1 class="text-4xl font-semibold tracking-tight text-white md:text-5xl">{{ caseStudy.title }}</h1>
-        <p class="max-w-2xl text-sm text-slate-200">{{ caseStudy.description }}</p>
+        <h1 class="headline-effect text-4xl font-semibold tracking-tight md:text-5xl">{{ caseStudy.title }}</h1>
+        <p class="max-w-2xl text-sm body-copy">{{ caseStudy.description }}</p>
         <div class="flex flex-wrap gap-4 text-xs uppercase tracking-[0.2em] text-slate-400">
           <span>{{ caseStudy.meta?.client || t('caseStudies.detail.fallbackClient') }}</span>
           <span>/</span>
@@ -26,19 +26,19 @@
       <div class="glass-panel highlight space-y-6 p-8">
         <div>
           <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('caseStudies.detail.servicesLabel') }}</p>
-          <p class="mt-3 text-sm text-slate-200">
+          <p class="mt-3 text-sm body-copy">
             {{ caseStudy.meta?.services || t('caseStudies.detail.fallbackServices') }}
           </p>
         </div>
         <div>
           <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('caseStudies.detail.outcomesLabel') }}</p>
-          <ul class="mt-3 space-y-2 text-sm text-slate-200">
+          <ul class="mt-3 space-y-2 text-sm body-copy">
             <li>{{ t('caseStudies.detail.outcomes.first') }}</li>
             <li>{{ t('caseStudies.detail.outcomes.second') }}</li>
             <li>{{ t('caseStudies.detail.outcomes.third') }}</li>
           </ul>
         </div>
-        <NuxtLink :to="localePath('/contact')" class="cta-button emerald justify-center">
+        <NuxtLink :to="localePath('/contact')" class="cta-button justify-center">
           {{ t('caseStudies.detail.cta') }}
         </NuxtLink>
       </div>

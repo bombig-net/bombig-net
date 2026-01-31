@@ -1,19 +1,19 @@
 <template>
-  <div class="glass-panel highlight p-6">
-    <p v-if="label" class="text-xs uppercase tracking-[0.2em] text-slate-400">
-      {{ label }}
-    </p>
-    <div class="logo-marquee mt-6" role="list" :aria-label="label">
-      <div class="logo-marquee-track">
-        <div
-          v-for="(item, index) in trackItems"
-          :key="`${item}-${index}`"
-          class="logo-marquee-item"
-          role="listitem"
-          :aria-hidden="index >= items.length"
+  <div class="logo-marquee" role="list" :aria-label="label">
+    <div class="logo-marquee-track">
+      <div
+        v-for="(item, index) in trackItems"
+        :key="`${item}-${index}`"
+        class="logo-marquee-item"
+        role="listitem"
+        :aria-hidden="index >= items.length"
+      >
+        <img
+          class="logo-image"
+          :src="logoUrl(index)"
+          :alt="item"
+          loading="lazy"
         >
-          {{ item }}
-        </div>
       </div>
     </div>
   </div>
@@ -27,4 +27,10 @@ const props = defineProps<{
 
 const trackItems = computed(() => [...props.items, ...props.items])
 const items = computed(() => props.items)
+
+const logoCount = 16
+const logoUrl = (index: number) => {
+  const logoIndex = (index % logoCount) + 1
+  return `https://logoipsum.com/logo/logo-${logoIndex}.svg`
+}
 </script>

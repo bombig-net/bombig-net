@@ -5,9 +5,7 @@
         <div class="nav-inner relative flex items-center justify-between gap-4 rounded-full py-[0.45rem] pr-3 pl-4">
           <NuxtLink :to="localePath('/')" class="nav-logo" aria-label="bombig.net">
             <span class="nav-logo-mark" aria-hidden="true">
-              <svg viewBox="0 0 24 24" class="nav-logo-icon" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M2.5 12h4.2l2-4.8 3.2 9.6 2.2-5.1H21.5" />
-              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256"><path fill="currentColor" d="m213.85 125.46l-112 120a8 8 0 0 1-13.69-7l14.66-73.33l-57.63-21.64a8 8 0 0 1-3-13l112-120a8 8 0 0 1 13.69 7l-14.7 73.41l57.63 21.61a8 8 0 0 1 3 12.95Z"/></svg>
             </span>
             <span>bombig.net</span>
           </NuxtLink>
@@ -21,7 +19,7 @@
                       <span class="text-[0.6rem] text-slate-400">▾</span>
                     </NavigationMenuTrigger>
                     <NavigationMenuContent class="absolute left-0 top-full z-50 mt-4 w-72 p-4 nav-panel">
-                      <div class="flex flex-col gap-3 text-xs uppercase tracking-[0.22em] text-slate-200">
+                      <div class="flex flex-col gap-3 text-xs uppercase tracking-[0.22em] body-copy">
                         <NavigationMenuLink as-child>
                           <NuxtLink :to="localePath(item.to)" class="transition hover:text-white">
                             {{ t('navServices.overview') }}
@@ -45,7 +43,7 @@
             </NavigationMenuRoot>
           </nav>
           <div class="flex items-center gap-2">
-            <NuxtLink :to="localePath('/contact')" class="nav-cta hidden sm:inline-flex">
+            <NuxtLink :to="localePath('/contact')" class="cta-button hidden sm:inline-flex px-4 py-2 text-xs uppercase tracking-[0.22em]">
               {{ t('header.letsTalk') }}
             </NuxtLink>
             <NuxtLink
@@ -100,7 +98,11 @@
                       </div>
                     </div>
                     <div class="flex flex-col gap-4">
-                      <NuxtLink :to="localePath('/contact')" class="nav-cta w-fit" @click="mobileMenuOpen = false">
+                      <NuxtLink
+                        :to="localePath('/contact')"
+                        class="cta-button w-fit px-4 py-2 text-xs uppercase tracking-[0.22em]"
+                        @click="mobileMenuOpen = false"
+                      >
                         {{ t('header.letsTalk') }}
                       </NuxtLink>
                       <NuxtLink
