@@ -839,78 +839,146 @@
   },
   "about": {
     "hero": {
-      "eyebrow": "Über Bombig",
-      "title": "Ein Studio für Teams, die nicht übersehen werden wollen.",
-      "description": "Wir sind ein kleines Senior-Team aus Strategie, Design und Build. Unser Fokus: ambitionierte Marken mit Klarheit, Confidence und Momentum zu launchen.",
-      "primaryCta": "Mit uns arbeiten",
-      "secondaryCta": "Arbeit ansehen"
+      "eyebrow": "Entscheidungssystem",
+      "title": "Ein Unternehmen, das für harte Entscheidungen bezahlt wird.",
+      "description": "Diese Seite beschreibt Urteilsfähigkeit unter Constraints und wie Entscheidungen getragen, geändert und gehalten werden.",
+      "subline": "Kohärenz entsteht aus Struktur, nicht aus Persönlichkeit."
     },
-    "beliefs": {
-      "label": "Woran wir glauben",
+    "system": {
+      "eyebrow": "Systemübersicht",
+      "title": "Wie das Entscheidungssystem arbeitet",
+      "description": "Ein kompaktes Modell aus Zuständigkeit, Constraints und Verantwortung.",
       "items": {
-        "first": "Klarheit schlägt Noise. Jede Seite sollte eine Sache richtig gut sagen.",
-        "second": "Design gewinnt Aufmerksamkeit, Performance gewinnt Vertraün.",
-        "third": "Storytelling gehört in jede Interaktion, nicht nur in die Copy."
+        "first": {
+          "title": "Entscheidungsverantwortung",
+          "text": "Jede Entscheidung hat eine benannte Verantwortung und eine dokumentierte Begründung."
+        },
+        "second": {
+          "title": "Struktur vor Flexibilität",
+          "text": "Grenzen werden früh gesetzt, damit Entscheidungen wiederholbar bleiben."
+        },
+        "third": {
+          "title": "Constraints als Input",
+          "text": "Zeitliche, rechtliche und operative Grenzen sind Eingaben."
+        },
+        "fourth": {
+          "title": "Feedback-Schleifen",
+          "text": "Signale werden in einem festen Rhythmus mit Schwellenwerten geprüft."
+        },
+        "fifth": {
+          "title": "Langfristige Verantwortung",
+          "text": "Verantwortung bleibt, nachdem eine Entscheidung getroffen ist."
+        }
       }
     },
-    "valüs": {
-      "leadership": {
-        "label": "Leadership",
-        "title": "Design, Strategie und Engineering in einem Raum.",
-        "description": "Du arbeitest direkt mit den Menschen, die das Projekt formen."
-      },
-      "method": {
-        "label": "Methode",
-        "title": "Kurze, fokussierte Sprints mit Wochen-Meilensteinen.",
-        "description": "Momentum bleibt hoch, Feedback bleibt echt, Entscheidungen bleiben klar."
-      },
-      "momentum": {
-        "label": "Momentum",
-        "title": "Launches, die sich unvermeidbar anfühlen.",
-        "description": "Wir positionieren dein Team für kontinuierliche Verbesserung nach dem Go-live."
-      }
-    },
-    "values": {
-      "leadership": {
-        "label": "Leadership",
-        "title": "Design, Strategie und Engineering in einem Raum.",
-        "description": "Du arbeitest direkt mit den Menschen, die das Projekt formen."
-      },
-      "method": {
-        "label": "Methode",
-        "title": "Kurze, fokussierte Sprints mit Wochen-Meilensteinen.",
-        "description": "Momentum bleibt hoch, Feedback bleibt echt, Entscheidungen bleiben klar."
-      },
-      "momentum": {
-        "label": "Momentum",
-        "title": "Launches, die sich unvermeidbar anfühlen.",
-        "description": "Wir positionieren dein Team für kontinuierliche Verbesserung nach dem Go-live."
-      }
-    },
-    "team": {
-      "eyebrow": "Unser Team",
-      "title": "Klein, senior, bewusst gebaut.",
-      "description": "Wir halten das Team schlank, damit jede Zusammenarbeit nah, konsistent und verantwortlich bleibt.",
-      "roles": {
-        "founder": "Founder / Strategy",
-        "creativeDirector": "Creative Director",
-        "productDesigner": "Product Designer",
-        "engineeringLead": "Engineering Lead"
-      }
-    },
-    "capabilities": {
-      "label": "Capabilities",
+    "mechanics": {
+      "eyebrow": "Entscheidungsmechanik",
+      "title": "Wie Entscheidungen im System bewegt werden",
+      "description": "Klare Regeln für Zuständigkeit, Änderung und Stabilität.",
       "items": {
-        "first": "Brand-Narrative und Messaging-Systeme",
-        "second": "Conversion-getriebene Landing Pages und Marketing Sites",
-        "third": "Design-Systeme mit Motion und Interaction Direction",
-        "fourth": "Nuxt + Vü Builds und Performance Tuning",
-        "fifth": "Content-Strategie und SEO-Fundamente"
+        "first": {
+          "label": "Zuständigkeitskarte",
+          "text": "Jeder Bereich hat eine verantwortliche Person mit finaler Entscheidung."
+        },
+        "second": {
+          "label": "Änderungsprotokoll",
+          "text": "Änderungen brauchen einen Trigger und eine aktualisierte Begründung."
+        },
+        "third": {
+          "label": "Trigger für Änderung",
+          "text": "Neue Constraints, neue Informationen oder gebrochene Annahmen."
+        },
+        "fourth": {
+          "label": "Keine Trigger",
+          "text": "Vorlieben, Dringlichkeit oder lautere Stimmen öffnen keine Entscheidungen."
+        }
       }
+    },
+    "responsibility": {
+      "eyebrow": "Verantwortungsmodell",
+      "title": "Wo Verantwortung beginnt und endet",
+      "description": "Klare Grenzen ohne Zusagen.",
+      "items": {
+        "first": {
+          "label": "System-Verantwortung",
+          "text": "Entscheidungsrahmen, Trade-offs und dokumentierte Begründung."
+        },
+        "second": {
+          "label": "Kunden-Verantwortung",
+          "text": "Business-Prioritäten, Kontext und finale Abnahme."
+        },
+        "third": {
+          "label": "Übergabepunkte",
+          "text": "Verantwortung wechselt, wenn Annahmen bestätigt oder verworfen werden."
+        },
+        "fourth": {
+          "label": "Wenn Annahmen brechen",
+          "text": "Wenn Annahmen scheitern, wird die Entscheidung neu geöffnet."
+        }
+      }
+    },
+    "structure": {
+      "eyebrow": "Feste Struktur",
+      "title": "Warum Rigidität hier Flexibilität übertrifft",
+      "description": "Struktur schützt Tempo und Klarheit, wenn der Einsatz hoch ist.",
+      "items": {
+        "first": {
+          "label": "Kosten",
+          "title": "Kosten von Unklarheit",
+          "text": "Unklarheit multipliziert Runden und verdeckt Risiken."
+        },
+        "second": {
+          "label": "Kosten",
+          "title": "Kosten von Neu-Entscheiden",
+          "text": "Wiederaufrollen verlangsamt alles."
+        },
+        "third": {
+          "label": "Effekt",
+          "title": "Rigidität ermöglicht Tempo",
+          "text": "Feste Regeln entfernen Debatte und halten Qualität stabil."
+        }
+      }
+    },
+    "founders": {
+      "eyebrow": "System Owner",
+      "title": "Gründer, die das System halten",
+      "description": "Verantwortung liegt bei zwei Ownern mit definierten Bereichen.",
+      "items": {
+        "first": {
+          "name": "Deniz Binay",
+          "role": "System Owner / Strategie",
+          "ownership": "Verantwortet Positionierungsentscheidungen und die Rahmung von Constraints.",
+          "proofLabel": "Beleg der Urteilskraft",
+          "proof": "Führte Multi-Stakeholder-Entscheidungen mit klarer Verantwortung."
+        },
+        "second": {
+          "name": "Jannis Tanner",
+          "role": "System Owner / Design & Build",
+          "ownership": "Verantwortet Umsetzungsentscheidungen, Quality Gates und Systemkontinuität.",
+          "proofLabel": "Beleg der Urteilskraft",
+          "proof": "Führte interdisziplinäre Umsetzung ohne Handover-Mehrdeutigkeit."
+        }
+      }
+    },
+    "guardrails": {
+      "eyebrow": "Geschützt vor",
+      "title": "Wovor das System sich schützt",
+      "description": "Fehlermuster, die Klarheit und Vertrauen abbauen.",
+      "items": {
+        "first": "Undokumentierte Rücknahmen",
+        "second": "Scope-Drift ohne Ownership",
+        "third": "Feedback ohne Kriterien",
+        "fourth": "Zusagen ohne Verantwortung",
+        "fifth": "Entscheidungen außerhalb des Systems"
+      }
+    },
+    "closing": {
+      "text": "Für eine erste Abstimmung nutze die Kontaktseite.",
+      "linkLabel": "Kontakt"
     },
     "meta": {
       "title": "Über Bombig",
-      "description": "Lerne das Team hinter Bombig kennen, einer Digitalagentur für mutige Launches."
+      "description": "Bombig arbeitet als Entscheidungssystem mit klarer Zuständigkeit, Constraints und Verantwortung."
     }
   },
   "contact": {

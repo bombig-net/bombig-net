@@ -1,137 +1,240 @@
 @layer components {
-  .beliefs-visual {
-    position: relative;
-    height: 160px;
-    border-radius: 24px;
-    border: 1px solid rgba(226, 251, 221, 0.2);
-    background:
-      radial-gradient(140% 120% at 20% 0%, rgba(160, 246, 212, 0.22), transparent 60%),
-      linear-gradient(160deg, rgba(10, 16, 14, 0.92), rgba(6, 10, 9, 0.98));
-    box-shadow: 0 18px 40px rgba(5, 10, 8, 0.5);
-    margin-bottom: 1.5rem;
-    overflow: hidden;
+  .atmo-about-system {
+    --section-wash:
+      radial-gradient(in oklch circle at 10% 25%, rgba(140, 255, 200, 0.05) 0%, transparent 58%),
+      radial-gradient(in oklch circle at 90% 55%, rgba(110, 200, 165, 0.05) 0%, transparent 60%);
+    --section-lighting:
+      radial-gradient(520px 360px at 12% 18%, rgba(120, 210, 175, 0.16), transparent 72%),
+      radial-gradient(520px 380px at 88% 32%, rgba(100, 185, 150, 0.14), transparent 72%);
+    --section-glow: none;
   }
 
-  .beliefs-visual::before {
+  .atmo-about-responsibility {
+    --section-wash:
+      radial-gradient(in oklch circle at 16% 20%, rgba(140, 255, 200, 0.06) 0%, transparent 60%),
+      radial-gradient(in oklch circle at 88% 60%, rgba(110, 200, 165, 0.05) 0%, transparent 60%);
+    --section-lighting:
+      radial-gradient(520px 380px at 14% 14%, rgba(120, 210, 175, 0.16), transparent 72%),
+      radial-gradient(520px 380px at 86% 32%, rgba(95, 175, 140, 0.14), transparent 72%);
+    --section-glow: none;
+  }
+
+  .atmo-about-founders {
+    --section-wash:
+      radial-gradient(in oklch circle at 20% 20%, rgba(140, 255, 200, 0.05) 0%, transparent 58%),
+      radial-gradient(in oklch circle at 80% 60%, rgba(110, 200, 165, 0.05) 0%, transparent 60%);
+    --section-lighting:
+      radial-gradient(520px 360px at 18% 18%, rgba(120, 210, 175, 0.14), transparent 72%),
+      radial-gradient(520px 380px at 82% 30%, rgba(95, 175, 140, 0.12), transparent 72%);
+    --section-glow: none;
+  }
+
+  .atmo-about-guard {
+    --section-wash:
+      radial-gradient(in oklch circle at 78% 20%, rgba(140, 255, 200, 0.05) 0%, transparent 58%),
+      radial-gradient(in oklch circle at 10% 75%, rgba(110, 200, 165, 0.05) 0%, transparent 60%);
+    --section-lighting:
+      radial-gradient(520px 360px at 78% 16%, rgba(120, 210, 175, 0.16), transparent 72%),
+      radial-gradient(520px 380px at 12% 78%, rgba(95, 175, 140, 0.12), transparent 72%);
+    --section-glow: none;
+  }
+
+  .about-hero-surface {
+    min-height: clamp(260px, 36vh, 360px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about-system-grid {
+    position: relative;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .about-system-grid::before {
     content: '';
     position: absolute;
-    inset: 0;
-    background-image:
-      linear-gradient(rgba(176, 231, 206, 0.18) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(176, 231, 206, 0.18) 1px, transparent 1px);
-    background-size: 28px 28px;
-    opacity: 0.25;
-    mask-image: radial-gradient(200px 180px at 30% 20%, rgba(0, 0, 0, 0.9) 0%, transparent 70%);
-  }
-
-  .beliefs-visual-core {
-    position: absolute;
-    inset: 22% 18%;
-    border-radius: 20px;
-    border: 1px solid rgba(226, 251, 221, 0.18);
-    background:
-      radial-gradient(160px 140px at 60% 30%, rgba(123, 215, 255, 0.25), transparent 70%),
-      linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0));
-  }
-
-  .value-card {
-    position: relative;
-    overflow: hidden;
-  }
-
-  .value-card::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(240px 180px at 85% 0%, rgba(160, 246, 212, 0.16), transparent 70%);
+    inset: 1.1rem 0 auto 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(160, 246, 212, 0.3), transparent);
     opacity: 0.6;
     pointer-events: none;
   }
 
-  .value-card > * {
-    position: relative;
-    z-index: 1;
-  }
-
-  .value-icon {
-    width: 46px;
-    height: 46px;
-    border-radius: 14px;
-    border: 1px solid rgba(226, 251, 221, 0.2);
-    background:
-      radial-gradient(80px 60px at 30% 20%, rgba(123, 215, 255, 0.22), transparent 70%),
-      linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0));
-    box-shadow: inset 0 0 18px rgba(160, 246, 212, 0.18);
-    margin-bottom: 1.25rem;
-  }
-
-  .team-portrait {
-    height: 120px;
-    border-radius: 20px;
-    border: 1px solid rgba(226, 251, 221, 0.2);
-    background:
-      radial-gradient(140% 120% at 20% 0%, rgba(160, 246, 212, 0.2), transparent 60%),
-      linear-gradient(160deg, rgba(10, 16, 14, 0.9), rgba(6, 10, 9, 0.98));
+  .about-system-node {
     position: relative;
     overflow: hidden;
   }
 
-  .team-portrait::after {
+  .about-system-node::after {
     content: '';
     position: absolute;
     inset: 0;
-    background-image:
-      linear-gradient(rgba(176, 231, 206, 0.16) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(176, 231, 206, 0.16) 1px, transparent 1px);
-    background-size: 26px 26px;
-    opacity: 0.25;
-    mask-image: radial-gradient(180px 140px at 30% 20%, rgba(0, 0, 0, 0.9) 0%, transparent 70%);
+    background: radial-gradient(240px 180px at 80% 10%, rgba(123, 215, 255, 0.14), transparent 70%);
+    opacity: 0.5;
+    pointer-events: none;
   }
 
-  .team-portrait.variant-a {
+  .about-system-node > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .about-system-index {
+    font-size: 0.7rem;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: rgba(226, 251, 221, 0.7);
+    margin-bottom: 0.85rem;
+  }
+
+  .about-mechanics-grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .about-mechanics-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  .about-mechanics-card {
+    min-height: 0;
+  }
+
+  .about-responsibility-grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .about-responsibility-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  .about-responsibility-item {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .about-responsibility-item::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(220px 160px at 15% 20%, rgba(160, 246, 212, 0.16), transparent 70%);
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  .about-responsibility-item > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .about-structure-grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .about-structure-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  .about-structure-card {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .about-structure-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(240px 180px at 85% 10%, rgba(123, 215, 255, 0.14), transparent 70%);
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  .about-structure-card > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .about-founder-grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .about-founder-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  .about-founder-card {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .about-founder-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
     background:
-      radial-gradient(160% 120% at 20% 0%, rgba(123, 215, 255, 0.24), transparent 60%),
-      linear-gradient(160deg, rgba(10, 16, 14, 0.92), rgba(6, 10, 9, 0.98));
+      radial-gradient(240px 180px at 80% 10%, rgba(160, 246, 212, 0.16), transparent 70%),
+      linear-gradient(160deg, rgba(12, 18, 14, 0.2), rgba(6, 10, 9, 0));
+    opacity: 0.6;
+    pointer-events: none;
   }
 
-  .team-portrait.variant-b {
-    background:
-      radial-gradient(160% 120% at 80% 10%, rgba(160, 246, 212, 0.26), transparent 60%),
-      linear-gradient(160deg, rgba(10, 16, 14, 0.92), rgba(6, 10, 9, 0.98));
+  .about-founder-card > * {
+    position: relative;
+    z-index: 1;
   }
 
-  .team-portrait.variant-c {
-    background:
-      radial-gradient(160% 120% at 10% 20%, rgba(255, 139, 92, 0.18), transparent 60%),
-      linear-gradient(160deg, rgba(10, 16, 14, 0.92), rgba(6, 10, 9, 0.98));
-  }
-
-  .team-portrait.variant-d {
-    background:
-      radial-gradient(160% 120% at 90% 0%, rgba(167, 160, 255, 0.2), transparent 60%),
-      linear-gradient(160deg, rgba(10, 16, 14, 0.92), rgba(6, 10, 9, 0.98));
-  }
-
-  .capability-list {
+  .about-guard-list {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: grid;
+    gap: 0.75rem;
   }
 
-  .capability-item {
+  .about-guard-item {
     position: relative;
     padding-left: 1.5rem;
   }
 
-  .capability-item::before {
+  .about-guard-item::before {
     content: '';
     position: absolute;
     left: 0;
-    top: 0.6rem;
+    top: 0.55rem;
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 9999px;
     background: rgba(160, 246, 212, 0.6);
     box-shadow: 0 0 12px rgba(160, 246, 212, 0.4);
+  }
+
+  .about-cta {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1.5rem;
+  }
+
+  .about-cta-link {
+    color: rgba(226, 251, 221, 0.9);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+  }
+
+  .about-cta-link:hover {
+    color: #f5f4f1;
   }
 }

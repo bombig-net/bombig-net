@@ -835,61 +835,146 @@
   },
   "about": {
     "hero": {
-      "eyebrow": "About Bombig",
-      "title": "A studio built for teams who refuse to be forgettable.",
-      "description": "We are a tight, senior team that blends strategy, design, and build. Our focus is simple: help ambitious brands launch with clarity, confidence, and momentum.",
-      "primaryCta": "Work with us",
-      "secondaryCta": "View our work"
+      "eyebrow": "Decision system",
+      "title": "A company paid to make the hard calls.",
+      "description": "This page describes judgment under constraints and how decisions are owned, changed, and held.",
+      "subline": "Coherence comes from structure, not personality."
     },
-    "beliefs": {
-      "label": "What we believe",
+    "system": {
+      "eyebrow": "System overview",
+      "title": "How the decision system operates",
+      "description": "A compact model of ownership, constraints, and accountability.",
       "items": {
-        "first": "Clarity beats noise. Every page should say one thing remarkably well.",
-        "second": "Design earns attention, but performance earns trust.",
-        "third": "Storytelling belongs in every interaction, not just the copy."
+        "first": {
+          "title": "Decision ownership",
+          "text": "Each decision has a named owner and a recorded rationale."
+        },
+        "second": {
+          "title": "Structure over flexibility",
+          "text": "Boundaries are defined early so choices stay repeatable."
+        },
+        "third": {
+          "title": "Constraints as input",
+          "text": "Time, legal, and operational limits are treated as inputs."
+        },
+        "fourth": {
+          "title": "Feedback loops",
+          "text": "Signals are reviewed on a cadence with clear thresholds."
+        },
+        "fifth": {
+          "title": "Long-term accountability",
+          "text": "Responsibility persists after a decision is made."
+        }
       }
     },
-    "values": {
-      "leadership": {
-        "label": "Leadership",
-        "title": "Design, strategy, and engineering in one room.",
-        "description": "You work directly with the people shaping the work, not a handoff chain."
-      },
-      "method": {
-        "label": "Method",
-        "title": "Short, focused sprints with weekly milestones.",
-        "description": "Momentum stays high, feedback stays real, decisions stay sharp."
-      },
-      "momentum": {
-        "label": "Momentum",
-        "title": "Launches that feel inevitable, not improvised.",
-        "description": "We set up your team for continuous improvement after go-live."
-      }
-    },
-    "team": {
-      "eyebrow": "Our team",
-      "title": "Small, senior, and intentionally built.",
-      "description": "We keep the team lean so every engagement stays close, consistent, and accountable.",
-      "roles": {
-        "founder": "Founder / Strategy",
-        "creativeDirector": "Creative Director",
-        "productDesigner": "Product Designer",
-        "engineeringLead": "Engineering Lead"
-      }
-    },
-    "capabilities": {
-      "label": "Capabilities",
+    "mechanics": {
+      "eyebrow": "Decision mechanics",
+      "title": "How decisions move inside the system",
+      "description": "Plain rules for ownership, change, and stability.",
       "items": {
-        "first": "Brand narrative and messaging systems",
-        "second": "Conversion-led landing pages and marketing sites",
-        "third": "Design systems with motion and interaction direction",
-        "fourth": "Nuxt + Vue production builds and performance tuning",
-        "fifth": "Content strategy and SEO foundations"
+        "first": {
+          "label": "Ownership map",
+          "text": "Each domain has one owner with final say."
+        },
+        "second": {
+          "label": "Change protocol",
+          "text": "Changes require a trigger and an updated rationale."
+        },
+        "third": {
+          "label": "Triggers for change",
+          "text": "New constraints, new information, or failed assumptions."
+        },
+        "fourth": {
+          "label": "Non-triggers",
+          "text": "Preferences, urgency, or louder voices do not reopen decisions."
+        }
       }
+    },
+    "responsibility": {
+      "eyebrow": "Responsibility model",
+      "title": "Where accountability starts and ends",
+      "description": "Clear boundaries without guarantees.",
+      "items": {
+        "first": {
+          "label": "System-held responsibility",
+          "text": "Decision framing, trade-offs, and documented rationale."
+        },
+        "second": {
+          "label": "Client-held responsibility",
+          "text": "Business priorities, domain context, and final acceptance."
+        },
+        "third": {
+          "label": "Transfer points",
+          "text": "Ownership transfers when assumptions are confirmed or rejected."
+        },
+        "fourth": {
+          "label": "When assumptions break",
+          "text": "When assumptions fail, the decision is reopened, not defended."
+        }
+      }
+    },
+    "structure": {
+      "eyebrow": "Fixed structure",
+      "title": "Why rigidity outperforms flexibility here",
+      "description": "Structure protects speed and clarity when stakes are real.",
+      "items": {
+        "first": {
+          "label": "Cost",
+          "title": "Cost of ambiguity",
+          "text": "Ambiguity multiplies rounds and hides risk."
+        },
+        "second": {
+          "label": "Cost",
+          "title": "Cost of re-deciding",
+          "text": "Revisiting settled decisions slows everything."
+        },
+        "third": {
+          "label": "Effect",
+          "title": "Rigidity enables speed",
+          "text": "Fixed rules remove debate and keep quality stable."
+        }
+      }
+    },
+    "founders": {
+      "eyebrow": "System owners",
+      "title": "Founders who hold the system",
+      "description": "Accountability is anchored to two owners with defined domains.",
+      "items": {
+        "first": {
+          "name": "Deniz Binay",
+          "role": "System Owner / Strategy",
+          "ownership": "Owns positioning decisions and constraint framing today.",
+          "proofLabel": "Prior proof of judgment",
+          "proof": "Led multi-stakeholder decision reviews with clear accountability."
+        },
+        "second": {
+          "name": "Jannis Tanner",
+          "role": "System Owner / Design & Build",
+          "ownership": "Owns delivery decisions, quality gates, and system continuity.",
+          "proofLabel": "Prior proof of judgment",
+          "proof": "Directed cross-disciplinary delivery with zero handoff ambiguity."
+        }
+      }
+    },
+    "guardrails": {
+      "eyebrow": "Protected from",
+      "title": "What the system defends against",
+      "description": "Failure modes that erode clarity and trust.",
+      "items": {
+        "first": "Undocumented reversals",
+        "second": "Scope drift without ownership",
+        "third": "Feedback without criteria",
+        "fourth": "Commitments without accountability",
+        "fifth": "Decisions made outside the system"
+      }
+    },
+    "closing": {
+      "text": "For initial alignment, use the contact page.",
+      "linkLabel": "Contact"
     },
     "meta": {
       "title": "About Bombig",
-      "description": "Meet the team behind Bombig, a digital agency focused on bold, conversion-ready launches."
+      "description": "Bombig operates as a decision system with clear ownership, constraints, and accountability."
     }
   },
   "contact": {
