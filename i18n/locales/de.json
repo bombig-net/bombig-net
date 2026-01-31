@@ -172,7 +172,7 @@
     "services": {
       "eyebrow": "Unsere Services",
       "title": "Finde den Service, der zu deinem Kontext passt.",
-      "description": "Platzhalter: Ein Satz, der den Wechsel zur passenden Landingpage erklärt.",
+      "description": "Drei klare Einstiege je nach Kontext — Förderprojekt, Agentur-Partnerschaft oder laufende Betreuung.",
       "items": {
         "educationResearch": {
           "eyebrow": "Förderprojekte",
@@ -197,7 +197,7 @@
     "logos": {
       "eyebrow": "Teams, die uns vertrauen",
       "title": "Partner, die auf unsere Delivery setzen",
-      "description": "Platzhalter: Ein Satz zu Vertrauen und langfristiger Zusammenarbeit.",
+      "description": "Vertrauen von öffentlichen Einrichtungen und Kulturorganisationen, die verlässliche Delivery brauchen.",
       "label": "Organisationen, die mit uns arbeiten",
       "items": {
         "first": "Universität Hamburg",
@@ -209,7 +209,7 @@
     "cta": {
       "eyebrow": "Bereit für den nächsten Schritt",
       "title": "Launch die Site, die Entscheidungen leichter macht.",
-      "description": "Platzhalter: Ein Satz über Alignment, Tempo und sichere Umsetzung.",
+      "description": "Wir klären Scope, Story und Tempo, damit der Launch schnell und sicher sitzt.",
       "primaryCta": "Discovery-Call buchen",
       "secondaryCta": "Services entdecken",
       "panel": {

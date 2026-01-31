@@ -172,7 +172,7 @@
     "services": {
       "eyebrow": "Our services",
       "title": "Pick the service that fits your context.",
-      "description": "Placeholder: One line that routes visitors to the right landing page.",
+      "description": "Three clear paths depending on your context — funded projects, agency partnerships, or ongoing care.",
       "items": {
         "educationResearch": {
           "eyebrow": "Funded projects",
@@ -197,7 +197,7 @@
     "logos": {
       "eyebrow": "Teams who trust us",
       "title": "Partners who rely on our delivery",
-      "description": "Placeholder: One line about credibility and long-term collaboration.",
+      "description": "Trusted by public institutions and cultural organizations that need steady delivery.",
       "label": "Organizations who work with us",
       "items": {
         "first": "University of Hamburg",
@@ -209,7 +209,7 @@
     "cta": {
       "eyebrow": "Ready to move",
       "title": "Launch the site that makes the decision easy.",
-      "description": "Placeholder: A short line about alignment, speed, and confident delivery.",
+      "description": "We align scope, message, and delivery pace so your launch lands fast and confidently.",
       "primaryCta": "Book a discovery call",
       "secondaryCta": "Explore services",
       "panel": {
