@@ -844,31 +844,18 @@
       "description": "Diese Seite beschreibt Urteilsfähigkeit unter Constraints und wie Entscheidungen getragen, geändert und gehalten werden.",
       "subline": "Kohärenz entsteht aus Struktur, nicht aus Persönlichkeit."
     },
-    "system": {
-      "eyebrow": "Systemübersicht",
-      "title": "Wie das Entscheidungssystem arbeitet",
-      "description": "Ein kompaktes Modell aus Zuständigkeit, Constraints und Verantwortung.",
-      "items": {
-        "first": {
-          "title": "Entscheidungsverantwortung",
-          "text": "Jede Entscheidung hat eine benannte Verantwortung und eine dokumentierte Begründung."
-        },
-        "second": {
-          "title": "Struktur vor Flexibilität",
-          "text": "Grenzen werden früh gesetzt, damit Entscheidungen wiederholbar bleiben."
-        },
-        "third": {
-          "title": "Constraints als Input",
-          "text": "Zeitliche, rechtliche und operative Grenzen sind Eingaben."
-        },
-        "fourth": {
-          "title": "Feedback-Schleifen",
-          "text": "Signale werden in einem festen Rhythmus mit Schwellenwerten geprüft."
-        },
-        "fifth": {
-          "title": "Langfristige Verantwortung",
-          "text": "Verantwortung bleibt, nachdem eine Entscheidung getroffen ist."
-        }
+    "systemVisual": {
+      "eyebrow": "Betriebsmodell",
+      "headline": "Das Entscheidungssystem",
+      "intro": "Eine geführte Struktur, in der Verantwortung zugewiesen, Constraints sichtbar und Entscheidungen verbindlich sind.",
+      "thesis": "Ein System. Klare Verantwortung.",
+      "nodes": {
+        "positioning": "Positionierung",
+        "quality": "Qualität",
+        "constraints": "Constraints",
+        "continuity": "Kontinuität",
+        "accountability": "Zuständigkeit",
+        "delivery": "Umsetzung"
       }
     },
     "mechanics": {

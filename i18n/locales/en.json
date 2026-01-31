@@ -840,31 +840,18 @@
       "description": "This page describes judgment under constraints and how decisions are owned, changed, and held.",
       "subline": "Coherence comes from structure, not personality."
     },
-    "system": {
-      "eyebrow": "System overview",
-      "title": "How the decision system operates",
-      "description": "A compact model of ownership, constraints, and accountability.",
-      "items": {
-        "first": {
-          "title": "Decision ownership",
-          "text": "Each decision has a named owner and a recorded rationale."
-        },
-        "second": {
-          "title": "Structure over flexibility",
-          "text": "Boundaries are defined early so choices stay repeatable."
-        },
-        "third": {
-          "title": "Constraints as input",
-          "text": "Time, legal, and operational limits are treated as inputs."
-        },
-        "fourth": {
-          "title": "Feedback loops",
-          "text": "Signals are reviewed on a cadence with clear thresholds."
-        },
-        "fifth": {
-          "title": "Long-term accountability",
-          "text": "Responsibility persists after a decision is made."
-        }
+    "systemVisual": {
+      "eyebrow": "Operating model",
+      "headline": "The decision system",
+      "intro": "A governed structure where responsibility is assigned, constraints are visible, and decisions hold.",
+      "thesis": "One system. Clear ownership.",
+      "nodes": {
+        "positioning": "Positioning",
+        "quality": "Quality",
+        "constraints": "Constraints",
+        "continuity": "Continuity",
+        "accountability": "Accountability",
+        "delivery": "Delivery"
       }
     },
     "mechanics": {

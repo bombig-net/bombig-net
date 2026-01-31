@@ -1,4 +1,276 @@
 @layer components {
+  /* Decision System Visual Section */
+  .atmo-about-decision-system {
+    --section-wash:
+      radial-gradient(in oklch circle at 50% 40%, rgba(140, 255, 200, 0.06) 0%, transparent 55%),
+      radial-gradient(in oklch circle at 20% 60%, rgba(110, 200, 165, 0.04) 0%, transparent 50%),
+      radial-gradient(in oklch circle at 80% 60%, rgba(110, 200, 165, 0.04) 0%, transparent 50%);
+    --section-lighting:
+      radial-gradient(600px 500px at 50% 45%, rgba(120, 210, 175, 0.14), transparent 70%),
+      radial-gradient(400px 300px at 25% 35%, rgba(100, 185, 150, 0.08), transparent 65%),
+      radial-gradient(400px 300px at 75% 35%, rgba(100, 185, 150, 0.08), transparent 65%);
+    --section-glow:
+      radial-gradient(450px 400px at 50% 50%, rgba(160, 246, 212, 0.08), transparent 70%);
+    --section-glow-opacity: 0.8;
+  }
+
+  .decision-system-section {
+    position: relative;
+    min-height: clamp(500px, 70vh, 800px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .decision-system-visual {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .decision-system-svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Core breathing animation */
+  .ds-core {
+    transform-origin: 400px 300px;
+    animation: ds-core-breathe 8s ease-in-out infinite;
+  }
+
+  .ds-core-glow {
+    animation: ds-core-glow-pulse 8s ease-in-out infinite;
+  }
+
+  .ds-core-ring {
+    animation: ds-ring-rotate 60s linear infinite;
+    transform-origin: 400px 300px;
+  }
+
+  .ds-core-inner {
+    animation: ds-inner-pulse 6s ease-in-out infinite;
+  }
+
+  .ds-core-point {
+    animation: ds-point-glow 4s ease-in-out infinite;
+  }
+
+  /* Node drift animations - each with slight offset */
+  .ds-node-1 {
+    animation: ds-node-drift-1 12s ease-in-out infinite;
+  }
+
+  .ds-node-2 {
+    animation: ds-node-drift-2 14s ease-in-out infinite;
+  }
+
+  .ds-node-3 {
+    animation: ds-node-drift-3 11s ease-in-out infinite;
+  }
+
+  .ds-node-4 {
+    animation: ds-node-drift-4 13s ease-in-out infinite;
+  }
+
+  .ds-node-5 {
+    animation: ds-node-drift-5 15s ease-in-out infinite;
+  }
+
+  .ds-node-6 {
+    animation: ds-node-drift-6 10s ease-in-out infinite;
+  }
+
+  /* Path pulse animations */
+  .ds-path {
+    stroke-dasharray: 8 4;
+    animation: ds-path-flow 20s linear infinite;
+  }
+
+  .ds-path-1 { animation-delay: 0s; }
+  .ds-path-2 { animation-delay: -3s; }
+  .ds-path-3 { animation-delay: -6s; }
+  .ds-path-4 { animation-delay: -9s; }
+  .ds-path-5 { animation-delay: -12s; }
+  .ds-path-6 { animation-delay: -15s; }
+
+  /* Keyframes */
+  @keyframes ds-core-breathe {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.04);
+    }
+  }
+
+  @keyframes ds-core-glow-pulse {
+    0%, 100% {
+      opacity: 0.85;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes ds-ring-rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes ds-inner-pulse {
+    0%, 100% {
+      opacity: 0.9;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes ds-point-glow {
+    0%, 100% {
+      opacity: 0.5;
+      filter: drop-shadow(0 0 3px rgba(226, 251, 221, 0.4));
+    }
+    50% {
+      opacity: 0.85;
+      filter: drop-shadow(0 0 8px rgba(226, 251, 221, 0.7));
+    }
+  }
+
+  @keyframes ds-node-drift-1 {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(3px, -4px);
+    }
+  }
+
+  @keyframes ds-node-drift-2 {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(-4px, -3px);
+    }
+  }
+
+  @keyframes ds-node-drift-3 {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(4px, 2px);
+    }
+  }
+
+  @keyframes ds-node-drift-4 {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(-3px, 3px);
+    }
+  }
+
+  @keyframes ds-node-drift-5 {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(2px, -3px);
+    }
+  }
+
+  @keyframes ds-node-drift-6 {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(-2px, -4px);
+    }
+  }
+
+  @keyframes ds-path-flow {
+    from {
+      stroke-dashoffset: 0;
+    }
+    to {
+      stroke-dashoffset: -48;
+    }
+  }
+
+  /* Respect reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    .ds-core,
+    .ds-core-glow,
+    .ds-core-ring,
+    .ds-core-inner,
+    .ds-core-point,
+    .ds-node-1,
+    .ds-node-2,
+    .ds-node-3,
+    .ds-node-4,
+    .ds-node-5,
+    .ds-node-6,
+    .ds-path {
+      animation: none;
+    }
+  }
+
+  /* Section header */
+  .decision-system-header {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin-bottom: 1rem;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .decision-system-header .eyebrow {
+    margin-bottom: 1rem;
+  }
+
+  .decision-system-headline {
+    font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+  }
+
+  .decision-system-intro {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Section thesis - promoted from tagline */
+  .decision-system-thesis {
+    position: relative;
+    z-index: 2;
+    margin-top: 2.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.24em;
+    color: rgba(226, 251, 221, 0.72);
+    font-weight: 500;
+  }
+
   .atmo-about-system {
     --section-wash:
       radial-gradient(in oklch circle at 10% 25%, rgba(140, 255, 200, 0.05) 0%, transparent 58%),

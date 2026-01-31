@@ -9,40 +9,15 @@
       </div>
     </section>
 
-    <section class="section-atmosphere atmosphere-hero atmo-about-system">
-      <div class="mx-auto w-full max-w-6xl px-6 space-y-10">
-        <SectionHeading
-          :eyebrow="t('about.system.eyebrow')"
-          :title="t('about.system.title')"
-          :description="t('about.system.description')"
-        />
-        <div class="about-system-grid">
-          <article class="glass-panel raised p-6 about-system-node">
-            <p class="about-system-index">01</p>
-            <h3 class="text-lg font-semibold">{{ t('about.system.items.first.title') }}</h3>
-            <p class="mt-3 text-sm body-copy">{{ t('about.system.items.first.text') }}</p>
-          </article>
-          <article class="glass-panel raised p-6 about-system-node">
-            <p class="about-system-index">02</p>
-            <h3 class="text-lg font-semibold">{{ t('about.system.items.second.title') }}</h3>
-            <p class="mt-3 text-sm body-copy">{{ t('about.system.items.second.text') }}</p>
-          </article>
-          <article class="glass-panel raised p-6 about-system-node">
-            <p class="about-system-index">03</p>
-            <h3 class="text-lg font-semibold">{{ t('about.system.items.third.title') }}</h3>
-            <p class="mt-3 text-sm body-copy">{{ t('about.system.items.third.text') }}</p>
-          </article>
-          <article class="glass-panel raised p-6 about-system-node">
-            <p class="about-system-index">04</p>
-            <h3 class="text-lg font-semibold">{{ t('about.system.items.fourth.title') }}</h3>
-            <p class="mt-3 text-sm body-copy">{{ t('about.system.items.fourth.text') }}</p>
-          </article>
-          <article class="glass-panel raised p-6 about-system-node">
-            <p class="about-system-index">05</p>
-            <h3 class="text-lg font-semibold">{{ t('about.system.items.fifth.title') }}</h3>
-            <p class="mt-3 text-sm body-copy">{{ t('about.system.items.fifth.text') }}</p>
-          </article>
+    <section class="section-atmosphere atmosphere-hero atmo-about-decision-system">
+      <div class="mx-auto w-full max-w-6xl px-6 decision-system-section">
+        <div class="decision-system-header">
+          <p class="eyebrow">{{ t('about.systemVisual.eyebrow') }}</p>
+          <h2 class="decision-system-headline headline-effect">{{ t('about.systemVisual.headline') }}</h2>
+          <p class="decision-system-intro body-copy">{{ t('about.systemVisual.intro') }}</p>
         </div>
+        <DecisionSystemVisual :labels="systemLabels" />
+        <p class="decision-system-thesis">{{ t('about.systemVisual.thesis') }}</p>
       </div>
     </section>
 
@@ -182,6 +157,16 @@
 <script setup lang="ts">
 const { t } = useI18n()
 const localePath = useLocalePath()
+
+const systemLabels = computed(() => [
+  t('about.systemVisual.nodes.positioning'),
+  t('about.systemVisual.nodes.quality'),
+  t('about.systemVisual.nodes.constraints'),
+  t('about.systemVisual.nodes.continuity'),
+  t('about.systemVisual.nodes.accountability'),
+  t('about.systemVisual.nodes.delivery'),
+])
+
 const metaTitle = computed(() => t('about.meta.title'))
 const metaDescription = computed(() => t('about.meta.description'))
 
