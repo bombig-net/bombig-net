@@ -21,6 +21,13 @@
           <stop offset="100%" stop-color="transparent" />
         </radialGradient>
 
+        <!-- Core aura gradient for breathing effect -->
+        <radialGradient id="ds-core-aura-gradient" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="rgba(160, 246, 212, 0.12)" />
+          <stop offset="40%" stop-color="rgba(120, 210, 175, 0.06)" />
+          <stop offset="100%" stop-color="transparent" />
+        </radialGradient>
+
         <!-- Node gradient -->
         <radialGradient id="ds-node-gradient" cx="50%" cy="50%" r="50%">
           <stop offset="0%" stop-color="rgba(160, 246, 212, 0.28)" />
@@ -113,6 +120,7 @@
             r="28"
             fill="url(#ds-node-gradient)"
             filter="url(#ds-soft-glow)"
+            class="ds-node-glow"
           />
           <circle
             cx="220"
@@ -138,6 +146,7 @@
             r="32"
             fill="url(#ds-node-gradient)"
             filter="url(#ds-soft-glow)"
+            class="ds-node-glow-2"
           />
           <circle
             cx="580"
@@ -163,6 +172,7 @@
             r="24"
             fill="url(#ds-node-gradient)"
             filter="url(#ds-soft-glow)"
+            class="ds-node-glow-3"
           />
           <circle
             cx="160"
@@ -188,6 +198,7 @@
             r="26"
             fill="url(#ds-node-gradient)"
             filter="url(#ds-soft-glow)"
+            class="ds-node-glow-4"
           />
           <circle
             cx="640"
@@ -213,6 +224,7 @@
             r="30"
             fill="url(#ds-node-gradient)"
             filter="url(#ds-soft-glow)"
+            class="ds-node-glow-5"
           />
           <circle
             cx="240"
@@ -238,6 +250,7 @@
             r="22"
             fill="url(#ds-node-gradient)"
             filter="url(#ds-soft-glow)"
+            class="ds-node-glow-6"
           />
           <circle
             cx="560"
@@ -265,7 +278,6 @@
           text-anchor="middle"
           class="ds-label"
           font-family="'Space Grotesk', 'Segoe UI', system-ui, sans-serif"
-          font-size="9"
           font-weight="500"
           letter-spacing="0.18em"
           fill="rgba(226, 251, 221, 0.48)"
@@ -277,7 +289,6 @@
           text-anchor="middle"
           class="ds-label"
           font-family="'Space Grotesk', 'Segoe UI', system-ui, sans-serif"
-          font-size="9"
           font-weight="500"
           letter-spacing="0.18em"
           fill="rgba(226, 251, 221, 0.48)"
@@ -289,7 +300,6 @@
           text-anchor="end"
           class="ds-label"
           font-family="'Space Grotesk', 'Segoe UI', system-ui, sans-serif"
-          font-size="9"
           font-weight="500"
           letter-spacing="0.18em"
           fill="rgba(226, 251, 221, 0.48)"
@@ -301,7 +311,6 @@
           text-anchor="start"
           class="ds-label"
           font-family="'Space Grotesk', 'Segoe UI', system-ui, sans-serif"
-          font-size="9"
           font-weight="500"
           letter-spacing="0.18em"
           fill="rgba(226, 251, 221, 0.48)"
@@ -313,7 +322,6 @@
           text-anchor="middle"
           class="ds-label"
           font-family="'Space Grotesk', 'Segoe UI', system-ui, sans-serif"
-          font-size="9"
           font-weight="500"
           letter-spacing="0.18em"
           fill="rgba(226, 251, 221, 0.48)"
@@ -325,7 +333,6 @@
           text-anchor="middle"
           class="ds-label"
           font-family="'Space Grotesk', 'Segoe UI', system-ui, sans-serif"
-          font-size="9"
           font-weight="500"
           letter-spacing="0.18em"
           fill="rgba(226, 251, 221, 0.48)"
@@ -334,6 +341,15 @@
 
       <!-- Central core -->
       <g class="ds-core" filter="url(#ds-glow)">
+        <!-- Aura ring - expands and contracts with breathing -->
+        <circle
+          cx="400"
+          cy="300"
+          r="110"
+          fill="url(#ds-core-aura-gradient)"
+          class="ds-core-aura"
+          opacity="0.4"
+        />
         <!-- Outer glow ring -->
         <circle
           cx="400"
