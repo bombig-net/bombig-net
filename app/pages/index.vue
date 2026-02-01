@@ -50,8 +50,8 @@
       </div>
       <div class="home-hero-shell mx-auto w-full max-w-6xl px-6 relative flex min-h-[calc(100svh-6rem)] flex-col justify-end pb-16 pt-12">
         <div class="max-w-3xl space-y-6">
-          <h1 class="hero-title headline-effect text-4xl sm:text-5xl md:text-7xl">{{ t('home.hero.title') }}</h1>
-          <div class="flex flex-wrap gap-4">
+          <h1 class="hero-title headline-effect text-4xl sm:text-5xl md:text-7xl stagger-in stagger-1">{{ t('home.hero.title') }}</h1>
+          <div class="flex flex-wrap gap-4 stagger-in stagger-2">
           <NuxtLink :to="localePath('/services')" class="cta-button">{{ t('home.hero.primaryCta') }}</NuxtLink>
             <NuxtLink :to="localePath('/about')" class="ghost-button">{{ t('home.hero.secondaryCta') }}</NuxtLink>
           </div>

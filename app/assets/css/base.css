@@ -1,4 +1,49 @@
 @layer base {
+  /* ===== Content Stagger Animation ===== */
+  .stagger-in {
+    --stagger-delay: 0ms;
+    --stagger-duration: 450ms;
+    --stagger-ease: cubic-bezier(0.22, 1, 0.36, 1);
+    opacity: 0;
+    transform: translateY(16px);
+    animation: stagger-fade-up var(--stagger-duration) var(--stagger-ease) forwards;
+    animation-delay: calc(var(--sweep-duration, 380ms) * 0.4 + var(--stagger-delay));
+  }
+
+  .stagger-in:nth-child(1) { --stagger-delay: 0ms; }
+  .stagger-in:nth-child(2) { --stagger-delay: 60ms; }
+  .stagger-in:nth-child(3) { --stagger-delay: 120ms; }
+  .stagger-in:nth-child(4) { --stagger-delay: 180ms; }
+  .stagger-in:nth-child(5) { --stagger-delay: 240ms; }
+  .stagger-in:nth-child(6) { --stagger-delay: 300ms; }
+
+  /* Manual stagger delay utilities */
+  .stagger-1 { --stagger-delay: 0ms; }
+  .stagger-2 { --stagger-delay: 60ms; }
+  .stagger-3 { --stagger-delay: 120ms; }
+  .stagger-4 { --stagger-delay: 180ms; }
+  .stagger-5 { --stagger-delay: 240ms; }
+
+  @keyframes stagger-fade-up {
+    0% {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Reduced motion: disable stagger animation */
+  @media (prefers-reduced-motion: reduce) {
+    .stagger-in {
+      animation: none;
+      opacity: 1;
+      transform: none;
+    }
+  }
+
   :root {
     color-scheme: dark;
     --ink: #0b0e13;

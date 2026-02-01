@@ -5,11 +5,11 @@
       <div class="service-hero-orb b" aria-hidden="true" />
       <div class="mx-auto w-full max-w-6xl px-6 relative grid gap-12 pb-16 pt-28 md:grid-cols-[1.1fr_0.9fr]">
         <div class="section-surface surface-grid space-y-8">
-          <p class="eyebrow">{{ t('servicePages.educationResearch.hero.eyebrow') }}</p>
-          <h1 class="hero-title headline-effect">{{ t('servicePages.educationResearch.hero.title') }}</h1>
-          <p class="max-w-xl text-base body-copy">{{ t('servicePages.educationResearch.hero.description') }}</p>
-          <p class="max-w-xl text-sm text-slate-300">{{ t('servicePages.educationResearch.hero.subline') }}</p>
-          <div class="flex flex-wrap gap-4">
+          <p class="eyebrow stagger-in stagger-1">{{ t('servicePages.educationResearch.hero.eyebrow') }}</p>
+          <h1 class="hero-title headline-effect stagger-in stagger-2">{{ t('servicePages.educationResearch.hero.title') }}</h1>
+          <p class="max-w-xl text-base body-copy stagger-in stagger-3">{{ t('servicePages.educationResearch.hero.description') }}</p>
+          <p class="max-w-xl text-sm text-slate-300 stagger-in stagger-4">{{ t('servicePages.educationResearch.hero.subline') }}</p>
+          <div class="flex flex-wrap gap-4 stagger-in stagger-5">
             <a :href="calendlyUrl" class="cta-button" target="_blank" rel="noreferrer">
               {{ t('servicePages.educationResearch.hero.primaryCta') }}
             </a>

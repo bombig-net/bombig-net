@@ -10,10 +10,10 @@
       </div>
       <div class="about-hero-shell mx-auto w-full max-w-6xl px-6 relative flex min-h-[calc(100svh-6rem)] flex-col justify-end pb-16 pt-12">
         <div class="max-w-3xl space-y-6">
-          <p class="eyebrow">{{ t('about.hero.eyebrow') }}</p>
-          <h1 class="headline-effect text-4xl font-semibold tracking-tight md:text-5xl">{{ t('about.hero.title') }}</h1>
-          <p class="text-sm body-copy max-w-2xl">{{ t('about.hero.description') }}</p>
-          <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('about.hero.subline') }}</p>
+          <p class="eyebrow stagger-in stagger-1">{{ t('about.hero.eyebrow') }}</p>
+          <h1 class="headline-effect text-4xl font-semibold tracking-tight md:text-5xl stagger-in stagger-2">{{ t('about.hero.title') }}</h1>
+          <p class="text-sm body-copy max-w-2xl stagger-in stagger-3">{{ t('about.hero.description') }}</p>
+          <p class="text-xs uppercase tracking-[0.2em] text-slate-400 stagger-in stagger-4">{{ t('about.hero.subline') }}</p>
         </div>
       </div>
     </section>
@@ -164,10 +164,10 @@
 </template>
 
 <script setup lang="ts">
+import heartSvgPath from '~/assets/svg/heart.svg'
+
 const { t } = useI18n()
 const localePath = useLocalePath()
-
-import heartSvgPath from '~/assets/svg/heart.svg'
 
 const systemLabels = computed(() => [
   t('about.systemVisual.nodes.positioning'),

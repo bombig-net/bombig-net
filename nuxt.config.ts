@@ -64,6 +64,10 @@ export default defineNuxtConfig({
         { name: 'theme-color', content: '#0d1016' },
       ],
     },
+    pageTransition: {
+      name: 'page-sweep',
+      mode: 'out-in',
+    },
   },
   site: {
     name: 'Bombig',

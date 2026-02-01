@@ -2,9 +2,9 @@
   <div class="space-y-20 pb-24">
     <section class="mx-auto w-full max-w-6xl px-6 grid gap-12 pt-16 md:grid-cols-[1.1fr_0.9fr]">
       <div class="section-surface surface-grid space-y-6">
-        <p class="eyebrow">{{ t('servicesIndex.hero.eyebrow') }}</p>
-        <h1 class="headline-effect text-4xl font-semibold tracking-tight md:text-5xl">{{ t('servicesIndex.hero.title') }}</h1>
-        <p class="text-sm body-copy">{{ t('servicesIndex.hero.description') }}</p>
+        <p class="eyebrow stagger-in stagger-1">{{ t('servicesIndex.hero.eyebrow') }}</p>
+        <h1 class="headline-effect text-4xl font-semibold tracking-tight md:text-5xl stagger-in stagger-2">{{ t('servicesIndex.hero.title') }}</h1>
+        <p class="text-sm body-copy stagger-in stagger-3">{{ t('servicesIndex.hero.description') }}</p>
       </div>
       <div class="section-frame">
         <div class="glass-panel raised p-8">

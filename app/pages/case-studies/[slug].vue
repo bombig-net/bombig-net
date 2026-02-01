@@ -2,9 +2,9 @@
   <article v-if="caseStudy" class="space-y-12 pb-24">
     <section class="mx-auto w-full max-w-6xl px-6 pt-16">
       <div class="section-surface surface-grid space-y-6">
-        <p class="eyebrow">{{ t('caseStudies.detail.eyebrow') }}</p>
-        <h1 class="headline-effect text-4xl font-semibold tracking-tight md:text-5xl">{{ caseStudy.title }}</h1>
-        <p class="max-w-2xl text-sm body-copy">{{ caseStudy.description }}</p>
+        <p class="eyebrow stagger-in stagger-1">{{ t('caseStudies.detail.eyebrow') }}</p>
+        <h1 class="headline-effect text-4xl font-semibold tracking-tight md:text-5xl stagger-in stagger-2">{{ caseStudy.title }}</h1>
+        <p class="max-w-2xl text-sm body-copy stagger-in stagger-3">{{ caseStudy.description }}</p>
         <div class="flex flex-wrap gap-4 text-xs uppercase tracking-[0.2em] text-slate-400">
           <span>{{ caseStudy.meta?.client || t('caseStudies.detail.fallbackClient') }}</span>
           <span>/</span>
