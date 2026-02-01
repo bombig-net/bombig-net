@@ -550,6 +550,206 @@
     --section-glow: none;
   }
 
+  .about-hero {
+    position: relative;
+    padding-bottom: var(--section-block, 0);
+    isolation: isolate;
+  }
+
+  .about-hero .about-hero-shell {
+    position: relative;
+    z-index: 2;
+  }
+
+  .about-hero::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: var(--section-fade-height, 200px);
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      var(--section-fade-to, #0b0f0b)
+    );
+    pointer-events: none;
+    z-index: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+
+  .about-hero .hero-canvas {
+    background:
+      radial-gradient(120% 120% at 50% 45%, rgba(0, 0, 0, 0) 45%, rgba(3, 6, 4, 0.78) 100%),
+      radial-gradient(900px 700px at 45% 50%, rgba(43, 96, 67, 0.35), transparent 65%),
+      linear-gradient(180deg, rgba(16, 26, 19, 0.7) 0%, rgba(11, 15, 11, 0.95) 70%),
+      #0b0f0b;
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .about-hero .hero-canvas::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(176, 231, 206, 0.12) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(176, 231, 206, 0.12) 1px, transparent 1px);
+    background-size: 32px 32px;
+    opacity: 0.35;
+    -webkit-mask-image: radial-gradient(45% 40% at 45% 50%, rgba(0, 0, 0, 0.9) 0%, transparent 100%);
+    mask-image: radial-gradient(45% 40% at 45% 50%, rgba(0, 0, 0, 0.9) 0%, transparent 100%);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+
+  .hero-heart {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    pointer-events: none;
+    --heart-x: 8vw;
+    --heart-y: -4vh;
+    will-change: opacity;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-mask-image: radial-gradient(50% 45% at 45% 50%, rgba(0, 0, 0, 0.95) 0%, transparent 100%);
+    mask-image: radial-gradient(50% 45% at 45% 50%, rgba(0, 0, 0, 0.95) 0%, transparent 100%);
+  }
+
+  @media (max-width: 1024px) {
+    .hero-heart {
+      --heart-x: 4vw;
+      --heart-y: -3vh;
+    }
+
+    .heart-wrapper {
+      width: min(120vw, 1200px);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .hero-heart {
+      --heart-x: 2vw;
+      --heart-y: -2vh;
+    }
+
+    .heart-wrapper {
+      width: min(110vw, 1000px);
+    }
+  }
+
+  .heart-wrapper {
+    position: relative;
+    width: min(140vw, 1500px);
+    height: auto;
+    opacity: 0.96;
+    transform: translate(var(--heart-x), var(--heart-y));
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform-style: flat;
+    -webkit-transform-style: flat;
+  }
+
+  .heart-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: 
+      brightness(0) 
+      invert(1)
+      drop-shadow(0 0 2px rgba(160, 247, 213, 0.3));
+    mix-blend-mode: screen;
+    opacity: 0.85;
+    shape-rendering: geometricPrecision;
+  }
+
+  .heart-glow {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.55;
+    filter: 
+      brightness(0) 
+      invert(1)
+      blur(12px)
+      drop-shadow(0 0 8px rgba(160, 247, 213, 0.4));
+    mix-blend-mode: screen;
+    animation: heart-glow-pulse 9s cubic-bezier(0.4, 0.0, 0.2, 1.0) infinite;
+    shape-rendering: geometricPrecision;
+  }
+
+  .heart-base {
+    transform-origin: 50% 50%;
+    animation: heart-breathe 9s cubic-bezier(0.4, 0.0, 0.2, 1.0) infinite;
+    will-change: transform;
+  }
+
+  @keyframes heart-breathe {
+    0%, 100% {
+      transform: scale(1) translate(0, 0);
+    }
+    25% {
+      transform: scale(1.04) translate(0.5px, -0.3px);
+    }
+    50% {
+      transform: scale(1.08) translate(0, 0);
+    }
+    75% {
+      transform: scale(1.04) translate(-0.5px, 0.3px);
+    }
+  }
+
+  @keyframes heart-glow-pulse {
+    0%, 100% {
+      opacity: 0.45;
+      filter: 
+        brightness(0) 
+        invert(1)
+        blur(12px)
+        drop-shadow(0 0 8px rgba(160, 247, 213, 0.4));
+    }
+    25% {
+      opacity: 0.55;
+      filter: 
+        brightness(0) 
+        invert(1)
+        blur(14px)
+        drop-shadow(0 0 12px rgba(160, 247, 213, 0.5));
+    }
+    50% {
+      opacity: 0.65;
+      filter: 
+        brightness(0) 
+        invert(1)
+        blur(16px)
+        drop-shadow(0 0 16px rgba(160, 247, 213, 0.6));
+    }
+    75% {
+      opacity: 0.55;
+      filter: 
+        brightness(0) 
+        invert(1)
+        blur(14px)
+        drop-shadow(0 0 12px rgba(160, 247, 213, 0.5));
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .heart-base,
+    .heart-glow {
+      animation: none;
+    }
+  }
+
   .about-hero-surface {
     min-height: clamp(260px, 36vh, 360px);
     display: flex;

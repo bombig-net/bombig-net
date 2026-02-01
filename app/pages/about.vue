@@ -1,11 +1,20 @@
 <template>
   <div class="space-y-20 pb-24">
-    <section class="mx-auto w-full max-w-6xl px-6 pt-16">
-      <div class="section-surface surface-grid about-hero-surface space-y-6">
-        <p class="eyebrow">{{ t('about.hero.eyebrow') }}</p>
-        <h1 class="headline-effect text-4xl font-semibold tracking-tight md:text-5xl">{{ t('about.hero.title') }}</h1>
-        <p class="text-sm body-copy max-w-2xl">{{ t('about.hero.description') }}</p>
-        <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('about.hero.subline') }}</p>
+    <section class="about-hero relative -mt-24 overflow-hidden pt-24">
+      <div class="hero-canvas absolute inset-0" aria-hidden="true" />
+      <div class="hero-heart" aria-hidden="true">
+        <div class="heart-wrapper">
+          <img :src="heartSvgPath" alt="" class="heart-image heart-base" />
+          <img :src="heartSvgPath" alt="" class="heart-image heart-glow" />
+        </div>
+      </div>
+      <div class="about-hero-shell mx-auto w-full max-w-6xl px-6 relative flex min-h-[calc(100svh-6rem)] flex-col justify-end pb-16 pt-12">
+        <div class="max-w-3xl space-y-6">
+          <p class="eyebrow">{{ t('about.hero.eyebrow') }}</p>
+          <h1 class="headline-effect text-4xl font-semibold tracking-tight md:text-5xl">{{ t('about.hero.title') }}</h1>
+          <p class="text-sm body-copy max-w-2xl">{{ t('about.hero.description') }}</p>
+          <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('about.hero.subline') }}</p>
+        </div>
       </div>
     </section>
 
@@ -157,6 +166,8 @@
 <script setup lang="ts">
 const { t } = useI18n()
 const localePath = useLocalePath()
+
+import heartSvgPath from '~/assets/svg/heart.svg'
 
 const systemLabels = computed(() => [
   t('about.systemVisual.nodes.positioning'),
