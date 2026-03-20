@@ -1,4 +1,5 @@
 ---
+entryId: "flux-pulse"
 title: "Flux Pulse"
 description: "Eine Fintech-Plattform, die schneller, moderner und eindeutig premium wirken sollte."
 meta:

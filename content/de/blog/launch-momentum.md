@@ -1,4 +1,5 @@
 ---
+entryId: "launch-momentum"
 title: "Design fuer Launch-Momentum"
 description: "Wie eine Marketing-Site schnell, fokussiert und conversion-stark bleibt, auch wenn die Roadmap sich bewegt."
 meta:

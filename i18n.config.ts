@@ -1,5 +1,7 @@
+import { DEFAULT_LOCALE } from './shared/contracts/locales'
+
 export default {
   legacy: false,
-  locale: 'de',
-  fallbackLocale: 'de',
+  locale: DEFAULT_LOCALE,
+  fallbackLocale: DEFAULT_LOCALE,
 }

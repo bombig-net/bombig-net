@@ -1,33 +1,38 @@
 <template>
-  <div class="space-y-12 pb-24">
-    <section class="mx-auto w-full max-w-6xl px-6 pt-16">
-      <div class="section-surface surface-grid space-y-6">
-        <p class="eyebrow">{{ t('privacy.eyebrow') }}</p>
-        <h1 class="headline-effect text-4xl font-semibold tracking-tight md:text-5xl">{{ t('privacy.title') }}</h1>
-        <p class="max-w-2xl text-sm body-copy">{{ t('privacy.description') }}</p>
-      </div>
+  <div v-bind="sx(globalStyles.pageStack)">
+    <section v-bind="sx(globalStyles.container, globalStyles.heroSection, globalStyles.sectionSurface)">
+      <p v-bind="sx(globalStyles.eyebrow)">{{ t('privacy.eyebrow') }}</p>
+      <h1 v-bind="sx(globalStyles.title)">{{ t('privacy.title') }}</h1>
+      <p v-bind="sx(globalStyles.body, styles.copy)">{{ t('privacy.description') }}</p>
     </section>
 
-    <section class="mx-auto w-full max-w-6xl px-6">
-      <div class="prose max-w-none">
-        <h2>{{ t('privacy.sections.collect.title') }}</h2>
-        <p>{{ t('privacy.sections.collect.body') }}</p>
-        <h2>{{ t('privacy.sections.use.title') }}</h2>
-        <p>{{ t('privacy.sections.use.body') }}</p>
-        <h2>{{ t('privacy.sections.choices.title') }}</h2>
-        <p>{{ t('privacy.sections.choices.body') }}</p>
+    <section v-bind="sx(globalStyles.container)">
+      <div v-bind="sx(globalStyles.panel, styles.article)">
+        <div v-for="section in sections" :key="section.title" v-bind="sx(styles.section)">
+          <h2 v-bind="sx(globalStyles.sectionTitle, styles.sectionTitle)">{{ section.title }}</h2>
+          <p v-bind="sx(globalStyles.body)">{{ section.body }}</p>
+        </div>
       </div>
     </section>
   </div>
 </template>
 
 <script setup lang="ts">
+import { globalStyles } from '../styles/system'
+import { privacyPageStyles as styles } from '../styles/view-styles'
+import { sx } from '../utils/stylex'
+
 const { t } = useI18n()
-const metaTitle = computed(() => t('privacy.meta.title'))
-const metaDescription = computed(() => t('privacy.meta.description'))
+
+const sections = computed(() => [
+  { title: t('privacy.sections.collect.title'), body: t('privacy.sections.collect.body') },
+  { title: t('privacy.sections.use.title'), body: t('privacy.sections.use.body') },
+  { title: t('privacy.sections.choices.title'), body: t('privacy.sections.choices.body') },
+])
 
 useSeoMeta({
-  title: metaTitle,
-  description: metaDescription,
+  title: computed(() => t('privacy.meta.title')),
+  description: computed(() => t('privacy.meta.description')),
 })
+
 </script>

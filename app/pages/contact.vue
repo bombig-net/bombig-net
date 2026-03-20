@@ -1,117 +1,97 @@
 <template>
-  <div class="space-y-16 pb-24">
-    <section class="mx-auto w-full max-w-6xl px-6 grid gap-12 pt-16 md:grid-cols-[1.1fr_0.9fr]">
-      <div class="section-surface surface-grid space-y-6">
-        <p class="eyebrow stagger-in stagger-1">{{ t('contact.hero.eyebrow') }}</p>
-        <h1 class="headline-effect text-4xl font-semibold tracking-tight md:text-5xl stagger-in stagger-2">{{ t('contact.hero.title') }}</h1>
-        <p class="text-sm body-copy stagger-in stagger-3">{{ t('contact.hero.description') }}</p>
-        <div class="space-y-2 text-sm body-copy">
-          <p>{{ config.site?.email }}</p>
-          <p>{{ config.site?.phone }}</p>
-          <p>{{ config.site?.location }}</p>
+  <div v-bind="sx(globalStyles.pageStack)">
+    <section v-bind="sx(globalStyles.container, globalStyles.heroSection, globalStyles.gridTwo)">
+      <div v-bind="sx(globalStyles.sectionSurface)">
+        <p v-bind="sx(globalStyles.eyebrow)">{{ t('contact.hero.eyebrow') }}</p>
+        <h1 v-bind="sx(globalStyles.title)">{{ t('contact.hero.title') }}</h1>
+        <p v-bind="sx(globalStyles.body)">{{ t('contact.hero.description') }}</p>
+        <div v-bind="sx(styles.contactMeta)">
+          <span>{{ SITE_PROFILE.email }}</span>
+          <span>{{ SITE_PROFILE.phone }}</span>
+          <span>{{ SITE_PROFILE.location }}</span>
         </div>
       </div>
-      <form class="glass-panel highlight grid gap-4 p-8" @submit.prevent="onSubmit">
-        <div class="sr-only" aria-hidden="true">
+
+      <form v-bind="sx(globalStyles.panel, globalStyles.panelStrong, styles.form)" @submit.prevent="onSubmit">
+        <div v-bind="sx(styles.hiddenField)" aria-hidden="true">
           <label for="company">Company</label>
           <input id="company" v-model="form.company" name="company" tabindex="-1" autocomplete="off" type="text">
         </div>
-        <label class="text-xs uppercase tracking-[0.2em] text-slate-400" for="name">{{ t('contact.form.name') }}</label>
-        <input
-          id="name"
-          v-model="form.name"
-          name="name"
-          type="text"
-          autocomplete="name"
-          required
-          class="form-field"
-          :placeholder="t('contact.form.namePlaceholder')"
-        >
-        <label class="text-xs uppercase tracking-[0.2em] text-slate-400" for="email">{{ t('contact.form.email') }}</label>
-        <input
-          id="email"
-          v-model="form.email"
-          name="email"
-          type="email"
-          autocomplete="email"
-          required
-          class="form-field"
-          :placeholder="t('contact.form.emailPlaceholder')"
-        >
-        <label class="text-xs uppercase tracking-[0.2em] text-slate-400" for="project">{{ t('contact.form.project') }}</label>
-        <textarea
-          id="project"
-          v-model="form.project"
-          name="project"
-          autocomplete="off"
-          required
-          rows="4"
-          class="form-field"
-          :placeholder="t('contact.form.projectPlaceholder')"
-        />
-        <button type="submit" class="cta-button justify-center" :disabled="isSending">
-          {{ isSending ? t('contact.form.sending') : t('contact.form.submit') }}
+        <label for="name" v-bind="sx(globalStyles.meta)">{{ t('contact.form.name') }}</label>
+        <input id="name" v-model="form.name" name="name" type="text" autocomplete="name" required v-bind="sx(globalStyles.field)" :placeholder="t('contact.form.namePlaceholder')">
+        <label for="email" v-bind="sx(globalStyles.meta)">{{ t('contact.form.email') }}</label>
+        <input id="email" v-model="form.email" name="email" type="email" autocomplete="email" required v-bind="sx(globalStyles.field)" :placeholder="t('contact.form.emailPlaceholder')">
+        <label for="project" v-bind="sx(globalStyles.meta)">{{ t('contact.form.project') }}</label>
+        <textarea id="project" v-model="form.project" name="project" rows="6" required v-bind="sx(globalStyles.field, styles.textarea)" :placeholder="t('contact.form.projectPlaceholder')" />
+        <button type="submit" :disabled="state.kind === 'sending'" v-bind="sx(globalStyles.buttonBase, globalStyles.buttonPrimary, styles.submit)">
+          {{ state.kind === 'sending' ? t('contact.form.sending') : t('contact.form.submit') }}
         </button>
-        <p class="text-xs text-slate-400">{{ t('contact.form.note') }}</p>
-        <p v-if="status === 'success'" class="text-xs text-emerald-300" role="status">
-          {{ t('contact.form.success') }}
-        </p>
-        <p v-if="status === 'error'" class="text-xs text-rose-300" role="alert">
-          {{ errorMessage || t('contact.form.error') }}
-        </p>
+        <p v-bind="sx(globalStyles.body, styles.note)">{{ t('contact.form.note') }}</p>
+        <p v-if="state.kind === 'success'" role="status" v-bind="sx(styles.success)">{{ t('contact.form.success') }}</p>
+        <p v-if="state.kind === 'error'" role="alert" v-bind="sx(styles.error)">{{ state.message || t('contact.form.error') }}</p>
       </form>
     </section>
   </div>
 </template>
 
 <script setup lang="ts">
-const config = useAppConfig()
-const { t, locale } = useI18n()
-const metaTitle = computed(() => t('contact.meta.title'))
-const metaDescription = computed(() => t('contact.meta.description'))
+import { contactRequestSchema, contactSuccessSchema, type ContactRequest } from '~~/shared/contracts/contact'
+import { SITE_PROFILE } from '~~/shared/contracts/site'
+import { globalStyles } from '../styles/system'
+import { contactPageStyles as styles } from '../styles/view-styles'
+import { sx } from '../utils/stylex'
 
-const form = reactive({
+const { t, locale } = useI18n()
+
+const form = reactive<ContactRequest>({
   name: '',
   email: '',
   project: '',
   company: '',
+  locale: locale.value === 'en' ? 'en' : 'de',
 })
 
-const status = ref<'idle' | 'sending' | 'success' | 'error'>('idle')
-const errorMessage = ref('')
-const isSending = computed(() => status.value === 'sending')
+type SubmitState =
+  | { kind: 'idle' }
+  | { kind: 'sending' }
+  | { kind: 'success' }
+  | { kind: 'error'; message: string }
+
+const state = ref<SubmitState>({ kind: 'idle' })
+
+watch(locale, (value) => {
+  form.locale = value === 'en' ? 'en' : 'de'
+})
 
 const onSubmit = async () => {
-  if (isSending.value) {
+  if (state.value.kind === 'sending') {
     return
   }
-  status.value = 'sending'
-  errorMessage.value = ''
+
+  state.value = { kind: 'sending' }
+
   try {
-    await $fetch('/api/contact', {
+    const payload = contactRequestSchema.parse(form)
+    const response = await $fetch('/api/contact', {
       method: 'POST',
-      body: {
-        name: form.name,
-        email: form.email,
-        project: form.project,
-        company: form.company,
-        locale: locale.value,
-      },
+      body: payload,
     })
-    status.value = 'success'
+
+    contactSuccessSchema.parse(response)
+    state.value = { kind: 'success' }
     form.name = ''
     form.email = ''
     form.project = ''
     form.company = ''
   } catch (error) {
-    status.value = 'error'
     const message = error instanceof Error ? error.message : ''
-    errorMessage.value = message
+    state.value = { kind: 'error', message }
   }
 }
 
 useSeoMeta({
-  title: metaTitle,
-  description: metaDescription,
+  title: computed(() => t('contact.meta.title')),
+  description: computed(() => t('contact.meta.description')),
 })
+
 </script>

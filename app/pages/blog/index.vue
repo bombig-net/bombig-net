@@ -1,15 +1,15 @@
 <template>
-  <div class="space-y-16 pb-24">
-    <section class="mx-auto w-full max-w-6xl px-6 pt-16">
-      <div class="section-surface surface-grid space-y-6">
-        <p class="eyebrow">{{ t('blog.index.eyebrow') }}</p>
-        <h1 class="headline-effect text-4xl font-semibold tracking-tight md:text-5xl">{{ t('blog.index.title') }}</h1>
-        <p class="max-w-2xl text-sm body-copy">{{ t('blog.index.description') }}</p>
-      </div>
+  <div v-bind="sx(globalStyles.pageStack)">
+    <section v-bind="sx(globalStyles.container, globalStyles.heroSection, globalStyles.sectionSurface)">
+      <p v-bind="sx(globalStyles.eyebrow)">{{ t('blog.index.eyebrow') }}</p>
+      <h1 v-bind="sx(globalStyles.title)">{{ t('blog.index.title') }}</h1>
+      <p v-bind="sx(globalStyles.body, styles.copy)">{{ t('blog.index.description') }}</p>
     </section>
 
-    <section class="mx-auto w-full max-w-6xl px-6 grid gap-6 md:grid-cols-3">
-      <PostCard v-for="item in posts" :key="item.id" :item="item" />
+    <section v-bind="sx(globalStyles.container)">
+      <div v-bind="sx(globalStyles.gridCards)">
+        <PostCard v-for="item in posts" :key="item.id" :item="item" />
+      </div>
     </section>
 
     <CalloutPanel />
@@ -17,23 +17,26 @@
 </template>
 
 <script setup lang="ts">
+import { globalStyles } from '../../styles/system'
+import { blogIndexPageStyles as styles } from '../../styles/view-styles'
+import { sx } from '../../utils/stylex'
+
 const { t, locale } = useI18n()
-const metaTitle = computed(() => t('blog.meta.title'))
-const metaDescription = computed(() => t('blog.meta.description'))
 
 const { data: posts } = await useAsyncData(
-  'blog-list',
+  () => `blog-list-${locale.value}`,
   () =>
-    queryCollection('content')
+    queryCollection('blog')
       .where('path', 'LIKE', `/${locale.value}/blog/%`)
       .select('id', 'title', 'description', 'path', 'meta')
       .order('path', 'DESC')
       .all(),
-  { watch: [locale] },
+  { watch: [locale], default: () => [] },
 )
 
 useSeoMeta({
-  title: metaTitle,
-  description: metaDescription,
+  title: computed(() => t('blog.meta.title')),
+  description: computed(() => t('blog.meta.description')),
 })
+
 </script>

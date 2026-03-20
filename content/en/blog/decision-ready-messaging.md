@@ -1,4 +1,5 @@
 ---
+entryId: "decision-ready-messaging"
 title: "Decision-ready messaging"
 description: "Positioning is not a tagline. It is the sequence of proof points that makes a buyer ready to decide."
 meta:

@@ -1,4 +1,5 @@
 ---
+entryId: "seo-for-humans"
 title: "SEO for humans who make buying decisions"
 description: "Search visibility is the outcome of clarity. Build content that reads like a decision-maker already trusts you."
 meta:

@@ -20,7 +20,8 @@
     "startProject": "Start a project",
     "letsTalk": "Let's talk",
     "language": "Switch language",
-    "menu": "Menu"
+    "menu": "Menu",
+    "close": "Close"
   },
   "footer": {
     "tagline": "Digital agency for fearless brands.",
@@ -43,13 +44,13 @@
     "hero": {
       "eyebrow": "Bombig, digital agency",
       "title": "We take responsibility for your website",
-      "description": "Placeholder: Briefly state who you are, what you stand for, and why teams hand over responsibility.",
+      "description": "We lead strategy, design, and delivery for teams that need one accountable partner to carry the website from brief to long-term care.",
       "primaryCta": "View services",
       "secondaryCta": "About us",
       "panel": {
         "label": "Responsibility",
         "title": "We lead, build, and maintain.",
-        "description": "Placeholder: One line that frames Bombig as the accountable partner.",
+        "description": "We turn scattered requirements into a governed delivery plan and stay responsible after launch.",
         "points": {
           "first": {
             "label": "Committed",
@@ -69,7 +70,7 @@
     "responsibility": {
       "eyebrow": "Responsibility",
       "title": "We carry the project with you.",
-      "description": "Placeholder: Explain handoff, care, and accountability.",
+      "description": "Clear ownership, documented choices, and lifecycle support keep the project dependable even when requirements move.",
       "points": {
         "first": {
           "label": "Focus",
@@ -141,7 +142,7 @@
     "proof": {
       "eyebrow": "Trust",
       "title": "Evidence beats claims.",
-      "description": "Placeholder: Short line about proof and outcomes.",
+      "description": "The strongest signal is repeat trust from teams that need delivery to stay clear under pressure.",
       "logosLabel": "Organizations who work with us",
       "logos": {
         "first": "University of Hamburg",
@@ -153,7 +154,7 @@
     "approach": {
       "eyebrow": "Collaboration",
       "title": "Clear frame, clear responsibility.",
-      "description": "Placeholder: How you organize work and accountability.",
+      "description": "We establish one decision frame, one owner per workstream, and a visible rhythm for scope, review, and release.",
       "steps": {
         "first": {
           "label": "01 Orientation",
@@ -232,12 +233,12 @@
     "hero": {
       "eyebrow": "Services",
       "title": "The right conversion page for your context.",
-      "description": "Placeholder: Short explanation of how the services differ."
+      "description": "Each offer is built around a distinct buying context: funded delivery, agency reinforcement, or ongoing operational care."
     },
     "panel": {
       "label": "Typical start",
       "title": "Two weeks to a concrete proposal.",
-      "description": "Placeholder: How quickly a tangible plan appears.",
+      "description": "We move from context call to scoped recommendation fast enough that teams can make a real decision within two weeks.",
       "items": {
         "first": "Intro + context",
         "second": "Offer + roadmap",
@@ -252,7 +253,7 @@
     "directory": {
       "eyebrow": "Service selection",
       "title": "Choose the right starting point.",
-      "description": "Placeholder: A line that points to each landing page."
+      "description": "Each landing page spells out scope, constraints, and next steps for that exact engagement model."
     },
     "cards": {
       "educationResearch": {
@@ -283,7 +284,7 @@
     "howToChoose": {
       "eyebrow": "How to choose",
       "title": "Context determines the landing page.",
-      "description": "Placeholder: What teams should consider.",
+      "description": "Choose based on who owns the budget, what delivery pressure exists, and whether the work is finite or continuous.",
       "points": {
         "first": {
           "label": "Funding context",
@@ -682,7 +683,7 @@
       "hero": {
         "eyebrow": "Agency partner",
         "title": "We strengthen agency delivery when it has to land.",
-        "description": "Placeholder: Audience, collaboration, and value.",
+        "description": "For agencies that need senior hands without adding management overhead, we slot into the delivery line and keep accountability clean.",
         "primaryCta": "Book a partner call",
         "secondaryCta": "Selected projects",
         "panelLabel": "Collaboration",
@@ -696,7 +697,7 @@
       "modes": {
         "eyebrow": "Engagements",
         "title": "Three modes you can scale.",
-        "description": "Placeholder: How collaboration is organized.",
+        "description": "You decide how visible we are. We can stay behind the curtain, co-lead delivery, or cover a critical sprint with a small senior team.",
         "items": {
           "first": { "label": "Mode 01", "title": "White-label build", "text": "We deliver implementation behind the scenes." },
           "second": { "label": "Mode 02", "title": "Design + build", "text": "We augment your team with senior design and engineering." },
@@ -706,7 +707,7 @@
       "why": {
         "eyebrow": "Why us",
         "title": "Reliable delivery for your clients.",
-        "description": "Placeholder: Differentiation as a partner.",
+        "description": "We are fast to onboard, careful with client trust, and structured enough that your team always sees what is moving next.",
         "points": {
           "first": { "label": "Senior", "text": "Direct access to a compact, experienced team." },
           "second": { "label": "Timing", "text": "Transparent milestones and realistic timelines." },
@@ -716,8 +717,8 @@
       "proof": {
         "eyebrow": "Proof",
         "title": "Trusted on agency projects.",
-        "description": "Placeholder: Example of agency partnership.",
-        "quote": "Placeholder quote from a partner agency.",
+        "description": "Most partner work starts when an agency has strong strategy but needs reliable build depth to keep quality and timing intact.",
+        "quote": "Bombig joined our delivery line fast, kept communication crisp, and shipped work our clients could trust immediately.",
         "attribution": "Managing Director / partner agency",
         "logosLabel": "Partners & clients",
         "logos": {
@@ -730,7 +731,7 @@
       "process": {
         "eyebrow": "Process",
         "title": "Clear frame, fast handoff.",
-        "description": "Placeholder: How we work together.",
+        "description": "We agree the frame early, deliver in visible milestones, and hand off with assets and rationale intact.",
         "steps": {
           "first": { "label": "01 Briefing", "text": "Align context, scope, and roles." },
           "second": { "label": "02 Delivery", "text": "We deliver design and build in sprints." },
@@ -740,17 +741,17 @@
       "faq": {
         "eyebrow": "FAQ",
         "title": "Common questions.",
-        "description": "Placeholder: Three agency questions.",
+        "description": "These are the questions agencies usually ask before bringing us into an active pipeline.",
         "items": {
-          "first": { "question": "How does white-label work?", "answer": "Placeholder: Communication and NDA." },
-          "second": { "question": "Do you join client calls?", "answer": "Placeholder: Options and boundaries." },
-          "third": { "question": "How do you price?", "answer": "Placeholder: Day rates or fixed packages." }
+          "first": { "question": "How does white-label work?", "answer": "We align on communication boundaries, sign NDAs when needed, and deliver in the format your team already uses." },
+          "second": { "question": "Do you join client calls?", "answer": "Yes, when it helps the project. We can stay invisible, join as a specialist, or co-lead selected workshops." },
+          "third": { "question": "How do you price?", "answer": "We use either scoped fixed fees or senior day blocks depending on the clarity and risk of the engagement." }
         }
       },
       "finalCta": {
         "eyebrow": "Next step",
         "title": "Book a partner call.",
-        "description": "Placeholder: We clarify scope and roles in 30 minutes.",
+        "description": "In one call we clarify context, team shape, and where we can remove delivery pressure fastest.",
         "cta": "Book a partner call"
       }
     },
@@ -762,19 +763,19 @@
       "hero": {
         "eyebrow": "SMB flat fee",
         "title": "We maintain your web presence for a monthly flat fee.",
-        "description": "Placeholder: Ongoing care, optimization, and results.",
+        "description": "For teams that need momentum after launch, we handle upkeep, iteration, and small bets inside a predictable monthly rhythm.",
         "primaryCta": "Request a flat fee",
         "secondaryCta": "View examples",
         "priceLabel": "Monthly flat fee",
         "priceValue": "from EUR 1,900 / month",
-        "priceNote": "Placeholder: Scope, term, and minimum duration.",
+        "priceNote": "The exact fee depends on update volume, reporting depth, and whether the collaboration needs a minimum operating term.",
         "promiseLabel": "Our promise",
         "promiseText": "Regular updates, clear prioritization, measurable impact."
       },
       "included": {
         "eyebrow": "Included",
         "title": "What the flat fee covers.",
-        "description": "Placeholder: What teams get each month.",
+        "description": "The flat fee covers recurring updates, conversion improvements, and enough structure that priorities stay visible month over month.",
         "items": {
           "first": { "label": "Core", "title": "Maintenance & updates", "text": "Content updates, technical maintenance, small improvements." },
           "second": { "label": "Impact", "title": "Conversion & SEO", "text": "Optimizations for visibility and inquiries." },
@@ -784,7 +785,7 @@
       "boundaries": {
         "eyebrow": "Boundaries",
         "title": "What is not in the flat fee.",
-        "description": "Placeholder: Clear boundaries build trust.",
+        "description": "We define what belongs in the monthly cadence and what should become a separate scoped project before work starts.",
         "points": {
           "first": { "label": "Large projects", "text": "Full relaunches are scoped separately." },
           "second": { "label": "Campaigns", "text": "Large campaigns get their own package." },
@@ -794,8 +795,8 @@
       "proof": {
         "eyebrow": "Proof",
         "title": "Long-term care, measurable impact.",
-        "description": "Placeholder: Example customer and outcomes.",
-        "quote": "Placeholder quote from an SMB client.",
+        "description": "The strongest results show up when a team needs many small improvements delivered with discipline rather than another full relaunch.",
+        "quote": "The flat fee gave us a calm operating rhythm. We stopped batching issues and started improving the site every month.",
         "attribution": "Managing director / SMB",
         "logosLabel": "SMB partners",
         "logos": {
@@ -808,7 +809,7 @@
       "process": {
         "eyebrow": "Process",
         "title": "Simple start, clear rhythm.",
-        "description": "Placeholder: How care works in practice.",
+        "description": "We start with an audit, agree the operating cadence, and then work from a visible queue with regular review points.",
         "steps": {
           "first": { "label": "01 Audit", "text": "Review the current site and priorities." },
           "second": { "label": "02 Plan", "text": "Set monthly roadmap and flat fee." },
@@ -818,17 +819,17 @@
       "faq": {
         "eyebrow": "FAQ",
         "title": "Common questions.",
-        "description": "Placeholder: Three SMB questions.",
+        "description": "These are the questions most teams ask before committing to an ongoing service relationship.",
         "items": {
-          "first": { "question": "Is there a minimum term?", "answer": "Placeholder: Term length and cancellation." },
-          "second": { "question": "How many tasks per month?", "answer": "Placeholder: Prioritization and scope." },
-          "third": { "question": "Can we adjust the plan?", "answer": "Placeholder: Flexibility and changes." }
+          "first": { "question": "Is there a minimum term?", "answer": "Usually yes, because the first months include audit, setup, and rhythm building. We confirm the exact term during scoping." },
+          "second": { "question": "How many tasks per month?", "answer": "We work from a priority queue sized to the plan. Smaller updates flow continuously, larger work is split into milestones." },
+          "third": { "question": "Can we adjust the plan?", "answer": "Yes. We revisit the plan as traffic, business needs, or internal capacity change." }
         }
       },
       "finalCta": {
         "eyebrow": "Next step",
         "title": "Request a flat fee.",
-        "description": "Placeholder: We clarify scope, goals, and start date.",
+        "description": "We review your current site, define the operating scope, and agree the first month of work together.",
         "cta": "Request a flat fee"
       }
     }

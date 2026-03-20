@@ -1,44 +1,36 @@
 <template>
-  <article v-if="caseStudy" class="space-y-12 pb-24">
-    <section class="mx-auto w-full max-w-6xl px-6 pt-16">
-      <div class="section-surface surface-grid space-y-6">
-        <p class="eyebrow stagger-in stagger-1">{{ t('caseStudies.detail.eyebrow') }}</p>
-        <h1 class="headline-effect text-4xl font-semibold tracking-tight md:text-5xl stagger-in stagger-2">{{ caseStudy.title }}</h1>
-        <p class="max-w-2xl text-sm body-copy stagger-in stagger-3">{{ caseStudy.description }}</p>
-        <div class="flex flex-wrap gap-4 text-xs uppercase tracking-[0.2em] text-slate-400">
-          <span>{{ caseStudy.meta?.client || t('caseStudies.detail.fallbackClient') }}</span>
-          <span>/</span>
-          <span>{{ caseStudy.meta?.year || t('caseStudies.detail.fallbackYear') }}</span>
-          <span>/</span>
-          <span>{{ caseStudy.meta?.scope || t('caseStudies.detail.fallbackScope') }}</span>
-        </div>
+  <article v-if="caseStudy" v-bind="sx(globalStyles.pageStack)">
+    <section v-bind="sx(globalStyles.container, globalStyles.heroSection, globalStyles.sectionSurface)">
+      <p v-bind="sx(globalStyles.eyebrow)">{{ t('caseStudies.detail.eyebrow') }}</p>
+      <h1 v-bind="sx(globalStyles.title)">{{ caseStudy.title }}</h1>
+      <p v-bind="sx(globalStyles.body, styles.copy)">{{ caseStudy.description }}</p>
+      <div v-bind="sx(styles.metaRow, globalStyles.meta)">
+        <span>{{ caseStudy.meta.client }}</span>
+        <span>{{ caseStudy.meta.year }}</span>
+        <span>{{ caseStudy.meta.scope }}</span>
       </div>
     </section>
 
-    <section class="mx-auto w-full max-w-6xl px-6 grid gap-8 md:grid-cols-[1.1fr_0.9fr]">
-      <div class="section-frame">
-        <div class="glass-panel raised">
-          <div class="prose max-w-none px-8 py-10">
-            <ContentRenderer :value="caseStudy" />
-          </div>
+    <section v-bind="sx(globalStyles.container, globalStyles.gridTwo)">
+      <div v-bind="sx(globalStyles.panel, styles.proseWrap)">
+        <div v-bind="sx(globalStyles.prose)">
+          <ContentRenderer :value="caseStudy" />
         </div>
       </div>
-      <div class="glass-panel highlight space-y-6 p-8">
-        <div>
-          <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('caseStudies.detail.servicesLabel') }}</p>
-          <p class="mt-3 text-sm body-copy">
-            {{ caseStudy.meta?.services || t('caseStudies.detail.fallbackServices') }}
-          </p>
+      <div v-bind="sx(globalStyles.panel, globalStyles.panelStrong, styles.sidebar)">
+        <div v-bind="sx(styles.sidebarGroup)">
+          <p v-bind="sx(globalStyles.meta)">{{ t('caseStudies.detail.servicesLabel') }}</p>
+          <p v-bind="sx(globalStyles.body)">{{ caseStudy.meta.services }}</p>
         </div>
-        <div>
-          <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('caseStudies.detail.outcomesLabel') }}</p>
-          <ul class="mt-3 space-y-2 text-sm body-copy">
+        <div v-bind="sx(styles.sidebarGroup)">
+          <p v-bind="sx(globalStyles.meta)">{{ t('caseStudies.detail.outcomesLabel') }}</p>
+          <ul v-bind="sx(globalStyles.list, globalStyles.body)">
             <li>{{ t('caseStudies.detail.outcomes.first') }}</li>
             <li>{{ t('caseStudies.detail.outcomes.second') }}</li>
             <li>{{ t('caseStudies.detail.outcomes.third') }}</li>
           </ul>
         </div>
-        <NuxtLink :to="localePath('/contact')" class="cta-button justify-center">
+        <NuxtLink :to="localePath('/contact')" v-bind="sx(globalStyles.buttonBase, globalStyles.buttonPrimary, styles.cta)">
           {{ t('caseStudies.detail.cta') }}
         </NuxtLink>
       </div>
@@ -47,29 +39,32 @@
 </template>
 
 <script setup lang="ts">
+import { globalStyles } from '../../styles/system'
+import { caseStudyDetailPageStyles as styles } from '../../styles/view-styles'
+import { sx } from '../../utils/stylex'
+
 const route = useRoute()
-const slug = String(route.params.slug)
 const { t, locale } = useI18n()
 const localePath = useLocalePath()
 
+if (typeof route.params.slug !== 'string') {
+  throw createError({ statusCode: 404, statusMessage: 'Case study not found' })
+}
+
+const slug = route.params.slug
 const { data: caseStudy } = await useAsyncData(
-  `case-study-${slug}`,
-  () =>
-    queryCollection('content')
-      .path(`/${locale.value}/case-studies/${slug}`)
-      .first(),
+  () => `case-study-${locale.value}-${slug}`,
+  () => queryCollection('casestudies').path(`/${locale.value}/case-studies/${slug}`).first(),
   { watch: [locale] },
 )
-
-const metaTitle = computed(() => caseStudy.value?.title || t('caseStudies.meta.title'))
-const metaDescription = computed(() => caseStudy.value?.description || t('caseStudies.meta.description'))
 
 if (!caseStudy.value) {
   throw createError({ statusCode: 404, statusMessage: 'Case study not found' })
 }
 
 useSeoMeta({
-  title: metaTitle,
-  description: metaDescription,
+  title: computed(() => caseStudy.value?.title || t('caseStudies.meta.title')),
+  description: computed(() => caseStudy.value?.description || t('caseStudies.meta.description')),
 })
+
 </script>

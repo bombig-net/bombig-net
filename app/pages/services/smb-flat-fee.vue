@@ -1,166 +1,164 @@
 <template>
-  <div class="space-y-24 pb-24">
-    <section class="service-hero service-hero-smb">
-      <div class="service-hero-orb a" aria-hidden="true" />
-      <div class="service-hero-orb b" aria-hidden="true" />
-      <div class="mx-auto w-full max-w-6xl px-6 relative grid gap-12 pb-16 pt-28 md:grid-cols-[1.1fr_0.9fr]">
-        <div class="section-surface surface-grid space-y-8">
-          <p class="eyebrow">{{ t('servicePages.smbFlatFee.hero.eyebrow') }}</p>
-          <h1 class="hero-title headline-effect">{{ t('servicePages.smbFlatFee.hero.title') }}</h1>
-          <p class="max-w-xl text-base body-copy">{{ t('servicePages.smbFlatFee.hero.description') }}</p>
-          <div class="flex flex-wrap gap-4">
-            <NuxtLink :to="localePath('/contact')" class="cta-button">{{ t('servicePages.smbFlatFee.hero.primaryCta') }}</NuxtLink>
-            <NuxtLink :to="localePath('/case-studies')" class="ghost-button">{{ t('servicePages.smbFlatFee.hero.secondaryCta') }}</NuxtLink>
-          </div>
+  <div v-bind="sx(globalStyles.pageStack)">
+    <section v-bind="sx(globalStyles.container, globalStyles.heroSection, globalStyles.gridTwo)">
+      <div v-bind="sx(globalStyles.sectionSurface)">
+        <p v-bind="sx(globalStyles.eyebrow)">{{ t('servicePages.smbFlatFee.hero.eyebrow') }}</p>
+        <h1 v-bind="sx(globalStyles.title)">{{ t('servicePages.smbFlatFee.hero.title') }}</h1>
+        <p v-bind="sx(globalStyles.body)">{{ t('servicePages.smbFlatFee.hero.description') }}</p>
+        <div v-bind="sx(globalStyles.buttonRow)">
+          <NuxtLink :to="localePath('/contact')" v-bind="sx(globalStyles.buttonBase, globalStyles.buttonPrimary)">
+            {{ t('servicePages.smbFlatFee.hero.primaryCta') }}
+          </NuxtLink>
+          <NuxtLink :to="localePath('/case-studies')" v-bind="sx(globalStyles.buttonBase, globalStyles.buttonSecondary)">
+            {{ t('servicePages.smbFlatFee.hero.secondaryCta') }}
+          </NuxtLink>
         </div>
-        <div class="glass-panel highlight space-y-6 p-8">
-          <p class="chip">{{ t('servicePages.smbFlatFee.hero.priceLabel') }}</p>
-          <p class="text-3xl font-semibold">{{ t('servicePages.smbFlatFee.hero.priceValue') }}</p>
-          <p class="text-sm body-copy">{{ t('servicePages.smbFlatFee.hero.priceNote') }}</p>
-          <div class="panel-inset p-5">
-            <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('servicePages.smbFlatFee.hero.promiseLabel') }}</p>
-            <p class="mt-3 text-sm body-copy">{{ t('servicePages.smbFlatFee.hero.promiseText') }}</p>
-          </div>
+      </div>
+      <div v-bind="sx(globalStyles.panel, globalStyles.panelStrong, styles.heroPanel)">
+        <p v-bind="sx(globalStyles.badge)">{{ t('servicePages.smbFlatFee.hero.priceLabel') }}</p>
+        <h2 v-bind="sx(globalStyles.sectionTitle)">{{ t('servicePages.smbFlatFee.hero.priceValue') }}</h2>
+        <p v-bind="sx(globalStyles.body)">{{ t('servicePages.smbFlatFee.hero.priceNote') }}</p>
+        <div v-bind="sx(globalStyles.panelInset, styles.promiseCard)">
+          <p v-bind="sx(globalStyles.meta)">{{ t('servicePages.smbFlatFee.hero.promiseLabel') }}</p>
+          <p v-bind="sx(globalStyles.body)">{{ t('servicePages.smbFlatFee.hero.promiseText') }}</p>
         </div>
       </div>
     </section>
 
-    <section class="mx-auto w-full max-w-6xl px-6 space-y-10">
+    <section v-bind="sx(globalStyles.container, globalStyles.section)">
       <SectionHeading
         :eyebrow="t('servicePages.smbFlatFee.included.eyebrow')"
         :title="t('servicePages.smbFlatFee.included.title')"
         :description="t('servicePages.smbFlatFee.included.description')"
       />
-      <div class="grid gap-6 md:grid-cols-3">
-        <div class="glass-panel raised p-6">
-          <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('servicePages.smbFlatFee.included.items.first.label') }}</p>
-          <p class="mt-3 text-lg font-semibold">{{ t('servicePages.smbFlatFee.included.items.first.title') }}</p>
-          <p class="mt-3 text-sm body-copy">{{ t('servicePages.smbFlatFee.included.items.first.text') }}</p>
-        </div>
-        <div class="glass-panel raised p-6">
-          <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('servicePages.smbFlatFee.included.items.second.label') }}</p>
-          <p class="mt-3 text-lg font-semibold">{{ t('servicePages.smbFlatFee.included.items.second.title') }}</p>
-          <p class="mt-3 text-sm body-copy">{{ t('servicePages.smbFlatFee.included.items.second.text') }}</p>
-        </div>
-        <div class="glass-panel raised p-6">
-          <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('servicePages.smbFlatFee.included.items.third.label') }}</p>
-          <p class="mt-3 text-lg font-semibold">{{ t('servicePages.smbFlatFee.included.items.third.title') }}</p>
-          <p class="mt-3 text-sm body-copy">{{ t('servicePages.smbFlatFee.included.items.third.text') }}</p>
+      <div v-bind="sx(globalStyles.gridThree)">
+        <div v-for="item in includedItems" :key="item.title" v-bind="sx(globalStyles.panel, styles.simpleCard)">
+          <p v-bind="sx(globalStyles.meta)">{{ item.label }}</p>
+          <h2 v-bind="sx(globalStyles.cardTitle)">{{ item.title }}</h2>
+          <p v-bind="sx(globalStyles.body)">{{ item.text }}</p>
         </div>
       </div>
     </section>
 
-    <section class="mx-auto w-full max-w-6xl px-6 grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
+    <section v-bind="sx(globalStyles.container, globalStyles.gridTwo)">
       <SectionHeading
         :eyebrow="t('servicePages.smbFlatFee.boundaries.eyebrow')"
         :title="t('servicePages.smbFlatFee.boundaries.title')"
         :description="t('servicePages.smbFlatFee.boundaries.description')"
       />
-      <div class="grid gap-4">
-        <div class="glass-panel raised p-6">
-          <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('servicePages.smbFlatFee.boundaries.points.first.label') }}</p>
-          <p class="mt-3 text-sm body-copy">{{ t('servicePages.smbFlatFee.boundaries.points.first.text') }}</p>
-        </div>
-        <div class="glass-panel raised p-6">
-          <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('servicePages.smbFlatFee.boundaries.points.second.label') }}</p>
-          <p class="mt-3 text-sm body-copy">{{ t('servicePages.smbFlatFee.boundaries.points.second.text') }}</p>
-        </div>
-        <div class="glass-panel raised p-6">
-          <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('servicePages.smbFlatFee.boundaries.points.third.label') }}</p>
-          <p class="mt-3 text-sm body-copy">{{ t('servicePages.smbFlatFee.boundaries.points.third.text') }}</p>
+      <div v-bind="sx(styles.stack)">
+        <div v-for="item in boundaryItems" :key="item.label" v-bind="sx(globalStyles.panel, styles.simpleCard)">
+          <p v-bind="sx(globalStyles.meta)">{{ item.label }}</p>
+          <p v-bind="sx(globalStyles.body)">{{ item.text }}</p>
         </div>
       </div>
     </section>
 
-    <section class="mx-auto w-full max-w-6xl px-6 grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
-      <div class="space-y-6">
+    <section v-bind="sx(globalStyles.container, globalStyles.gridTwo)">
+      <div v-bind="sx(styles.stack)">
         <SectionHeading
           :eyebrow="t('servicePages.smbFlatFee.proof.eyebrow')"
           :title="t('servicePages.smbFlatFee.proof.title')"
           :description="t('servicePages.smbFlatFee.proof.description')"
         />
-        <div class="glass-panel raised p-6">
-          <p class="text-sm font-semibold">{{ t('servicePages.smbFlatFee.proof.quote') }}</p>
-          <p class="mt-4 text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('servicePages.smbFlatFee.proof.attribution') }}</p>
+        <div v-bind="sx(globalStyles.panel, styles.simpleCard)">
+          <p v-bind="sx(globalStyles.body)">{{ t('servicePages.smbFlatFee.proof.quote') }}</p>
+          <p v-bind="sx(globalStyles.meta)">{{ t('servicePages.smbFlatFee.proof.attribution') }}</p>
         </div>
       </div>
-      <div class="glass-panel highlight p-6">
-        <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('servicePages.smbFlatFee.proof.logosLabel') }}</p>
-        <div class="mt-6 grid gap-3 text-sm uppercase tracking-[0.2em] text-slate-300 sm:grid-cols-2">
-          <span>{{ t('servicePages.smbFlatFee.proof.logos.first') }}</span>
-          <span>{{ t('servicePages.smbFlatFee.proof.logos.second') }}</span>
-          <span>{{ t('servicePages.smbFlatFee.proof.logos.third') }}</span>
-          <span>{{ t('servicePages.smbFlatFee.proof.logos.fourth') }}</span>
+      <div v-bind="sx(globalStyles.panel, globalStyles.panelStrong, styles.logoPanel)">
+        <p v-bind="sx(globalStyles.meta)">{{ t('servicePages.smbFlatFee.proof.logosLabel') }}</p>
+        <div v-bind="sx(styles.logoGrid)">
+          <span v-for="logo in proofLogos" :key="logo" v-bind="sx(globalStyles.badge)">{{ logo }}</span>
         </div>
       </div>
     </section>
 
-    <section class="mx-auto w-full max-w-6xl px-6 grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
+    <section v-bind="sx(globalStyles.container, globalStyles.gridTwo)">
       <SectionHeading
         :eyebrow="t('servicePages.smbFlatFee.process.eyebrow')"
         :title="t('servicePages.smbFlatFee.process.title')"
         :description="t('servicePages.smbFlatFee.process.description')"
       />
-      <div class="grid gap-4">
-        <div class="glass-panel raised flex items-center justify-between px-6 py-5">
-          <p class="text-sm uppercase tracking-[0.2em] text-slate-400">{{ t('servicePages.smbFlatFee.process.steps.first.label') }}</p>
-          <p class="text-sm body-copy">{{ t('servicePages.smbFlatFee.process.steps.first.text') }}</p>
-        </div>
-        <div class="glass-panel raised flex items-center justify-between px-6 py-5">
-          <p class="text-sm uppercase tracking-[0.2em] text-slate-400">{{ t('servicePages.smbFlatFee.process.steps.second.label') }}</p>
-          <p class="text-sm body-copy">{{ t('servicePages.smbFlatFee.process.steps.second.text') }}</p>
-        </div>
-        <div class="glass-panel raised flex items-center justify-between px-6 py-5">
-          <p class="text-sm uppercase tracking-[0.2em] text-slate-400">{{ t('servicePages.smbFlatFee.process.steps.third.label') }}</p>
-          <p class="text-sm body-copy">{{ t('servicePages.smbFlatFee.process.steps.third.text') }}</p>
+      <div v-bind="sx(styles.stack)">
+        <div v-for="step in processSteps" :key="step.label" v-bind="sx(globalStyles.panel, styles.processCard)">
+          <span v-bind="sx(globalStyles.meta)">{{ step.label }}</span>
+          <span v-bind="sx(globalStyles.body)">{{ step.text }}</span>
         </div>
       </div>
     </section>
 
-    <section class="mx-auto w-full max-w-6xl px-6 grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
+    <section v-bind="sx(globalStyles.container, globalStyles.gridTwo)">
       <SectionHeading
         :eyebrow="t('servicePages.smbFlatFee.faq.eyebrow')"
         :title="t('servicePages.smbFlatFee.faq.title')"
         :description="t('servicePages.smbFlatFee.faq.description')"
       />
-      <div class="space-y-4">
-        <details class="glass-panel raised p-6">
-          <summary class="cursor-pointer text-sm font-semibold">{{ t('servicePages.smbFlatFee.faq.items.first.question') }}</summary>
-          <p class="mt-3 text-sm body-copy">{{ t('servicePages.smbFlatFee.faq.items.first.answer') }}</p>
-        </details>
-        <details class="glass-panel raised p-6">
-          <summary class="cursor-pointer text-sm font-semibold">{{ t('servicePages.smbFlatFee.faq.items.second.question') }}</summary>
-          <p class="mt-3 text-sm body-copy">{{ t('servicePages.smbFlatFee.faq.items.second.answer') }}</p>
-        </details>
-        <details class="glass-panel raised p-6">
-          <summary class="cursor-pointer text-sm font-semibold">{{ t('servicePages.smbFlatFee.faq.items.third.question') }}</summary>
-          <p class="mt-3 text-sm body-copy">{{ t('servicePages.smbFlatFee.faq.items.third.answer') }}</p>
+      <div v-bind="sx(styles.stack)">
+        <details v-for="faq in faqs" :key="faq.question" v-bind="sx(globalStyles.panel, styles.faqCard)">
+          <summary v-bind="sx(globalStyles.cardTitle, styles.faqSummary)">{{ faq.question }}</summary>
+          <p v-bind="sx(globalStyles.body)">{{ faq.answer }}</p>
         </details>
       </div>
     </section>
 
-    <section class="mx-auto w-full max-w-6xl px-6">
-      <div class="glass-panel highlight flex flex-col gap-6 p-10 md:flex-row md:items-center md:justify-between">
-        <div>
-          <p class="eyebrow">{{ t('servicePages.smbFlatFee.finalCta.eyebrow') }}</p>
-          <p class="text-2xl font-semibold">{{ t('servicePages.smbFlatFee.finalCta.title') }}</p>
-          <p class="mt-3 text-sm body-copy">{{ t('servicePages.smbFlatFee.finalCta.description') }}</p>
+    <section v-bind="sx(globalStyles.container)">
+      <div v-bind="sx(globalStyles.panel, globalStyles.panelStrong, styles.finalCta)">
+        <div v-bind="sx(styles.stackTight)">
+          <p v-bind="sx(globalStyles.eyebrow)">{{ t('servicePages.smbFlatFee.finalCta.eyebrow') }}</p>
+          <h2 v-bind="sx(globalStyles.sectionTitle)">{{ t('servicePages.smbFlatFee.finalCta.title') }}</h2>
+          <p v-bind="sx(globalStyles.body)">{{ t('servicePages.smbFlatFee.finalCta.description') }}</p>
         </div>
-        <NuxtLink :to="localePath('/contact')" class="cta-button">{{ t('servicePages.smbFlatFee.finalCta.cta') }}</NuxtLink>
+        <NuxtLink :to="localePath('/contact')" v-bind="sx(globalStyles.buttonBase, globalStyles.buttonPrimary)">
+          {{ t('servicePages.smbFlatFee.finalCta.cta') }}
+        </NuxtLink>
       </div>
     </section>
   </div>
 </template>
 
 <script setup lang="ts">
+import { globalStyles } from '../../styles/system'
+import { smbFlatFeePageStyles as styles } from '../../styles/view-styles'
+import { sx } from '../../utils/stylex'
+
 const { t } = useI18n()
 const localePath = useLocalePath()
 
-const metaTitle = computed(() => t('servicePages.smbFlatFee.meta.title'))
-const metaDescription = computed(() => t('servicePages.smbFlatFee.meta.description'))
+const includedItems = computed(() => [
+  { label: t('servicePages.smbFlatFee.included.items.first.label'), title: t('servicePages.smbFlatFee.included.items.first.title'), text: t('servicePages.smbFlatFee.included.items.first.text') },
+  { label: t('servicePages.smbFlatFee.included.items.second.label'), title: t('servicePages.smbFlatFee.included.items.second.title'), text: t('servicePages.smbFlatFee.included.items.second.text') },
+  { label: t('servicePages.smbFlatFee.included.items.third.label'), title: t('servicePages.smbFlatFee.included.items.third.title'), text: t('servicePages.smbFlatFee.included.items.third.text') },
+])
+
+const boundaryItems = computed(() => [
+  { label: t('servicePages.smbFlatFee.boundaries.points.first.label'), text: t('servicePages.smbFlatFee.boundaries.points.first.text') },
+  { label: t('servicePages.smbFlatFee.boundaries.points.second.label'), text: t('servicePages.smbFlatFee.boundaries.points.second.text') },
+  { label: t('servicePages.smbFlatFee.boundaries.points.third.label'), text: t('servicePages.smbFlatFee.boundaries.points.third.text') },
+])
+
+const proofLogos = computed(() => [
+  t('servicePages.smbFlatFee.proof.logos.first'),
+  t('servicePages.smbFlatFee.proof.logos.second'),
+  t('servicePages.smbFlatFee.proof.logos.third'),
+  t('servicePages.smbFlatFee.proof.logos.fourth'),
+])
+
+const processSteps = computed(() => [
+  { label: t('servicePages.smbFlatFee.process.steps.first.label'), text: t('servicePages.smbFlatFee.process.steps.first.text') },
+  { label: t('servicePages.smbFlatFee.process.steps.second.label'), text: t('servicePages.smbFlatFee.process.steps.second.text') },
+  { label: t('servicePages.smbFlatFee.process.steps.third.label'), text: t('servicePages.smbFlatFee.process.steps.third.text') },
+])
+
+const faqs = computed(() => [
+  { question: t('servicePages.smbFlatFee.faq.items.first.question'), answer: t('servicePages.smbFlatFee.faq.items.first.answer') },
+  { question: t('servicePages.smbFlatFee.faq.items.second.question'), answer: t('servicePages.smbFlatFee.faq.items.second.answer') },
+  { question: t('servicePages.smbFlatFee.faq.items.third.question'), answer: t('servicePages.smbFlatFee.faq.items.third.answer') },
+])
 
 useSeoMeta({
-  title: metaTitle,
-  description: metaDescription,
+  title: computed(() => t('servicePages.smbFlatFee.meta.title')),
+  description: computed(() => t('servicePages.smbFlatFee.meta.description')),
 })
+
 </script>

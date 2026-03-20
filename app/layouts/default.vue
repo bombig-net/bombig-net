@@ -1,13 +1,10 @@
 <template>
-  <div class="min-h-screen text-white">
-    <a
-      href="#main-content"
-      class="sr-only focus:not-sr-only focus:fixed focus:left-6 focus:top-6 focus:z-50 focus:rounded-full focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-slate-900"
-    >
+  <div v-bind="sx(globalStyles.page)">
+    <a href="#main-content" v-bind="sx(styles.skipLink)">
       {{ t('a11y.skipToContent') }}
     </a>
     <SiteHeader />
-    <main id="main-content" class="pt-24">
+    <main id="main-content" v-bind="sx(styles.main)">
       <slot />
     </main>
     <SiteFooter />
@@ -15,12 +12,17 @@
 </template>
 
 <script setup lang="ts">
+import { globalStyles } from '../styles/system'
+import { defaultLayoutStyles as styles } from '../styles/view-styles'
+import { sx } from '../utils/stylex'
+import { SITE_PROFILE } from '~~/shared/contracts/site'
+
 const { t } = useI18n()
 const route = useRoute()
 const localeHead = useLocaleHead({ seo: true })
 const runtimeConfig = useRuntimeConfig()
 
-const siteUrl = computed(() => runtimeConfig.public.siteUrl || 'https://bombig.net')
+const siteUrl = computed(() => runtimeConfig.public.siteUrl || SITE_PROFILE.siteUrl)
 const canonicalUrl = computed(() => new URL(route.path || '/', siteUrl.value).toString())
 
 useHead(() => ({
@@ -34,9 +36,10 @@ useHead(() => ({
   ],
   meta: [
     ...(localeHead.value.meta || []),
-    { property: 'og:site_name', content: 'bombig.net' },
+    { property: 'og:site_name', content: SITE_PROFILE.shortName },
     { property: 'og:type', content: 'website' },
     { name: 'twitter:card', content: 'summary_large_image' },
   ],
 }))
+
 </script>

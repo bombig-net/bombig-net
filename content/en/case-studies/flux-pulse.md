@@ -1,4 +1,5 @@
 ---
+entryId: "flux-pulse"
 title: "Flux Pulse"
 description: "Repositioning a fintech product to feel fast, modern, and unmistakably premium."
 meta:

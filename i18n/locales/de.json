@@ -20,7 +20,8 @@
     "startProject": "Projekt starten",
     "letsTalk": "Lass uns sprechen",
     "language": "Sprache wechseln",
-    "menu": "Menü"
+    "menu": "Menü",
+    "close": "Schließen"
   },
   "footer": {
     "tagline": "Digitale Agentur für mutige Marken.",
@@ -43,13 +44,13 @@
     "hero": {
       "eyebrow": "Bombig, Digitalagentur",
       "title": "Wir tragen Verantwortung für deine Website",
-      "description": "Platzhalter: Kurz erklären, wer ihr seid, wofür ihr steht und warum Teams euch Verantwortung geben.",
+      "description": "Wir führen Strategie, Design und Delivery für Teams, die einen verantwortlichen Partner brauchen, der die Website vom Brief bis zur Betreuung trägt.",
       "primaryCta": "Services ansehen",
       "secondaryCta": "Über uns",
       "panel": {
         "label": "Verantwortung",
         "title": "Wir führen, bauen und betreuen.",
-        "description": "Platzhalter: Ein Satz, der die Rolle von Bombig als verantwortlicher Partner beschreibt.",
+        "description": "Wir machen aus verteilten Anforderungen einen klaren Delivery-Plan und bleiben auch nach dem Launch verantwortlich.",
         "points": {
           "first": {
             "label": "Verbindlich",
@@ -69,7 +70,7 @@
     "responsibility": {
       "eyebrow": "Verantwortung",
       "title": "Wir tragen das Projekt mit euch.",
-      "description": "Platzhalter: Erkläre die Übergabe, Betreuung und den Anspruch an Zuverlässigkeit.",
+      "description": "Klare Zuständigkeiten, dokumentierte Entscheidungen und Betreuung über die Laufzeit halten Projekte auch bei Bewegung verlässlich.",
       "points": {
         "first": {
           "label": "Fokus",
@@ -141,7 +142,7 @@
     "proof": {
       "eyebrow": "Vertraün",
       "title": "Belege statt Behauptungen.",
-      "description": "Platzhalter: Kurzer Satz zu Proof, Ergebnissen und Zusammenarbeit.",
+      "description": "Der stärkste Beleg ist wiederholtes Vertrauen von Teams, die Delivery auch unter Druck klar halten müssen.",
       "logosLabel": "Organisationen, die mit uns arbeiten",
       "logos": {
         "first": "Universität Hamburg",
@@ -153,7 +154,7 @@
     "approach": {
       "eyebrow": "Zusammenarbeit",
       "title": "Klarer Rahmen, klare Verantwortung.",
-      "description": "Platzhalter: Wie ihr Zusammenarbeit organisiert und Verantwortung sichtbar macht.",
+      "description": "Wir setzen einen gemeinsamen Entscheidungsrahmen, klare Owner pro Arbeitsstrang und einen sichtbaren Rhythmus für Scope, Review und Release.",
       "steps": {
         "first": {
           "label": "01 Orientierung",
@@ -232,12 +233,12 @@
     "hero": {
       "eyebrow": "Services",
       "title": "Die passende Conversion-Seite für deinen Kontext.",
-      "description": "Platzhalter: Kurze Einordnung, wie sich die Services unterscheiden."
+      "description": "Jeder Service ist für einen anderen Kaufkontext gebaut: Förderprojekt, Agenturverstärkung oder laufende operative Betreuung."
     },
     "panel": {
       "label": "Typischer Start",
       "title": "In 2 Wochen zum klaren Vorschlag.",
-      "description": "Platzhalter: Wie schnell ein konkreter Vorschlag entsteht.",
+      "description": "Vom ersten Gespräch bis zum belastbaren Vorschlag vergehen in der Regel nur zwei Wochen, damit Teams wirklich entscheiden können.",
       "items": {
         "first": "Kennenlernen + Kontext",
         "second": "Angebot + Fahrplan",
@@ -252,7 +253,7 @@
     "directory": {
       "eyebrow": "Service-Auswahl",
       "title": "Wähle die passende Ausgangslage.",
-      "description": "Platzhalter: Ein Satz, der auf die individülle Landingpage verweist."
+      "description": "Jede Landingpage erklärt Scope, Constraints und nächste Schritte für genau dieses Modell der Zusammenarbeit."
     },
     "cards": {
       "educationResearch": {
@@ -283,7 +284,7 @@
     "howToChoose": {
       "eyebrow": "So wählst du",
       "title": "Der Kontext entscheidet die Landingpage.",
-      "description": "Platzhalter: Woran sich Teams orientieren sollten.",
+      "description": "Entscheidend sind Budgetverantwortung, Delivery-Druck und die Frage, ob die Arbeit endlich oder fortlaufend ist.",
       "points": {
         "first": {
           "label": "Förderkontext",
@@ -319,7 +320,6 @@
         "secondaryCta": "Projekte ansehen",
         "priceLabel": "Fixpreis",
         "priceValue": "8.500 EUR inkl. USt.",
-        "priceValü": "8.500 EUR inkl. USt.",
         "priceNote": "Erster Entwurf nach nur 4 Wochen.",
         "promiseLabel": "Unser Versprechen",
         "promiseText": "Individülles Design, rechtliche Sicherheit und Betreuung über die gesamte Laufzeit.",
@@ -369,7 +369,6 @@
         "description": "In nur 4 Wochen erhälst du den ersten Entwurf in deinem Projektdesign. Der Fixpreis gibt dir volle Kostenkontrolle unabhängig von deiner Projektlaufzeit. Technik, Support und rechtliche Anforderungen sind abgedeckt. So wird deine Website zur verlässlichen Basis für Öffentlichkeitsarbeit und Projekterfolg.",
         "priceLabel": "Festpreis",
         "priceValue": "8.500 EUR inkl. USt.",
-        "priceValü": "8.500 EUR inkl. USt.",
         "cta": "Kennenlernen buchen",
         "images": {
           "first": "Mobile Ansicht der fAIr Research Startseite mit Logo, Slogan, Kurzbeschreibung und zwei Aktionsbuttons.",
@@ -424,7 +423,6 @@
         "description": "Nach Projektende konvertieren wir deine WordPress-Seite in eine wartungsarme HTML-Version mit Archivhinweis. Wir spielen sie auf den Server oder Webspace deiner Organisation ein und verbinden die Domain.",
         "priceLabel": "Festpreis",
         "priceValue": "1.500 EUR inkl. USt.",
-        "priceValü": "1.500 EUR inkl. USt.",
         "cta": "Kennenlernen buchen",
         "images": {
           "first": "Archivansicht einer Projektseite mit Filter und Suche.",
@@ -685,7 +683,7 @@
       "hero": {
         "eyebrow": "Agency Partner",
         "title": "Wir stärken Agenturen, wenn Delivery sitzen muss.",
-        "description": "Platzhalter: Zielgruppe, Zusammenarbeit und Nutzen.",
+        "description": "Für Agenturen, die seniorige Delivery-Power ohne zusätzliche Managementschicht brauchen, ergänzen wir die Linie und halten Verantwortlichkeit klar.",
         "primaryCta": "Partner-Call buchen",
         "secondaryCta": "Ausgewählte Projekte",
         "panelLabel": "Zusammenarbeit",
@@ -699,7 +697,7 @@
       "modes": {
         "eyebrow": "Engagements",
         "title": "Drei Modi, die ihr skalieren könnt.",
-        "description": "Platzhalter: Wie die Zusammenarbeit organisiert wird.",
+        "description": "Ihr entscheidet, wie sichtbar wir sind. Wir bleiben unsichtbar, co-leaden Delivery oder decken kritische Phasen mit einem kleinen Senior-Team ab.",
         "items": {
           "first": { "label": "Modus 01", "title": "White-Label Build", "text": "Wir übernehmen Umsetzung und Lieferung im Hintergrund." },
           "second": { "label": "Modus 02", "title": "Design + Build", "text": "Wir ergänzen eür Team mit Senior-Design und Engineering." },
@@ -709,7 +707,7 @@
       "why": {
         "eyebrow": "Warum wir",
         "title": "Zuverlässige Delivery für eure Kunden.",
-        "description": "Platzhalter: Differenzierung als Partner.",
+        "description": "Wir sind schnell im Projekt, sorgfältig im Umgang mit Kundevertrauen und strukturiert genug, dass euer Team immer den nächsten Schritt sieht.",
         "points": {
           "first": { "label": "Senior", "text": "Direkter Zugriff auf ein kleines, erfahrenes Team." },
           "second": { "label": "Timing", "text": "Transparente Meilensteine und realistische Timelines." },
@@ -719,8 +717,8 @@
       "proof": {
         "eyebrow": "Proof",
         "title": "Vertraün aus Agenturprojekten.",
-        "description": "Platzhalter: Beispielhafte Zusammenarbeit.",
-        "quote": "Platzhalter-Zitat einer Partneragentur.",
+        "description": "Die meisten Partner-Projekte starten, wenn eine Agentur starke Strategie hat, aber verlässliche Build-Tiefe für Timing und Qualität braucht.",
+        "quote": "Bombig war schnell in unserer Delivery-Linie, hat Kommunikation klar gehalten und sofort vertrauensfähige Ergebnisse geliefert.",
         "attribution": "Managing Director / Partneragentur",
         "logosLabel": "Partner & Kunden",
         "logos": {
@@ -733,7 +731,7 @@
       "process": {
         "eyebrow": "Ablauf",
         "title": "Klarer Rahmen, schnelle Übergabe.",
-        "description": "Platzhalter: Wie ihr zusammenarbeitet.",
+        "description": "Wir klären den Rahmen früh, liefern in sichtbaren Meilensteinen und übergeben Assets und Entscheidungslogik sauber dokumentiert.",
         "steps": {
           "first": { "label": "01 Briefing", "text": "Kontext, Scope und Rollen klären." },
           "second": { "label": "02 Delivery", "text": "Wir liefern Design und Build in Sprints." },
@@ -743,17 +741,17 @@
       "faq": {
         "eyebrow": "FAQ",
         "title": "Häufige Fragen.",
-        "description": "Platzhalter: Drei Fragen von Agenturen.",
+        "description": "Diese Fragen kommen fast immer, bevor Agenturen uns in eine aktive Pipeline holen.",
         "items": {
-          "first": { "question": "Wie funktioniert White Label konkret?", "qüstion": "Wie funktioniert White Label konkret?", "answer": "Platzhalter: Kommunikation und NDA." },
-          "second": { "question": "Übernehmt ihr Kundenkontakt?", "qüstion": "Übernehmt ihr Kundenkontakt?", "answer": "Platzhalter: Optionen und Grenzen." },
-          "third": { "question": "Wie kalkuliert ihr?", "qüstion": "Wie kalkuliert ihr?", "answer": "Platzhalter: Tagessätze oder Paketpreise." }
+          "first": { "question": "Wie funktioniert White Label konkret?", "answer": "Wir klären Kommunikationsgrenzen, unterschreiben bei Bedarf NDAs und liefern in den Formaten, die euer Team bereits nutzt." },
+          "second": { "question": "Übernehmt ihr Kundenkontakt?", "answer": "Ja, wenn es dem Projekt hilft. Wir können unsichtbar bleiben, als Spezialist auftreten oder ausgewählte Workshops mitführen." },
+          "third": { "question": "Wie kalkuliert ihr?", "answer": "Je nach Klarheit und Risiko arbeiten wir mit fixen Paketen oder Senior-Tagesblöcken." }
         }
       },
       "finalCta": {
         "eyebrow": "Nächster Schritt",
         "title": "Partner-Call buchen.",
-        "description": "Platzhalter: Wir klären Scope und Rollen in 30 Minuten.",
+        "description": "In einem Gespräch klären wir Kontext, Teamaufstellung und wo wir Delivery-Druck am schnellsten herausnehmen können.",
         "cta": "Partner-Call buchen"
       }
     },
@@ -765,20 +763,19 @@
       "hero": {
         "eyebrow": "KMU Flat Fee",
         "title": "Wir betreuen euren Webauftritt zum monatlichen Fixpreis.",
-        "description": "Platzhalter: Laufende Pflege, Optimierung und messbare Ergebnisse.",
+        "description": "Für Teams, die nach dem Launch Momentum brauchen, übernehmen wir Pflege, Iteration und kleine Experimente in einem planbaren Monatsrhythmus.",
         "primaryCta": "Fixpreis anfragen",
         "secondaryCta": "Beispiele ansehen",
         "priceLabel": "Monatlicher Fixpreis",
         "priceValue": "ab 1.900 EUR / Monat",
-        "priceValü": "ab 1.900 EUR / Monat",
-        "priceNote": "Platzhalter: Umfang, Laufzeit und Mindestdaür.",
+        "priceNote": "Der genaue Fixpreis hängt von Update-Volumen, Reporting-Tiefe und der gewünschten Mindestlaufzeit ab.",
         "promiseLabel": "Unser Versprechen",
         "promiseText": "Regelmässige Updates, klare Priorisierung und messbarer Impact."
       },
       "included": {
         "eyebrow": "Enthalten",
         "title": "Was der Fixpreis abdeckt.",
-        "description": "Platzhalter: Was Teams jeden Monat erwarten können.",
+        "description": "Der Fixpreis deckt wiederkehrende Updates, Conversion-Verbesserungen und genug Struktur ab, damit Prioritäten jeden Monat sichtbar bleiben.",
         "items": {
           "first": { "label": "Basis", "title": "Pflege & Updates", "text": "Content, technische Wartung und kleine Verbesserungen." },
           "second": { "label": "Wirkung", "title": "Conversion & SEO", "text": "Optimierungen für Sichtbarkeit und Anfragen." },
@@ -788,7 +785,7 @@
       "boundaries": {
         "eyebrow": "Abgrenzung",
         "title": "Was nicht im Fixpreis steckt.",
-        "description": "Platzhalter: Grenzen schaffen Vertraün.",
+        "description": "Wir definieren vor dem Start klar, was in die Monatsroutine gehört und was als separates Projekt geplant werden sollte.",
         "points": {
           "first": { "label": "Grossprojekte", "text": "Komplette Relaunches werden separat geplant." },
           "second": { "label": "Kampagnen", "text": "Grösse Kampagnen erhalten ein eigenes Paket." },
@@ -798,8 +795,8 @@
       "proof": {
         "eyebrow": "Proof",
         "title": "Langfristige Betreuung, messbare Wirkung.",
-        "description": "Platzhalter: Beispielkunde und Ergebnisse.",
-        "quote": "Platzhalter-Zitat eines KMU Kunden.",
+        "description": "Die stärksten Ergebnisse entstehen, wenn viele kleine Verbesserungen diszipliniert geliefert werden statt sofort der nächste Relaunch gestartet wird.",
+        "quote": "Die Flat Fee hat uns einen ruhigen Arbeitsrhythmus gegeben. Statt Baustellen zu sammeln, verbessern wir die Site jeden Monat.",
         "attribution": "Geschäftsführung / KMU",
         "logosLabel": "KMU Partner",
         "logos": {
@@ -812,7 +809,7 @@
       "process": {
         "eyebrow": "Ablauf",
         "title": "Einfacher Start, klare Routine.",
-        "description": "Platzhalter: So läuft die Betreuung.",
+        "description": "Wir starten mit einem Audit, setzen den Arbeitsrhythmus und arbeiten dann aus einer sichtbaren Prioritätenliste mit festen Review-Punkten.",
         "steps": {
           "first": { "label": "01 Audit", "text": "Bestehende Site analysieren und priorisieren." },
           "second": { "label": "02 Plan", "text": "Monatliche Roadmap und Fixpreis festlegen." },
@@ -822,17 +819,17 @@
       "faq": {
         "eyebrow": "FAQ",
         "title": "Häufige Fragen.",
-        "description": "Platzhalter: Drei Fragen von KMU.",
+        "description": "Diese Fragen stellen Teams fast immer, bevor sie sich für eine laufende Betreuung entscheiden.",
         "items": {
-          "first": { "question": "Gibt es eine Mindestlaufzeit?", "qüstion": "Gibt es eine Mindestlaufzeit?", "answer": "Platzhalter: Laufzeit und Kündigungsfrist." },
-          "second": { "question": "Wie viele Aufgaben pro Monat?", "qüstion": "Wie viele Aufgaben pro Monat?", "answer": "Platzhalter: Priorisierung und Umfang." },
-          "third": { "question": "Können wir den Plan ändern?", "qüstion": "Können wir den Plan ändern?", "answer": "Platzhalter: Anpassung und Flexibilität." }
+          "first": { "question": "Gibt es eine Mindestlaufzeit?", "answer": "In der Regel ja, weil Audit, Setup und Arbeitsrhythmus in den ersten Monaten aufgebaut werden. Die genaue Laufzeit klären wir im Scoping." },
+          "second": { "question": "Wie viele Aufgaben pro Monat?", "answer": "Wir arbeiten aus einer priorisierten Liste, die zum Plan passt. Kleine Updates laufen kontinuierlich, größere Themen werden in Meilensteine zerlegt." },
+          "third": { "question": "Können wir den Plan ändern?", "answer": "Ja. Wir passen den Plan an, wenn sich Traffic, Ziele oder interne Kapazitäten verändern." }
         }
       },
       "finalCta": {
         "eyebrow": "Nächster Schritt",
         "title": "Fixpreis anfragen.",
-        "description": "Platzhalter: Wir klären Umfang, Ziele und Starttermin.",
+        "description": "Wir schauen auf eure aktuelle Site, definieren den Betriebsrahmen und legen gemeinsam den ersten Arbeitsmonat fest.",
         "cta": "Fixpreis anfragen"
       }
     }

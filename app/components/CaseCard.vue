@@ -1,41 +1,39 @@
 <template>
-  <NuxtLink :to="item.path" class="group section-card">
-    <div class="section-card-media" aria-hidden="true" />
-    <div class="flex items-center justify-between text-xs uppercase tracking-[0.2em] text-slate-400">
-      <span>{{ item.meta?.client || t('caseStudies.card.fallbackClient') }}</span>
-      <span>{{ item.meta?.year || t('caseStudies.card.fallbackYear') }}</span>
+  <NuxtLink :to="item.path" v-bind="sx(styles.card)">
+    <div v-bind="sx(styles.metaRow, globalStyles.meta)">
+      <span>{{ item.meta.client }}</span>
+      <span>{{ item.meta.year }}</span>
     </div>
-    <div class="space-y-3">
-      <h3 class="text-xl font-semibold text-white">{{ item.title }}</h3>
-      <p class="text-sm body-copy">{{ item.description }}</p>
+    <div v-bind="sx(styles.body)">
+      <h3 v-bind="sx(globalStyles.cardTitle)">{{ item.title }}</h3>
+      <p v-bind="sx(globalStyles.body)">{{ item.description }}</p>
     </div>
-    <div class="flex flex-wrap gap-2 text-xs uppercase tracking-[0.2em] text-slate-400">
-      <span v-for="tag in tags" :key="tag" class="chip">{{ tag }}</span>
+    <div v-bind="sx(styles.tagRow)">
+      <span v-for="tag in tags" :key="tag" v-bind="sx(globalStyles.badge)">
+        {{ tag }}
+      </span>
     </div>
   </NuxtLink>
 </template>
 
 <script setup lang="ts">
-type ContentItem = {
-  title?: string
-  description?: string
-  path?: string
-  meta?: Record<string, unknown>
-}
+import { globalStyles } from '../styles/system'
+import { caseCardStyles as styles } from '../styles/view-styles'
+import { sx } from '../utils/stylex'
 
-const props = defineProps<{ item: ContentItem }>()
-
-const { t } = useI18n()
-
-const tags = computed(() => {
-  const metaTags = props.item.meta?.tags
-  if (Array.isArray(metaTags)) {
-    return metaTags.slice(0, 3) as string[]
+const props = defineProps<{
+  item: {
+    title: string
+    description: string
+    path: string
+    meta: {
+      client?: string
+      year?: string
+      tags?: string[]
+    }
   }
-  return [
-    t('caseStudies.card.defaultTags.first'),
-    t('caseStudies.card.defaultTags.second'),
-    t('caseStudies.card.defaultTags.third'),
-  ]
-})
+}>()
+
+const tags = computed(() => props.item.meta.tags?.slice(0, 3) ?? [])
+
 </script>

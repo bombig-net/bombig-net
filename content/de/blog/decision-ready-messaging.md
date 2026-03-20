@@ -1,4 +1,5 @@
 ---
+entryId: "decision-ready-messaging"
 title: "Entscheidungsklare Positionierung"
 description: "Positionierung ist kein Claim. Es ist die Abfolge von Belegen, die eine Entscheidung moeglich macht."
 meta:

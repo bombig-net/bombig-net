@@ -1,4 +1,5 @@
 ---
+entryId: "seo-for-humans"
 title: "SEO fuer Menschen mit Kaufentscheidungen"
 description: "Sichtbarkeit ist die Folge von Klarheit. Baue Content, der sich wie Vertrauen liest."
 meta:

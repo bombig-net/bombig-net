@@ -1,4 +1,5 @@
 ---
+entryId: "vega-stack"
 title: "Vega Stack"
 description: "A devtools launch that needed to feel iconic without losing technical clarity."
 meta:

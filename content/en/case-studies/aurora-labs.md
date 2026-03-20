@@ -1,4 +1,5 @@
 ---
+entryId: "aurora-labs"
 title: "Aurora Labs"
 description: "A precision healthcare platform that needed clarity, trust, and momentum before Series B."
 meta:

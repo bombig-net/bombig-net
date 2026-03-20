@@ -1,4 +1,5 @@
 ---
+entryId: "launch-momentum"
 title: "Designing for launch momentum"
 description: "How to keep a marketing site fast, focused, and conversion-ready even when the roadmap is evolving."
 meta:

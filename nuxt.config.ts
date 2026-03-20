@@ -1,44 +1,7 @@
-import { existsSync, readdirSync } from 'node:fs'
-import { join } from 'node:path'
-
-const contentRoot = join(process.cwd(), 'content')
-const locales = ['en', 'de']
-const staticRoutes = [
-  '/',
-  '/about',
-  '/services',
-  '/services/education-research',
-  '/services/agency-partner',
-  '/services/smb-flat-fee',
-  '/contact',
-  '/case-studies',
-  '/blog',
-  '/privacy',
-]
-
-const readSlugs = (dir: string) => {
-  if (!existsSync(dir)) {
-    return []
-  }
-  return readdirSync(dir)
-    .filter((name) => name.endsWith('.md'))
-    .map((name) => name.replace(/\.md$/, ''))
-}
-
-const localizedStaticRoutes = locales.flatMap((locale) =>
-  staticRoutes.map((route) => (route === '/' ? `/${locale}` : `/${locale}${route}`)),
-)
-
-const localizedContentRoutes = locales.flatMap((locale) => {
-  const blogSlugs = readSlugs(join(contentRoot, locale, 'blog'))
-  const caseSlugs = readSlugs(join(contentRoot, locale, 'case-studies'))
-  return [
-    ...blogSlugs.map((slug) => `/${locale}/blog/${slug}`),
-    ...caseSlugs.map((slug) => `/${locale}/case-studies/${slug}`),
-  ]
-})
-
-const prerenderRoutes = ['/', '/sitemap.xml', ...localizedStaticRoutes, ...localizedContentRoutes]
+import stylex from '@stylexjs/unplugin'
+import { LOCALE_DEFINITIONS, DEFAULT_LOCALE } from './shared/contracts/locales'
+import { getPrerenderRoutes } from './shared/contracts/prerender'
+import { SITE_PROFILE } from './shared/contracts/site'
 
 export default defineNuxtConfig({
   modules: [
@@ -50,7 +13,6 @@ export default defineNuxtConfig({
     '@nuxt/scripts',
     '@nuxtjs/seo',
     '@nuxtjs/i18n',
-    '@nuxtjs/tailwindcss',
     'reka-ui/nuxt',
   ],
   devtools: { enabled: true },
@@ -59,6 +21,14 @@ export default defineNuxtConfig({
     head: {
       htmlAttrs: { lang: 'en' },
       titleTemplate: '%s - Bombig',
+      link: [
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css2?family=Manrope:wght@300..800&family=Space+Grotesk:wght@300..700&display=swap',
+        },
+      ],
       meta: [
         { name: 'description', content: 'Bombig is a digital agency crafting bold, conversion-ready brand experiences.' },
         { name: 'theme-color', content: '#0d1016' },
@@ -70,8 +40,8 @@ export default defineNuxtConfig({
     },
   },
   site: {
-    name: 'Bombig',
-    url: 'https://bombig.net',
+    name: SITE_PROFILE.name,
+    url: SITE_PROFILE.siteUrl,
     description: 'A modern digital agency for high-impact, design-driven websites.',
   },
   runtimeConfig: {
@@ -79,7 +49,7 @@ export default defineNuxtConfig({
     contactToEmail: process.env.CONTACT_TO_EMAIL ?? '',
     contactFromEmail: process.env.CONTACT_FROM_EMAIL ?? '',
     public: {
-      siteUrl: 'https://bombig.net',
+      siteUrl: SITE_PROFILE.siteUrl,
     },
   },
   image: {
@@ -87,13 +57,10 @@ export default defineNuxtConfig({
   },
   i18n: {
     strategy: 'prefix',
-    defaultLocale: 'de',
+    defaultLocale: DEFAULT_LOCALE,
     langDir: 'locales',
-    baseUrl: 'https://bombig.net',
-    locales: [
-      { code: 'en', iso: 'en-US', file: 'en.json', name: 'English' },
-      { code: 'de', iso: 'de-DE', file: 'de.json', name: 'Deutsch' },
-    ],
+    baseUrl: SITE_PROFILE.siteUrl,
+    locales: [...LOCALE_DEFINITIONS],
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',
@@ -113,8 +80,20 @@ export default defineNuxtConfig({
   },
   nitro: {
     prerender: {
-      routes: prerenderRoutes,
+      routes: getPrerenderRoutes(),
     },
   },
-  css: ['./app/assets/css/main.css'],
+  css: ['./app/assets/stylex.css'],
+  vite: {
+    plugins: [
+      stylex.vite({
+        dev: process.env.NODE_ENV === 'development',
+        treeshakeCompensation: true,
+        unstable_moduleResolution: {
+          type: 'commonJS',
+          rootDir: process.cwd(),
+        },
+      }),
+    ],
+  },
 })

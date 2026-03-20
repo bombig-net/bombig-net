@@ -81,6 +81,16 @@ const run = async () => {
     await fs.writeFile(lastJson, JSON.stringify(metadata, null, 2), "utf8");
     await fs.writeFile(runJson, JSON.stringify(metadata, null, 2), "utf8");
 
+    if (consoleErrors.length || pageErrors.length || hydrationMismatches.length) {
+      throw new Error(
+        [
+          consoleErrors.length ? `console errors: ${consoleErrors.length}` : "",
+          pageErrors.length ? `page errors: ${pageErrors.length}` : "",
+          hydrationMismatches.length ? `hydration mismatches: ${hydrationMismatches.length}` : "",
+        ].filter(Boolean).join(", "),
+      );
+    }
+
     if (pause) {
       await page.pause();
     }

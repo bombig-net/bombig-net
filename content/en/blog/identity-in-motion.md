@@ -1,4 +1,5 @@
 ---
+entryId: "identity-in-motion"
 title: "Identity in motion"
 description: "Motion can be your brand's most convincing proof of confidence. Here is how to use it without slowing things down."
 meta:

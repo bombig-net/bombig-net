@@ -1,4 +1,5 @@
 ---
+entryId: "identity-in-motion"
 title: "Identity in Motion"
 description: "Motion kann der ueberzeugendste Beweis fuer Marken-Confidence sein. So nutzt du es ohne Speed zu verlieren."
 meta:

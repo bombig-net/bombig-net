@@ -1,4 +1,5 @@
 ---
+entryId: "aurora-labs"
 title: "Aurora Labs"
 description: "Eine Praezisions-Healthcare-Plattform, die vor der Series B Klarheit, Vertrauen und Momentum brauchte."
 meta:

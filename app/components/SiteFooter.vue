@@ -1,49 +1,46 @@
 <template>
-  <footer class="footer-surface mt-12 border-t">
-    <div class="mx-auto w-full max-w-6xl px-6 grid gap-10 py-16 md:grid-cols-[2fr_1fr_1fr]">
-      <div class="space-y-4">
-        <p class="text-2xl font-semibold text-white">{{ t('footer.tagline') }}</p>
-        <p class="text-sm body-copy">{{ t('footer.blurb') }}</p>
-        <div class="flex flex-wrap gap-3 text-sm body-copy">
-          <span>{{ config.site?.location }}</span>
-          <span class="text-slate-500">|</span>
-          <span>{{ config.site?.phone }}</span>
-          <span class="text-slate-500">|</span>
-          <span>{{ config.site?.email }}</span>
+  <footer v-bind="sx(globalStyles.siteFooter)">
+    <div v-bind="sx(globalStyles.container, styles.grid)">
+      <div v-bind="sx(styles.column)">
+        <p v-bind="sx(globalStyles.sectionTitle, styles.tagline)">{{ t('footer.tagline') }}</p>
+        <p v-bind="sx(globalStyles.body)">{{ t('footer.blurb') }}</p>
+        <div v-bind="sx(styles.metaRow, globalStyles.meta)">
+          <span>{{ SITE_PROFILE.location }}</span>
+          <span>{{ SITE_PROFILE.phone }}</span>
+          <span>{{ SITE_PROFILE.email }}</span>
         </div>
       </div>
-      <div class="space-y-3 text-sm">
-        <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('footer.explore') }}</p>
-        <NuxtLink
-          v-for="item in footerNav"
-          :key="item.to"
-          :to="localePath(item.to)"
-          class="block body-copy transition hover:text-white"
-        >
-          {{ t(item.key) }}
+      <div v-bind="sx(styles.column)">
+        <p v-bind="sx(globalStyles.eyebrow)">{{ t('footer.explore') }}</p>
+        <NuxtLink v-for="item in footerItems" :key="item.id" :to="localePath(item.path)" v-bind="sx(styles.link)">
+          {{ t(item.navKey) }}
         </NuxtLink>
       </div>
-      <div class="space-y-3 text-sm">
-        <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ t('footer.elsewhere') }}</p>
-        <NuxtLink
-          v-for="item in socials"
-          :key="item.href"
-          :to="item.href"
-          external
-          class="block body-copy transition hover:text-white"
-        >
+      <div v-bind="sx(styles.column)">
+        <p v-bind="sx(globalStyles.eyebrow)">{{ t('footer.elsewhere') }}</p>
+        <NuxtLink v-for="item in SITE_PROFILE.socials" :key="item.href" :to="item.href" external v-bind="sx(styles.link)">
           {{ item.label }}
         </NuxtLink>
-        <div class="pt-4 text-xs uppercase tracking-[0.2em] text-slate-500">{{ t('footer.copyright') }}</div>
+        <span v-bind="sx(globalStyles.meta)">{{ t('footer.copyright') }}</span>
       </div>
     </div>
   </footer>
 </template>
 
 <script setup lang="ts">
-const config = useAppConfig()
+import { FOOTER_NAVIGATION, getRoutePath } from '~~/shared/contracts/routes'
+import { SITE_PROFILE } from '~~/shared/contracts/site'
+import { globalStyles } from '../styles/system'
+import { siteFooterStyles as styles } from '../styles/view-styles'
+import { sx } from '../utils/stylex'
+
 const { t } = useI18n()
 const localePath = useLocalePath()
-const footerNav = computed(() => config.navigation?.footer ?? [])
-const socials = computed(() => config.socials ?? [])
+
+const footerItems = FOOTER_NAVIGATION.map((routeId) => ({
+  id: routeId,
+  path: getRoutePath(routeId) || '/',
+  navKey: routeId === 'caseStudies' ? 'nav.caseStudies' : `nav.${routeId}`,
+}))
+
 </script>
